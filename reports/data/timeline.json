@@ -1,0 +1,115 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-NB3FDE0",
+    "children" : [ {
+      "name" : "9776-MainThread",
+      "children" : [ {
+        "name" : "输入错误用户名正确密码登录失败",
+        "uid" : "7cfc61be9a57e38b",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340657706,
+          "stop" : 1650340670008,
+          "duration" : 12302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "输入正确用户名密码登录成功",
+        "uid" : "323d3fd832273c7e",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340598112,
+          "stop" : 1650340609985,
+          "duration" : 11873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}" ]
+      }, {
+        "name" : "输入空的用户名登录失败",
+        "uid" : "430276af9558a636",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340609997,
+          "stop" : 1650340621737,
+          "duration" : 11740
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '2', 'casename': '输入空的用户名登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "输入错误密码登录失败",
+        "uid" : "9e8b66492614008d",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340645975,
+          "stop" : 1650340657703,
+          "duration" : 11728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '5', 'casename': '输入错误密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a1234567', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "使用空的用户名密码登录失败",
+        "uid" : "4ac6fabab731d254",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340633976,
+          "stop" : 1650340645970,
+          "duration" : 11994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '4', 'casename': '使用空的用户名密码登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "输入空的密码登录失败",
+        "uid" : "8e2db0a70793c2ba",
+        "parentUid" : "531483d1fc969ca105635540ca367272",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650340621740,
+          "stop" : 1650340633969,
+          "duration" : 12229
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '3', 'casename': '输入空的密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      } ],
+      "uid" : "531483d1fc969ca105635540ca367272"
+    } ],
+    "uid" : "0ee3cabf779a80526bceb03d1d5a0575"
+  } ]
+}
