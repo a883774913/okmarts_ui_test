@@ -1,0 +1,208 @@
+{
+  "uid" : "a60cc87cfe8ea66e",
+  "name" : "密码为大写字母+特殊字符注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "82ad053b8050efa9fab87af87310369e",
+  "time" : {
+    "start" : 1650604236295,
+    "stop" : 1650604279387,
+    "duration" : 43092
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650603609838,
+      "stop" : 1650603611810,
+      "duration" : 1972
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650603611811,
+      "stop" : 1650603611811,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fd38d5e1b683a27f",
+      "name" : "stdout",
+      "source" : "fd38d5e1b683a27f.txt",
+      "type" : "text/plain",
+      "size" : 105
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650604536330,
+      "stop" : 1650604536330,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650604536331,
+      "stop" : 1650604536629,
+      "duration" : 298
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "9384-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '27', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "aa06dd98ccdeee99",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/aa06dd98ccdeee99",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650599220024,
+          "stop" : 1650599253900,
+          "duration" : 33876
+        }
+      }, {
+        "uid" : "30c731b1a96a183d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/30c731b1a96a183d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650597813375,
+          "stop" : 1650597856263,
+          "duration" : 42888
+        }
+      }, {
+        "uid" : "855499a04c9b5b74",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/855499a04c9b5b74",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650596912848,
+          "stop" : 1650596941410,
+          "duration" : 28562
+        }
+      }, {
+        "uid" : "56af44a6db24fe95",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/56af44a6db24fe95",
+        "status" : "broken",
+        "statusDetails" : "IndexError: string index out of range",
+        "time" : {
+          "start" : 1650520460376,
+          "stop" : 1650520488816,
+          "duration" : 28440
+        }
+      }, {
+        "uid" : "5a76fcbb99fc74be",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/5a76fcbb99fc74be",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x007F7413+2389011]\n\tOrdinal0 [0x00789F61+1941345]\n\tOrdinal0 [0x0067C658+837208]\n\tOrdinal0 [0x006A91DD+1020381]\n\tOrdinal0 [0x006A949B+1021083]\n\tOrdinal0 [0x006D6032+1204274]\n\tOrdinal0 [0x006C4194+1130900]\n\tOrdinal0 [0x006D4302+1196802]\n\tOrdinal0 [0x006C3F66+1130342]\n\tOrdinal0 [0x0069E546+976198]\n\tOrdinal0 [0x0069F456+980054]\n\tGetHandleVerifier [0x009A9632+1727522]\n\tGetHandleVerifier [0x00A5BA4D+2457661]\n\tGetHandleVerifier [0x0088EB81+569713]\n\tGetHandleVerifier [0x0088DD76+566118]\n\tOrdinal0 [0x00790B2B+1968939]\n\tOrdinal0 [0x00795988+1989000]\n\tOrdinal0 [0x00795A75+1989237]\n\tOrdinal0 [0x0079ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650519542143,
+          "stop" : 1650519578052,
+          "duration" : 35909
+        }
+      }, {
+        "uid" : "d5bdc10474a50414",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/d5bdc10474a50414",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650518131138,
+          "stop" : 1650518172968,
+          "duration" : 41830
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a60cc87cfe8ea66e.json",
+  "parameterValues" : [ "{'case_no': '27', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+}
