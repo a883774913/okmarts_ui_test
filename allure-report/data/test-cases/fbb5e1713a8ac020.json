@@ -1,0 +1,276 @@
+{
+  "uid" : "fbb5e1713a8ac020",
+  "name" : "输入错误用户名正确密码登录失败",
+  "fullName" : "test_main.Test_Main#test_login",
+  "historyId" : "ffc8a243dc70c9b7c85366a04b3eeaff",
+  "time" : {
+    "start" : 1650519891408,
+    "stop" : 1650519895890,
+    "duration" : 4482
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650519838348,
+      "stop" : 1650519840342,
+      "duration" : 1994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650519840343,
+      "stop" : 1650519840343,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "525ed4d882d3384b",
+      "name" : "stdout",
+      "source" : "525ed4d882d3384b.txt",
+      "type" : "text/plain",
+      "size" : 340
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650520752838,
+      "stop" : 1650520752838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650520752840,
+      "stop" : 1650520753060,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "17060-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "a807143a5b1bf440",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/a807143a5b1bf440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650518979244,
+          "stop" : 1650518983923,
+          "duration" : 4679
+        }
+      }, {
+        "uid" : "782d0475d27905f3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/782d0475d27905f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650517541572,
+          "stop" : 1650517546118,
+          "duration" : 4546
+        }
+      }, {
+        "uid" : "563eadf0e652306f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/563eadf0e652306f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650511022183,
+          "stop" : 1650511026673,
+          "duration" : 4490
+        }
+      }, {
+        "uid" : "ae86804398564b35",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/20/allure/#testresult/ae86804398564b35",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506747080,
+          "stop" : 1650506751613,
+          "duration" : 4533
+        }
+      }, {
+        "uid" : "b1139a52fcf5752f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/19/allure/#testresult/b1139a52fcf5752f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506321431,
+          "stop" : 1650506325870,
+          "duration" : 4439
+        }
+      }, {
+        "uid" : "90ee5131bb1a2ea9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/18/allure/#testresult/90ee5131bb1a2ea9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650449283782,
+          "stop" : 1650449288257,
+          "duration" : 4475
+        }
+      }, {
+        "uid" : "67bf68779e312d12",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/17/allure/#testresult/67bf68779e312d12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448794051,
+          "stop" : 1650448798543,
+          "duration" : 4492
+        }
+      }, {
+        "uid" : "a5a494f93a780ccd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/16/allure/#testresult/a5a494f93a780ccd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448583527,
+          "stop" : 1650448588024,
+          "duration" : 4497
+        }
+      }, {
+        "uid" : "cd71f99f8ee1cf72",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/cd71f99f8ee1cf72",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650447745815,
+          "stop" : 1650447750315,
+          "duration" : 4500
+        }
+      }, {
+        "uid" : "331b7444afe7e2c7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/331b7444afe7e2c7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650445605669,
+          "stop" : 1650445610150,
+          "duration" : 4481
+        }
+      }, {
+        "uid" : "25ff25a12473becc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/25ff25a12473becc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650445338118,
+          "stop" : 1650445342630,
+          "duration" : 4512
+        }
+      }, {
+        "uid" : "3b2b7b9555f5fd69",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/12/allure/#testresult/3b2b7b9555f5fd69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650442903225,
+          "stop" : 1650442907789,
+          "duration" : 4564
+        }
+      }, {
+        "uid" : "583891ff8179d42f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/11/allure/#testresult/583891ff8179d42f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650442190976,
+          "stop" : 1650442195447,
+          "duration" : 4471
+        }
+      }, {
+        "uid" : "33473efa193e1683",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/10/allure/#testresult/33473efa193e1683",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650438013272,
+          "stop" : 1650438017801,
+          "duration" : 4529
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fbb5e1713a8ac020.json",
+  "parameterValues" : [ "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+}

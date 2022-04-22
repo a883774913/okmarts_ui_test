@@ -1,0 +1,179 @@
+{
+  "uid" : "c2ec961ccb927ea8",
+  "name" : "密码为5位注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "5ab0f8b6936934406938e06afab052c6",
+  "time" : {
+    "start" : 1650520083530,
+    "stop" : 1650520126598,
+    "duration" : 43068
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650519838348,
+      "stop" : 1650519840342,
+      "duration" : 1994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650519840343,
+      "stop" : 1650519840343,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "76142f467b433d69",
+      "name" : "stdout",
+      "source" : "76142f467b433d69.txt",
+      "type" : "text/plain",
+      "size" : 97
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650520752838,
+      "stop" : 1650520752838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650520752840,
+      "stop" : 1650520753060,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "17060-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "c448321d6b08ed57",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/c448321d6b08ed57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650519159051,
+          "stop" : 1650519202514,
+          "duration" : 43463
+        }
+      }, {
+        "uid" : "5c3db6fc56e55dee",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/5c3db6fc56e55dee",
+        "status" : "broken",
+        "statusDetails" : "IndexError: string index out of range",
+        "time" : {
+          "start" : 1650517745107,
+          "stop" : 1650517773075,
+          "duration" : 27968
+        }
+      }, {
+        "uid" : "a19e73db4c11e820",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/a19e73db4c11e820",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"_mail_component_147_147\"]\"}\n  (Session info: MicrosoftEdge=100.0.1185.44)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF724221922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72415E982+515794]\n\tOrdinal0 [0x00007FF723C70BC5+658373]\n\tOrdinal0 [0x00007FF723CAB992+899474]\n\tOrdinal0 [0x00007FF723CABC68+900200]\n\tOrdinal0 [0x00007FF723CDD937+1104183]\n\tOrdinal0 [0x00007FF723CC6C7F+1010815]\n\tOrdinal0 [0x00007FF723CDB034+1093684]\n\tOrdinal0 [0x00007FF723CC6A53+1010259]\n\tOrdinal0 [0x00007FF723C9DB47+842567]\n\tOrdinal0 [0x00007FF723C9F018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF723E2F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF723F19389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF723F1C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF723D6C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF724165971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72416A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72416AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF7241748BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1650511181177,
+          "stop" : 1650511205011,
+          "duration" : 23834
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c2ec961ccb927ea8.json",
+  "parameterValues" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+}

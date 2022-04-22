@@ -1,0 +1,197 @@
+{
+  "uid" : "e872b21ce63e577a",
+  "name" : "密码为6为字符注册成功",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "8f2fdfed3883ab0733597ab4a59f82f5",
+  "time" : {
+    "start" : 1650520040694,
+    "stop" : 1650520083526,
+    "duration" : 42832
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650519838348,
+      "stop" : 1650519840342,
+      "duration" : 1994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650519840343,
+      "stop" : 1650519840343,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7328387e899232f9",
+      "name" : "stdout",
+      "source" : "7328387e899232f9.txt",
+      "type" : "text/plain",
+      "size" : 70
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650520752838,
+      "stop" : 1650520752838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650520752840,
+      "stop" : 1650520753060,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "17060-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "3289a8026df8bcc6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/3289a8026df8bcc6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650519115109,
+          "stop" : 1650519159047,
+          "duration" : 43938
+        }
+      }, {
+        "uid" : "bd86b49f1705212f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/bd86b49f1705212f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650517701762,
+          "stop" : 1650517745103,
+          "duration" : 43341
+        }
+      }, {
+        "uid" : "b55a41c79a50bab2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/b55a41c79a50bab2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"_mail_component_147_147\"]\"}\n  (Session info: MicrosoftEdge=100.0.1185.44)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF724221922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72415E982+515794]\n\tOrdinal0 [0x00007FF723C70BC5+658373]\n\tOrdinal0 [0x00007FF723CAB992+899474]\n\tOrdinal0 [0x00007FF723CABC68+900200]\n\tOrdinal0 [0x00007FF723CDD937+1104183]\n\tOrdinal0 [0x00007FF723CC6C7F+1010815]\n\tOrdinal0 [0x00007FF723CDB034+1093684]\n\tOrdinal0 [0x00007FF723CC6A53+1010259]\n\tOrdinal0 [0x00007FF723C9DB47+842567]\n\tOrdinal0 [0x00007FF723C9F018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF723E2F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF723F19389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF723F1C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF723D6C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF724165971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72416A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF72416AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF7241748BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1650511156848,
+          "stop" : 1650511180991,
+          "duration" : 24143
+        }
+      }, {
+        "uid" : "6a89a09c209555fa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/20/allure/#testresult/6a89a09c209555fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506880670,
+          "stop" : 1650506916198,
+          "duration" : 35528
+        }
+      }, {
+        "uid" : "e22bc947b32320dd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/19/allure/#testresult/e22bc947b32320dd",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650506463535,
+          "stop" : 1650506465599,
+          "duration" : 2064
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e872b21ce63e577a.json",
+  "parameterValues" : [ "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+}

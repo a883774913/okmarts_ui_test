@@ -1,0 +1,276 @@
+{
+  "uid" : "f7eb2bf938e5961c",
+  "name" : "不勾选用户协议注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "e587d238ec5860c1d80bd6f44d62d5ed",
+  "time" : {
+    "start" : 1650519906299,
+    "stop" : 1650519909936,
+    "duration" : 3637
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650519838348,
+      "stop" : 1650519840342,
+      "duration" : 1994
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650519840343,
+      "stop" : 1650519840343,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "518a7ce006a4da3d",
+      "name" : "stdout",
+      "source" : "518a7ce006a4da3d.txt",
+      "type" : "text/plain",
+      "size" : 59
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650520752838,
+      "stop" : 1650520752838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650520752840,
+      "stop" : 1650520753060,
+      "duration" : 220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "17060-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '10', 'casename': '不勾选用户协议注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please checked our user agreement first'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "a5995b9529756844",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/a5995b9529756844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650518993695,
+          "stop" : 1650518997304,
+          "duration" : 3609
+        }
+      }, {
+        "uid" : "f34e94391cdef16",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/f34e94391cdef16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650517555880,
+          "stop" : 1650517559514,
+          "duration" : 3634
+        }
+      }, {
+        "uid" : "db4ea8187320fcb2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/db4ea8187320fcb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650511036364,
+          "stop" : 1650511039998,
+          "duration" : 3634
+        }
+      }, {
+        "uid" : "a72f72ae5e289eb9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/20/allure/#testresult/a72f72ae5e289eb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506756669,
+          "stop" : 1650506758759,
+          "duration" : 2090
+        }
+      }, {
+        "uid" : "3c82ab3b6fb0b1b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/19/allure/#testresult/3c82ab3b6fb0b1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506330881,
+          "stop" : 1650506332985,
+          "duration" : 2104
+        }
+      }, {
+        "uid" : "d24220110567d183",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/18/allure/#testresult/d24220110567d183",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650449293348,
+          "stop" : 1650449295451,
+          "duration" : 2103
+        }
+      }, {
+        "uid" : "a8ffed24c63044d5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/17/allure/#testresult/a8ffed24c63044d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448803798,
+          "stop" : 1650448805912,
+          "duration" : 2114
+        }
+      }, {
+        "uid" : "43ca8de4046c7f25",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/16/allure/#testresult/43ca8de4046c7f25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448593104,
+          "stop" : 1650448595211,
+          "duration" : 2107
+        }
+      }, {
+        "uid" : "4cdf6c2e56ba4cca",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/4cdf6c2e56ba4cca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650447755430,
+          "stop" : 1650447757508,
+          "duration" : 2078
+        }
+      }, {
+        "uid" : "2aeec4f7788d9ae4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/2aeec4f7788d9ae4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650445615303,
+          "stop" : 1650445617396,
+          "duration" : 2093
+        }
+      }, {
+        "uid" : "b7ea51ab0f3c7ba4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/b7ea51ab0f3c7ba4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650445347714,
+          "stop" : 1650445349772,
+          "duration" : 2058
+        }
+      }, {
+        "uid" : "9a7c6af86992c6bb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/12/allure/#testresult/9a7c6af86992c6bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650442913192,
+          "stop" : 1650442915291,
+          "duration" : 2099
+        }
+      }, {
+        "uid" : "707db65b93d83f1a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/11/allure/#testresult/707db65b93d83f1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650442200844,
+          "stop" : 1650442202929,
+          "duration" : 2085
+        }
+      }, {
+        "uid" : "26a2bb527b6b5e55",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/10/allure/#testresult/26a2bb527b6b5e55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650438049546,
+          "stop" : 1650438060650,
+          "duration" : 11104
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f7eb2bf938e5961c.json",
+  "parameterValues" : [ "{'case_no': '10', 'casename': '不勾选用户协议注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please checked our user agreement first'}" ]
+}
