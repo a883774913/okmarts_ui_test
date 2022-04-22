@@ -1,4 +1,11 @@
 [ {
+  "buildOrder" : 27,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 691867
+  }
+}, {
   "buildOrder" : 26,
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/26/allure",
   "reportName" : "AllureReport",
@@ -126,12 +133,5 @@
   "reportName" : "AllureReport",
   "data" : {
     "duration" : 75334
-  }
-}, {
-  "buildOrder" : 7,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/7/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 77794
   }
 } ]
