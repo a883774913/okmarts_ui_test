@@ -44,6 +44,7 @@ class Regist:
         if casename == '用户名邮箱为空下一步操作置灰':
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").get_attribute('disabled')
+            print('通道1')
             print(text)
             assert text == result
         elif casename == '关闭验证码页面成功':
@@ -57,9 +58,10 @@ class Regist:
             code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码
             print(code[0])
             self.input_code(driver, code)
-            time.sleep(1.3)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道2')
             print(text)
             assert text == result
         elif casename == '输入错误验证码注册失败':
@@ -68,6 +70,7 @@ class Regist:
             time.sleep(1.3)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道3')
             print(text)
             assert text == result
         elif casename == '超时后再次发送验证码成功':
@@ -76,12 +79,14 @@ class Regist:
             time.sleep(3)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道4')
             print(text)
             assert text == result
         elif casename in ['邮箱不含@弹出错误提示', '输入已存在的用户名注册失败', '不勾选用户协议注册失败']:
             time.sleep(1)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道5')
             print(text)
             assert text == result
         elif casename == '注册完成后领取优惠卷成功':
@@ -100,15 +105,19 @@ class Regist:
             time.sleep(1.5)
             coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                                value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道6')
             print(coupons_text)
             assert text == 'success' and coupons_text == result
-
         else:
-            self.regist_mode1(useraccount, driver, data)
-            text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                       value=f"{assert_way.split('=', 1)[1]}").text
-            print(text)
-            assert text == result
+            try:
+                self.regist_mode1(useraccount, driver, data)
+                text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                           value=f"{assert_way.split('=', 1)[1]}").text
+                print('通道0')
+                print(text)
+                assert text == result
+            except :
+                raise AssertionError
 
     def input_code(self, driver, code):
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="0"]').send_keys(

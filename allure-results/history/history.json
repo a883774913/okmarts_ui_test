@@ -4,11 +4,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 14,
+      "passed" : 17,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "65fb63370d0f0cde",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/65fb63370d0f0cde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598609776,
+        "stop" : 1650598615914,
+        "duration" : 6138
+      }
+    }, {
+      "uid" : "b023cfc1e9aa4ee3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/b023cfc1e9aa4ee3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597323233,
+        "stop" : 1650597329387,
+        "duration" : 6154
+      }
+    }, {
+      "uid" : "dbcec038905081fd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/dbcec038905081fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596338480,
+        "stop" : 1650596344591,
+        "duration" : 6111
+      }
+    }, {
       "uid" : "d0a339686f7d4281",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d0a339686f7d4281",
       "status" : "passed",
@@ -151,11 +178,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "688784d1748e0f56",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/688784d1748e0f56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598587483,
+        "stop" : 1650598592000,
+        "duration" : 4517
+      }
+    }, {
+      "uid" : "6730dcd0f954e555",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/6730dcd0f954e555",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597298259,
+        "stop" : 1650597302779,
+        "duration" : 4520
+      }
+    }, {
+      "uid" : "88719301bfd3a953",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/88719301bfd3a953",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596316133,
+        "stop" : 1650596320674,
+        "duration" : 4541
+      }
+    }, {
       "uid" : "4d56d0d7f0179cd3",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/4d56d0d7f0179cd3",
       "status" : "passed",
@@ -294,14 +348,42 @@
   },
   "f44382204f6c23bd5640584e5a08c4dd" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 17,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "383839f8acef6f39",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/383839f8acef6f39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598602571,
+        "stop" : 1650598606135,
+        "duration" : 3564
+      }
+    }, {
+      "uid" : "5f59c5129e42625e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/5f59c5129e42625e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650597314433,
+        "stop" : 1650597318589,
+        "duration" : 4156
+      }
+    }, {
+      "uid" : "9ca327b5b4b78ba6",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/9ca327b5b4b78ba6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596331284,
+        "stop" : 1650596334834,
+        "duration" : 3550
+      }
+    }, {
       "uid" : "bc2d6f93e61e8a1a",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/bc2d6f93e61e8a1a",
       "status" : "passed",
@@ -441,13 +523,41 @@
   "bfa9ac51cd33477fd64d5a664ebabac1" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "fa866eea68264b3d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fa866eea68264b3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599373804,
+        "stop" : 1650599417192,
+        "duration" : 43388
+      }
+    }, {
+      "uid" : "af0e06e380ccc8c9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/af0e06e380ccc8c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597986135,
+        "stop" : 1650598029168,
+        "duration" : 43033
+      }
+    }, {
+      "uid" : "b704643d47d210f9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/b704643d47d210f9",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596974973,
+        "stop" : 1650596977804,
+        "duration" : 2831
+      }
+    }, {
       "uid" : "47c4146f4a775a75",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/47c4146f4a775a75",
       "status" : "passed",
@@ -482,11 +592,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "ee989892313bc5b7",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/ee989892313bc5b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598599010,
+        "stop" : 1650598602567,
+        "duration" : 3557
+      }
+    }, {
+      "uid" : "90ed6b9c7c121bcc",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/90ed6b9c7c121bcc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597310599,
+        "stop" : 1650597314425,
+        "duration" : 3826
+      }
+    }, {
+      "uid" : "1f5df457342b8239",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/1f5df457342b8239",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596327714,
+        "stop" : 1650596331280,
+        "duration" : 3566
+      }
+    }, {
       "uid" : "9562495629fe302a",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/9562495629fe302a",
       "status" : "passed",
@@ -664,13 +801,42 @@
   "82ad053b8050efa9fab87af87310369e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 4,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "aa06dd98ccdeee99",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/aa06dd98ccdeee99",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650599220024,
+        "stop" : 1650599253900,
+        "duration" : 33876
+      }
+    }, {
+      "uid" : "30c731b1a96a183d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/30c731b1a96a183d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597813375,
+        "stop" : 1650597856263,
+        "duration" : 42888
+      }
+    }, {
+      "uid" : "855499a04c9b5b74",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/855499a04c9b5b74",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596912848,
+        "stop" : 1650596941410,
+        "duration" : 28562
+      }
+    }, {
       "uid" : "56af44a6db24fe95",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/56af44a6db24fe95",
       "status" : "broken",
@@ -706,11 +872,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "de67b396147e13",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/de67b396147e13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598578622,
+        "stop" : 1650598583078,
+        "duration" : 4456
+      }
+    }, {
+      "uid" : "6f2c7743de9c3332",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/6f2c7743de9c3332",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597289341,
+        "stop" : 1650597293816,
+        "duration" : 4475
+      }
+    }, {
+      "uid" : "df1d609d957716d2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/df1d609d957716d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596307237,
+        "stop" : 1650596311687,
+        "duration" : 4450
+      }
+    }, {
       "uid" : "f6c8c664d4eafd58",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/f6c8c664d4eafd58",
       "status" : "passed",
@@ -850,13 +1043,41 @@
   "62e6485cb91e738c4177891dcee168f3" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "cfbf041d746c0101",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/cfbf041d746c0101",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599254375,
+        "stop" : 1650599297323,
+        "duration" : 42948
+      }
+    }, {
+      "uid" : "8c062cbcac47411e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/8c062cbcac47411e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597856267,
+        "stop" : 1650597899510,
+        "duration" : 43243
+      }
+    }, {
+      "uid" : "32dab38d87e06da5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/32dab38d87e06da5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596941567,
+        "stop" : 1650596969584,
+        "duration" : 28017
+      }
+    }, {
       "uid" : "7226a46848c070d1",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/7226a46848c070d1",
       "status" : "passed",
@@ -888,13 +1109,41 @@
   "4db67c3151e1045c8a214ecc5e16be50" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "1ba741b7bd56e9db",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/1ba741b7bd56e9db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599176501,
+        "stop" : 1650599220020,
+        "duration" : 43519
+      }
+    }, {
+      "uid" : "5fcb7c1763a54af",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/5fcb7c1763a54af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597769401,
+        "stop" : 1650597813371,
+        "duration" : 43970
+      }
+    }, {
+      "uid" : "f9e5fdea756c2cd6",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/f9e5fdea756c2cd6",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596879362,
+        "stop" : 1650596912689,
+        "duration" : 33327
+      }
+    }, {
       "uid" : "4e7f6b041f9d8d97",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/4e7f6b041f9d8d97",
       "status" : "passed",
@@ -926,14 +1175,44 @@
   },
   "9c8084bdade3c8359a3aa1068b600ada" : {
     "statistic" : {
-      "failed" : 3,
-      "broken" : 0,
+      "failed" : 4,
+      "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "b9658720de0d2601",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/b9658720de0d2601",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650599417195,
+        "stop" : 1650599451360,
+        "duration" : 34165
+      }
+    }, {
+      "uid" : "84fe90183f8126b8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/84fe90183f8126b8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650598029172,
+        "stop" : 1650598071924,
+        "duration" : 42752
+      }
+    }, {
+      "uid" : "20dea1744b0ef55",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/20dea1744b0ef55",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596977983,
+        "stop" : 1650596981373,
+        "duration" : 3390
+      }
+    }, {
       "uid" : "d4ce357f50a083e0",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d4ce357f50a083e0",
       "status" : "failed",
@@ -970,11 +1249,38 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "b34846bf34a5fa",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/b34846bf34a5fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599133285,
+        "stop" : 1650599176498,
+        "duration" : 43213
+      }
+    }, {
+      "uid" : "511eb430a32eb187",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/511eb430a32eb187",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597726601,
+        "stop" : 1650597769398,
+        "duration" : 42797
+      }
+    }, {
+      "uid" : "999955e62fd70cc3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/999955e62fd70cc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596836397,
+        "stop" : 1650596879358,
+        "duration" : 42961
+      }
+    }, {
       "uid" : "d4e2ccceac3df20f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d4e2ccceac3df20f",
       "status" : "broken",
@@ -1008,13 +1314,42 @@
   "5ab0f8b6936934406938e06afab052c6" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 4,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 4
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "594723b81a95c5dd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/594723b81a95c5dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598797657,
+        "stop" : 1650598840238,
+        "duration" : 42581
+      }
+    }, {
+      "uid" : "d5295ea40f6d114c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/d5295ea40f6d114c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597483756,
+        "stop" : 1650597512420,
+        "duration" : 28664
+      }
+    }, {
+      "uid" : "45a27ef4fa987730",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/45a27ef4fa987730",
+      "status" : "broken",
+      "statusDetails" : "IndexError: string index out of range",
+      "time" : {
+        "start" : 1650596525833,
+        "stop" : 1650596553871,
+        "duration" : 28038
+      }
+    }, {
       "uid" : "c2ec961ccb927ea8",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/c2ec961ccb927ea8",
       "status" : "passed",
@@ -1134,13 +1469,41 @@
   "ab33e3e75132ee1b3e35256d0c7d8af0" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "f7c29456230d2ace",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/f7c29456230d2ace",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599003993,
+        "stop" : 1650599046975,
+        "duration" : 42982
+      }
+    }, {
+      "uid" : "77441a009fb7ade0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/77441a009fb7ade0",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597626477,
+        "stop" : 1650597654868,
+        "duration" : 28391
+      }
+    }, {
+      "uid" : "991e353cb8df4079",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/991e353cb8df4079",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596707524,
+        "stop" : 1650596750906,
+        "duration" : 43382
+      }
+    }, {
       "uid" : "9b2c98e01211c3c8",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/9b2c98e01211c3c8",
       "status" : "broken",
@@ -1174,13 +1537,42 @@
   "db0f54ef793e1d192e51b9db52341248" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 4,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 2,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "a6a3ac248432d814",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/a6a3ac248432d814",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598917764,
+        "stop" : 1650598960252,
+        "duration" : 42488
+      }
+    }, {
+      "uid" : "1a6f50a3fa31b502",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/1a6f50a3fa31b502",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597569520,
+        "stop" : 1650597597522,
+        "duration" : 28002
+      }
+    }, {
+      "uid" : "cc0b4ab5ea4f865e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/cc0b4ab5ea4f865e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596630999,
+        "stop" : 1650596664640,
+        "duration" : 33641
+      }
+    }, {
       "uid" : "25e9f0adfa3bbeea",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/25e9f0adfa3bbeea",
       "status" : "broken",
@@ -1213,14 +1605,44 @@
   },
   "1d057baed39ed7952c8e2889bbb3bd2c" : {
     "statistic" : {
-      "failed" : 3,
-      "broken" : 0,
+      "failed" : 5,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "fec2002eeb6c3c51",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fec2002eeb6c3c51",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650599330652,
+        "stop" : 1650599373669,
+        "duration" : 43017
+      }
+    }, {
+      "uid" : "4bfe6ab7ca578bc1",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/4bfe6ab7ca578bc1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650597942137,
+        "stop" : 1650597985994,
+        "duration" : 43857
+      }
+    }, {
+      "uid" : "2088842eb73b4963",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/2088842eb73b4963",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596972218,
+        "stop" : 1650596974805,
+        "duration" : 2587
+      }
+    }, {
       "uid" : "ffda103b3bd78afa",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/ffda103b3bd78afa",
       "status" : "failed",
@@ -1255,13 +1677,43 @@
   "b85fe7d6ca3d85f8a5cb2da1e69aa8ec" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 3,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "43b9ea4abbf77570",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/43b9ea4abbf77570",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[3]/div/div/div/div[2]/div/div/div\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650598874500,
+        "stop" : 1650598917584,
+        "duration" : 43084
+      }
+    }, {
+      "uid" : "43215ffe8637d658",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/43215ffe8637d658",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597540869,
+        "stop" : 1650597569351,
+        "duration" : 28482
+      }
+    }, {
+      "uid" : "ff08eea875025831",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/ff08eea875025831",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596597153,
+        "stop" : 1650596630812,
+        "duration" : 33659
+      }
+    }, {
       "uid" : "afbb614425b5f3fc",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/afbb614425b5f3fc",
       "status" : "passed",
@@ -1293,13 +1745,41 @@
   "55bfa903be6bf8d89ffe158c01819b94" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "fb2c906b5e613f6c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fb2c906b5e613f6c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599451523,
+        "stop" : 1650599500877,
+        "duration" : 49354
+      }
+    }, {
+      "uid" : "53e43c53053b0af2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/53e43c53053b0af2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598072056,
+        "stop" : 1650598121532,
+        "duration" : 49476
+      }
+    }, {
+      "uid" : "c910ae92ef8e64d5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/c910ae92ef8e64d5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596981545,
+        "stop" : 1650596984172,
+        "duration" : 2627
+      }
+    }, {
       "uid" : "e6cf140b5212c5a7",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/e6cf140b5212c5a7",
       "status" : "passed",
@@ -1371,13 +1851,41 @@
   "97ca9bfa96e7ac87aa77e457e21acee4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
+      "broken" : 6,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 10
+      "total" : 13
     },
     "items" : [ {
+      "uid" : "121b686dc11dbf76",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/121b686dc11dbf76",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598711427,
+        "stop" : 1650598754268,
+        "duration" : 42841
+      }
+    }, {
+      "uid" : "d7ba0931a9fcab14",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/d7ba0931a9fcab14",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597426539,
+        "stop" : 1650597454642,
+        "duration" : 28103
+      }
+    }, {
+      "uid" : "c3b1cefa2ed32fe2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/c3b1cefa2ed32fe2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596440082,
+        "stop" : 1650596483047,
+        "duration" : 42965
+      }
+    }, {
       "uid" : "d7c218c7153ee459",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d7c218c7153ee459",
       "status" : "broken",
@@ -1479,11 +1987,38 @@
       "failed" : 0,
       "broken" : 8,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "7013abe68d190f3e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/7013abe68d190f3e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598615918,
+        "stop" : 1650598636070,
+        "duration" : 20152
+      }
+    }, {
+      "uid" : "eb6911ee7195d479",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/eb6911ee7195d479",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597329390,
+        "stop" : 1650597351272,
+        "duration" : 21882
+      }
+    }, {
+      "uid" : "3f78816e7b209ce7",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/3f78816e7b209ce7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596344596,
+        "stop" : 1650596364958,
+        "duration" : 20362
+      }
+    }, {
       "uid" : "2c06538d9735ba5",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/2c06538d9735ba5",
       "status" : "broken",
@@ -1669,13 +2204,41 @@
   "8f2fdfed3883ab0733597ab4a59f82f5" : {
     "statistic" : {
       "failed" : 1,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 4,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 6
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "8a9e8aabba613f97",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/8a9e8aabba613f97",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598754273,
+        "stop" : 1650598797653,
+        "duration" : 43380
+      }
+    }, {
+      "uid" : "57df4f995945f1fd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/57df4f995945f1fd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597454828,
+        "stop" : 1650597483568,
+        "duration" : 28740
+      }
+    }, {
+      "uid" : "4bf4128e2bbd82ea",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/4bf4128e2bbd82ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596483051,
+        "stop" : 1650596525829,
+        "duration" : 42778
+      }
+    }, {
       "uid" : "e872b21ce63e577a",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/e872b21ce63e577a",
       "status" : "passed",
@@ -1736,13 +2299,41 @@
   "b93a00d5dae2367b42886a43fe619b7e" : {
     "statistic" : {
       "failed" : 2,
-      "broken" : 4,
+      "broken" : 5,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 12
+      "total" : 15
     },
     "items" : [ {
+      "uid" : "458ec4db3677a58e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/458ec4db3677a58e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598636075,
+        "stop" : 1650598704956,
+        "duration" : 68881
+      }
+    }, {
+      "uid" : "1e63605989526ef4",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/1e63605989526ef4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-statistic-content-suffix\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597351276,
+        "stop" : 1650597420802,
+        "duration" : 69526
+      }
+    }, {
+      "uid" : "ca3c123006999de5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/ca3c123006999de5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596364962,
+        "stop" : 1650596433600,
+        "duration" : 68638
+      }
+    }, {
       "uid" : "d901caa7aab0bf25",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d901caa7aab0bf25",
       "status" : "passed",
@@ -1863,11 +2454,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "9fd2f630d6081617",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/9fd2f630d6081617",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598583082,
+        "stop" : 1650598587479,
+        "duration" : 4397
+      }
+    }, {
+      "uid" : "4eaf02c29a6bbdf3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/4eaf02c29a6bbdf3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597293820,
+        "stop" : 1650597298256,
+        "duration" : 4436
+      }
+    }, {
+      "uid" : "7b0ff8593c07e815",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/7b0ff8593c07e815",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596311691,
+        "stop" : 1650596316129,
+        "duration" : 4438
+      }
+    }, {
       "uid" : "710376a3bd9cc714",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/710376a3bd9cc714",
       "status" : "passed",
@@ -2007,13 +2625,41 @@
   "7dee1056e92b6ff49e92c8950ff9ab31" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "ce82ffd398d17b55",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/ce82ffd398d17b55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598960256,
+        "stop" : 1650599003988,
+        "duration" : 43732
+      }
+    }, {
+      "uid" : "493950f2e7c15907",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/493950f2e7c15907",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597597690,
+        "stop" : 1650597626309,
+        "duration" : 28619
+      }
+    }, {
+      "uid" : "7b61414407d867c9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/7b61414407d867c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596664795,
+        "stop" : 1650596707519,
+        "duration" : 42724
+      }
+    }, {
       "uid" : "80b72db5b31eb988",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/80b72db5b31eb988",
       "status" : "passed",
@@ -2045,13 +2691,41 @@
   "09e1b62aa7fa94741114697d564a4a95" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 12,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "800223fc41f1978",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/800223fc41f1978",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598704960,
+        "stop" : 1650598711423,
+        "duration" : 6463
+      }
+    }, {
+      "uid" : "130cab43f3daf1db",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/130cab43f3daf1db",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597421020,
+        "stop" : 1650597426362,
+        "duration" : 5342
+      }
+    }, {
+      "uid" : "d870313f17ae2df8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/d870313f17ae2df8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596433603,
+        "stop" : 1650596440078,
+        "duration" : 6475
+      }
+    }, {
       "uid" : "716eed7a02fbc115",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/716eed7a02fbc115",
       "status" : "passed",
@@ -2158,11 +2832,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "e11f3edf1134d7dc",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/e11f3edf1134d7dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599090206,
+        "stop" : 1650599133281,
+        "duration" : 43075
+      }
+    }, {
+      "uid" : "26a65d386aef2569",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/26a65d386aef2569",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597683337,
+        "stop" : 1650597726597,
+        "duration" : 43260
+      }
+    }, {
+      "uid" : "3ca4a8e7bbebbe02",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/3ca4a8e7bbebbe02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596793748,
+        "stop" : 1650596836393,
+        "duration" : 42645
+      }
+    }, {
       "uid" : "77a579b78849b497",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/77a579b78849b497",
       "status" : "passed",
@@ -2197,11 +2898,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "3895968c12d0ed2a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/3895968c12d0ed2a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598592003,
+        "stop" : 1650598596482,
+        "duration" : 4479
+      }
+    }, {
+      "uid" : "8bef1e5937a4574e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/8bef1e5937a4574e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597302782,
+        "stop" : 1650597308030,
+        "duration" : 5248
+      }
+    }, {
+      "uid" : "f7892cbdb7bebbb8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/f7892cbdb7bebbb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596320678,
+        "stop" : 1650596325180,
+        "duration" : 4502
+      }
+    }, {
       "uid" : "fbb5e1713a8ac020",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/fbb5e1713a8ac020",
       "status" : "passed",
@@ -2343,11 +3071,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "d5fef9ec231fbdc4",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/d5fef9ec231fbdc4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598563778,
+        "stop" : 1650598571924,
+        "duration" : 8146
+      }
+    }, {
+      "uid" : "4f67666f06c3ceb0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/4f67666f06c3ceb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597272794,
+        "stop" : 1650597282671,
+        "duration" : 9877
+      }
+    }, {
+      "uid" : "bef1494fdd6f4acb",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/bef1494fdd6f4acb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596292305,
+        "stop" : 1650596300514,
+        "duration" : 8209
+      }
+    }, {
       "uid" : "40e7ab4201809f17",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/40e7ab4201809f17",
       "status" : "passed",
@@ -2489,11 +3244,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "2033f96c879f751c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/2033f96c879f751c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598606141,
+        "stop" : 1650598609772,
+        "duration" : 3631
+      }
+    }, {
+      "uid" : "61f4e0f024a3b14b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/61f4e0f024a3b14b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597319429,
+        "stop" : 1650597323229,
+        "duration" : 3800
+      }
+    }, {
+      "uid" : "7981dd7e7fcbdb99",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/7981dd7e7fcbdb99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596334840,
+        "stop" : 1650596338475,
+        "duration" : 3635
+      }
+    }, {
       "uid" : "f7eb2bf938e5961c",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/f7eb2bf938e5961c",
       "status" : "passed",
@@ -2635,11 +3417,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 14,
+      "passed" : 17,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "36613e7cd3235978",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/36613e7cd3235978",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598571928,
+        "stop" : 1650598578619,
+        "duration" : 6691
+      }
+    }, {
+      "uid" : "9099c778520eab0b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/9099c778520eab0b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597282675,
+        "stop" : 1650597289337,
+        "duration" : 6662
+      }
+    }, {
+      "uid" : "919872c5a17f475f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/919872c5a17f475f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596300519,
+        "stop" : 1650596307233,
+        "duration" : 6714
+      }
+    }, {
       "uid" : "e28ff1f09fb93dfa",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/e28ff1f09fb93dfa",
       "status" : "passed",
@@ -2782,11 +3591,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 15
+      "total" : 18
     },
     "items" : [ {
+      "uid" : "d6173e65827e4775",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/d6173e65827e4775",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650598596486,
+        "stop" : 1650598599006,
+        "duration" : 2520
+      }
+    }, {
+      "uid" : "7c4ba01cdafaae70",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/7c4ba01cdafaae70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650597308039,
+        "stop" : 1650597310595,
+        "duration" : 2556
+      }
+    }, {
+      "uid" : "19704921c8ec3f17",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/19704921c8ec3f17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596325184,
+        "stop" : 1650596327711,
+        "duration" : 2527
+      }
+    }, {
       "uid" : "c2fe12b0b6b903ab",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/c2fe12b0b6b903ab",
       "status" : "passed",
@@ -2926,13 +3762,42 @@
   "7932406c89649507e0ffb394d9f11b7e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 3,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "41d94ddccadb2b54",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/41d94ddccadb2b54",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650598840242,
+        "stop" : 1650598873835,
+        "duration" : 33593
+      }
+    }, {
+      "uid" : "6ef817b25fc5559b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/6ef817b25fc5559b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597512582,
+        "stop" : 1650597540709,
+        "duration" : 28127
+      }
+    }, {
+      "uid" : "5469331d688c22c3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/5469331d688c22c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596554268,
+        "stop" : 1650596597149,
+        "duration" : 42881
+      }
+    }, {
       "uid" : "fbbb7b9fbcbfb2a8",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/fbbb7b9fbcbfb2a8",
       "status" : "passed",
@@ -2965,13 +3830,41 @@
   "335217f587876de5f395889edc2b9bff" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "2009d5c52cb1358a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/2009d5c52cb1358a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650599046979,
+        "stop" : 1650599090202,
+        "duration" : 43223
+      }
+    }, {
+      "uid" : "21d36d82047ec3ae",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/21d36d82047ec3ae",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650597655032,
+        "stop" : 1650597683153,
+        "duration" : 28121
+      }
+    }, {
+      "uid" : "b6367c919749165b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/b6367c919749165b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650596750912,
+        "stop" : 1650596793744,
+        "duration" : 42832
+      }
+    }, {
       "uid" : "6cc1250ffe101e5f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/6cc1250ffe101e5f",
       "status" : "broken",
@@ -3041,14 +3934,44 @@
   },
   "429d8b780abf2a8d21a4a5582921e496" : {
     "statistic" : {
-      "failed" : 2,
-      "broken" : 1,
+      "failed" : 3,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "5cb44ff29b989a8b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/5cb44ff29b989a8b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650599297327,
+        "stop" : 1650599330501,
+        "duration" : 33174
+      }
+    }, {
+      "uid" : "eb4b4292732d40ca",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/eb4b4292732d40ca",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650597899514,
+        "stop" : 1650597941988,
+        "duration" : 42474
+      }
+    }, {
+      "uid" : "de9a246dc266fd78",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/de9a246dc266fd78",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650596969738,
+        "stop" : 1650596972039,
+        "duration" : 2301
+      }
+    }, {
       "uid" : "883cdc7f830fffde",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/883cdc7f830fffde",
       "status" : "failed",

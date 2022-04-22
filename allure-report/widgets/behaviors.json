@@ -4,10 +4,10 @@
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 11,
+      "failed" : 6,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 16,
+      "passed" : 20,
       "unknown" : 0,
       "total" : 27
     }

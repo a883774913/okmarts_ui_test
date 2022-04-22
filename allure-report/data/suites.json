@@ -7,13 +7,13 @@
       "name" : "Test_Main",
       "children" : [ {
         "name" : "输入正确用户名密码登录成功",
-        "uid" : "bef1494fdd6f4acb",
+        "uid" : "74eb00300e2f08c6",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596292305,
-          "stop" : 1650596300514,
-          "duration" : 8209
+          "start" : 1650603611812,
+          "stop" : 1650603620065,
+          "duration" : 8253
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
         "parameters" : [ "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}" ]
       }, {
         "name" : "输入空的用户名登录失败",
-        "uid" : "919872c5a17f475f",
+        "uid" : "76bbc2e0a6222741",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596300519,
-          "stop" : 1650596307233,
-          "duration" : 6714
+          "start" : 1650603620070,
+          "stop" : 1650603626721,
+          "duration" : 6651
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
         "parameters" : [ "{'case_no': '2', 'casename': '输入空的用户名登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
         "name" : "输入空的密码登录失败",
-        "uid" : "df1d609d957716d2",
+        "uid" : "2bc4d534b1d1955a",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596307237,
-          "stop" : 1650596311687,
-          "duration" : 4450
+          "start" : 1650603626725,
+          "stop" : 1650603631188,
+          "duration" : 4463
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +58,13 @@
         "parameters" : [ "{'case_no': '3', 'casename': '输入空的密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
         "name" : "使用空的用户名密码登录失败",
-        "uid" : "7b0ff8593c07e815",
+        "uid" : "69dfda8b9fadf1c2",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596311691,
-          "stop" : 1650596316129,
-          "duration" : 4438
+          "start" : 1650603631192,
+          "stop" : 1650603635609,
+          "duration" : 4417
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +75,13 @@
         "parameters" : [ "{'case_no': '4', 'casename': '使用空的用户名密码登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
         "name" : "输入错误密码登录失败",
-        "uid" : "88719301bfd3a953",
+        "uid" : "bfc577c873c19fb",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596316133,
-          "stop" : 1650596320674,
-          "duration" : 4541
+          "start" : 1650603635613,
+          "stop" : 1650603640173,
+          "duration" : 4560
         },
         "flaky" : false,
         "newFailed" : false,
@@ -92,13 +92,13 @@
         "parameters" : [ "{'case_no': '5', 'casename': '输入错误密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a1234567', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
         "name" : "输入错误用户名正确密码登录失败",
-        "uid" : "f7892cbdb7bebbb8",
+        "uid" : "efb09728cf6fd3df",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596320678,
-          "stop" : 1650596325180,
-          "duration" : 4502
+          "start" : 1650603640183,
+          "stop" : 1650603644680,
+          "duration" : 4497
         },
         "flaky" : false,
         "newFailed" : false,
@@ -109,13 +109,13 @@
         "parameters" : [ "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
         "name" : "用户名邮箱为空下一步操作置灰",
-        "uid" : "19704921c8ec3f17",
+        "uid" : "c4a3363e2740158f",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596325184,
-          "stop" : 1650596327711,
-          "duration" : 2527
+          "start" : 1650603644684,
+          "stop" : 1650603647463,
+          "duration" : 2779
         },
         "flaky" : false,
         "newFailed" : false,
@@ -126,13 +126,13 @@
         "parameters" : [ "{'case_no': '7', 'casename': '用户名邮箱为空下一步操作置灰', 'mode': '注册', 'data': 'userAccount=', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button', 'result': 'true'}" ]
       }, {
         "name" : "邮箱不含@弹出错误提示",
-        "uid" : "1f5df457342b8239",
+        "uid" : "69ab972ecfc724c5",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596327714,
-          "stop" : 1650596331280,
-          "duration" : 3566
+          "start" : 1650603647467,
+          "stop" : 1650603651045,
+          "duration" : 3578
         },
         "flaky" : false,
         "newFailed" : false,
@@ -143,13 +143,13 @@
         "parameters" : [ "{'case_no': '8', 'casename': '邮箱不含@弹出错误提示', 'mode': '注册', 'data': 'userAccount=123456', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Register an account'}" ]
       }, {
         "name" : "输入已存在的用户名注册失败",
-        "uid" : "9ca327b5b4b78ba6",
+        "uid" : "fd8dd6c3faaf23aa",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596331284,
-          "stop" : 1650596334834,
-          "duration" : 3550
+          "start" : 1650603651051,
+          "stop" : 1650603654906,
+          "duration" : 3855
         },
         "flaky" : false,
         "newFailed" : false,
@@ -160,13 +160,13 @@
         "parameters" : [ "{'case_no': '9', 'casename': '输入已存在的用户名注册失败', 'mode': '注册', 'data': 'userAccount=979172251@qq.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'The mailbox is already registered'}" ]
       }, {
         "name" : "不勾选用户协议注册失败",
-        "uid" : "7981dd7e7fcbdb99",
+        "uid" : "5d0c5af4d7240798",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596334840,
-          "stop" : 1650596338475,
-          "duration" : 3635
+          "start" : 1650603654910,
+          "stop" : 1650603659142,
+          "duration" : 4232
         },
         "flaky" : false,
         "newFailed" : false,
@@ -177,13 +177,13 @@
         "parameters" : [ "{'case_no': '10', 'casename': '不勾选用户协议注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please checked our user agreement first'}" ]
       }, {
         "name" : "关闭验证码页面成功",
-        "uid" : "dbcec038905081fd",
+        "uid" : "d1b6e9eef930f4ad",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596338480,
-          "stop" : 1650596344591,
-          "duration" : 6111
+          "start" : 1650603659147,
+          "stop" : 1650603665245,
+          "duration" : 6098
         },
         "flaky" : false,
         "newFailed" : false,
@@ -194,30 +194,30 @@
         "parameters" : [ "{'case_no': '11', 'casename': '关闭验证码页面成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-modal-body', 'result': 1}" ]
       }, {
         "name" : "使用过期验证码验证失败",
-        "uid" : "3f78816e7b209ce7",
+        "uid" : "aaf28a7ef3d821b1",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "passed",
+        "status" : "broken",
         "time" : {
-          "start" : 1650596344596,
-          "stop" : 1650596364958,
-          "duration" : 20362
+          "start" : 1650603665249,
+          "stop" : 1650603685922,
+          "duration" : 20673
         },
         "flaky" : false,
         "newFailed" : false,
-        "newPassed" : true,
-        "newBroken" : false,
+        "newPassed" : false,
+        "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '12', 'casename': '使用过期验证码验证失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
       }, {
         "name" : "超时后再次发送验证码成功",
-        "uid" : "ca3c123006999de5",
+        "uid" : "dd5c08b6846a8498",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596364962,
-          "stop" : 1650596433600,
-          "duration" : 68638
+          "start" : 1650603686341,
+          "stop" : 1650603755215,
+          "duration" : 68874
         },
         "flaky" : false,
         "newFailed" : false,
@@ -228,13 +228,13 @@
         "parameters" : [ "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}" ]
       }, {
         "name" : "输入错误验证码注册失败",
-        "uid" : "d870313f17ae2df8",
+        "uid" : "e608ea366b7c363f",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596433603,
-          "stop" : 1650596440078,
-          "duration" : 6475
+          "start" : 1650603755219,
+          "stop" : 1650603761688,
+          "duration" : 6469
         },
         "flaky" : false,
         "newFailed" : false,
@@ -245,30 +245,30 @@
         "parameters" : [ "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
       }, {
         "name" : "密码为空注册失败",
-        "uid" : "c3b1cefa2ed32fe2",
+        "uid" : "b14a9a6b58fdec97",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596440082,
-          "stop" : 1650596483047,
-          "duration" : 42965
+          "start" : 1650603761692,
+          "stop" : 1650603804425,
+          "duration" : 42733
         },
         "flaky" : false,
         "newFailed" : false,
-        "newPassed" : true,
+        "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '15', 'casename': '密码为空注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为6为字符注册成功",
-        "uid" : "4bf4128e2bbd82ea",
+        "uid" : "52ceb8a86ba285e6",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596483051,
-          "stop" : 1650596525829,
-          "duration" : 42778
+          "start" : 1650603804429,
+          "stop" : 1650603848302,
+          "duration" : 43873
         },
         "flaky" : false,
         "newFailed" : false,
@@ -279,30 +279,13 @@
         "parameters" : [ "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为5位注册失败",
-        "uid" : "45a27ef4fa987730",
-        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
-        "time" : {
-          "start" : 1650596525833,
-          "stop" : 1650596553871,
-          "duration" : 28038
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为16位注册成功",
-        "uid" : "5469331d688c22c3",
+        "uid" : "455a8911f3fac9fc",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596554268,
-          "stop" : 1650596597149,
-          "duration" : 42881
+          "start" : 1650603848306,
+          "stop" : 1650603890923,
+          "duration" : 42617
         },
         "flaky" : false,
         "newFailed" : false,
@@ -310,33 +293,50 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+        "parameters" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "密码为17位注册失败",
-        "uid" : "ff08eea875025831",
+        "name" : "密码为16位注册成功",
+        "uid" : "d9684450a6e06c30",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1650596597153,
-          "stop" : 1650596630812,
-          "duration" : 33659
+          "start" : 1650603890927,
+          "stop" : 1650603934034,
+          "duration" : 43107
         },
         "flaky" : false,
         "newFailed" : false,
+        "newPassed" : true,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "密码为17位注册失败",
+        "uid" : "62736a5cb647859d",
+        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650603934037,
+          "stop" : 1650603962533,
+          "duration" : 28496
+        },
+        "flaky" : false,
+        "newFailed" : true,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '19', 'casename': '密码为17位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234567891234567', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为纯数字注册失败",
-        "uid" : "cc0b4ab5ea4f865e",
+        "uid" : "b4c7a8e1d48a4271",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1650596630999,
-          "stop" : 1650596664640,
-          "duration" : 33641
+          "start" : 1650603962693,
+          "stop" : 1650604006624,
+          "duration" : 43931
         },
         "flaky" : false,
         "newFailed" : false,
@@ -347,16 +347,16 @@
         "parameters" : [ "{'case_no': '20', 'casename': '密码为纯数字注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123456789', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为纯小写字母注册失败",
-        "uid" : "7b61414407d867c9",
+        "uid" : "814a949a82a06c66",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "passed",
+        "status" : "failed",
         "time" : {
-          "start" : 1650596664795,
-          "stop" : 1650596707519,
-          "duration" : 42724
+          "start" : 1650604006629,
+          "stop" : 1650604035326,
+          "duration" : 28697
         },
         "flaky" : false,
-        "newFailed" : false,
+        "newFailed" : true,
         "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
@@ -364,47 +364,47 @@
         "parameters" : [ "{'case_no': '21', 'casename': '密码为纯小写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfghjkl', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为纯大写字母注册失败",
-        "uid" : "991e353cb8df4079",
+        "uid" : "f6919a8a648345a5",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596707524,
-          "stop" : 1650596750906,
-          "duration" : 43382
+          "start" : 1650604035479,
+          "stop" : 1650604078527,
+          "duration" : 43048
         },
         "flaky" : false,
         "newFailed" : false,
-        "newPassed" : true,
+        "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '22', 'casename': '密码为纯大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDFGHJKL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为纯特殊字符注册失败",
-        "uid" : "b6367c919749165b",
+        "uid" : "3d4f853d1f604fe0",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596750912,
-          "stop" : 1650596793744,
-          "duration" : 42832
+          "start" : 1650604078531,
+          "stop" : 1650604121559,
+          "duration" : 43028
         },
         "flaky" : false,
         "newFailed" : false,
-        "newPassed" : true,
+        "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '23', 'casename': '密码为纯特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=~！@#￥%……&**', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为数字+特殊字符注册失败",
-        "uid" : "3ca4a8e7bbebbe02",
+        "uid" : "dec99845d9795902",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596793748,
-          "stop" : 1650596836393,
-          "duration" : 42645
+          "start" : 1650604121563,
+          "stop" : 1650604164697,
+          "duration" : 43134
         },
         "flaky" : false,
         "newFailed" : false,
@@ -415,13 +415,47 @@
         "parameters" : [ "{'case_no': '24', 'casename': '密码为数字+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=12345！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为小写字母+大写字母注册失败",
-        "uid" : "999955e62fd70cc3",
+        "uid" : "d0077351841325e7",
+        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650604164701,
+          "stop" : 1650604193141,
+          "duration" : 28440
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '25', 'casename': '密码为小写字母+大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfGHJKKLL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为小写字母+特殊字符注册失败",
+        "uid" : "9df92287d5f29b4d",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
         "status" : "passed",
         "time" : {
-          "start" : 1650596836397,
-          "stop" : 1650596879358,
-          "duration" : 42961
+          "start" : 1650604193295,
+          "stop" : 1650604236292,
+          "duration" : 42997
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '26', 'casename': '密码为小写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdf！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为大写字母+特殊字符注册失败",
+        "uid" : "a60cc87cfe8ea66e",
+        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650604236295,
+          "stop" : 1650604279387,
+          "duration" : 43092
         },
         "flaky" : false,
         "newFailed" : false,
@@ -429,33 +463,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '25', 'casename': '密码为小写字母+大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfGHJKKLL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+        "parameters" : [ "{'case_no': '27', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "密码为小写字母+特殊字符注册失败",
-        "uid" : "f9e5fdea756c2cd6",
+        "name" : "密码为数字+小写字母+大写字母注册成功",
+        "uid" : "3e5d8249d006dbb7",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1650596879362,
-          "stop" : 1650596912689,
-          "duration" : 33327
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '26', 'casename': '密码为小写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdf！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为大写字母+特殊字符注册失败",
-        "uid" : "855499a04c9b5b74",
-        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
-        "time" : {
-          "start" : 1650596912848,
-          "stop" : 1650596941410,
-          "duration" : 28562
+          "start" : 1650604279391,
+          "stop" : 1650604323067,
+          "duration" : 43676
         },
         "flaky" : false,
         "newFailed" : false,
@@ -463,106 +480,89 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '27', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为数字+小写字母+大写字母注册成功",
-        "uid" : "32dab38d87e06da5",
-        "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
-        "time" : {
-          "start" : 1650596941567,
-          "stop" : 1650596969584,
-          "duration" : 28017
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+大写字母注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdFGH', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+小写字母+特殊字符注册成功",
-        "uid" : "de9a246dc266fd78",
+        "uid" : "aed2d169b565a2c3",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "failed",
         "time" : {
-          "start" : 1650596969738,
-          "stop" : 1650596972039,
-          "duration" : 2301
+          "start" : 1650604323071,
+          "stop" : 1650604365527,
+          "duration" : 42456
         },
         "flaky" : false,
-        "newFailed" : false,
+        "newFailed" : true,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+大写字母+特殊字符注册成功",
-        "uid" : "2088842eb73b4963",
+        "uid" : "96a4b119264f07cc",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "failed",
         "time" : {
-          "start" : 1650596972218,
-          "stop" : 1650596974805,
-          "duration" : 2587
+          "start" : 1650604365671,
+          "stop" : 1650604399727,
+          "duration" : 34056
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '30', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为小写字母+大写字母+特殊字符注册失败",
-        "uid" : "b704643d47d210f9",
+        "uid" : "ab1f7d8b1aaf6862",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1650596974973,
-          "stop" : 1650596977804,
-          "duration" : 2831
+          "start" : 1650604399901,
+          "stop" : 1650604442759,
+          "duration" : 42858
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '31', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-        "uid" : "20dea1744b0ef55",
+        "uid" : "4f9e9bed42cb4c4a",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "failed",
         "time" : {
-          "start" : 1650596977983,
-          "stop" : 1650596981373,
-          "duration" : 3390
+          "start" : 1650604442763,
+          "stop" : 1650604486787,
+          "duration" : 44024
         },
         "flaky" : false,
-        "newFailed" : false,
+        "newFailed" : true,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '32', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "注册完成后领取优惠卷成功",
-        "uid" : "c910ae92ef8e64d5",
+        "uid" : "3c4f8d2da00a0c63",
         "parentUid" : "9c27a9ef4b7456208c02759d0c06ff71",
-        "status" : "broken",
+        "status" : "passed",
         "time" : {
-          "start" : 1650596981545,
-          "stop" : 1650596984172,
-          "duration" : 2627
+          "start" : 1650604486931,
+          "stop" : 1650604536329,
+          "duration" : 49398
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '33', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
