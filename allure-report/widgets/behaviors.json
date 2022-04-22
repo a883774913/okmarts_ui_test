@@ -1,26 +1,4 @@
 {
-  "total" : 2,
-  "items" : [ {
-    "uid" : "7797343a6802ee9c34157b5b69c20959",
-    "name" : "注册",
-    "statistic" : {
-      "failed" : 3,
-      "broken" : 7,
-      "skipped" : 0,
-      "passed" : 17,
-      "unknown" : 0,
-      "total" : 27
-    }
-  }, {
-    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
-    "name" : "登录",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 6,
-      "unknown" : 0,
-      "total" : 6
-    }
-  } ]
+  "total" : 0,
+  "items" : [ ]
 }

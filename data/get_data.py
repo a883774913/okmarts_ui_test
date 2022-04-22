@@ -3,8 +3,8 @@ import xlrd
 
 class Get_Data:
 
-    def get_data(self):
-        book = xlrd.open_workbook(r"C:\Users\admin\Desktop\UI自动化用测试用例.xlsx")
+    def get_data(self,filepath):
+        book = xlrd.open_workbook(filepath)
         sheet = book.sheet_by_name('Sheet1')
         General_table = {}      #用于存放用例数据集合
         General_for_casename = {}
@@ -56,4 +56,4 @@ class Get_Data:
 
 if __name__ == '__main__':
     a = Get_Data()
-    a.get_data()
+    a.get_data(filepath='./UI自动化用测试用例.xlsx')

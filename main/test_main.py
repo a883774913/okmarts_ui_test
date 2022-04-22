@@ -3,15 +3,13 @@
 import allure
 import pytest
 
-
-from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.data.get_data import Get_Data
 from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.register import Regist
 
 
 class Test_Main:
-    infos = Get_Data().get_data()
+    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例.xlsx')
     case_infos = infos[0]
     casename_infos = infos[1]
 
