@@ -41,5 +41,3 @@ def driver():
         _driver = webdriver.Chrome()
         _driver.maximize_window()
     yield _driver
-    cmd = 'TASKKILL /F /IM chrome.exe /T'
-    os.system(cmd)

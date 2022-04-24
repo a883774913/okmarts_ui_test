@@ -1,7 +1,6 @@
 import os
 import random
 
-
 import xlrd
 
 
@@ -17,18 +16,16 @@ class Common:
         password = sh.cell_value(rowx=random_row, colx=1)
         return userAgent, password
 
-
     def random_email_account(self):
-        account_li = "a8837749" + random.choice(['20','19','18','17','16'])+'@163.com'
+        account_li = "a8837749" + random.choice(['20', '19', '18', '17', '16']) + '@163.com'
         print(account_li)
         return account_li
-
-
 
     # 关闭所有浏览器
     def close_browser(self):
         cmd = 'TASKKILL /F /IM chrome.exe /T'
         os.system(cmd)
+
 
 if __name__ == '__main__':
     a = Common()

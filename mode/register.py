@@ -56,7 +56,6 @@ class Regist:
                                        value=f"{assert_way.split('=', 1)[1]}").is_displayed() is not result
         elif casename == '使用过期验证码验证失败':
             code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码
-            print(code[0])
             self.input_code(driver, code)
             time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
@@ -108,6 +107,45 @@ class Regist:
             print('通道6')
             print(coupons_text)
             assert text == 'success' and coupons_text == result
+        elif casename == '领取优惠卷回退页面再次领取失败':
+            self.regist_mode1(useraccount, driver, data)
+            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱
+            time.sleep(0.2)
+            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
+            time.sleep(2)
+            driver.back()
+            time.sleep(2)
+            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱
+            time.sleep(0.3)
+            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
+            time.sleep(2)
+            driver.find_element(by='id', value='horizontal_login_userAccount').send_keys(useraccount)  # 登录
+            driver.find_element(by='id', value='horizontal_login_password').send_keys(data[1].split('=')[-1])
+            driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()
+            time.sleep(2)
+            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p').click()
+            time.sleep(1.5)
+            coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                               value=f"{assert_way.split('=', 1)[1]}").text
+            print('通道7')
+            print(coupons_text)
+            assert coupons_text == result
+        elif casename == '不进行验证注册失败':
+            time.sleep(10)      #等待验证码发送至邮箱
+            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
+            print(code[0])
+            self.input_code(driver, code)
+            time.sleep(5)   #验证码输入后的等待时间
+            driver.find_element(by='xpath',
+                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(
+                data[1].split('=')[-1])  # 输入密码
+            time.sleep(1)
+            driver.find_element(by="xpath",
+                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()  # 点击下一步
+            time.sleep(2)
+            text = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+            print(text)
+            assert text == 'Please press the slider and drag to the far right'
         else:
             try:
                 self.regist_mode1(useraccount, driver, data)
@@ -120,6 +158,13 @@ class Regist:
                 raise AssertionError
 
     def input_code(self, driver, code):
+        """
+        注册界面输入验证码
+        :param driver: 驱动
+        :param code: 验证码 格式为 [111111]
+        :return:
+        """
+        print(f'验证码为{code}')
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="0"]').send_keys(
             code[0][0])  # 验证码第1个
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="1"]').send_keys(
@@ -146,11 +191,11 @@ class Regist:
 
         driver.find_element(by='xpath',
                             value='//*[@id="app"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(
-            data[1].split('=')[-1])
+            data[1].split('=')[-1])     #输入密码
         time.sleep(1)
 
         driver.find_element(by="xpath",
-                            value='//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()
+                            value='//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()    #点击下一步
         time.sleep(2)
 
     def move_to_gap(self, slider, tracks, driver):  # 验证码模块
