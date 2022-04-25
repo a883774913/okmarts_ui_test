@@ -1,15 +1,26 @@
 {
-  "total" : 2,
+  "total" : 3,
   "items" : [ {
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 6,
+      "failed" : 3,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 23,
+      "unknown" : 0,
+      "total" : 28
+    }
+  }, {
+    "uid" : "bdf6646c907dd4a7c11cb54225e7ecda",
+    "name" : "忘记密码",
+    "statistic" : {
+      "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 20,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 27
+      "total" : 12
     }
   }, {
     "uid" : "6e12e06fb17fec92464fd1fd24bca881",

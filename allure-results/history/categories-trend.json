@@ -1,4 +1,49 @@
 [ {
+  "buildOrder" : 35,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/35/allure",
+  "reportName" : "AllureReport",
+  "data" : { }
+}, {
+  "buildOrder" : 34,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 9,
+    "Test defects" : 3
+  }
+}, {
+  "buildOrder" : 33,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 9,
+    "Test defects" : 2
+  }
+}, {
+  "buildOrder" : 32,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 2
+  }
+}, {
+  "buildOrder" : 31,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 3
+  }
+}, {
+  "buildOrder" : 30,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 6,
+    "Test defects" : 1
+  }
+}, {
   "buildOrder" : 29,
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure",
   "reportName" : "AllureReport",
@@ -97,43 +142,5 @@
   "reportName" : "AllureReport",
   "data" : {
     "Test defects" : 3
-  }
-}, {
-  "buildOrder" : 15,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 14,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 1
-  }
-}, {
-  "buildOrder" : 13,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 12,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/12/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 1
-  }
-}, {
-  "buildOrder" : 11,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/11/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 1
-  }
-}, {
-  "buildOrder" : 10,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/10/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Test defects" : 2
   }
 } ]

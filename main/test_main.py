@@ -3,6 +3,7 @@ import pytest
 
 from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.data.get_data import Get_Data
+from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.register import Regist
 
@@ -30,3 +31,9 @@ class Test_Main:
     def test_regist(self, Parameter, driver):
         allure.dynamic.title(Parameter['casename'])  # 测试用例名称
         Regist().regist(Parameter, driver)
+
+    @allure.feature('忘记密码')
+    @pytest.mark.parametrize('Parameter', case_infos['forget'], ids=casename_infos['forget'])
+    def test_forget_password(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Forget_Password().forget_password(driver,Parameter)

@@ -1,6 +1,6 @@
 [ {
   "values" : [ "Winods 11" ],
-  "name" : "systemVersion"
+  "name" : "system"
 }, {
   "values" : [ "2.332.2" ],
   "name" : "jenkinsVsersion"

@@ -66,7 +66,7 @@ class Regist:
         elif casename == '输入错误验证码注册失败':
             time.sleep(2)
             self.input_code(driver, ['111111'])
-            time.sleep(1.3)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
             print('通道3')
@@ -96,10 +96,7 @@ class Regist:
             time.sleep(2)
             text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text
             print(text)
-            driver.find_element(by='id', value='horizontal_login_userAccount').send_keys(useraccount)  # 登录
-            driver.find_element(by='id', value='horizontal_login_password').send_keys(data[1].split('=')[-1])
-            driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()
-            time.sleep(2)
+            Common().logo(driver,useraccount,password=data[1].split('=')[-1])
             driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p').click()
             time.sleep(1.5)
             coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
@@ -115,15 +112,10 @@ class Regist:
             time.sleep(2)
             driver.back()
             time.sleep(2)
-            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱
-            time.sleep(0.3)
             driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
             time.sleep(2)
-            driver.find_element(by='id', value='horizontal_login_userAccount').send_keys(useraccount)  # 登录
-            driver.find_element(by='id', value='horizontal_login_password').send_keys(data[1].split('=')[-1])
-            driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()
-            time.sleep(2)
-            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p').click()
+            Common().logo(driver,useraccount,password=data[1].split('=')[-1])   #登录
+            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()
             time.sleep(1.5)
             coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                                value=f"{assert_way.split('=', 1)[1]}").text
@@ -135,17 +127,20 @@ class Regist:
             code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
             print(code[0])
             self.input_code(driver, code)
-            time.sleep(5)   #验证码输入后的等待时间
+            time.sleep(3)   #验证码输入后的等待时间
             driver.find_element(by='xpath',
                                 value='//*[@id="app"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(
                 data[1].split('=')[-1])  # 输入密码
             time.sleep(1)
             driver.find_element(by="xpath",
                                 value='//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()  # 点击下一步
-            time.sleep(2)
-            text = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+            time.sleep(0.5)
+            text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                       value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
-            assert text == 'Please press the slider and drag to the far right'
+            print('通道0')
+            print(text)
+            assert text == result
         else:
             try:
                 self.regist_mode1(useraccount, driver, data)

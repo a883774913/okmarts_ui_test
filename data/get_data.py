@@ -15,6 +15,9 @@ class Get_Data:
         registe_casename = []  #注册用例名称集合
         registe_cases_list = [] #注册用例集合
 
+        forget_casename = []        #忘记密码用例名称集合
+        forget_cases_list =  []     #忘记密码用例集合
+
         for i in range(1,sheet.nrows):
             dicts = {}
             value = sheet.row_values(i)
@@ -31,6 +34,10 @@ class Get_Data:
             if mode == '注册':
                 self.get_list(dicts,registe_cases_list,case_no,casename,mode,data,assert_way,result)
                 registe_casename.append(casename)
+            if mode == '忘记密码':
+                self.get_list(dicts,forget_cases_list,case_no,casename,mode,data,assert_way,result)
+                forget_casename.append(casename)
+
 
         General_for_casename['login'] = login_casename
         General_table['login'] = login_cases_list
@@ -38,8 +45,11 @@ class Get_Data:
         General_for_casename['registe'] = registe_casename
         General_table["registe"] = registe_cases_list
 
-        print(General_table['registe'])
-        print(General_for_casename['registe'])
+        General_for_casename['forget'] = forget_casename
+        General_table['forget'] = forget_cases_list
+
+        print(General_table['forget'])
+        print(General_for_casename['forget'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):
