@@ -18,6 +18,9 @@ class Get_Data:
         forget_casename = []        #忘记密码用例名称集合
         forget_cases_list =  []     #忘记密码用例集合
 
+        help_center_casename = []   #帮助中心用例名称集合
+        help_center_case_list = []  #帮助中心用例集合
+
         for i in range(1,sheet.nrows):
             dicts = {}
             value = sheet.row_values(i)
@@ -37,6 +40,9 @@ class Get_Data:
             if mode == '忘记密码':
                 self.get_list(dicts,forget_cases_list,case_no,casename,mode,data,assert_way,result)
                 forget_casename.append(casename)
+            if mode == '帮助中心' :
+                self.get_list(dicts,help_center_case_list,case_no,casename,mode,data,assert_way,result)
+                help_center_casename.append(casename)
 
 
         General_for_casename['login'] = login_casename
@@ -48,8 +54,11 @@ class Get_Data:
         General_for_casename['forget'] = forget_casename
         General_table['forget'] = forget_cases_list
 
-        print(General_table['forget'])
-        print(General_for_casename['forget'])
+        General_for_casename['help_center'] = help_center_casename
+        General_table['help_center'] = help_center_case_list
+
+        print(General_table['help_center'])
+        print(General_for_casename['help_center'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):

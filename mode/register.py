@@ -4,6 +4,7 @@
 import time
 
 from selenium.webdriver import ActionChains
+from selenium.webdriver.support.wait import WebDriverWait
 
 from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.mode.get_code import Get_Code
@@ -64,7 +65,6 @@ class Regist:
             print(text)
             assert text == result
         elif casename == '输入错误验证码注册失败':
-            time.sleep(2)
             self.input_code(driver, ['111111'])
             time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
@@ -96,8 +96,9 @@ class Regist:
             time.sleep(2)
             text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text
             print(text)
-            Common().logo(driver,useraccount,password=data[1].split('=')[-1])
-            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p').click()
+            Common().login(driver,useraccount,password=data[1].split('=')[-1])
+            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span'))
+            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()
             time.sleep(1.5)
             coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                                value=f"{assert_way.split('=', 1)[1]}").text
@@ -114,7 +115,7 @@ class Regist:
             time.sleep(2)
             driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
             time.sleep(2)
-            Common().logo(driver,useraccount,password=data[1].split('=')[-1])   #登录
+            Common().login(driver,useraccount,password=data[1].split('=')[-1])   #登录
             driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()
             time.sleep(1.5)
             coupons_text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
@@ -123,23 +124,26 @@ class Regist:
             print(coupons_text)
             assert coupons_text == result
         elif casename == '不进行验证注册失败':
+            print('通道0')
             time.sleep(10)      #等待验证码发送至邮箱
             code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
             print(code[0])
             self.input_code(driver, code)
-            time.sleep(3)   #验证码输入后的等待时间
-            driver.find_element(by='xpath',
-                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(
-                data[1].split('=')[-1])  # 输入密码
-            time.sleep(1)
-            driver.find_element(by="xpath",
-                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()  # 点击下一步
+            time.sleep(2)
+            driver.find_element(by='css selector',value='#app > div > div.login-form-wrap > '
+                                                        'div.login-form.margin-bottom > form > div:nth-child(1) > div'
+                                                        ' > div > span > span > input').send_keys(data[1].split('=')[-1]) # 输入密码
+
             time.sleep(0.5)
+            driver.find_element(by="css selector",
+                                value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > '
+                                      'div.btn-out.ant-row.ant-form-item > div > div > span > div > a').click()  # 点击下一步
+            WebDriverWait(driver,30,0.2).until(lambda driver:driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span'))
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
-            print(text)
-            print('通道0')
-            print(text)
+            print(f'text 为{text}')
+            print(f'result 为{result}')
             assert text == result
         else:
             try:
@@ -160,6 +164,8 @@ class Regist:
         :return:
         """
         print(f'验证码为{code}')
+        WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
+            'div[class="input-content"]>input[data-index="0"]'))  # 显示等待
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="0"]').send_keys(
             code[0][0])  # 验证码第1个
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="1"]').send_keys(
@@ -172,6 +178,10 @@ class Regist:
             code[0][4])  # 验证码第5个
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="5"]').send_keys(
             code[0][5])  # 验证码第6个
+        driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="5"]').click()
+        driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="5"]').send_keys(
+            code[0][5])  # 验证码第6个
+
 
     # 获取验证码 - 输入验证码 - 移动滑块 - 点击注册
     def regist_mode1(self, useraccount, driver, data):
@@ -179,7 +189,8 @@ class Regist:
         code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
         print(code[0])
         self.input_code(driver, code)
-        time.sleep(5)
+        WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_xpath(
+            '//*[@id="app"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i'))  # 显示等待
         huakuai = driver.find_element("xpath",
                                       value="""//*[@id="app"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i""")  # 定位滑块
         self.move_to_gap(huakuai, self.get_track(500), driver)  # 移动滑块

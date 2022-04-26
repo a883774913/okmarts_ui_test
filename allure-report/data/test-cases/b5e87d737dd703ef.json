@@ -1,0 +1,139 @@
+{
+  "uid" : "b5e87d737dd703ef",
+  "name" : "网站左上角存在帮助中心入口",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "c39aafceb577c98b9bcb9f955b94406f",
+  "time" : {
+    "start" : 1650936393644,
+    "stop" : 1650936394990,
+    "duration" : 1346
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650934635879,
+      "stop" : 1650934638069,
+      "duration" : 2190
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650934638069,
+      "stop" : 1650934638069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7a9e1905c3c3d1d7",
+      "name" : "stdout",
+      "source" : "7a9e1905c3c3d1d7.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650936455050,
+      "stop" : 1650936455249,
+      "duration" : 199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650936455251,
+      "stop" : 1650936455251,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "8436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '51', 'casename': '网站左上角存在帮助中心入口', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.top-menu > a:nth-child(3)', 'result': 'True'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b5e87d737dd703ef.json",
+  "parameterValues" : [ "{'case_no': '51', 'casename': '网站左上角存在帮助中心入口', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.top-menu > a:nth-child(3)', 'result': 'True'}" ]
+}

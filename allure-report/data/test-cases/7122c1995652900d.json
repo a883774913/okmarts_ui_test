@@ -1,0 +1,363 @@
+{
+  "uid" : "7122c1995652900d",
+  "name" : "输入错误验证码注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "09e1b62aa7fa94741114697d564a4a95",
+  "time" : {
+    "start" : 1650934785303,
+    "stop" : 1650934790183,
+    "duration" : 4880
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x000001C483B36C70>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'case_no': '14', 'casename': '输入错误验证码注册失败', 'data': 'useraccount=a883774917@163.com', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"226d56cace6127b393c0d9ae04f993e7\")>\n\n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n        allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n>       Regist().regist(Parameter, driver)\n\ntest_main.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\register.py:69: in regist\n    self.input_code(driver, ['111111'])\n..\\mode\\register.py:165: in input_code\n    driver.find_element(by='css selector', value='div[class=\"input-content\"]>input[data-index=\"0\"]').send_keys(\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1244: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001C4839F9CD0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...unk [0x75906739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\nE         (Session info: chrome=100.0.4896.127)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00F27413+2389011]\nE       \tOrdinal0 [0x00EB9F61+1941345]\nE       \tOrdinal0 [0x00DAC658+837208]\nE       \tOrdinal0 [0x00DD91DD+1020381]\nE       \tOrdinal0 [0x00DD949B+1021083]\nE       \tOrdinal0 [0x00E06032+1204274]\nE       \tOrdinal0 [0x00DF4194+1130900]\nE       \tOrdinal0 [0x00E04302+1196802]\nE       \tOrdinal0 [0x00DF3F66+1130342]\nE       \tOrdinal0 [0x00DCE546+976198]\nE       \tOrdinal0 [0x00DCF456+980054]\nE       \tGetHandleVerifier [0x010D9632+1727522]\nE       \tGetHandleVerifier [0x0118BA4D+2457661]\nE       \tGetHandleVerifier [0x00FBEB81+569713]\nE       \tGetHandleVerifier [0x00FBDD76+566118]\nE       \tOrdinal0 [0x00EC0B2B+1968939]\nE       \tOrdinal0 [0x00EC5988+1989000]\nE       \tOrdinal0 [0x00EC5A75+1989237]\nE       \tOrdinal0 [0x00ECECB1+2026673]\nE       \tBaseThreadInitThunk [0x75906739+25]\nE       \tRtlGetFullPathName_UEx [0x77408E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77408E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: NoSuchElementException",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650934635879,
+      "stop" : 1650934638069,
+      "duration" : 2190
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650934638069,
+      "stop" : 1650934638069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x000001C483B36C70>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'case_no': '14', 'casename': '输入错误验证码注册失败', 'data': 'useraccount=a883774917@163.com', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"226d56cace6127b393c0d9ae04f993e7\")>\n\n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n        allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n>       Regist().regist(Parameter, driver)\n\ntest_main.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\register.py:69: in regist\n    self.input_code(driver, ['111111'])\n..\\mode\\register.py:165: in input_code\n    driver.find_element(by='css selector', value='div[class=\"input-content\"]>input[data-index=\"0\"]').send_keys(\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1244: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001C4839F9CD0>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...unk [0x75906739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\nE         (Session info: chrome=100.0.4896.127)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00F27413+2389011]\nE       \tOrdinal0 [0x00EB9F61+1941345]\nE       \tOrdinal0 [0x00DAC658+837208]\nE       \tOrdinal0 [0x00DD91DD+1020381]\nE       \tOrdinal0 [0x00DD949B+1021083]\nE       \tOrdinal0 [0x00E06032+1204274]\nE       \tOrdinal0 [0x00DF4194+1130900]\nE       \tOrdinal0 [0x00E04302+1196802]\nE       \tOrdinal0 [0x00DF3F66+1130342]\nE       \tOrdinal0 [0x00DCE546+976198]\nE       \tOrdinal0 [0x00DCF456+980054]\nE       \tGetHandleVerifier [0x010D9632+1727522]\nE       \tGetHandleVerifier [0x0118BA4D+2457661]\nE       \tGetHandleVerifier [0x00FBEB81+569713]\nE       \tGetHandleVerifier [0x00FBDD76+566118]\nE       \tOrdinal0 [0x00EC0B2B+1968939]\nE       \tOrdinal0 [0x00EC5988+1989000]\nE       \tOrdinal0 [0x00EC5A75+1989237]\nE       \tOrdinal0 [0x00ECECB1+2026673]\nE       \tBaseThreadInitThunk [0x75906739+25]\nE       \tRtlGetFullPathName_UEx [0x77408E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77408E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: NoSuchElementException",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1650934790656,
+        "stop" : 1650934790861,
+        "duration" : 205
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1905e8e2077109a5",
+        "name" : "失败截图",
+        "source" : "1905e8e2077109a5.png",
+        "type" : "image/png",
+        "size" : 46292
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "3ef1b4e23d4c211a",
+      "name" : "stdout",
+      "source" : "3ef1b4e23d4c211a.txt",
+      "type" : "text/plain",
+      "size" : 42
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650936455050,
+      "stop" : 1650936455249,
+      "duration" : 199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650936455251,
+      "stop" : 1650936455251,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "8436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 4,
+        "skipped" : 0,
+        "passed" : 18,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "e75bf89585eb9aef",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/e75bf89585eb9aef",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650868118904,
+          "stop" : 1650868126142,
+          "duration" : 7238
+        }
+      }, {
+        "uid" : "fdb73bb394842bed",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/fdb73bb394842bed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650865646892,
+          "stop" : 1650865654762,
+          "duration" : 7870
+        }
+      }, {
+        "uid" : "e202dcf737004013",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/e202dcf737004013",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650857391277,
+          "stop" : 1650857398462,
+          "duration" : 7185
+        }
+      }, {
+        "uid" : "b6c49db0a7c8b522",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/b6c49db0a7c8b522",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650853643264,
+          "stop" : 1650853650422,
+          "duration" : 7158
+        }
+      }, {
+        "uid" : "f9468bcafe77ee97",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/f9468bcafe77ee97",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650851693508,
+          "stop" : 1650851700664,
+          "duration" : 7156
+        }
+      }, {
+        "uid" : "e762621bb1b76da6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/e762621bb1b76da6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650788662536,
+          "stop" : 1650788670373,
+          "duration" : 7837
+        }
+      }, {
+        "uid" : "1072dcdb260766cc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/1072dcdb260766cc",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00477413+2389011]\n\tOrdinal0 [0x00409F61+1941345]\n\tOrdinal0 [0x002FC658+837208]\n\tOrdinal0 [0x003291DD+1020381]\n\tOrdinal0 [0x0032949B+1021083]\n\tOrdinal0 [0x00356032+1204274]\n\tOrdinal0 [0x00344194+1130900]\n\tOrdinal0 [0x00354302+1196802]\n\tOrdinal0 [0x00343F66+1130342]\n\tOrdinal0 [0x0031E546+976198]\n\tOrdinal0 [0x0031F456+980054]\n\tGetHandleVerifier [0x00629632+1727522]\n\tGetHandleVerifier [0x006DBA4D+2457661]\n\tGetHandleVerifier [0x0050EB81+569713]\n\tGetHandleVerifier [0x0050DD76+566118]\n\tOrdinal0 [0x00410B2B+1968939]\n\tOrdinal0 [0x00415988+1989000]\n\tOrdinal0 [0x00415A75+1989237]\n\tOrdinal0 [0x0041ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650784973237,
+          "stop" : 1650784978090,
+          "duration" : 4853
+        }
+      }, {
+        "uid" : "e608ea366b7c363f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/e608ea366b7c363f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650603755219,
+          "stop" : 1650603761688,
+          "duration" : 6469
+        }
+      }, {
+        "uid" : "800223fc41f1978",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/800223fc41f1978",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650598704960,
+          "stop" : 1650598711423,
+          "duration" : 6463
+        }
+      }, {
+        "uid" : "130cab43f3daf1db",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/130cab43f3daf1db",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650597421020,
+          "stop" : 1650597426362,
+          "duration" : 5342
+        }
+      }, {
+        "uid" : "d870313f17ae2df8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/d870313f17ae2df8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650596433603,
+          "stop" : 1650596440078,
+          "duration" : 6475
+        }
+      }, {
+        "uid" : "716eed7a02fbc115",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/716eed7a02fbc115",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650520005471,
+          "stop" : 1650520012027,
+          "duration" : 6556
+        }
+      }, {
+        "uid" : "dd31512ae8853f1e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/dd31512ae8853f1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650519084999,
+          "stop" : 1650519091534,
+          "duration" : 6535
+        }
+      }, {
+        "uid" : "2b2f9dac827c48e1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/2b2f9dac827c48e1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x007F7413+2389011]\n\tOrdinal0 [0x00789F61+1941345]\n\tOrdinal0 [0x0067C658+837208]\n\tOrdinal0 [0x006A91DD+1020381]\n\tOrdinal0 [0x006A949B+1021083]\n\tOrdinal0 [0x006D6032+1204274]\n\tOrdinal0 [0x006C4194+1130900]\n\tOrdinal0 [0x006D4302+1196802]\n\tOrdinal0 [0x006C3F66+1130342]\n\tOrdinal0 [0x0069E546+976198]\n\tOrdinal0 [0x0069F456+980054]\n\tGetHandleVerifier [0x009A9632+1727522]\n\tGetHandleVerifier [0x00A5BA4D+2457661]\n\tGetHandleVerifier [0x0088EB81+569713]\n\tGetHandleVerifier [0x0088DD76+566118]\n\tOrdinal0 [0x00790B2B+1968939]\n\tOrdinal0 [0x00795988+1989000]\n\tOrdinal0 [0x00795A75+1989237]\n\tOrdinal0 [0x0079ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650517654916,
+          "stop" : 1650517659786,
+          "duration" : 4870
+        }
+      }, {
+        "uid" : "866b9f78d78876d9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/866b9f78d78876d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650511126132,
+          "stop" : 1650511132546,
+          "duration" : 6414
+        }
+      }, {
+        "uid" : "16127d0157566419",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/20/allure/#testresult/16127d0157566419",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506847318,
+          "stop" : 1650506852172,
+          "duration" : 4854
+        }
+      }, {
+        "uid" : "1215b19e43c63349",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/19/allure/#testresult/1215b19e43c63349",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650506423164,
+          "stop" : 1650506427994,
+          "duration" : 4830
+        }
+      }, {
+        "uid" : "c1b0e87632c1e254",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/18/allure/#testresult/c1b0e87632c1e254",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650449388843,
+          "stop" : 1650449393871,
+          "duration" : 5028
+        }
+      }, {
+        "uid" : "5e5f2e7f39708c04",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/17/allure/#testresult/5e5f2e7f39708c04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448899402,
+          "stop" : 1650448904385,
+          "duration" : 4983
+        }
+      }, {
+        "uid" : "d28f126c98d1e797",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/16/allure/#testresult/d28f126c98d1e797",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650448679678,
+          "stop" : 1650448684622,
+          "duration" : 4944
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7122c1995652900d.json",
+  "parameterValues" : [ "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+}

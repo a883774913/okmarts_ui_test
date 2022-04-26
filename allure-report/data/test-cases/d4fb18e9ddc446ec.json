@@ -1,0 +1,336 @@
+{
+  "uid" : "d4fb18e9ddc446ec",
+  "name" : "超时后再次发送验证码成功",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "b93a00d5dae2367b42886a43fe619b7e",
+  "time" : {
+    "start" : 1650934716351,
+    "stop" : 1650934785297,
+    "duration" : 68946
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1650934635879,
+      "stop" : 1650934638069,
+      "duration" : 2190
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1650934638069,
+      "stop" : 1650934638069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "22566e7e423bd4e5",
+      "name" : "stdout",
+      "source" : "22566e7e423bd4e5.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1650936455050,
+      "stop" : 1650936455249,
+      "duration" : 199
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1650936455251,
+      "stop" : 1650936455251,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "8436-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 17,
+        "unknown" : 0,
+        "total" : 24
+      },
+      "items" : [ {
+        "uid" : "a4f4186ce24dda71",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/a4f4186ce24dda71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650868050189,
+          "stop" : 1650868118894,
+          "duration" : 68705
+        }
+      }, {
+        "uid" : "3a5fbd6508f439e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/3a5fbd6508f439e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650865576960,
+          "stop" : 1650865646889,
+          "duration" : 69929
+        }
+      }, {
+        "uid" : "2cb345f95f2097c3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/2cb345f95f2097c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650857321659,
+          "stop" : 1650857391272,
+          "duration" : 69613
+        }
+      }, {
+        "uid" : "6cc2ce52b83a74c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/6cc2ce52b83a74c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650853574513,
+          "stop" : 1650853643258,
+          "duration" : 68745
+        }
+      }, {
+        "uid" : "bf1572ea8af73fb2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/bf1572ea8af73fb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650851624585,
+          "stop" : 1650851693508,
+          "duration" : 68923
+        }
+      }, {
+        "uid" : "9cbc105d5d1882e9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/9cbc105d5d1882e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650788593537,
+          "stop" : 1650788662533,
+          "duration" : 68996
+        }
+      }, {
+        "uid" : "1d72fa1eed7ef786",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/1d72fa1eed7ef786",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650784904317,
+          "stop" : 1650784973234,
+          "duration" : 68917
+        }
+      }, {
+        "uid" : "dd5c08b6846a8498",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/dd5c08b6846a8498",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650603686341,
+          "stop" : 1650603755215,
+          "duration" : 68874
+        }
+      }, {
+        "uid" : "458ec4db3677a58e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/458ec4db3677a58e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650598636075,
+          "stop" : 1650598704956,
+          "duration" : 68881
+        }
+      }, {
+        "uid" : "1e63605989526ef4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/1e63605989526ef4",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-statistic-content-suffix\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650597351276,
+          "stop" : 1650597420802,
+          "duration" : 69526
+        }
+      }, {
+        "uid" : "ca3c123006999de5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/ca3c123006999de5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650596364962,
+          "stop" : 1650596433600,
+          "duration" : 68638
+        }
+      }, {
+        "uid" : "d901caa7aab0bf25",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/d901caa7aab0bf25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650519936749,
+          "stop" : 1650520005467,
+          "duration" : 68718
+        }
+      }, {
+        "uid" : "fd91fbc3ad571902",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/fd91fbc3ad571902",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650519015678,
+          "stop" : 1650519084995,
+          "duration" : 69317
+        }
+      }, {
+        "uid" : "51512031da6d7296",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/51512031da6d7296",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650517585631,
+          "stop" : 1650517654912,
+          "duration" : 69281
+        }
+      }, {
+        "uid" : "ab787c66775c99d4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/21/allure/#testresult/ab787c66775c99d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650511058410,
+          "stop" : 1650511126122,
+          "duration" : 67712
+        }
+      }, {
+        "uid" : "d888a1eb8590ab91",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/20/allure/#testresult/d888a1eb8590ab91",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[3]/span/div/div/div/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01117413+2389011]\n\tOrdinal0 [0x010A9F61+1941345]\n\tOrdinal0 [0x00F9C658+837208]\n\tOrdinal0 [0x00FC91DD+1020381]\n\tOrdinal0 [0x00FC949B+1021083]\n\tOrdinal0 [0x00FF6032+1204274]\n\tOrdinal0 [0x00FE4194+1130900]\n\tOrdinal0 [0x00FF4302+1196802]\n\tOrdinal0 [0x00FE3F66+1130342]\n\tOrdinal0 [0x00FBE546+976198]\n\tOrdinal0 [0x00FBF456+980054]\n\tGetHandleVerifier [0x012C9632+1727522]\n\tGetHandleVerifier [0x0137BA4D+2457661]\n\tGetHandleVerifier [0x011AEB81+569713]\n\tGetHandleVerifier [0x011ADD76+566118]\n\tOrdinal0 [0x010B0B2B+1968939]\n\tOrdinal0 [0x010B5988+1989000]\n\tOrdinal0 [0x010B5A75+1989237]\n\tOrdinal0 [0x010BECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650506781492,
+          "stop" : 1650506847144,
+          "duration" : 65652
+        }
+      }, {
+        "uid" : "197efdd807c44778",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/19/allure/#testresult/197efdd807c44778",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[3]/span/div/div/div/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01117413+2389011]\n\tOrdinal0 [0x010A9F61+1941345]\n\tOrdinal0 [0x00F9C658+837208]\n\tOrdinal0 [0x00FC91DD+1020381]\n\tOrdinal0 [0x00FC949B+1021083]\n\tOrdinal0 [0x00FF6032+1204274]\n\tOrdinal0 [0x00FE4194+1130900]\n\tOrdinal0 [0x00FF4302+1196802]\n\tOrdinal0 [0x00FE3F66+1130342]\n\tOrdinal0 [0x00FBE546+976198]\n\tOrdinal0 [0x00FBF456+980054]\n\tGetHandleVerifier [0x012C9632+1727522]\n\tGetHandleVerifier [0x0137BA4D+2457661]\n\tGetHandleVerifier [0x011AEB81+569713]\n\tGetHandleVerifier [0x011ADD76+566118]\n\tOrdinal0 [0x010B0B2B+1968939]\n\tOrdinal0 [0x010B5988+1989000]\n\tOrdinal0 [0x010B5A75+1989237]\n\tOrdinal0 [0x010BECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650506356607,
+          "stop" : 1650506422757,
+          "duration" : 66150
+        }
+      }, {
+        "uid" : "5fc092f3a6257cdb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/18/allure/#testresult/5fc092f3a6257cdb",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650449321901,
+          "stop" : 1650449388475,
+          "duration" : 66574
+        }
+      }, {
+        "uid" : "9b000e9fe288e957",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/17/allure/#testresult/9b000e9fe288e957",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650448832294,
+          "stop" : 1650448898916,
+          "duration" : 66622
+        }
+      }, {
+        "uid" : "bdc9105507082a12",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/16/allure/#testresult/bdc9105507082a12",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[3]/span/div/div/div/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A07413+2389011]\n\tOrdinal0 [0x00999F61+1941345]\n\tOrdinal0 [0x0088C658+837208]\n\tOrdinal0 [0x008B91DD+1020381]\n\tOrdinal0 [0x008B949B+1021083]\n\tOrdinal0 [0x008E6032+1204274]\n\tOrdinal0 [0x008D4194+1130900]\n\tOrdinal0 [0x008E4302+1196802]\n\tOrdinal0 [0x008D3F66+1130342]\n\tOrdinal0 [0x008AE546+976198]\n\tOrdinal0 [0x008AF456+980054]\n\tGetHandleVerifier [0x00BB9632+1727522]\n\tGetHandleVerifier [0x00C6BA4D+2457661]\n\tGetHandleVerifier [0x00A9EB81+569713]\n\tGetHandleVerifier [0x00A9DD76+566118]\n\tOrdinal0 [0x009A0B2B+1968939]\n\tOrdinal0 [0x009A5988+1989000]\n\tOrdinal0 [0x009A5A75+1989237]\n\tOrdinal0 [0x009AECB1+2026673]\n\tBaseThreadInitThunk [0x75AB6739+25]\n\tRtlGetFullPathName_UEx [0x77398E7F+1215]\n\tRtlGetFullPathName_UEx [0x77398E4D+1165]",
+        "time" : {
+          "start" : 1650448613165,
+          "stop" : 1650448679472,
+          "duration" : 66307
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d4fb18e9ddc446ec.json",
+  "parameterValues" : [ "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}" ]
+}

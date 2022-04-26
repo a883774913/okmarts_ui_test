@@ -1,13 +1,13 @@
 {
-  "total" : 3,
+  "total" : 4,
   "items" : [ {
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 3,
-      "broken" : 2,
+      "failed" : 4,
+      "broken" : 3,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 21,
       "unknown" : 0,
       "total" : 28
     }
@@ -16,11 +16,22 @@
     "name" : "忘记密码",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 3,
       "skipped" : 0,
-      "passed" : 11,
+      "passed" : 13,
       "unknown" : 0,
-      "total" : 12
+      "total" : 16
+    }
+  }, {
+    "uid" : "a8683ef936769eca0631743faf12b699",
+    "name" : "帮助中心",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 15,
+      "unknown" : 0,
+      "total" : 15
     }
   }, {
     "uid" : "6e12e06fb17fec92464fd1fd24bca881",

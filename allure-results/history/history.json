@@ -25,11 +25,38 @@
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "a0aedfee1875c8d2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/a0aedfee1875c8d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869613497,
+        "stop" : 1650869652030,
+        "duration" : 38533
+      }
+    }, {
+      "uid" : "402264da8a878e7a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/402264da8a878e7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867031451,
+        "stop" : 1650867065523,
+        "duration" : 34072
+      }
+    }, {
+      "uid" : "9d45392d82410046",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/9d45392d82410046",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858933691,
+        "stop" : 1650858969027,
+        "duration" : 35336
+      }
+    }, {
       "uid" : "fdfd9747193fbff8",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/fdfd9747193fbff8",
       "status" : "failed",
@@ -56,11 +83,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 22,
+      "passed" : 25,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "85133d2b239c5209",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/85133d2b239c5209",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868021236,
+        "stop" : 1650868027492,
+        "duration" : 6256
+      }
+    }, {
+      "uid" : "f4d0d4e7ea6f04c8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/f4d0d4e7ea6f04c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865548602,
+        "stop" : 1650865554970,
+        "duration" : 6368
+      }
+    }, {
+      "uid" : "803954eada5dd218",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/803954eada5dd218",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857289530,
+        "stop" : 1650857296615,
+        "duration" : 7085
+      }
+    }, {
       "uid" : "6f393f0573b08127",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/6f393f0573b08127",
       "status" : "passed",
@@ -213,33 +267,6 @@
         "stop" : 1650448599810,
         "duration" : 4594
       }
-    }, {
-      "uid" : "443e0f4901797c48",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/443e0f4901797c48",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447757511,
-        "stop" : 1650447762099,
-        "duration" : 4588
-      }
-    }, {
-      "uid" : "162a9c9f0cc9422c",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/162a9c9f0cc9422c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445617400,
-        "stop" : 1650445622281,
-        "duration" : 4881
-      }
-    }, {
-      "uid" : "2703343dc8ef4d92",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/2703343dc8ef4d92",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445349775,
-        "stop" : 1650445354348,
-        "duration" : 4573
-      }
     } ]
   },
   "b48564a7bfa65ccf6e5f01371b381708" : {
@@ -285,11 +312,38 @@
       "failed" : 1,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 12,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "88ea2dda7444817a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/88ea2dda7444817a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868747084,
+        "stop" : 1650868788064,
+        "duration" : 40980
+      }
+    }, {
+      "uid" : "978241d8ad4f213c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/978241d8ad4f213c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866312100,
+        "stop" : 1650866355389,
+        "duration" : 43289
+      }
+    }, {
+      "uid" : "33a977d6343f7022",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/33a977d6343f7022",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857951216,
+        "stop" : 1650857995080,
+        "duration" : 43864
+      }
+    }, {
       "uid" : "5ae5164378b64441",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/5ae5164378b64441",
       "status" : "passed",
@@ -397,11 +451,38 @@
       "failed" : 1,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "7db639735bbd57ea",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/7db639735bbd57ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868663643,
+        "stop" : 1650868705834,
+        "duration" : 42191
+      }
+    }, {
+      "uid" : "4e6aca64074a6f0f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/4e6aca64074a6f0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866224704,
+        "stop" : 1650866268811,
+        "duration" : 44107
+      }
+    }, {
+      "uid" : "5ca0d5d801c454d0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5ca0d5d801c454d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857862250,
+        "stop" : 1650857907626,
+        "duration" : 45376
+      }
+    }, {
       "uid" : "91c2ffdda47a54a5",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/91c2ffdda47a54a5",
       "status" : "passed",
@@ -510,11 +591,38 @@
       "failed" : 2,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "cb4ca580f8ed2b08",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/cb4ca580f8ed2b08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868622488,
+        "stop" : 1650868663639,
+        "duration" : 41151
+      }
+    }, {
+      "uid" : "da82cf4408421a69",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/da82cf4408421a69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866180971,
+        "stop" : 1650866224700,
+        "duration" : 43729
+      }
+    }, {
+      "uid" : "cc754f601b5038c0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/cc754f601b5038c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857815964,
+        "stop" : 1650857862246,
+        "duration" : 46282
+      }
+    }, {
       "uid" : "70b16e7b4c679abe",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/70b16e7b4c679abe",
       "status" : "passed",
@@ -698,14 +806,44 @@
   },
   "1d057baed39ed7952c8e2889bbb3bd2c" : {
     "statistic" : {
-      "failed" : 10,
+      "failed" : 13,
       "broken" : 1,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "e4dbe046b4f62601",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/e4dbe046b4f62601",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868829261,
+        "stop" : 1650868872328,
+        "duration" : 43067
+      }
+    }, {
+      "uid" : "2238032f8799e5b9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/2238032f8799e5b9",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650866400071,
+        "stop" : 1650866434866,
+        "duration" : 34795
+      }
+    }, {
+      "uid" : "7b160316b8ecab5a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/7b160316b8ecab5a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650858041671,
+        "stop" : 1650858088406,
+        "duration" : 46735
+      }
+    }, {
       "uid" : "9c10b9de63d1621f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9c10b9de63d1621f",
       "status" : "failed",
@@ -908,13 +1046,43 @@
   "55bfa903be6bf8d89ffe158c01819b94" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 5,
       "skipped" : 0,
       "passed" : 9,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "3587f12b9c23055e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/3587f12b9c23055e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650868958459,
+        "stop" : 1650869004687,
+        "duration" : 46228
+      }
+    }, {
+      "uid" : "8695ef8ec382b48d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/8695ef8ec382b48d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650866504292,
+        "stop" : 1650866538770,
+        "duration" : 34478
+      }
+    }, {
+      "uid" : "fa58c11226fcf1c2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/fa58c11226fcf1c2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650858186820,
+        "stop" : 1650858384816,
+        "duration" : 197996
+      }
+    }, {
       "uid" : "9df0b4a15d23067b",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9df0b4a15d23067b",
       "status" : "passed",
@@ -1022,11 +1190,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "c9d362669e9be2e2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/c9d362669e9be2e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869260425,
+        "stop" : 1650869266955,
+        "duration" : 6530
+      }
+    }, {
+      "uid" : "b32802ccdb17a71a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/b32802ccdb17a71a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866684472,
+        "stop" : 1650866691413,
+        "duration" : 6941
+      }
+    }, {
+      "uid" : "41fd5a22856867f5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/41fd5a22856867f5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858572794,
+        "stop" : 1650858579314,
+        "duration" : 6520
+      }
+    }, {
       "uid" : "b96bcbe69807266e",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/b96bcbe69807266e",
       "status" : "passed",
@@ -1090,11 +1285,38 @@
       "failed" : 0,
       "broken" : 6,
       "skipped" : 0,
-      "passed" : 12,
+      "passed" : 15,
       "unknown" : 0,
-      "total" : 18
+      "total" : 21
     },
     "items" : [ {
+      "uid" : "2fbd3fb4d95b3f25",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/2fbd3fb4d95b3f25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868126712,
+        "stop" : 1650868166552,
+        "duration" : 39840
+      }
+    }, {
+      "uid" : "80a1d3a58b35008",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/80a1d3a58b35008",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865654766,
+        "stop" : 1650865697696,
+        "duration" : 42930
+      }
+    }, {
+      "uid" : "b5cf1a460b78f803",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/b5cf1a460b78f803",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857398467,
+        "stop" : 1650857443607,
+        "duration" : 45140
+      }
+    }, {
       "uid" : "7c04843562ce2e9e",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/7c04843562ce2e9e",
       "status" : "passed",
@@ -1253,15 +1475,6 @@
         "stop" : 1650448705936,
         "duration" : 21311
       }
-    }, {
-      "uid" : "c7fbdfa562f01244",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/c7fbdfa562f01244",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447857402,
-        "stop" : 1650447890880,
-        "duration" : 33478
-      }
     } ]
   },
   "bd466ecba8567bea303211a5e7e4c51e" : {
@@ -1269,11 +1482,38 @@
       "failed" : 0,
       "broken" : 9,
       "skipped" : 0,
-      "passed" : 14,
+      "passed" : 17,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "651ae8d68b08800b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/651ae8d68b08800b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868027492,
+        "stop" : 1650868050185,
+        "duration" : 22693
+      }
+    }, {
+      "uid" : "1ec12d393e5b29cc",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/1ec12d393e5b29cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865554974,
+        "stop" : 1650865576955,
+        "duration" : 21981
+      }
+    }, {
+      "uid" : "6c34f69fbf68f12c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/6c34f69fbf68f12c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857296620,
+        "stop" : 1650857321655,
+        "duration" : 25035
+      }
+    }, {
       "uid" : "99166e662877e565",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/99166e662877e565",
       "status" : "passed",
@@ -1432,33 +1672,6 @@
         "stop" : 1650448612754,
         "duration" : 12939
       }
-    }, {
-      "uid" : "29335283c3139612",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/29335283c3139612",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447762099,
-        "stop" : 1650447785800,
-        "duration" : 23701
-      }
-    }, {
-      "uid" : "7e4a218fc9a39d4a",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/7e4a218fc9a39d4a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445622289,
-        "stop" : 1650445678561,
-        "duration" : 56272
-      }
-    }, {
-      "uid" : "ae16366c1dbb0da5",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/ae16366c1dbb0da5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445354357,
-        "stop" : 1650445375778,
-        "duration" : 21421
-      }
     } ]
   },
   "e59a3ff51e4444bcb8742d1120dfab09" : {
@@ -1502,13 +1715,42 @@
   "8b85d62c1f3c1e7f48e41fe32251ac52" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 6,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 4
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "15478ab373420248",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/15478ab373420248",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a data-v-1f620c15=\"\">...</a> is not clickable at point (1159, 578). Other element would receive the click: <div class=\"ant-modal-body\">...</div>\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FDF8AF+1046703]\n\tOrdinal0 [0x00FDD8D6+1038550]\n\tOrdinal0 [0x00FDB5EB+1029611]\n\tOrdinal0 [0x00FDA359+1024857]\n\tOrdinal0 [0x00FCFF93+982931]\n\tOrdinal0 [0x00FF414C+1130828]\n\tOrdinal0 [0x00FCF974+981364]\n\tOrdinal0 [0x00FF4364+1131364]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650869004909,
+        "stop" : 1650869157857,
+        "duration" : 152948
+      }
+    }, {
+      "uid" : "f55c4ae287d89334",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/f55c4ae287d89334",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866538981,
+        "stop" : 1650866593378,
+        "duration" : 54397
+      }
+    }, {
+      "uid" : "58920335367249aa",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/58920335367249aa",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650858384996,
+        "stop" : 1650858452602,
+        "duration" : 67606
+      }
+    }, {
       "uid" : "aa25c141553e85c1",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/aa25c141553e85c1",
       "status" : "broken",
@@ -1555,11 +1797,38 @@
       "failed" : 2,
       "broken" : 5,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 16,
       "unknown" : 0,
-      "total" : 20
+      "total" : 23
     },
     "items" : [ {
+      "uid" : "a4f4186ce24dda71",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/a4f4186ce24dda71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868050189,
+        "stop" : 1650868118894,
+        "duration" : 68705
+      }
+    }, {
+      "uid" : "3a5fbd6508f439e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/3a5fbd6508f439e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865576960,
+        "stop" : 1650865646889,
+        "duration" : 69929
+      }
+    }, {
+      "uid" : "2cb345f95f2097c3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/2cb345f95f2097c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857321659,
+        "stop" : 1650857391272,
+        "duration" : 69613
+      }
+    }, {
       "uid" : "6cc2ce52b83a74c",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/6cc2ce52b83a74c",
       "status" : "passed",
@@ -1718,34 +1987,6 @@
         "stop" : 1650448679472,
         "duration" : 66307
       }
-    }, {
-      "uid" : "2d506bead6ae9e11",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/2d506bead6ae9e11",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447785800,
-        "stop" : 1650447852445,
-        "duration" : 66645
-      }
-    }, {
-      "uid" : "d1c7f50a206ac2ca",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/d1c7f50a206ac2ca",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-statistic-content-value\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A07413+2389011]\n\tOrdinal0 [0x00999F61+1941345]\n\tOrdinal0 [0x0088C658+837208]\n\tOrdinal0 [0x008B91DD+1020381]\n\tOrdinal0 [0x008B949B+1021083]\n\tOrdinal0 [0x008E6032+1204274]\n\tOrdinal0 [0x008D4194+1130900]\n\tOrdinal0 [0x008E4302+1196802]\n\tOrdinal0 [0x008D3F66+1130342]\n\tOrdinal0 [0x008AE546+976198]\n\tOrdinal0 [0x008AF456+980054]\n\tGetHandleVerifier [0x00BB9632+1727522]\n\tGetHandleVerifier [0x00C6BA4D+2457661]\n\tGetHandleVerifier [0x00A9EB81+569713]\n\tGetHandleVerifier [0x00A9DD76+566118]\n\tOrdinal0 [0x009A0B2B+1968939]\n\tOrdinal0 [0x009A5988+1989000]\n\tOrdinal0 [0x009A5A75+1989237]\n\tOrdinal0 [0x009AECB1+2026673]\n\tBaseThreadInitThunk [0x75AB6739+25]\n\tRtlGetFullPathName_UEx [0x77398E7F+1215]\n\tRtlGetFullPathName_UEx [0x77398E4D+1165]",
-      "time" : {
-        "start" : 1650445678565,
-        "stop" : 1650445744927,
-        "duration" : 66362
-      }
-    }, {
-      "uid" : "3644ffbdb0f3b563",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/3644ffbdb0f3b563",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445375788,
-        "stop" : 1650445441919,
-        "duration" : 66131
-      }
     } ]
   },
   "7dee1056e92b6ff49e92c8950ff9ab31" : {
@@ -1753,11 +1994,38 @@
       "failed" : 1,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 12,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "9cdb1ecd8dfc0461",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/9cdb1ecd8dfc0461",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868312014,
+        "stop" : 1650868388563,
+        "duration" : 76549
+      }
+    }, {
+      "uid" : "a670c236bcd4fc80",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/a670c236bcd4fc80",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866004773,
+        "stop" : 1650866051005,
+        "duration" : 46232
+      }
+    }, {
+      "uid" : "121309a881eeacee",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/121309a881eeacee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857633941,
+        "stop" : 1650857677937,
+        "duration" : 43996
+      }
+    }, {
       "uid" : "23e12cb65ac172b1",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/23e12cb65ac172b1",
       "status" : "passed",
@@ -1884,13 +2152,43 @@
   "3d0974d276d01ef9e62c44adf3a7cba4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 4,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 1
+      "total" : 4
     },
     "items" : [ {
+      "uid" : "8336f4067f5b2c58",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/8336f4067f5b2c58",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650869652035,
+        "stop" : 1650869765185,
+        "duration" : 113150
+      }
+    }, {
+      "uid" : "cb66e4c187ec456f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/cb66e4c187ec456f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650867065535,
+        "stop" : 1650867153046,
+        "duration" : 87511
+      }
+    }, {
+      "uid" : "f1c6518acfcbdb7",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/f1c6518acfcbdb7",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650858969031,
+        "stop" : 1650859058547,
+        "duration" : 89516
+      }
+    }, {
       "uid" : "4f579c62312eda6d",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/4f579c62312eda6d",
       "status" : "broken",
@@ -1907,11 +2205,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 22,
+      "passed" : 25,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "a1c97192e41a2e1e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/a1c97192e41a2e1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867982217,
+        "stop" : 1650867989476,
+        "duration" : 7259
+      }
+    }, {
+      "uid" : "488d022a1083e511",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/488d022a1083e511",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865508947,
+        "stop" : 1650865515847,
+        "duration" : 6900
+      }
+    }, {
+      "uid" : "775d093b2716e5e8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/775d093b2716e5e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857247203,
+        "stop" : 1650857254607,
+        "duration" : 7404
+      }
+    }, {
       "uid" : "9341e19dd8b4d77f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9341e19dd8b4d77f",
       "status" : "passed",
@@ -2065,33 +2390,6 @@
         "stop" : 1650448570120,
         "duration" : 6444
       }
-    }, {
-      "uid" : "8c86382b6baa3b5",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/8c86382b6baa3b5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447725888,
-        "stop" : 1650447732337,
-        "duration" : 6449
-      }
-    }, {
-      "uid" : "4bac9f7fd6bee406",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/4bac9f7fd6bee406",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445585764,
-        "stop" : 1650445592256,
-        "duration" : 6492
-      }
-    }, {
-      "uid" : "965d00a20db09233",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/965d00a20db09233",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445318152,
-        "stop" : 1650445324658,
-        "duration" : 6506
-      }
     } ]
   },
   "9ff5df54441ee07e01f27cc4688cb1cb" : {
@@ -2099,11 +2397,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "7e8f2b31e3f2f804",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/7e8f2b31e3f2f804",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868007808,
+        "stop" : 1650868010347,
+        "duration" : 2539
+      }
+    }, {
+      "uid" : "4b1e839e69be3b2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/4b1e839e69be3b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865534474,
+        "stop" : 1650865537499,
+        "duration" : 3025
+      }
+    }, {
+      "uid" : "62588bd39fdf9625",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/62588bd39fdf9625",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857275001,
+        "stop" : 1650857277636,
+        "duration" : 2635
+      }
+    }, {
       "uid" : "45150fa6d2492110",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/45150fa6d2492110",
       "status" : "passed",
@@ -2256,45 +2581,47 @@
         "stop" : 1650448589012,
         "duration" : 982
       }
-    }, {
-      "uid" : "356c8987d8283916",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/356c8987d8283916",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447750319,
-        "stop" : 1650447751317,
-        "duration" : 998
-      }
-    }, {
-      "uid" : "db32778f0a15ded5",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/db32778f0a15ded5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445610154,
-        "stop" : 1650445611139,
-        "duration" : 985
-      }
-    }, {
-      "uid" : "31d196d1e19d758",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/31d196d1e19d758",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445342633,
-        "stop" : 1650445343639,
-        "duration" : 1006
-      }
     } ]
   },
   "7932406c89649507e0ffb394d9f11b7e" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 3,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "57d6970239a56f85",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/57d6970239a56f85",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868244306,
+        "stop" : 1650868269777,
+        "duration" : 25471
+      }
+    }, {
+      "uid" : "762a864218407553",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/762a864218407553",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650865800466,
+        "stop" : 1650865951062,
+        "duration" : 150596
+      }
+    }, {
+      "uid" : "ed9ad943e1dd9c5d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/ed9ad943e1dd9c5d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857536819,
+        "stop" : 1650857587173,
+        "duration" : 50354
+      }
+    }, {
       "uid" : "e88d30e0968a0c98",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/e88d30e0968a0c98",
       "status" : "passed",
@@ -2404,11 +2731,38 @@
       "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 12,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "b79623562e809987",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/b79623562e809987",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868536783,
+        "stop" : 1650868580063,
+        "duration" : 43280
+      }
+    }, {
+      "uid" : "db9d3f793a11f3c9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/db9d3f793a11f3c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866094295,
+        "stop" : 1650866137508,
+        "duration" : 43213
+      }
+    }, {
+      "uid" : "e24489022b10a4f9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/e24489022b10a4f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857722851,
+        "stop" : 1650857770871,
+        "duration" : 48020
+      }
+    }, {
       "uid" : "e7ca23e53fee8ca4",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/e7ca23e53fee8ca4",
       "status" : "passed",
@@ -2554,11 +2908,38 @@
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "f3808129ddd1ffd7",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/f3808129ddd1ffd7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869372167,
+        "stop" : 1650869408360,
+        "duration" : 36193
+      }
+    }, {
+      "uid" : "5187ae900c4842b4",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/5187ae900c4842b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866795374,
+        "stop" : 1650866830650,
+        "duration" : 35276
+      }
+    }, {
+      "uid" : "4d1b74a6ad910d3b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/4d1b74a6ad910d3b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858690812,
+        "stop" : 1650858725279,
+        "duration" : 34467
+      }
+    }, {
       "uid" : "60757949b7ab1db",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/60757949b7ab1db",
       "status" : "failed",
@@ -2585,11 +2966,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "227a8dd04925b681",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/227a8dd04925b681",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867998495,
+        "stop" : 1650868003266,
+        "duration" : 4771
+      }
+    }, {
+      "uid" : "a0488c38bb295a2c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/a0488c38bb295a2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865525069,
+        "stop" : 1650865529654,
+        "duration" : 4585
+      }
+    }, {
+      "uid" : "ce7bdd2e87bb5a3f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/ce7bdd2e87bb5a3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857264381,
+        "stop" : 1650857269618,
+        "duration" : 5237
+      }
+    }, {
       "uid" : "bc9d86a1de5c725f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/bc9d86a1de5c725f",
       "status" : "passed",
@@ -2742,33 +3150,6 @@
         "stop" : 1650448583523,
         "duration" : 4522
       }
-    }, {
-      "uid" : "ca8d392ce8aca9c5",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/ca8d392ce8aca9c5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447741267,
-        "stop" : 1650447745811,
-        "duration" : 4544
-      }
-    }, {
-      "uid" : "3ff70084b585186e",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/3ff70084b585186e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445601117,
-        "stop" : 1650445605666,
-        "duration" : 4549
-      }
-    }, {
-      "uid" : "b1310d9451b3dd5e",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/b1310d9451b3dd5e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445333548,
-        "stop" : 1650445338115,
-        "duration" : 4567
-      }
     } ]
   },
   "f44382204f6c23bd5640584e5a08c4dd" : {
@@ -2776,11 +3157,38 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 22,
+      "passed" : 25,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "987f086ae4cc88f7",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/987f086ae4cc88f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868013989,
+        "stop" : 1650868017575,
+        "duration" : 3586
+      }
+    }, {
+      "uid" : "9e1f8af3299dcf1e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/9e1f8af3299dcf1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865541131,
+        "stop" : 1650865544951,
+        "duration" : 3820
+      }
+    }, {
+      "uid" : "aa5d3cbb91d27199",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/aa5d3cbb91d27199",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857281749,
+        "stop" : 1650857285442,
+        "duration" : 3693
+      }
+    }, {
       "uid" : "da29d6329c5179d",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/da29d6329c5179d",
       "status" : "passed",
@@ -2934,33 +3342,6 @@
         "stop" : 1650448593098,
         "duration" : 2024
       }
-    }, {
-      "uid" : "cdc004b4f6a0a55e",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/cdc004b4f6a0a55e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447753338,
-        "stop" : 1650447755425,
-        "duration" : 2087
-      }
-    }, {
-      "uid" : "203b0aecc3079e63",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/203b0aecc3079e63",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445613208,
-        "stop" : 1650445615300,
-        "duration" : 2092
-      }
-    }, {
-      "uid" : "817445fb7b0ce461",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/817445fb7b0ce461",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445345677,
-        "stop" : 1650445347710,
-        "duration" : 2033
-      }
     } ]
   },
   "bb438e4f603d6966dd58bac58ac42a2c" : {
@@ -2968,11 +3349,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "21625aad4450064d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/21625aad4450064d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869246765,
+        "stop" : 1650869253705,
+        "duration" : 6940
+      }
+    }, {
+      "uid" : "1a8c72117ebfe22e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/1a8c72117ebfe22e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866672928,
+        "stop" : 1650866677812,
+        "duration" : 4884
+      }
+    }, {
+      "uid" : "90c095921dbe7544",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/90c095921dbe7544",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858561783,
+        "stop" : 1650858566315,
+        "duration" : 4532
+      }
+    }, {
       "uid" : "fa7e87ea3e4505ea",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/fa7e87ea3e4505ea",
       "status" : "passed",
@@ -2994,14 +3402,42 @@
   },
   "bfa9ac51cd33477fd64d5a664ebabac1" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "f1119bd8b25f5ea2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/f1119bd8b25f5ea2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868872504,
+        "stop" : 1650868913733,
+        "duration" : 41229
+      }
+    }, {
+      "uid" : "9b59468cea87142f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/9b59468cea87142f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650866435082,
+        "stop" : 1650866469604,
+        "duration" : 34522
+      }
+    }, {
+      "uid" : "5537273e25eae3e5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5537273e25eae3e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858088590,
+        "stop" : 1650858137641,
+        "duration" : 49051
+      }
+    }, {
       "uid" : "96665dbffa73ce23",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/96665dbffa73ce23",
       "status" : "failed",
@@ -3110,11 +3546,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "62a94ba7977c9951",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/62a94ba7977c9951",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868010351,
+        "stop" : 1650868013981,
+        "duration" : 3630
+      }
+    }, {
+      "uid" : "40400c507867b06e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/40400c507867b06e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865537503,
+        "stop" : 1650865541127,
+        "duration" : 3624
+      }
+    }, {
+      "uid" : "8fec76359d22b8d0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/8fec76359d22b8d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857277640,
+        "stop" : 1650857281740,
+        "duration" : 4100
+      }
+    }, {
       "uid" : "ec793f863657ca4f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/ec793f863657ca4f",
       "status" : "passed",
@@ -3267,45 +3730,46 @@
         "stop" : 1650448591067,
         "duration" : 2050
       }
-    }, {
-      "uid" : "aa913f8539c18f64",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/aa913f8539c18f64",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447751322,
-        "stop" : 1650447753331,
-        "duration" : 2009
-      }
-    }, {
-      "uid" : "ec3e282770c6ab46",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/ec3e282770c6ab46",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445611142,
-        "stop" : 1650445613197,
-        "duration" : 2055
-      }
-    }, {
-      "uid" : "922198acb69d0f4c",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/922198acb69d0f4c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445343642,
-        "stop" : 1650445345672,
-        "duration" : 2030
-      }
     } ]
   },
   "1c05625f316ea1ddcd1a4a6c40d30b8b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "f9c537074eb47439",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/f9c537074eb47439",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable: element has zero size\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FDA64A+1025610]\n\tOrdinal0 [0x00FCFF93+982931]\n\tOrdinal0 [0x00FF414C+1130828]\n\tOrdinal0 [0x00FCF974+981364]\n\tOrdinal0 [0x00FF4364+1131364]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650869241895,
+        "stop" : 1650869246195,
+        "duration" : 4300
+      }
+    }, {
+      "uid" : "d6e2c432e88d2cce",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/d6e2c432e88d2cce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866668486,
+        "stop" : 1650866672923,
+        "duration" : 4437
+      }
+    }, {
+      "uid" : "a2d67037f532322f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/a2d67037f532322f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858554746,
+        "stop" : 1650858561780,
+        "duration" : 7034
+      }
+    }, {
       "uid" : "c5ab650d96a23042",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/c5ab650d96a23042",
       "status" : "passed",
@@ -3325,16 +3789,64 @@
       }
     } ]
   },
+  "efd3e0954257d45dc643069f7f524dc2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4661a7daa1de8a7e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/4661a7daa1de8a7e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(1) > div > div > span > div > div:nth-child(2) > a\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650867200126,
+        "stop" : 1650867288952,
+        "duration" : 88826
+      }
+    } ]
+  },
   "82ad053b8050efa9fab87af87310369e" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 4,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "7af92b52163a6a62",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/7af92b52163a6a62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868705834,
+        "stop" : 1650868747084,
+        "duration" : 41250
+      }
+    }, {
+      "uid" : "ddc19e2befd5b30c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/ddc19e2befd5b30c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866268819,
+        "stop" : 1650866312096,
+        "duration" : 43277
+      }
+    }, {
+      "uid" : "6af35ec8489c6358",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/6af35ec8489c6358",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857907630,
+        "stop" : 1650857951211,
+        "duration" : 43581
+      }
+    }, {
       "uid" : "9a4cd322cb649b2d",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9a4cd322cb649b2d",
       "status" : "passed",
@@ -3444,11 +3956,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "7ccbf91868b6ac0a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/7ccbf91868b6ac0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867989480,
+        "stop" : 1650867994000,
+        "duration" : 4520
+      }
+    }, {
+      "uid" : "92e8b27ca47c3108",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/92e8b27ca47c3108",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865515850,
+        "stop" : 1650865520502,
+        "duration" : 4652
+      }
+    }, {
+      "uid" : "ebea0b9c94be1f21",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/ebea0b9c94be1f21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857254613,
+        "stop" : 1650857259713,
+        "duration" : 5100
+      }
+    }, {
       "uid" : "6e8357c38f1c6533",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/6e8357c38f1c6533",
       "status" : "passed",
@@ -3601,33 +4140,6 @@
         "stop" : 1650448574575,
         "duration" : 4450
       }
-    }, {
-      "uid" : "984635dbf7412a58",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/984635dbf7412a58",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447732347,
-        "stop" : 1650447736813,
-        "duration" : 4466
-      }
-    }, {
-      "uid" : "51821774af4d076a",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/51821774af4d076a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445592256,
-        "stop" : 1650445596722,
-        "duration" : 4466
-      }
-    }, {
-      "uid" : "5cebfbc122e00a8b",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/5cebfbc122e00a8b",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445324658,
-        "stop" : 1650445329138,
-        "duration" : 4480
-      }
     } ]
   },
   "cc5056e2f350ae9c52d434244450b725" : {
@@ -3635,11 +4147,38 @@
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "77c071d1119310f3",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/77c071d1119310f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869492165,
+        "stop" : 1650869528996,
+        "duration" : 36831
+      }
+    }, {
+      "uid" : "b6c4eeb25074eea",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/b6c4eeb25074eea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866913868,
+        "stop" : 1650866948337,
+        "duration" : 34469
+      }
+    }, {
+      "uid" : "5dbcd8bd7c0af3bd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5dbcd8bd7c0af3bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858811662,
+        "stop" : 1650858847234,
+        "duration" : 35572
+      }
+    }, {
       "uid" : "d238d84d19cd073b",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/d238d84d19cd073b",
       "status" : "failed",
@@ -3661,16 +4200,76 @@
       }
     } ]
   },
+  "cab3a7fb97be07b8a444413b78e0b286" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c4df6248971f72ff",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/c4df6248971f72ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869810675,
+        "stop" : 1650869899170,
+        "duration" : 88495
+      }
+    }, {
+      "uid" : "aa66f6560e953b35",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/aa66f6560e953b35",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable: element has zero size\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FDA64A+1025610]\n\tOrdinal0 [0x00FCFF93+982931]\n\tOrdinal0 [0x00FF414C+1130828]\n\tOrdinal0 [0x00FCF974+981364]\n\tOrdinal0 [0x00FF4364+1131364]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650867196376,
+        "stop" : 1650867199767,
+        "duration" : 3391
+      }
+    } ]
+  },
   "9c8084bdade3c8359a3aa1068b600ada" : {
     "statistic" : {
-      "failed" : 9,
+      "failed" : 12,
       "broken" : 2,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "99fcd4b0e880163d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/99fcd4b0e880163d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868913738,
+        "stop" : 1650868958206,
+        "duration" : 44468
+      }
+    }, {
+      "uid" : "c132e43fd79961e8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/c132e43fd79961e8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650866469801,
+        "stop" : 1650866504083,
+        "duration" : 34282
+      }
+    }, {
+      "uid" : "252dcf2c91fb0f65",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/252dcf2c91fb0f65",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650858137645,
+        "stop" : 1650858186660,
+        "duration" : 49015
+      }
+    }, {
       "uid" : "c07270d87620b65f",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/c07270d87620b65f",
       "status" : "failed",
@@ -3782,16 +4381,72 @@
       }
     } ]
   },
+  "edbb857ec50f972bc4494dfb55207af0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "d1706c4d0f5fbf9f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/d1706c4d0f5fbf9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869765635,
+        "stop" : 1650869810675,
+        "duration" : 45040
+      }
+    }, {
+      "uid" : "4640b385b14212bf",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/4640b385b14212bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867153526,
+        "stop" : 1650867196375,
+        "duration" : 42849
+      }
+    } ]
+  },
   "6fd6107880a5c9c624937e2e29d07432" : {
     "statistic" : {
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "3b218296fd710f53",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/3b218296fd710f53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869529005,
+        "stop" : 1650869613497,
+        "duration" : 84492
+      }
+    }, {
+      "uid" : "1618b46acb710861",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/1618b46acb710861",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866948342,
+        "stop" : 1650867031446,
+        "duration" : 83104
+      }
+    }, {
+      "uid" : "910208a898e63e09",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/910208a898e63e09",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858847239,
+        "stop" : 1650858933687,
+        "duration" : 86448
+      }
+    }, {
       "uid" : "b6372d7eea8e7d60",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/b6372d7eea8e7d60",
       "status" : "failed",
@@ -3818,11 +4473,38 @@
       "failed" : 0,
       "broken" : 4,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 11,
       "unknown" : 0,
-      "total" : 12
+      "total" : 15
     },
     "items" : [ {
+      "uid" : "2b274d1ce7b31a83",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/2b274d1ce7b31a83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868205634,
+        "stop" : 1650868244302,
+        "duration" : 38668
+      }
+    }, {
+      "uid" : "1ecbe14657fc82aa",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/1ecbe14657fc82aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865741946,
+        "stop" : 1650865800456,
+        "duration" : 58510
+      }
+    }, {
+      "uid" : "d06e993355bba5d0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/d06e993355bba5d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857492242,
+        "stop" : 1650857536813,
+        "duration" : 44571
+      }
+    }, {
       "uid" : "b46a886babb45365",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/b46a886babb45365",
       "status" : "passed",
@@ -3939,13 +4621,41 @@
   "6cea32d0b9e44b91967a1ba548f4b58e" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "1cae18159eb27532",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/1cae18159eb27532",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869198118,
+        "stop" : 1650869241885,
+        "duration" : 43767
+      }
+    }, {
+      "uid" : "7233a1f9ae757ac1",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/7233a1f9ae757ac1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650866627062,
+        "stop" : 1650866668304,
+        "duration" : 41242
+      }
+    }, {
+      "uid" : "6713450986f061ea",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/6713450986f061ea",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858499331,
+        "stop" : 1650858554741,
+        "duration" : 55410
+      }
+    }, {
       "uid" : "eeb41f77a12098a1",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/eeb41f77a12098a1",
       "status" : "passed",
@@ -3970,11 +4680,38 @@
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 3,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "32a17a5a45bc3268",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/32a17a5a45bc3268",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869408365,
+        "stop" : 1650869492165,
+        "duration" : 83800
+      }
+    }, {
+      "uid" : "b5cb547f5e417256",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/b5cb547f5e417256",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866830654,
+        "stop" : 1650866913863,
+        "duration" : 83209
+      }
+    }, {
+      "uid" : "79834759e64480aa",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/79834759e64480aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858725283,
+        "stop" : 1650858811659,
+        "duration" : 86376
+      }
+    }, {
       "uid" : "afcac1177522a571",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/afcac1177522a571",
       "status" : "failed",
@@ -3998,14 +4735,42 @@
   },
   "ab33e3e75132ee1b3e35256d0c7d8af0" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "d804d4628a0ef9de",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/d804d4628a0ef9de",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868388563,
+        "stop" : 1650868536383,
+        "duration" : 147820
+      }
+    }, {
+      "uid" : "31aeaeaa47d0b575",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/31aeaeaa47d0b575",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866051009,
+        "stop" : 1650866094289,
+        "duration" : 43280
+      }
+    }, {
+      "uid" : "4cfb10e972db7800",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/4cfb10e972db7800",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857677941,
+        "stop" : 1650857722846,
+        "duration" : 44905
+      }
+    }, {
       "uid" : "224e341111e795b",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/224e341111e795b",
       "status" : "passed",
@@ -4114,11 +4879,38 @@
       "failed" : 0,
       "broken" : 4,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 10,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "e713f1f09005077f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/e713f1f09005077f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868270036,
+        "stop" : 1650868312009,
+        "duration" : 41973
+      }
+    }, {
+      "uid" : "348fd47f7af770d5",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/348fd47f7af770d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865951952,
+        "stop" : 1650866004769,
+        "duration" : 52817
+      }
+    }, {
+      "uid" : "b0b53ebde3f776e9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/b0b53ebde3f776e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857587176,
+        "stop" : 1650857633935,
+        "duration" : 46759
+      }
+    }, {
       "uid" : "e7dac66153578535",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/e7dac66153578535",
       "status" : "passed",
@@ -4228,11 +5020,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 2
+      "total" : 5
     },
     "items" : [ {
+      "uid" : "97c1fba35764eec2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/97c1fba35764eec2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869253711,
+        "stop" : 1650869260425,
+        "duration" : 6714
+      }
+    }, {
+      "uid" : "7ed3889fb76d246c",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/7ed3889fb76d246c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866677817,
+        "stop" : 1650866684472,
+        "duration" : 6655
+      }
+    }, {
+      "uid" : "6acd67020b5e4e02",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/6acd67020b5e4e02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858566319,
+        "stop" : 1650858572790,
+        "duration" : 6471
+      }
+    }, {
       "uid" : "fddfbd81d81bbdd",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/fddfbd81d81bbdd",
       "status" : "passed",
@@ -4257,11 +5076,38 @@
       "failed" : 1,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 11,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 14
+      "total" : 17
     },
     "items" : [ {
+      "uid" : "82d2acf8e432558d",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/82d2acf8e432558d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868166556,
+        "stop" : 1650868205634,
+        "duration" : 39078
+      }
+    }, {
+      "uid" : "f434909740018de6",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/f434909740018de6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865697700,
+        "stop" : 1650865741943,
+        "duration" : 44243
+      }
+    }, {
+      "uid" : "df452381ee31e2c9",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/df452381ee31e2c9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857443610,
+        "stop" : 1650857492239,
+        "duration" : 48629
+      }
+    }, {
       "uid" : "e6352b4af55d82d6",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/e6352b4af55d82d6",
       "status" : "passed",
@@ -4397,11 +5243,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "5f6836c33ae26dca",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/5f6836c33ae26dca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867994005,
+        "stop" : 1650867998491,
+        "duration" : 4486
+      }
+    }, {
+      "uid" : "51410a920f0cd6cd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/51410a920f0cd6cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865520512,
+        "stop" : 1650865525065,
+        "duration" : 4553
+      }
+    }, {
+      "uid" : "6cc033e6151807fb",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/6cc033e6151807fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857259717,
+        "stop" : 1650857264378,
+        "duration" : 4661
+      }
+    }, {
       "uid" : "2318de27f180bc6",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/2318de27f180bc6",
       "status" : "passed",
@@ -4554,45 +5427,46 @@
         "stop" : 1650448578995,
         "duration" : 4410
       }
-    }, {
-      "uid" : "cc16d77a414bf9aa",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/cc16d77a414bf9aa",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447736816,
-        "stop" : 1650447741257,
-        "duration" : 4441
-      }
-    }, {
-      "uid" : "ce07f6fce2102b99",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/ce07f6fce2102b99",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445596722,
-        "stop" : 1650445601117,
-        "duration" : 4395
-      }
-    }, {
-      "uid" : "b3d29b0e7849e603",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/b3d29b0e7849e603",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445329138,
-        "stop" : 1650445333538,
-        "duration" : 4400
-      }
     } ]
   },
   "09e1b62aa7fa94741114697d564a4a95" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 3,
       "skipped" : 0,
-      "passed" : 16,
+      "passed" : 18,
       "unknown" : 0,
-      "total" : 19
+      "total" : 22
     },
     "items" : [ {
+      "uid" : "e75bf89585eb9aef",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/e75bf89585eb9aef",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868118904,
+        "stop" : 1650868126142,
+        "duration" : 7238
+      }
+    }, {
+      "uid" : "fdb73bb394842bed",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/fdb73bb394842bed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865646892,
+        "stop" : 1650865654762,
+        "duration" : 7870
+      }
+    }, {
+      "uid" : "e202dcf737004013",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/e202dcf737004013",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857391277,
+        "stop" : 1650857398462,
+        "duration" : 7185
+      }
+    }, {
       "uid" : "b6c49db0a7c8b522",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/b6c49db0a7c8b522",
       "status" : "passed",
@@ -4748,24 +5622,6 @@
         "stop" : 1650448684622,
         "duration" : 4944
       }
-    }, {
-      "uid" : "25d3196ec6fd87cc",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/25d3196ec6fd87cc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447852448,
-        "stop" : 1650447857398,
-        "duration" : 4950
-      }
-    }, {
-      "uid" : "6b767a70fbfe2dbe",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/6b767a70fbfe2dbe",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445745337,
-        "stop" : 1650445750196,
-        "duration" : 4859
-      }
     } ]
   },
   "87398c6d6cebaa37735095e0807d53b7" : {
@@ -4773,11 +5629,38 @@
       "failed" : 0,
       "broken" : 1,
       "skipped" : 0,
-      "passed" : 10,
+      "passed" : 13,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "5cd541680da37bb8",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/5cd541680da37bb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868580063,
+        "stop" : 1650868622484,
+        "duration" : 42421
+      }
+    }, {
+      "uid" : "713ebe47d9d0888e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/713ebe47d9d0888e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866137515,
+        "stop" : 1650866180967,
+        "duration" : 43452
+      }
+    }, {
+      "uid" : "10264d4f7c1961c2",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/10264d4f7c1961c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857770875,
+        "stop" : 1650857815960,
+        "duration" : 45085
+      }
+    }, {
       "uid" : "35a2a15bb3587c89",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/35a2a15bb3587c89",
       "status" : "passed",
@@ -4884,11 +5767,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "b37aff26ab8650fd",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/b37aff26ab8650fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868003269,
+        "stop" : 1650868007804,
+        "duration" : 4535
+      }
+    }, {
+      "uid" : "2a7f65570b14933e",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/2a7f65570b14933e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865529660,
+        "stop" : 1650865534470,
+        "duration" : 4810
+      }
+    }, {
+      "uid" : "f2c9c56273d2fac0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/f2c9c56273d2fac0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857269626,
+        "stop" : 1650857274995,
+        "duration" : 5369
+      }
+    }, {
       "uid" : "e95a929d2f6eae40",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/e95a929d2f6eae40",
       "status" : "passed",
@@ -5041,33 +5951,6 @@
         "stop" : 1650448588024,
         "duration" : 4497
       }
-    }, {
-      "uid" : "cd71f99f8ee1cf72",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/cd71f99f8ee1cf72",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447745815,
-        "stop" : 1650447750315,
-        "duration" : 4500
-      }
-    }, {
-      "uid" : "331b7444afe7e2c7",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/331b7444afe7e2c7",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445605669,
-        "stop" : 1650445610150,
-        "duration" : 4481
-      }
-    }, {
-      "uid" : "25ff25a12473becc",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/25ff25a12473becc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445338118,
-        "stop" : 1650445342630,
-        "duration" : 4512
-      }
     } ]
   },
   "fde18a51fe368c0942acbf20a323f9a5" : {
@@ -5075,11 +5958,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "93cee3775739fb9b",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/93cee3775739fb9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650867973732,
+        "stop" : 1650867982208,
+        "duration" : 8476
+      }
+    }, {
+      "uid" : "6dd8107f15fd0e08",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/6dd8107f15fd0e08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865495932,
+        "stop" : 1650865508939,
+        "duration" : 13007
+      }
+    }, {
+      "uid" : "bd274beabf55509a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/bd274beabf55509a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857238993,
+        "stop" : 1650857247179,
+        "duration" : 8186
+      }
+    }, {
       "uid" : "4f254a91de2e6cea",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/4f254a91de2e6cea",
       "status" : "passed",
@@ -5232,33 +6142,6 @@
         "stop" : 1650448563672,
         "duration" : 8657
       }
-    }, {
-      "uid" : "98aa3a6876c2f5a8",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/98aa3a6876c2f5a8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447717423,
-        "stop" : 1650447725882,
-        "duration" : 8459
-      }
-    }, {
-      "uid" : "82d4377404910556",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/82d4377404910556",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445577355,
-        "stop" : 1650445585756,
-        "duration" : 8401
-      }
-    }, {
-      "uid" : "d836e0e5398730e2",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/d836e0e5398730e2",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445309700,
-        "stop" : 1650445318145,
-        "duration" : 8445
-      }
     } ]
   },
   "b3d575885f4e741804f7073402c2ff59" : {
@@ -5266,11 +6149,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     },
     "items" : [ {
+      "uid" : "5feed453428fe96",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/5feed453428fe96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650869266955,
+        "stop" : 1650869372163,
+        "duration" : 105208
+      }
+    }, {
+      "uid" : "5d9bee4cff98b17a",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/5d9bee4cff98b17a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650866691423,
+        "stop" : 1650866795369,
+        "duration" : 103946
+      }
+    }, {
+      "uid" : "1a512ccd2ec24829",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/1a512ccd2ec24829",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858579319,
+        "stop" : 1650858690807,
+        "duration" : 111488
+      }
+    }, {
       "uid" : "868328452bb41e72",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/35/allure/#testresult/868328452bb41e72",
       "status" : "passed",
@@ -5304,11 +6214,38 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 23,
+      "passed" : 26,
       "unknown" : 0,
-      "total" : 23
+      "total" : 26
     },
     "items" : [ {
+      "uid" : "c9d2d88dc921144f",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/c9d2d88dc921144f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650868017579,
+        "stop" : 1650868021229,
+        "duration" : 3650
+      }
+    }, {
+      "uid" : "eeb23c76eb983b47",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/eeb23c76eb983b47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650865544955,
+        "stop" : 1650865548597,
+        "duration" : 3642
+      }
+    }, {
+      "uid" : "907e325e59551042",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/907e325e59551042",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650857285446,
+        "stop" : 1650857289525,
+        "duration" : 4079
+      }
+    }, {
       "uid" : "8c4be1617e91beeb",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/8c4be1617e91beeb",
       "status" : "passed",
@@ -5461,45 +6398,47 @@
         "stop" : 1650448595211,
         "duration" : 2107
       }
-    }, {
-      "uid" : "4cdf6c2e56ba4cca",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/15/allure/#testresult/4cdf6c2e56ba4cca",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650447755430,
-        "stop" : 1650447757508,
-        "duration" : 2078
-      }
-    }, {
-      "uid" : "2aeec4f7788d9ae4",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/14/allure/#testresult/2aeec4f7788d9ae4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445615303,
-        "stop" : 1650445617396,
-        "duration" : 2093
-      }
-    }, {
-      "uid" : "b7ea51ab0f3c7ba4",
-      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/13/allure/#testresult/b7ea51ab0f3c7ba4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1650445347714,
-        "stop" : 1650445349772,
-        "duration" : 2058
-      }
     } ]
   },
   "14971ccdbbb35a3a2adea61b84f9bef0" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
+      "broken" : 6,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
-      "total" : 4
+      "total" : 7
     },
     "items" : [ {
+      "uid" : "1c5b9c4d9e91f805",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/1c5b9c4d9e91f805",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"body > div.ant-message > span > div > div > div > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650869158210,
+        "stop" : 1650869195687,
+        "duration" : 37477
+      }
+    }, {
+      "uid" : "f055d3a3a6f33fbf",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/f055d3a3a6f33fbf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "time" : {
+        "start" : 1650866593381,
+        "stop" : 1650866626619,
+        "duration" : 33238
+      }
+    }, {
+      "uid" : "15945665ec51b95",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/15945665ec51b95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650858452855,
+        "stop" : 1650858499327,
+        "duration" : 46472
+      }
+    }, {
       "uid" : "d1785c6fe610d22a",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/d1785c6fe610d22a",
       "status" : "broken",
@@ -5543,14 +6482,44 @@
   },
   "429d8b780abf2a8d21a4a5582921e496" : {
     "statistic" : {
-      "failed" : 8,
+      "failed" : 11,
       "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 11
+      "total" : 14
     },
     "items" : [ {
+      "uid" : "ec2cdbee15776aa0",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/ec2cdbee15776aa0",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650868788064,
+        "stop" : 1650868829104,
+        "duration" : 41040
+      }
+    }, {
+      "uid" : "fccd7815c5f319bb",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/fccd7815c5f319bb",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650866355393,
+        "stop" : 1650866399601,
+        "duration" : 44208
+      }
+    }, {
+      "uid" : "8f05bbdc9260c7ee",
+      "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/8f05bbdc9260c7ee",
+      "status" : "failed",
+      "statusDetails" : "AssertionError",
+      "time" : {
+        "start" : 1650857995084,
+        "stop" : 1650858040950,
+        "duration" : 45866
+      }
+    }, {
       "uid" : "2ff28ae930720d92",
       "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/2ff28ae930720d92",
       "status" : "failed",

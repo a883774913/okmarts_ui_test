@@ -3,6 +3,7 @@ import random
 import time
 
 import xlrd
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class Common:
@@ -27,7 +28,7 @@ class Common:
         cmd = 'TASKKILL /F /IM chrome.exe /T'
         os.system(cmd)
 
-    def logo(self,driver,useraccount,password):
+    def login(self,driver,useraccount,password):
         """
         登录页面进行登录，输入账户密码点击登录
         :param driver: 驱动
@@ -42,7 +43,7 @@ class Common:
 
     def Restore_environment(self, dr):
         """
-        检测是否为登录状态，如果登录推出登录状态，如果未登录则PASS
+        检测是否为登录状态，如果登录退出登录状态，如果未登录则PASS
         :param dr:  驱动
         :return:
         """
@@ -58,6 +59,36 @@ class Common:
             time.sleep(0.5)
             dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
             time.sleep(0.5)
+
+    def is_login(self,driver):
+        """
+        首页检测是否为登录状态，如果登录则PASS，如果未登录则进行登录
+        :param driver:
+        :return:
+        """
+        is_login = driver.find_element(by='css selector',
+                                       value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').text
+        print(is_login)
+        if is_login == 'Login':  # 为未登录状态
+            driver.find_element(by='css selector',
+                                value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()  # 点击登录
+            WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_class_name(
+                "title.text-tit-lg.margin-bottom-lg"))
+            Common().login(driver, useraccount="979172251@qq.com", password='a123456')
+        else:
+            pass
+
+    #滑动到页面指定位置
+    def huadong(self,driver,by,value):
+        """
+        滑动页面至指定位置
+        :param driver:  驱动
+        :param by:  定位方式
+        :param value: 定位元素
+        :return:
+        """
+        target = driver.find_element(by=by,value=value)
+        driver.execute_script("arguments[0].scrollIntoView();", target)  # 拖动到可见的元素去
 
 if __name__ == '__main__':
     a = Common()
