@@ -3,6 +3,7 @@ import random
 import time
 
 import xlrd
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 
 
@@ -25,8 +26,11 @@ class Common:
 
     # 关闭所有浏览器
     def close_browser(self):
-        cmd = 'TASKKILL /F /IM chrome.exe /T'
-        os.system(cmd)
+        cmd1 = 'TASKKILL /F /IM chrome.exe /T'
+        cmd2 = 'TASKKILL /F /IM chromedriver.exe /T'
+        os.system(cmd1)
+        os.system(cmd2)
+
 
     def login(self,driver,useraccount,password):
         """
@@ -56,7 +60,7 @@ class Common:
                             value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').click()  # 点击按钮进入个人中心
             time.sleep(1)
             dr.find_element(by='class name', value='login-out.text-white').click()  # 点击注销
-            time.sleep(0.5)
+            time.sleep(1)
             dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
             time.sleep(0.5)
 
@@ -89,6 +93,20 @@ class Common:
         """
         target = driver.find_element(by=by,value=value)
         driver.execute_script("arguments[0].scrollIntoView();", target)  # 拖动到可见的元素去
+
+    #悬停方法
+    def hover(self,driver,way,element):
+        """
+        悬停操作
+        :param driver:驱动
+        :param way: 定位方法
+        :param element: 元素位置
+        :return:
+        """
+        # 定位到要悬停的元素
+        above = driver.find_element(by=f'{way}',value=f'{element}')
+        # 对定位的元素执行鼠标悬停操作,perform为提交所有ActionChains类中存储的行为
+        ActionChains(driver).move_to_element(above).perform()
 
 if __name__ == '__main__':
     a = Common()

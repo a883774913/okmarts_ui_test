@@ -3,9 +3,11 @@ import pytest
 
 from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.data.get_data import Get_Data
+from okmarts_ui_test.mode.address import Address
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
 from okmarts_ui_test.mode.login import Login
+from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
 
 
@@ -44,3 +46,15 @@ class Test_Main:
     def test_help_center(self,driver,Parameter):
         allure.dynamic.title(Parameter['casename'])
         Help_Center().help_center(driver,Parameter)
+
+    @allure.feature('导航栏')
+    @pytest.mark.parametrize('Parameter', case_infos['navigation_bar'], ids=casename_infos['navigation_bar'])
+    def test_navigation_bar(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Navigation_Bar().navigation_bar(driver,Parameter)
+
+
+    @allure.feature('地址管理')
+    @pytest.mark.parametrize('Parameter', case_infos['address'], ids=casename_infos['address'])
+    def test_address(self,driver,Parameter):
+        Address().address(driver,Parameter)

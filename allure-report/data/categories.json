@@ -4,16 +4,16 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"input-content\"]>input[data-index=\"0\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-statistic-content-suffix\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
       "children" : [ {
-        "name" : "输入错误验证码注册失败",
-        "uid" : "7122c1995652900d",
-        "parentUid" : "8ecdb01b7cc2e4196c25bb812271cdb4",
+        "name" : "超时后再次发送验证码成功",
+        "uid" : "bd571753ae5e6dd5",
+        "parentUid" : "3c984580872b227a26beeb0d08efb994",
         "status" : "broken",
         "time" : {
-          "start" : 1650934785303,
-          "stop" : 1650934790183,
-          "duration" : 4880
+          "start" : 1650959635564,
+          "stop" : 1650959704577,
+          "duration" : 69013
         },
         "flaky" : false,
         "newFailed" : false,
@@ -21,62 +21,20 @@
         "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+        "parameters" : [ "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}" ]
       } ],
-      "uid" : "8ecdb01b7cc2e4196c25bb812271cdb4"
+      "uid" : "3c984580872b227a26beeb0d08efb994"
     }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
-      "children" : [ {
-        "name" : "领取优惠卷回退页面再次领取失败",
-        "uid" : "5d27397020375f93",
-        "parentUid" : "9bafcf31462d16b28204b0282fe928d1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1650935529154,
-          "stop" : 1650935576944,
-          "duration" : 47790
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '33', 'casename': '领取优惠卷回退页面再次领取失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
-      } ],
-      "uid" : "9bafcf31462d16b28204b0282fe928d1"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"body > div.ant-message > span > div > div > div > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
-      "children" : [ {
-        "name" : "不进行验证注册失败",
-        "uid" : "9726549242ad99e2",
-        "parentUid" : "80feb2e0e56fc0b30afb81692b35e653",
-        "status" : "broken",
-        "time" : {
-          "start" : 1650935577179,
-          "stop" : 1650935608795,
-          "duration" : 31616
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '34', 'casename': '不进行验证注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Please press the slider and drag to the far right'}" ]
-      } ],
-      "uid" : "80feb2e0e56fc0b30afb81692b35e653"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00F27413+2389011]\n\tOrdinal0 [0x00EB9F61+1941345]\n\tOrdinal0 [0x00DAC658+837208]\n\tOrdinal0 [0x00DD91DD+1020381]\n\tOrdinal0 [0x00DD949B+1021083]\n\tOrdinal0 [0x00E06032+1204274]\n\tOrdinal0 [0x00DF4194+1130900]\n\tOrdinal0 [0x00E04302+1196802]\n\tOrdinal0 [0x00DF3F66+1130342]\n\tOrdinal0 [0x00DCE546+976198]\n\tOrdinal0 [0x00DCF456+980054]\n\tGetHandleVerifier [0x010D9632+1727522]\n\tGetHandleVerifier [0x0118BA4D+2457661]\n\tGetHandleVerifier [0x00FBEB81+569713]\n\tGetHandleVerifier [0x00FBDD76+566118]\n\tOrdinal0 [0x00EC0B2B+1968939]\n\tOrdinal0 [0x00EC5988+1989000]\n\tOrdinal0 [0x00EC5A75+1989237]\n\tOrdinal0 [0x00ECECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
       "children" : [ {
         "name" : "输入6位字母+数字密码更改成功",
-        "uid" : "34b7758fe52ba060",
-        "parentUid" : "b330b6eeaddfc4e460da293f24eea068",
+        "uid" : "e4c263dc1d4cee37",
+        "parentUid" : "1da4f3691b015e2dd426b844f7c2cfa7",
         "status" : "broken",
         "time" : {
-          "start" : 1650936049731,
-          "stop" : 1650936162172,
-          "duration" : 112441
+          "start" : 1650960962715,
+          "stop" : 1650961074792,
+          "duration" : 112077
         },
         "flaky" : false,
         "newFailed" : false,
@@ -85,19 +43,15 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '46', 'casename': '输入6位字母+数字密码更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
-      } ],
-      "uid" : "b330b6eeaddfc4e460da293f24eea068"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"_mail_component_147_147\"]\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6F0401922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6F033E982+515794]\n\tOrdinal0 [0x00007FF6EFE50BC5+658373]\n\tOrdinal0 [0x00007FF6EFE8B992+899474]\n\tOrdinal0 [0x00007FF6EFE8BC68+900200]\n\tOrdinal0 [0x00007FF6EFEBD937+1104183]\n\tOrdinal0 [0x00007FF6EFEA6C7F+1010815]\n\tOrdinal0 [0x00007FF6EFEBB034+1093684]\n\tOrdinal0 [0x00007FF6EFEA6A53+1010259]\n\tOrdinal0 [0x00007FF6EFE7DB47+842567]\n\tOrdinal0 [0x00007FF6EFE7F018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6F000F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6F00F9389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6F00FC562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6EFF4C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6F0345971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6F034A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6F034AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6F03548BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
-      "children" : [ {
+      }, {
         "name" : "更改密码成功后回退重新输入验证码",
-        "uid" : "52771977fcf78dc7",
-        "parentUid" : "896f4dc3a6dabdd94a2397d136e3ddec",
+        "uid" : "6c341ecad6d30039",
+        "parentUid" : "1da4f3691b015e2dd426b844f7c2cfa7",
         "status" : "broken",
         "time" : {
-          "start" : 1650936288127,
-          "stop" : 1650936314689,
-          "duration" : 26562
+          "start" : 1650961161996,
+          "stop" : 1650961313496,
+          "duration" : 151500
         },
         "flaky" : false,
         "newFailed" : false,
@@ -108,13 +62,13 @@
         "parameters" : [ "{'case_no': '49', 'casename': '更改密码成功后回退重新输入验证码', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(1) > div > div > span > div > div:nth-child(2) > a', 'result': 'Send verification code to email'}" ]
       }, {
         "name" : "输入修改过的密码更改失败",
-        "uid" : "1a45a66410e3022",
-        "parentUid" : "896f4dc3a6dabdd94a2397d136e3ddec",
+        "uid" : "b92145af85dd0ef1",
+        "parentUid" : "1da4f3691b015e2dd426b844f7c2cfa7",
         "status" : "broken",
         "time" : {
-          "start" : 1650936314891,
-          "stop" : 1650936391307,
-          "duration" : 76416
+          "start" : 1650961313682,
+          "stop" : 1650961415993,
+          "duration" : 102311
         },
         "flaky" : false,
         "newFailed" : false,
@@ -124,7 +78,28 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '50', 'casename': '输入修改过的密码更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
       } ],
-      "uid" : "896f4dc3a6dabdd94a2397d136e3ddec"
+      "uid" : "1da4f3691b015e2dd426b844f7c2cfa7"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "children" : [ {
+        "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
+        "uid" : "dc08ed16f58c631e",
+        "parentUid" : "6942cee29110d662882721f73e597158",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650961450225,
+          "stop" : 1650961454933,
+          "duration" : 4708
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
+      } ],
+      "uid" : "6942cee29110d662882721f73e597158"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
@@ -132,31 +107,48 @@
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "密码为16位注册成功",
-        "uid" : "138991814ee3830e",
+        "name" : "密码为数字+特殊字符注册失败",
+        "uid" : "54aaf44c6e6134ef",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1650934913369,
-          "stop" : 1650934973586,
-          "duration" : 60217
+          "start" : 1650960028643,
+          "stop" : 1650960087738,
+          "duration" : 59095
         },
         "flaky" : false,
-        "newFailed" : false,
+        "newFailed" : true,
         "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+        "parameters" : [ "{'case_no': '23', 'casename': '密码为数字+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=12345！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "密码为数字+小写字母+特殊字符注册成功",
-        "uid" : "7e7ff63c51ecbd36",
+        "name" : "密码为小写字母+大写字母注册失败",
+        "uid" : "72b434bd3c3992db",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1650935328596,
-          "stop" : 1650935367507,
-          "duration" : 38911
+          "start" : 1650960088228,
+          "stop" : 1650960147548,
+          "duration" : 59320
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '24', 'casename': '密码为小写字母+大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfGHJKKLL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为数字+小写字母+特殊字符注册成功",
+        "uid" : "3f6d18c4deafd6b4",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650960265276,
+          "stop" : 1650960303855,
+          "duration" : 38579
         },
         "flaky" : false,
         "newFailed" : false,
@@ -167,13 +159,13 @@
         "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+大写字母+特殊字符注册成功",
-        "uid" : "d42148f1ab2c3fe9",
+        "uid" : "8f22b09699e202e4",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1650935368005,
-          "stop" : 1650935395137,
-          "duration" : 27132
+          "start" : 1650960304007,
+          "stop" : 1650960343287,
+          "duration" : 39280
         },
         "flaky" : false,
         "newFailed" : false,
@@ -183,14 +175,31 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
-        "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-        "uid" : "bed1ceb3f9f84c15",
+        "name" : "密码为小写字母+大写字母+特殊字符注册失败",
+        "uid" : "9488ac78cf5e8e1b",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1650935438169,
-          "stop" : 1650935478294,
-          "duration" : 40125
+          "start" : 1650960343440,
+          "stop" : 1650960403116,
+          "duration" : 59676
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
+        "uid" : "d9465b91c65738ae",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650960403268,
+          "stop" : 1650960442393,
+          "duration" : 39125
         },
         "flaky" : false,
         "newFailed" : false,
@@ -199,6 +208,40 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "登录状态意见反馈不输入标题发送失败",
+        "uid" : "737bd1cf760be22e",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650961469459,
+          "stop" : 1650961474048,
+          "duration" : 4589
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '63', 'casename': '登录状态意见反馈不输入标题发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=aaaaaaaaaaaaaaaaaaaaaa', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}" ]
+      }, {
+        "name" : "鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功",
+        "uid" : "77419d53c40c1410",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650961487551,
+          "stop" : 1650961490092,
+          "duration" : 2541
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '68', 'casename': '鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-left > div.menu-out > div.menu-lv-1.text-xs.border-radius-sm > ul > li:nth-child(1) > div > div.lv-2-list > div > div:nth-child(1) > a', 'result': 'PRX'}" ]
       } ],
       "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],

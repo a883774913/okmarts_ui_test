@@ -18,10 +18,14 @@ class Forget_Password:
         mode = Parameter['mode']
         data = Parameter['data'].split('\n')
         print(data)
-        userAccount = random.choice(['a979172251@163.com','a9791722511@163.com','a97917225111@163.com'])
         password = data[1].split('=')[-1]
         assert_way = Parameter['assert_way']
         result = Parameter['result']
+
+        if casename in ['不输入邮箱号点击发送验证码失败','输入错误邮箱发送验证码失败']:
+            userAccount = data[0].split('=')[-1]
+        else :
+            userAccount = random.choice(['a979172251@163.com', 'a9791722511@163.com', 'a97917225111@163.com'])
 
         if casename in ['输入正确内容修改密码成功','不输入验证码下一步置灰','输入过期验证码点击下一步失败','输入6位字母+数字密码更改成功']:
             new_password = 'test' + f'{random.randint(11, 99)}'

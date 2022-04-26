@@ -1,15 +1,37 @@
 {
-  "total" : 4,
+  "total" : 5,
   "items" : [ {
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 4,
-      "broken" : 3,
+      "failed" : 6,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 21,
       "unknown" : 0,
       "total" : 28
+    }
+  }, {
+    "uid" : "a8683ef936769eca0631743faf12b699",
+    "name" : "帮助中心",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "fa7e8993eeb6f08f58f63d7cdfad719b",
+    "name" : "导航栏",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 6
     }
   }, {
     "uid" : "bdf6646c907dd4a7c11cb54225e7ecda",
@@ -21,17 +43,6 @@
       "passed" : 13,
       "unknown" : 0,
       "total" : 16
-    }
-  }, {
-    "uid" : "a8683ef936769eca0631743faf12b699",
-    "name" : "帮助中心",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 15,
-      "unknown" : 0,
-      "total" : 15
     }
   }, {
     "uid" : "6e12e06fb17fec92464fd1fd24bca881",

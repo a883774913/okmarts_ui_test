@@ -21,6 +21,13 @@ class Get_Data:
         help_center_casename = []   #帮助中心用例名称集合
         help_center_case_list = []  #帮助中心用例集合
 
+        navigation_bar_casename = []    #导航栏用例名称集合
+        navigation_bar_case_list = []   #导航栏用例集合
+
+        address_casename = []           #地址管理模块用例名称集合
+        address_case_list = []          #地址管理模块用例集合
+
+
         for i in range(1,sheet.nrows):
             dicts = {}
             value = sheet.row_values(i)
@@ -43,6 +50,12 @@ class Get_Data:
             if mode == '帮助中心' :
                 self.get_list(dicts,help_center_case_list,case_no,casename,mode,data,assert_way,result)
                 help_center_casename.append(casename)
+            if mode == '导航栏':
+                self.get_list(dicts,navigation_bar_case_list,case_no,casename,mode,data,assert_way,result)
+                navigation_bar_casename.append(casename)
+            if mode == '地址管理':
+                self.get_list(dicts,address_case_list,case_no,casename,mode,data,assert_way,result)
+                address_casename.append(casename)
 
 
         General_for_casename['login'] = login_casename
@@ -57,8 +70,14 @@ class Get_Data:
         General_for_casename['help_center'] = help_center_casename
         General_table['help_center'] = help_center_case_list
 
-        print(General_table['help_center'])
-        print(General_for_casename['help_center'])
+        General_for_casename['navigation_bar'] = navigation_bar_casename
+        General_table['navigation_bar'] = navigation_bar_case_list
+
+        General_for_casename['address'] = address_casename
+        General_table['address'] = address_case_list
+
+        print(General_table['address'])
+        print(General_for_casename['address'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):

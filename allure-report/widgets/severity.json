@@ -1,650 +1,710 @@
 [ {
-  "uid" : "be1aba76238c9309",
-  "name" : "邮箱不含@弹出错误提示",
+  "uid" : "5c538dc38d599b54",
+  "name" : "输入16位字母+数字更改成功",
   "time" : {
-    "start" : 1650934676858,
-    "stop" : 1650934680432,
-    "duration" : 3574
+    "start" : 1650961075284,
+    "stop" : 1650961117002,
+    "duration" : 41718
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8dd256baf4a16173",
-  "name" : "密码为小写字母+特殊字符注册失败",
+  "uid" : "aa5d6191c2885c02",
+  "name" : "使用空的用户名密码登录失败",
   "time" : {
-    "start" : 1650935209285,
-    "stop" : 1650935250537,
-    "duration" : 41252
+    "start" : 1650959578114,
+    "stop" : 1650959582554,
+    "duration" : 4440
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "34b7758fe52ba060",
-  "name" : "输入6位字母+数字密码更改成功",
+  "uid" : "bd571753ae5e6dd5",
+  "name" : "超时后再次发送验证码成功",
   "time" : {
-    "start" : 1650936049731,
-    "stop" : 1650936162172,
-    "duration" : 112441
+    "start" : 1650959635564,
+    "stop" : 1650959704577,
+    "duration" : 69013
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "6b7b2c5e2a5390cf",
-  "name" : "登录状态意见反馈不输入任何内容发送失败",
-  "time" : {
-    "start" : 1650936434474,
-    "stop" : 1650936441300,
-    "duration" : 6826
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9cced0ab97a8206",
-  "name" : "输入7位英文小写密码修改失败",
-  "time" : {
-    "start" : 1650935898520,
-    "stop" : 1650935932443,
-    "duration" : 33923
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2eb4f78f8b97c20b",
-  "name" : "输入正确内容修改密码成功",
-  "time" : {
-    "start" : 1650935608973,
-    "stop" : 1650935652975,
-    "duration" : 44002
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "54e440feab820500",
-  "name" : "关闭验证码页面成功",
-  "time" : {
-    "start" : 1650934687644,
-    "stop" : 1650934693791,
-    "duration" : 6147
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bd6e1313ef6ec025",
+  "uid" : "ab14c4306923f6a0",
   "name" : "登录状态点击Change Email Address(Need to log in first)页面成功跳转至邮箱修改页面",
   "time" : {
-    "start" : 1650936407747,
-    "stop" : 1650936412462,
-    "duration" : 4715
+    "start" : 1650961430698,
+    "stop" : 1650961435369,
+    "duration" : 4671
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7122c1995652900d",
-  "name" : "输入错误验证码注册失败",
+  "uid" : "c892af04444365a7",
+  "name" : "密码为6为字符注册成功",
   "time" : {
-    "start" : 1650934785303,
-    "stop" : 1650934790183,
-    "duration" : 4880
+    "start" : 1650959751804,
+    "stop" : 1650959791294,
+    "duration" : 39490
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1d4404aa7a04991",
+  "name" : "网站左上角存在帮助中心入口",
+  "time" : {
+    "start" : 1650961416176,
+    "stop" : 1650961417554,
+    "duration" : 1378
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4426d35cd0581fa7",
+  "name" : "用户名邮箱为空下一步操作置灰",
+  "time" : {
+    "start" : 1650959591612,
+    "stop" : 1650959594498,
+    "duration" : 2886
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fea5232fbfbc3c8a",
+  "name" : "输入错误密码登录失败",
+  "time" : {
+    "start" : 1650959582564,
+    "stop" : 1650959587109,
+    "duration" : 4545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b17f156aa288ef2a",
+  "name" : "输入过期验证码点击下一步失败",
+  "time" : {
+    "start" : 1650960639339,
+    "stop" : 1650960742971,
+    "duration" : 103632
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49f4114ac4b88681",
+  "name" : "输入7位英文大写密码修改失败",
+  "time" : {
+    "start" : 1650960894263,
+    "stop" : 1650960928916,
+    "duration" : 34653
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28b56a7ab37522b8",
+  "name" : "登录状态意见反馈不输入内容发送失败",
+  "time" : {
+    "start" : 1650961474252,
+    "stop" : 1650961478804,
+    "duration" : 4552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b92145af85dd0ef1",
+  "name" : "输入修改过的密码更改失败",
+  "time" : {
+    "start" : 1650961313682,
+    "stop" : 1650961415993,
+    "duration" : 102311
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "d8bd1ea8a345713f",
-  "name" : "输入7位英文大写密码修改失败",
+  "uid" : "d3882f0c21f279fb",
+  "name" : "密码为纯大写字母注册失败",
   "time" : {
-    "start" : 1650935932446,
-    "stop" : 1650936015331,
-    "duration" : 82885
+    "start" : 1650959950491,
+    "stop" : 1650959989361,
+    "duration" : 38870
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3d8a02591985f893",
-  "name" : "输入空的用户名登录失败",
+  "uid" : "1cc788a29885462b",
+  "name" : "点击帮助中心页面成功跳转",
   "time" : {
-    "start" : 1650934649353,
-    "stop" : 1650934656170,
-    "duration" : 6817
+    "start" : 1650961417560,
+    "stop" : 1650961419180,
+    "duration" : 1620
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c5baa095198ce098",
-  "name" : "输入错误密码登录失败",
+  "uid" : "f020810598c4025d",
+  "name" : "登录状态点击点击Auction payment balance页面正确跳转至拍卖页面",
   "time" : {
-    "start" : 1650934665151,
-    "stop" : 1650934669778,
-    "duration" : 4627
+    "start" : 1650961440405,
+    "stop" : 1650961445159,
+    "duration" : 4754
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3c8c274eaefd2d5c",
-  "name" : "点击Change Email Address(Need to log in first)页面成功跳转至登录页面",
+  "uid" : "6b660f18c79ebb65",
+  "name" : "密码为纯小写字母注册失败",
   "time" : {
-    "start" : 1650936403027,
-    "stop" : 1650936407737,
-    "duration" : 4710
+    "start" : 1650959911674,
+    "stop" : 1650959950488,
+    "duration" : 38814
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d42148f1ab2c3fe9",
-  "name" : "密码为数字+大写字母+特殊字符注册成功",
+  "uid" : "86223d9e232cf0d4",
+  "name" : "不输入邮箱号点击发送验证码失败",
   "time" : {
-    "start" : 1650935368005,
-    "stop" : 1650935395137,
-    "duration" : 27132
+    "start" : 1650960626398,
+    "stop" : 1650960632859,
+    "duration" : 6461
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65ccf2dbcb183c54",
+  "name" : "登录状态点击Retrieve Password页面跳转到修改密码页面",
+  "time" : {
+    "start" : 1650961420427,
+    "stop" : 1650961425641,
+    "duration" : 5214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54aaf44c6e6134ef",
+  "name" : "密码为数字+特殊字符注册失败",
+  "time" : {
+    "start" : 1650960028643,
+    "stop" : 1650960087738,
+    "duration" : 59095
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "ca08de0d23a574e4",
-  "name" : "使用空的用户名密码登录失败",
+  "uid" : "6b9c75b4d9c6efd5",
+  "name" : "输入正确内容修改密码成功",
   "time" : {
-    "start" : 1650934660741,
-    "stop" : 1650934665147,
-    "duration" : 4406
+    "start" : 1650960569850,
+    "stop" : 1650960614371,
+    "duration" : 44521
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "52771977fcf78dc7",
-  "name" : "更改密码成功后回退重新输入验证码",
-  "time" : {
-    "start" : 1650936288127,
-    "stop" : 1650936314689,
-    "duration" : 26562
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "24279dc3d0d31fa2",
-  "name" : "输入空的密码登录失败",
-  "time" : {
-    "start" : 1650934656174,
-    "stop" : 1650934660737,
-    "duration" : 4563
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5679ac9af8a4978b",
-  "name" : "输入7位特殊字符密码修改失败",
-  "time" : {
-    "start" : 1650936015331,
-    "stop" : 1650936049722,
-    "duration" : 34391
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb3490b25d65c01a",
-  "name" : "登录状态意见反馈不输入内容发送失败",
-  "time" : {
-    "start" : 1650936445861,
-    "stop" : 1650936450498,
-    "duration" : 4637
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7d7901214d52a89d",
+  "uid" : "e7d48e1b6b672ef1",
   "name" : "输入5位字母+数字更改失败",
   "time" : {
-    "start" : 1650936202911,
-    "stop" : 1650936288127,
-    "duration" : 85216
+    "start" : 1650961117006,
+    "stop" : 1650961161991,
+    "duration" : 44985
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "24b2c51a8a2ed470",
+  "uid" : "bf699556a3e647ad",
+  "name" : "注册完成后领取优惠卷成功",
+  "time" : {
+    "start" : 1650960442549,
+    "stop" : 1650960487580,
+    "duration" : 45031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85ec01884b6a35e6",
+  "name" : "不勾选用户协议注册失败",
+  "time" : {
+    "start" : 1650959602128,
+    "stop" : 1650959606570,
+    "duration" : 4442
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "435a75182feb6a34",
+  "name" : "输入错误验证码注册失败",
+  "time" : {
+    "start" : 1650959705008,
+    "stop" : 1650959712066,
+    "duration" : 7058
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "737bd1cf760be22e",
+  "name" : "登录状态意见反馈不输入标题发送失败",
+  "time" : {
+    "start" : 1650961469459,
+    "stop" : 1650961474048,
+    "duration" : 4589
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "56d373448d4d96d7",
+  "name" : "密码为小写字母+特殊字符注册失败",
+  "time" : {
+    "start" : 1650960147733,
+    "stop" : 1650960187318,
+    "duration" : 39585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7bd56f25d444149",
+  "name" : "该品牌下无商品，品牌页面正确显示",
+  "time" : {
+    "start" : 1650961494140,
+    "stop" : 1650961498176,
+    "duration" : 4036
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bbc23ba28d4efea",
+  "name" : "点击Full catalog进入所有类别页面",
+  "time" : {
+    "start" : 1650961485770,
+    "stop" : 1650961487546,
+    "duration" : 1776
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5df0b14038e6df7f",
+  "name" : "关闭验证码页面成功",
+  "time" : {
+    "start" : 1650959606574,
+    "stop" : 1650959613063,
+    "duration" : 6489
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c9d9f2593021944",
+  "name" : "点击 Order without payment页面正确跳转至登录页面",
+  "time" : {
+    "start" : 1650961445163,
+    "stop" : 1650961450221,
+    "duration" : 5058
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1d777bc36323e73",
+  "name" : "邮箱不含@弹出错误提示",
+  "time" : {
+    "start" : 1650959594503,
+    "stop" : 1650959598176,
+    "duration" : 3673
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc08ed16f58c631e",
+  "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
+  "time" : {
+    "start" : 1650961450225,
+    "stop" : 1650961454933,
+    "duration" : 4708
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "30b14491b74f6e2d",
+  "name" : "输入错误用户名正确密码登录失败",
+  "time" : {
+    "start" : 1650959587113,
+    "stop" : 1650959591609,
+    "duration" : 4496
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "464c501bc051d4f0",
+  "name" : "密码为数字+小写字母+大写字母注册成功",
+  "time" : {
+    "start" : 1650960226293,
+    "stop" : 1650960265276,
+    "duration" : 38983
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b43a95f8473ef744",
+  "name" : "点击Change Email Address(Need to log in first)页面成功跳转至登录页面",
+  "time" : {
+    "start" : 1650961425648,
+    "stop" : 1650961430694,
+    "duration" : 5046
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bc481697ac3f397",
   "name" : "点击Auction payment balance页面正确跳转至登录页面",
   "time" : {
-    "start" : 1650936412467,
-    "stop" : 1650936417097,
-    "duration" : 4630
+    "start" : 1650961435373,
+    "stop" : 1650961440401,
+    "duration" : 5028
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5d27397020375f93",
-  "name" : "领取优惠卷回退页面再次领取失败",
+  "uid" : "626d09af61e6350c",
+  "name" : "密码为纯特殊字符注册失败",
   "time" : {
-    "start" : 1650935529154,
-    "stop" : 1650935576944,
-    "duration" : 47790
+    "start" : 1650959989368,
+    "stop" : 1650960028640,
+    "duration" : 39272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf21b685e6547bf5",
+  "name" : "点击导航栏导航栏伸缩成功",
+  "time" : {
+    "start" : 1650961483483,
+    "stop" : 1650961485766,
+    "duration" : 2283
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4c263dc1d4cee37",
+  "name" : "输入6位字母+数字密码更改成功",
+  "time" : {
+    "start" : 1650960962715,
+    "stop" : 1650961074792,
+    "duration" : 112077
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "1a45a66410e3022",
-  "name" : "输入修改过的密码更改失败",
-  "time" : {
-    "start" : 1650936314891,
-    "stop" : 1650936391307,
-    "duration" : 76416
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "77d9dfac6dd8c1db",
-  "name" : "输入错误邮箱发送验证码失败",
-  "time" : {
-    "start" : 1650935671054,
-    "stop" : 1650935677545,
-    "duration" : 6491
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ed7142a8701000ea",
-  "name" : "输入正确用户名密码登录成功",
-  "time" : {
-    "start" : 1650934638072,
-    "stop" : 1650934649348,
-    "duration" : 11276
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fa42c89e991d2214",
+  "uid" : "bca12f0825772973",
   "name" : "使用过期验证码验证失败",
   "time" : {
-    "start" : 1650934693797,
-    "stop" : 1650934716347,
-    "duration" : 22550
+    "start" : 1650959613067,
+    "stop" : 1650959635559,
+    "duration" : 22492
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d4fb18e9ddc446ec",
-  "name" : "超时后再次发送验证码成功",
+  "uid" : "955a02c173ebbe73",
+  "name" : "点击Retrieve Password页面跳转到登录页面",
   "time" : {
-    "start" : 1650934716351,
-    "stop" : 1650934785297,
-    "duration" : 68946
+    "start" : 1650961419187,
+    "stop" : 1650961420422,
+    "duration" : 1235
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "66d3f499a0db56b4",
+  "uid" : "418b80deb6f44031",
+  "name" : "All Categories 页面可以点击类别快速移动到该类别所在页面位置",
+  "time" : {
+    "start" : 1650961498179,
+    "stop" : 1650961502556,
+    "duration" : 4377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6445276a6bb00292",
   "name" : "密码为纯数字注册失败",
   "time" : {
-    "start" : 1650934973744,
-    "stop" : 1650935012805,
-    "duration" : 39061
+    "start" : 1650959873120,
+    "stop" : 1650959911660,
+    "duration" : 38540
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3963205e8d4e6cb2",
-  "name" : "登录状态意见反馈输入正确内容发送成功",
+  "uid" : "7b576ae0d0c5fb7",
+  "name" : "输入7位特殊字符密码修改失败",
   "time" : {
-    "start" : 1650936450501,
-    "stop" : 1650936455047,
-    "duration" : 4546
+    "start" : 1650960928920,
+    "stop" : 1650960962710,
+    "duration" : 33790
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2a50c62e538e2dec",
+  "uid" : "822685e361cb3ba0",
+  "name" : "输入7位英文小写密码修改失败",
+  "time" : {
+    "start" : 1650960860553,
+    "stop" : 1650960894259,
+    "duration" : 33706
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42e8c5a394e9641b",
+  "name" : "不输入验证码下一步置灰",
+  "time" : {
+    "start" : 1650960621760,
+    "stop" : 1650960626394,
+    "duration" : 4634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "788648a2942d507b",
   "name" : "不输入邮箱修下一步置灰",
   "time" : {
-    "start" : 1650935652981,
-    "stop" : 1650935660183,
+    "start" : 1650960614378,
+    "stop" : 1650960621750,
+    "duration" : 7372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0635aa079696342",
+  "name" : "登录状态意见反馈输入正确内容发送成功",
+  "time" : {
+    "start" : 1650961478809,
+    "stop" : 1650961483480,
+    "duration" : 4671
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2495aae15f2c98f",
+  "name" : "领取优惠卷回退页面再次领取失败",
+  "time" : {
+    "start" : 1650960487584,
+    "stop" : 1650960536350,
+    "duration" : 48766
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6e39e454e463c61",
+  "name" : "密码为5位注册失败",
+  "time" : {
+    "start" : 1650959791298,
+    "stop" : 1650959832990,
+    "duration" : 41692
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "867c038daa86c947",
+  "name" : "输入已存在的用户名注册失败",
+  "time" : {
+    "start" : 1650959598179,
+    "stop" : 1650959602122,
+    "duration" : 3943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4588c8cc21ae3287",
+  "name" : "密码为空注册失败",
+  "time" : {
+    "start" : 1650959712070,
+    "stop" : 1650959751804,
+    "duration" : 39734
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b0dea9db281157b",
+  "name" : "点击二级分类商品品牌跳转至该品牌页中，且商品成功显示",
+  "time" : {
+    "start" : 1650961490326,
+    "stop" : 1650961494137,
+    "duration" : 3811
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f22b09699e202e4",
+  "name" : "密码为数字+大写字母+特殊字符注册成功",
+  "time" : {
+    "start" : 1650960304007,
+    "stop" : 1650960343287,
+    "duration" : 39280
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b15fe1ce4f54a291",
+  "name" : "输入错误邮箱发送验证码失败",
+  "time" : {
+    "start" : 1650960632869,
+    "stop" : 1650960639329,
+    "duration" : 6460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50e97c001e7f962e",
+  "name" : "密码为大写字母+特殊字符注册失败",
+  "time" : {
+    "start" : 1650960187322,
+    "stop" : 1650960226289,
+    "duration" : 38967
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72b434bd3c3992db",
+  "name" : "密码为小写字母+大写字母注册失败",
+  "time" : {
+    "start" : 1650960088228,
+    "stop" : 1650960147548,
+    "duration" : 59320
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a91ba0ae7a683049",
+  "name" : "输入正确用户名密码登录成功",
+  "time" : {
+    "start" : 1650959553926,
+    "stop" : 1650959566427,
+    "duration" : 12501
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c341ecad6d30039",
+  "name" : "更改密码成功后回退重新输入验证码",
+  "time" : {
+    "start" : 1650961161996,
+    "stop" : 1650961313496,
+    "duration" : 151500
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b11b6b2cfba4be09",
+  "name" : "密码为16位注册成功",
+  "time" : {
+    "start" : 1650959832999,
+    "stop" : 1650959873120,
+    "duration" : 40121
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "77419d53c40c1410",
+  "name" : "鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功",
+  "time" : {
+    "start" : 1650961487551,
+    "stop" : 1650961490092,
+    "duration" : 2541
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "224896aef77f7858",
+  "name" : "输入7位纯数字修改失败",
+  "time" : {
+    "start" : 1650960777575,
+    "stop" : 1650960860549,
+    "duration" : 82974
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f6d18c4deafd6b4",
+  "name" : "密码为数字+小写字母+特殊字符注册成功",
+  "time" : {
+    "start" : 1650960265276,
+    "stop" : 1650960303855,
+    "duration" : 38579
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9465b91c65738ae",
+  "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
+  "time" : {
+    "start" : 1650960403268,
+    "stop" : 1650960442393,
+    "duration" : 39125
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "72dfd1ca864cb6b6",
+  "name" : "不进行验证注册失败",
+  "time" : {
+    "start" : 1650960536355,
+    "stop" : 1650960569850,
+    "duration" : 33495
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9664b103a7b05142",
+  "name" : "输入空的密码登录失败",
+  "time" : {
+    "start" : 1650959573637,
+    "stop" : 1650959578114,
+    "duration" : 4477
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b76759e7c3fa689",
+  "name" : "登录状态意见反馈不输入任何内容发送失败",
+  "time" : {
+    "start" : 1650961462523,
+    "stop" : 1650961469454,
+    "duration" : 6931
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9488ac78cf5e8e1b",
+  "name" : "密码为小写字母+大写字母+特殊字符注册失败",
+  "time" : {
+    "start" : 1650960343440,
+    "stop" : 1650960403116,
+    "duration" : 59676
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8012f0fd0be5ef70",
+  "name" : "输入空密码修改失败",
+  "time" : {
+    "start" : 1650960742975,
+    "stop" : 1650960777571,
+    "duration" : 34596
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a02ea027f459ab9",
+  "name" : "输入空的用户名登录失败",
+  "time" : {
+    "start" : 1650959566432,
+    "stop" : 1650959573634,
     "duration" : 7202
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e561cd0a12519bcb",
-  "name" : "密码为数字+小写字母+大写字母注册成功",
-  "time" : {
-    "start" : 1650935289279,
-    "stop" : 1650935328592,
-    "duration" : 39313
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9b70dd3d7ce9f5d5",
-  "name" : "输入错误用户名正确密码登录失败",
-  "time" : {
-    "start" : 1650934669782,
-    "stop" : 1650934674336,
-    "duration" : 4554
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "93adabb205d61c82",
-  "name" : "密码为空注册失败",
-  "time" : {
-    "start" : 1650934790866,
-    "stop" : 1650934834446,
-    "duration" : 43580
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "31a5664a981c4fab",
-  "name" : "点击 Order without payment页面正确跳转至登录页面",
-  "time" : {
-    "start" : 1650936421767,
-    "stop" : 1650936426287,
-    "duration" : 4520
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "908fbdde2cae8535",
-  "name" : "密码为纯特殊字符注册失败",
-  "time" : {
-    "start" : 1650935090617,
-    "stop" : 1650935129635,
-    "duration" : 39018
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "286bf17e94b063ec",
-  "name" : "登录状态意见反馈不输入标题发送失败",
-  "time" : {
-    "start" : 1650936441304,
-    "stop" : 1650936445857,
-    "duration" : 4553
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3aa9112912f1cb86",
-  "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
-  "time" : {
-    "start" : 1650936426297,
-    "stop" : 1650936430894,
-    "duration" : 4597
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e587e1d1d062381",
-  "name" : "登录状态点击点击Auction payment balance页面正确跳转至拍卖页面",
-  "time" : {
-    "start" : 1650936417107,
-    "stop" : 1650936421767,
-    "duration" : 4660
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7e7ff63c51ecbd36",
-  "name" : "密码为数字+小写字母+特殊字符注册成功",
-  "time" : {
-    "start" : 1650935328596,
-    "stop" : 1650935367507,
-    "duration" : 38911
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "f8df20b70f3b021f",
-  "name" : "密码为纯小写字母注册失败",
-  "time" : {
-    "start" : 1650935012809,
-    "stop" : 1650935051732,
-    "duration" : 38923
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8e0ce87e46a73cb0",
+  "uid" : "f6b102e7ef02a3bb",
   "name" : "存在意见反馈模块",
   "time" : {
-    "start" : 1650936430898,
-    "stop" : 1650936434474,
-    "duration" : 3576
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3603b67ddc7488db",
-  "name" : "密码为5位注册失败",
-  "time" : {
-    "start" : 1650934874360,
-    "stop" : 1650934913365,
-    "duration" : 39005
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9726549242ad99e2",
-  "name" : "不进行验证注册失败",
-  "time" : {
-    "start" : 1650935577179,
-    "stop" : 1650935608795,
-    "duration" : 31616
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "9064311fc96636f0",
-  "name" : "点击帮助中心页面成功跳转",
-  "time" : {
-    "start" : 1650936394998,
-    "stop" : 1650936396857,
-    "duration" : 1859
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2b399ffbc5eea8d2",
-  "name" : "点击Retrieve Password页面跳转到登录页面",
-  "time" : {
-    "start" : 1650936396863,
-    "stop" : 1650936398104,
-    "duration" : 1241
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "138991814ee3830e",
-  "name" : "密码为16位注册成功",
-  "time" : {
-    "start" : 1650934913369,
-    "stop" : 1650934973586,
-    "duration" : 60217
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "6b76566fbde644a1",
-  "name" : "不输入验证码下一步置灰",
-  "time" : {
-    "start" : 1650935660194,
-    "stop" : 1650935664664,
-    "duration" : 4470
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c3016717435e9e86",
-  "name" : "输入7位纯数字修改失败",
-  "time" : {
-    "start" : 1650935816239,
-    "stop" : 1650935898510,
-    "duration" : 82271
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "832dceb0b6969bec",
-  "name" : "密码为纯大写字母注册失败",
-  "time" : {
-    "start" : 1650935051736,
-    "stop" : 1650935090611,
-    "duration" : 38875
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "afa75932403021f",
-  "name" : "密码为小写字母+大写字母+特殊字符注册失败",
-  "time" : {
-    "start" : 1650935395452,
-    "stop" : 1650935438161,
-    "duration" : 42709
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8ae036f11ac65286",
-  "name" : "密码为小写字母+大写字母注册失败",
-  "time" : {
-    "start" : 1650935168539,
-    "stop" : 1650935209279,
-    "duration" : 40740
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b5e87d737dd703ef",
-  "name" : "网站左上角存在帮助中心入口",
-  "time" : {
-    "start" : 1650936393644,
-    "stop" : 1650936394990,
-    "duration" : 1346
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9f4e846dca72234f",
-  "name" : "不勾选用户协议注册失败",
-  "time" : {
-    "start" : 1650934684021,
-    "stop" : 1650934687641,
-    "duration" : 3620
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bed1ceb3f9f84c15",
-  "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-  "time" : {
-    "start" : 1650935438169,
-    "stop" : 1650935478294,
-    "duration" : 40125
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "de01086002e3af27",
-  "name" : "输入16位字母+数字更改成功",
-  "time" : {
-    "start" : 1650936162671,
-    "stop" : 1650936202911,
-    "duration" : 40240
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fc7ba7079b1ef007",
-  "name" : "密码为数字+特殊字符注册失败",
-  "time" : {
-    "start" : 1650935129639,
-    "stop" : 1650935168535,
-    "duration" : 38896
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b1445292db86a3d0",
-  "name" : "登录状态点击Retrieve Password页面跳转到修改密码页面",
-  "time" : {
-    "start" : 1650936398112,
-    "stop" : 1650936403027,
-    "duration" : 4915
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1cd494c22141146a",
-  "name" : "不输入邮箱号点击发送验证码失败",
-  "time" : {
-    "start" : 1650935664674,
-    "stop" : 1650935671054,
-    "duration" : 6380
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "81e16dc45c25f2b",
-  "name" : "输入过期验证码点击下一步失败",
-  "time" : {
-    "start" : 1650935677554,
-    "stop" : 1650935782282,
-    "duration" : 104728
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3696aa433b16572",
-  "name" : "密码为大写字母+特殊字符注册失败",
-  "time" : {
-    "start" : 1650935250541,
-    "stop" : 1650935289275,
-    "duration" : 38734
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cab66629e06e4be9",
-  "name" : "密码为6为字符注册成功",
-  "time" : {
-    "start" : 1650934834451,
-    "stop" : 1650934874356,
-    "duration" : 39905
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "389e8f081d790c6a",
-  "name" : "注册完成后领取优惠卷成功",
-  "time" : {
-    "start" : 1650935478455,
-    "stop" : 1650935529150,
-    "duration" : 50695
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "71d4a8a0a5583d7f",
-  "name" : "输入空密码修改失败",
-  "time" : {
-    "start" : 1650935782287,
-    "stop" : 1650935816236,
-    "duration" : 33949
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "89a96897f1f1b78e",
-  "name" : "输入已存在的用户名注册失败",
-  "time" : {
-    "start" : 1650934680436,
-    "stop" : 1650934684017,
-    "duration" : 3581
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "27dcb438d779c549",
-  "name" : "用户名邮箱为空下一步操作置灰",
-  "time" : {
-    "start" : 1650934674342,
-    "stop" : 1650934676853,
-    "duration" : 2511
+    "start" : 1650961458336,
+    "stop" : 1650961462518,
+    "duration" : 4182
   },
   "status" : "passed",
   "severity" : "normal"
