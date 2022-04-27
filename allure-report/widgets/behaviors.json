@@ -1,33 +1,55 @@
 {
-  "total" : 5,
+  "total" : 6,
   "items" : [ {
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 6,
-      "broken" : 1,
+      "failed" : 4,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 21,
+      "passed" : 22,
       "unknown" : 0,
       "total" : 28
     }
   }, {
-    "uid" : "a8683ef936769eca0631743faf12b699",
-    "name" : "帮助中心",
+    "uid" : "f4adcbe437d6229b8b7d480cb9dc15fa",
+    "name" : "地址管理",
     "statistic" : {
       "failed" : 1,
-      "broken" : 1,
+      "broken" : 7,
       "skipped" : 0,
-      "passed" : 13,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 15
+      "total" : 22
     }
   }, {
     "uid" : "fa7e8993eeb6f08f58f63d7cdfad719b",
     "name" : "导航栏",
     "statistic" : {
       "failed" : 1,
-      "broken" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "a8683ef936769eca0631743faf12b699",
+    "name" : "帮助中心",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
+    "name" : "登录",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 5,
       "unknown" : 0,
@@ -38,22 +60,11 @@
     "name" : "忘记密码",
     "statistic" : {
       "failed" : 0,
-      "broken" : 3,
-      "skipped" : 0,
-      "passed" : 13,
-      "unknown" : 0,
-      "total" : 16
-    }
-  }, {
-    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
-    "name" : "登录",
-    "statistic" : {
-      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 16,
       "unknown" : 0,
-      "total" : 6
+      "total" : 16
     }
   } ]
 }

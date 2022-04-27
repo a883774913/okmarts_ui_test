@@ -2,9 +2,9 @@
   "name" : "Jenkins",
   "type" : "jenkins",
   "url" : "http://localhost:8080/",
-  "buildOrder" : 42,
-  "buildName" : "okmarts_ui_test #42",
-  "buildUrl" : "http://localhost:8080/job/okmarts_ui_test/42/",
+  "buildOrder" : 46,
+  "buildName" : "okmarts_ui_test #46",
+  "buildUrl" : "http://localhost:8080/job/okmarts_ui_test/46/",
   "reportName" : "AllureReport",
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure"
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure"
 } ]

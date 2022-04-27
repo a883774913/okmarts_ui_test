@@ -58,16 +58,21 @@ class Common:
         else:
             dr.find_element(by='xpath',
                             value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').click()  # 点击按钮进入个人中心
-            time.sleep(1)
+            time.sleep(1.5)
             dr.find_element(by='class name', value='login-out.text-white').click()  # 点击注销
-            time.sleep(1)
-            dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
+            time.sleep(1.5)
+            try:
+                dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
+            except :
+                dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
             time.sleep(0.5)
 
-    def is_login(self,driver):
+    def is_login(self,driver,useraccount,password):
         """
         首页检测是否为登录状态，如果登录则PASS，如果未登录则进行登录
-        :param driver:
+        :param driver: 驱动
+        :param useraccount: 用户名
+        :param password ： 密码
         :return:
         """
         is_login = driver.find_element(by='css selector',
@@ -78,7 +83,7 @@ class Common:
                                 value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()  # 点击登录
             WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_class_name(
                 "title.text-tit-lg.margin-bottom-lg"))
-            Common().login(driver, useraccount="979172251@qq.com", password='a123456')
+            Common().login(driver, useraccount=useraccount, password=password)
         else:
             pass
 
@@ -91,7 +96,7 @@ class Common:
         :param value: 定位元素
         :return:
         """
-        target = driver.find_element(by=by,value=value)
+        target = driver.find_element(by=f'{by}',value=f'{value}')
         driver.execute_script("arguments[0].scrollIntoView();", target)  # 拖动到可见的元素去
 
     #悬停方法

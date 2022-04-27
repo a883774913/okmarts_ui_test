@@ -3,6 +3,7 @@
 """
 import time
 
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -90,7 +91,11 @@ class Regist:
             assert text == result
         elif casename == '注册完成后领取优惠卷成功':
             self.regist_mode1(useraccount, driver, data)
-            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱
+            try:
+                driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱
+            except NoSuchElementException:
+                time.sleep(1)
+                driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[5]/img').click()  # 点击礼物箱 如果报错等待1S 再次点击
             time.sleep(0.2)
             driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
             time.sleep(2)

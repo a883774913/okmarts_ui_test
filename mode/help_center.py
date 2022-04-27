@@ -3,6 +3,7 @@
 """
 import time
 
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 
 from okmarts_ui_test.common.common import Common
@@ -21,7 +22,8 @@ class Help_Center:
         driver.get('http://18.118.13.94:81/index')  # 打开首页
         time.sleep(1)
         if '登录状态' in casename:
-            Common().is_login(driver)
+            Common().is_login(driver,useraccount='979172251@qq.com',password='a123456')
+            time.sleep(2)
             if casename == '登录状态点击Retrieve Password页面跳转到修改密码页面':
                 print('通道1')
                 self.Go(driver, assert_way, result,1)
@@ -32,8 +34,14 @@ class Help_Center:
             elif casename == '登录状态点击 Order without payment页面正确跳转至购物车页面':
                 try:
                     self.Go(driver, assert_way, result, 4)
-                except :
-                    text = driver.find_element(by='css selector',value='#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span').text
+                except NoSuchElementException:  #如果断言错误 则为存在商品
+                    print('购物车存在商品')
+                    try:
+                        text = driver.find_element(by='css selector',value='#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > '
+                                                                           'div.title-1.flex.align-center.space-between > div.name.flex.align-center > span').text
+                    except NoSuchElementException:
+                        time.sleep(1)
+                        text = driver.find_element(by='xpath',value='//*[@id="app"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span').text
                     assert text == 'Shopping cart'
             elif casename in ['登录状态意见反馈不输入任何内容发送失败','登录状态意见反馈不输入标题发送失败','登录状态意见反馈不输入内容发送失败','登录状态意见反馈输入正确内容发送成功']:
                 print('通道9')
@@ -98,7 +106,8 @@ class Help_Center:
         WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
             "#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.text-tit-lg"))
         driver.find_element(by='css selector',
-                            value=f'#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.flex.href-list.space-between.text-xs > a:nth-child({number})').click()
+                            value=f'#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.flex.href-list.space-between.text-xs > '
+                                  f'a:nth-child({number})').click()
         time.sleep(1)
         text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                    value=f"{assert_way.split('=', 1)[1]}").text
@@ -124,13 +133,17 @@ class Help_Center:
                          value='#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container '
                                '> div.content.page-help-content > div.site-message.clearfix > '
                                'div.text-tit-lg.margin-bottom-xs')      #滑动到指定位置
-        driver.find_element(by='css selector',value='#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > input').click()
-        driver.find_element(by='css selector',value='#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > input').send_keys(title)       #输入标题
+        driver.find_element(by='css selector',value='#app > div.page-myCenter.page-help.transparent-header'
+                                                    '.transparent > div.ui-container > div.content.page-help-content '
+                                                    '> div.site-message.clearfix > input').click()
+        driver.find_element(by='css selector',value='#app > div.page-myCenter.page-help.transparent-header'
+                                                    '.transparent > div.ui-container > div.content.page-help-content '
+                                                    '> div.site-message.clearfix > input').send_keys(title)       #输入标题
         driver.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[4]/textarea').click()
         driver.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[4]/textarea').send_keys(descript) #输入描述正文
         time.sleep(2)
         driver.find_element(by='xpath',value='/html/body/div[1]/div[1]/div[2]/div[1]/div[4]/button').click()            #点击发送
-        time.sleep(1)
+        time.sleep(1.4)
         text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                    value=f"{assert_way.split('=', 1)[1]}").text
         print(f'text 为 {text}')

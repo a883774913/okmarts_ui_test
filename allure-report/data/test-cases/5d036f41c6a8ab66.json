@@ -1,0 +1,364 @@
+{
+  "uid" : "5d036f41c6a8ab66",
+  "name" : "密码为小写字母+大写字母+特殊字符注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "bfa9ac51cd33477fd64d5a664ebabac1",
+  "time" : {
+    "start" : 1651036948112,
+    "stop" : 1651037089983,
+    "duration" : 141871
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    def regist(self, Parameter, driver):\n        casename = Parameter['casename']\n        mode = Parameter['mode']\n        data = Parameter['data'].split('\\n')\n        if casename == '用户名邮箱为空下一步操作置灰':\n            useraccount = data[0].split('=')[-1]\n        elif casename == '输入已存在的用户名注册失败':\n            useraccount = '979172251@qq.com'\n        else:\n            useraccount = Common().random_email_account()\n    \n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/my/register')\n        time.sleep(0.5)\n        driver.find_element(by='id', value='register_step_1_userAccount').send_keys(useraccount)\n    \n        if casename == '不勾选用户协议注册失败':\n            driver.find_element(by='class name', value='ant-checkbox').click()\n        else:\n            pass\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button/a').click()  # 点击下一步发送验证码\n    \n        if casename == '用户名邮箱为空下一步操作置灰':\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").get_attribute('disabled')\n            print('通道1')\n            print(text)\n            assert text == result\n        elif casename == '关闭验证码页面成功':\n            time.sleep(3)\n            # print(self.dr.find_element(by='class name', value='ant-modal-body').is_displayed())\n            driver.find_element(by='class name', value='anticon.anticon-close.ant-modal-close-icon').click()\n            time.sleep(0.5)\n            assert driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed() is not result\n        elif casename == '使用过期验证码验证失败':\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码\n            self.input_code(driver, code)\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道2')\n            print(text)\n            assert text == result\n        elif casename == '输入错误验证码注册失败':\n            self.input_code(driver, ['111111'])\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道3')\n            print(text)\n            assert text == result\n        elif casename == '超时后再次发送验证码成功':\n            time.sleep(63)\n            driver.find_element(by='xpath', value='/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/a').click()\n            time.sleep(3)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道4')\n            print(text)\n            assert text == result\n        elif casename in ['邮箱不含@弹出错误提示', '输入已存在的用户名注册失败', '不勾选用户协议注册失败']:\n            time.sleep(1)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道5')\n            print(text)\n            assert text == result\n        elif casename == '注册完成后领取优惠卷成功':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text\n            print(text)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])\n            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span'))\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道6')\n            print(coupons_text)\n            assert text == 'success' and coupons_text == result\n        elif casename == '领取优惠卷回退页面再次领取失败':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            driver.back()\n            time.sleep(2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])   #登录\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道7')\n            print(coupons_text)\n            assert coupons_text == result\n        elif casename == '不进行验证注册失败':\n            print('通道0')\n            time.sleep(10)      #等待验证码发送至邮箱\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n            print(code[0])\n            self.input_code(driver, code)\n            time.sleep(2)\n            driver.find_element(by='css selector',value='#app > div > div.login-form-wrap > '\n                                                        'div.login-form.margin-bottom > form > div:nth-child(1) > div'\n                                                        ' > div > span > span > input').send_keys(data[1].split('=')[-1]) # 输入密码\n    \n            time.sleep(0.5)\n            driver.find_element(by=\"css selector\",\n                                value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > '\n                                      'div.btn-out.ant-row.ant-form-item > div > div > span > div > a').click()  # 点击下一步\n            WebDriverWait(driver,30,0.2).until(lambda driver:driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span'))\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text 为{text}')\n            print(f'result 为{result}')\n            assert text == result\n        else:\n            try:\n>               self.regist_mode1(useraccount, driver, data)\n\n..\\mode\\register.py:150: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nuseraccount = 'a883774916@163.com'\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\ndata = ['useraccount=a883774917@163.com', 'password=asdASD!@#']\n\n    def regist_mode1(self, useraccount, driver, data):\n        time.sleep(10)\n        code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n        print(code[0])\n        self.input_code(driver, code)\n        WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_xpath(\n            '//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i'))  # 显示等待\n        huakuai = driver.find_element(\"xpath\",\n                                      value=\"\"\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"\"\")  # 定位滑块\n        self.move_to_gap(huakuai, self.get_track(500), driver)  # 移动滑块\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(\n            data[1].split('=')[-1])     #输入密码\n        time.sleep(1)\n    \n>       driver.find_element(by=\"xpath\",\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()    #点击下一步\n\n..\\mode\\register.py:203: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.webelement.WebElement (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\", element=\"d196f0ac-67c9-42c8-abee-8a516e84454f\")>\n\n    def click(self) -> None:\n        \"\"\"Clicks the element.\"\"\"\n>       self._execute(Command.CLICK_ELEMENT)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:81: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.webelement.WebElement (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\", element=\"d196f0ac-67c9-42c8-abee-8a516e84454f\")>\ncommand = 'clickElement'\nparams = {'id': 'd196f0ac-67c9-42c8-abee-8a516e84454f', 'sessionId': 'b93df9bf9fed55af28b9b9fc5d059e9f'}\n\n    def _execute(self, command, params=None):\n        \"\"\"Executes a command against the underlying HTML element.\n    \n        Args:\n          command: The name of the command to _execute as a string.\n          params: A dictionary of named parameters to send with the command.\n    \n        Returns:\n          The command's JSON response loaded into a dictionary object.\n        \"\"\"\n        if not params:\n            params = {}\n        params['id'] = self._id\n>       return self._parent.execute(command, params)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:710: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\ndriver_command = 'clickElement'\nparams = {'id': 'd196f0ac-67c9-42c8-abee-8a516e84454f'}\n\n    def execute(self, driver_command: str, params: dict = None) -> dict:\n        \"\"\"\n        Sends a command to be executed by a command.CommandExecutor.\n    \n        :Args:\n         - driver_command: The name of the command to execute as a string.\n         - params: A dictionary of named parameters to send with the command.\n    \n        :Returns:\n          The command's JSON response loaded into a dictionary object.\n        \"\"\"\n        if self.session_id:\n            if not params:\n                params = {'sessionId': self.session_id}\n            elif 'sessionId' not in params:\n                params['sessionId'] = self.session_id\n    \n        params = self._wrap_value(params)\n        response = self.command_executor.execute(driver_command, params)\n        if response:\n>           self.error_handler.check_response(response)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001D9556F2C70>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...unk [0x75906739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a data-v-1f620c15=\"\">...</a> is not clickable at point (1159, 578). Other element would receive the click: <div class=\"ant-modal-body\">...</div>\nE         (Session info: chrome=100.0.4896.127)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00927413+2389011]\nE       \tOrdinal0 [0x008B9F61+1941345]\nE       \tOrdinal0 [0x007AC658+837208]\nE       \tOrdinal0 [0x007DF8AF+1046703]\nE       \tOrdinal0 [0x007DD8D6+1038550]\nE       \tOrdinal0 [0x007DB5EB+1029611]\nE       \tOrdinal0 [0x007DA359+1024857]\nE       \tOrdinal0 [0x007CFF93+982931]\nE       \tOrdinal0 [0x007F414C+1130828]\nE       \tOrdinal0 [0x007CF974+981364]\nE       \tOrdinal0 [0x007F4364+1131364]\nE       \tOrdinal0 [0x00804302+1196802]\nE       \tOrdinal0 [0x007F3F66+1130342]\nE       \tOrdinal0 [0x007CE546+976198]\nE       \tOrdinal0 [0x007CF456+980054]\nE       \tGetHandleVerifier [0x00AD9632+1727522]\nE       \tGetHandleVerifier [0x00B8BA4D+2457661]\nE       \tGetHandleVerifier [0x009BEB81+569713]\nE       \tGetHandleVerifier [0x009BDD76+566118]\nE       \tOrdinal0 [0x008C0B2B+1968939]\nE       \tOrdinal0 [0x008C5988+1989000]\nE       \tOrdinal0 [0x008C5A75+1989237]\nE       \tOrdinal0 [0x008CECB1+2026673]\nE       \tBaseThreadInitThunk [0x75906739+25]\nE       \tRtlGetFullPathName_UEx [0x77408E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77408E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: ElementClickInterceptedException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test_main.Test_Main object at 0x000001D955872F10>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    \n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n>       allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n\ntest_main.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    def regist(self, Parameter, driver):\n        casename = Parameter['casename']\n        mode = Parameter['mode']\n        data = Parameter['data'].split('\\n')\n        if casename == '用户名邮箱为空下一步操作置灰':\n            useraccount = data[0].split('=')[-1]\n        elif casename == '输入已存在的用户名注册失败':\n            useraccount = '979172251@qq.com'\n        else:\n            useraccount = Common().random_email_account()\n    \n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/my/register')\n        time.sleep(0.5)\n        driver.find_element(by='id', value='register_step_1_userAccount').send_keys(useraccount)\n    \n        if casename == '不勾选用户协议注册失败':\n            driver.find_element(by='class name', value='ant-checkbox').click()\n        else:\n            pass\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button/a').click()  # 点击下一步发送验证码\n    \n        if casename == '用户名邮箱为空下一步操作置灰':\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").get_attribute('disabled')\n            print('通道1')\n            print(text)\n            assert text == result\n        elif casename == '关闭验证码页面成功':\n            time.sleep(3)\n            # print(self.dr.find_element(by='class name', value='ant-modal-body').is_displayed())\n            driver.find_element(by='class name', value='anticon.anticon-close.ant-modal-close-icon').click()\n            time.sleep(0.5)\n            assert driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed() is not result\n        elif casename == '使用过期验证码验证失败':\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码\n            self.input_code(driver, code)\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道2')\n            print(text)\n            assert text == result\n        elif casename == '输入错误验证码注册失败':\n            self.input_code(driver, ['111111'])\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道3')\n            print(text)\n            assert text == result\n        elif casename == '超时后再次发送验证码成功':\n            time.sleep(63)\n            driver.find_element(by='xpath', value='/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/a').click()\n            time.sleep(3)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道4')\n            print(text)\n            assert text == result\n        elif casename in ['邮箱不含@弹出错误提示', '输入已存在的用户名注册失败', '不勾选用户协议注册失败']:\n            time.sleep(1)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道5')\n            print(text)\n            assert text == result\n        elif casename == '注册完成后领取优惠卷成功':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text\n            print(text)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])\n            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span'))\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道6')\n            print(coupons_text)\n            assert text == 'success' and coupons_text == result\n        elif casename == '领取优惠卷回退页面再次领取失败':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            driver.back()\n            time.sleep(2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])   #登录\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道7')\n            print(coupons_text)\n            assert coupons_text == result\n        elif casename == '不进行验证注册失败':\n            print('通道0')\n            time.sleep(10)      #等待验证码发送至邮箱\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n            print(code[0])\n            self.input_code(driver, code)\n            time.sleep(2)\n            driver.find_element(by='css selector',value='#app > div > div.login-form-wrap > '\n                                                        'div.login-form.margin-bottom > form > div:nth-child(1) > div'\n                                                        ' > div > span > span > input').send_keys(data[1].split('=')[-1]) # 输入密码\n    \n            time.sleep(0.5)\n            driver.find_element(by=\"css selector\",\n                                value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > '\n                                      'div.btn-out.ant-row.ant-form-item > div > div > span > div > a').click()  # 点击下一步\n            WebDriverWait(driver,30,0.2).until(lambda driver:driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span'))\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text 为{text}')\n            print(f'result 为{result}')\n            assert text == result\n        else:\n            try:\n                self.regist_mode1(useraccount, driver, data)\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                           value=f\"{assert_way.split('=', 1)[1]}\").text\n                print('通道0')\n                print(text)\n                assert text == result\n            except :\n>               raise AssertionError\nE               AssertionError\n\n..\\mode\\register.py:157: AssertionError",
+  "flaky" : true,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651036160659,
+      "stop" : 1651036162863,
+      "duration" : 2204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651036162864,
+      "stop" : 1651036162864,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    def regist(self, Parameter, driver):\n        casename = Parameter['casename']\n        mode = Parameter['mode']\n        data = Parameter['data'].split('\\n')\n        if casename == '用户名邮箱为空下一步操作置灰':\n            useraccount = data[0].split('=')[-1]\n        elif casename == '输入已存在的用户名注册失败':\n            useraccount = '979172251@qq.com'\n        else:\n            useraccount = Common().random_email_account()\n    \n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/my/register')\n        time.sleep(0.5)\n        driver.find_element(by='id', value='register_step_1_userAccount').send_keys(useraccount)\n    \n        if casename == '不勾选用户协议注册失败':\n            driver.find_element(by='class name', value='ant-checkbox').click()\n        else:\n            pass\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button/a').click()  # 点击下一步发送验证码\n    \n        if casename == '用户名邮箱为空下一步操作置灰':\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").get_attribute('disabled')\n            print('通道1')\n            print(text)\n            assert text == result\n        elif casename == '关闭验证码页面成功':\n            time.sleep(3)\n            # print(self.dr.find_element(by='class name', value='ant-modal-body').is_displayed())\n            driver.find_element(by='class name', value='anticon.anticon-close.ant-modal-close-icon').click()\n            time.sleep(0.5)\n            assert driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed() is not result\n        elif casename == '使用过期验证码验证失败':\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码\n            self.input_code(driver, code)\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道2')\n            print(text)\n            assert text == result\n        elif casename == '输入错误验证码注册失败':\n            self.input_code(driver, ['111111'])\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道3')\n            print(text)\n            assert text == result\n        elif casename == '超时后再次发送验证码成功':\n            time.sleep(63)\n            driver.find_element(by='xpath', value='/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/a').click()\n            time.sleep(3)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道4')\n            print(text)\n            assert text == result\n        elif casename in ['邮箱不含@弹出错误提示', '输入已存在的用户名注册失败', '不勾选用户协议注册失败']:\n            time.sleep(1)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道5')\n            print(text)\n            assert text == result\n        elif casename == '注册完成后领取优惠卷成功':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text\n            print(text)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])\n            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span'))\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道6')\n            print(coupons_text)\n            assert text == 'success' and coupons_text == result\n        elif casename == '领取优惠卷回退页面再次领取失败':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            driver.back()\n            time.sleep(2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])   #登录\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道7')\n            print(coupons_text)\n            assert coupons_text == result\n        elif casename == '不进行验证注册失败':\n            print('通道0')\n            time.sleep(10)      #等待验证码发送至邮箱\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n            print(code[0])\n            self.input_code(driver, code)\n            time.sleep(2)\n            driver.find_element(by='css selector',value='#app > div > div.login-form-wrap > '\n                                                        'div.login-form.margin-bottom > form > div:nth-child(1) > div'\n                                                        ' > div > span > span > input').send_keys(data[1].split('=')[-1]) # 输入密码\n    \n            time.sleep(0.5)\n            driver.find_element(by=\"css selector\",\n                                value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > '\n                                      'div.btn-out.ant-row.ant-form-item > div > div > span > div > a').click()  # 点击下一步\n            WebDriverWait(driver,30,0.2).until(lambda driver:driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span'))\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text 为{text}')\n            print(f'result 为{result}')\n            assert text == result\n        else:\n            try:\n>               self.regist_mode1(useraccount, driver, data)\n\n..\\mode\\register.py:150: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nuseraccount = 'a883774916@163.com'\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\ndata = ['useraccount=a883774917@163.com', 'password=asdASD!@#']\n\n    def regist_mode1(self, useraccount, driver, data):\n        time.sleep(10)\n        code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n        print(code[0])\n        self.input_code(driver, code)\n        WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_xpath(\n            '//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i'))  # 显示等待\n        huakuai = driver.find_element(\"xpath\",\n                                      value=\"\"\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"\"\")  # 定位滑块\n        self.move_to_gap(huakuai, self.get_track(500), driver)  # 移动滑块\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[1]/div/div/span/span/input').send_keys(\n            data[1].split('=')[-1])     #输入密码\n        time.sleep(1)\n    \n>       driver.find_element(by=\"xpath\",\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/a').click()    #点击下一步\n\n..\\mode\\register.py:203: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.webelement.WebElement (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\", element=\"d196f0ac-67c9-42c8-abee-8a516e84454f\")>\n\n    def click(self) -> None:\n        \"\"\"Clicks the element.\"\"\"\n>       self._execute(Command.CLICK_ELEMENT)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:81: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.webelement.WebElement (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\", element=\"d196f0ac-67c9-42c8-abee-8a516e84454f\")>\ncommand = 'clickElement'\nparams = {'id': 'd196f0ac-67c9-42c8-abee-8a516e84454f', 'sessionId': 'b93df9bf9fed55af28b9b9fc5d059e9f'}\n\n    def _execute(self, command, params=None):\n        \"\"\"Executes a command against the underlying HTML element.\n    \n        Args:\n          command: The name of the command to _execute as a string.\n          params: A dictionary of named parameters to send with the command.\n    \n        Returns:\n          The command's JSON response loaded into a dictionary object.\n        \"\"\"\n        if not params:\n            params = {}\n        params['id'] = self._id\n>       return self._parent.execute(command, params)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:710: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\ndriver_command = 'clickElement'\nparams = {'id': 'd196f0ac-67c9-42c8-abee-8a516e84454f'}\n\n    def execute(self, driver_command: str, params: dict = None) -> dict:\n        \"\"\"\n        Sends a command to be executed by a command.CommandExecutor.\n    \n        :Args:\n         - driver_command: The name of the command to execute as a string.\n         - params: A dictionary of named parameters to send with the command.\n    \n        :Returns:\n          The command's JSON response loaded into a dictionary object.\n        \"\"\"\n        if self.session_id:\n            if not params:\n                params = {'sessionId': self.session_id}\n            elif 'sessionId' not in params:\n                params['sessionId'] = self.session_id\n    \n        params = self._wrap_value(params)\n        response = self.command_executor.execute(driver_command, params)\n        if response:\n>           self.error_handler.check_response(response)\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001D9556F2C70>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element click intercepted\",\"message\":\"element click intercepted: Element ...unk [0x75906739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77408E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a data-v-1f620c15=\"\">...</a> is not clickable at point (1159, 578). Other element would receive the click: <div class=\"ant-modal-body\">...</div>\nE         (Session info: chrome=100.0.4896.127)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00927413+2389011]\nE       \tOrdinal0 [0x008B9F61+1941345]\nE       \tOrdinal0 [0x007AC658+837208]\nE       \tOrdinal0 [0x007DF8AF+1046703]\nE       \tOrdinal0 [0x007DD8D6+1038550]\nE       \tOrdinal0 [0x007DB5EB+1029611]\nE       \tOrdinal0 [0x007DA359+1024857]\nE       \tOrdinal0 [0x007CFF93+982931]\nE       \tOrdinal0 [0x007F414C+1130828]\nE       \tOrdinal0 [0x007CF974+981364]\nE       \tOrdinal0 [0x007F4364+1131364]\nE       \tOrdinal0 [0x00804302+1196802]\nE       \tOrdinal0 [0x007F3F66+1130342]\nE       \tOrdinal0 [0x007CE546+976198]\nE       \tOrdinal0 [0x007CF456+980054]\nE       \tGetHandleVerifier [0x00AD9632+1727522]\nE       \tGetHandleVerifier [0x00B8BA4D+2457661]\nE       \tGetHandleVerifier [0x009BEB81+569713]\nE       \tGetHandleVerifier [0x009BDD76+566118]\nE       \tOrdinal0 [0x008C0B2B+1968939]\nE       \tOrdinal0 [0x008C5988+1989000]\nE       \tOrdinal0 [0x008C5A75+1989237]\nE       \tOrdinal0 [0x008CECB1+2026673]\nE       \tBaseThreadInitThunk [0x75906739+25]\nE       \tRtlGetFullPathName_UEx [0x77408E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77408E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: ElementClickInterceptedException\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test_main.Test_Main object at 0x000001D955872F10>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    \n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n>       allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n\ntest_main.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.register.Regist object at 0x000001D9558ECEB0>\nParameter = {'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"b93df9bf9fed55af28b9b9fc5d059e9f\")>\n\n    def regist(self, Parameter, driver):\n        casename = Parameter['casename']\n        mode = Parameter['mode']\n        data = Parameter['data'].split('\\n')\n        if casename == '用户名邮箱为空下一步操作置灰':\n            useraccount = data[0].split('=')[-1]\n        elif casename == '输入已存在的用户名注册失败':\n            useraccount = '979172251@qq.com'\n        else:\n            useraccount = Common().random_email_account()\n    \n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/my/register')\n        time.sleep(0.5)\n        driver.find_element(by='id', value='register_step_1_userAccount').send_keys(useraccount)\n    \n        if casename == '不勾选用户协议注册失败':\n            driver.find_element(by='class name', value='ant-checkbox').click()\n        else:\n            pass\n    \n        driver.find_element(by='xpath',\n                            value='//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button/a').click()  # 点击下一步发送验证码\n    \n        if casename == '用户名邮箱为空下一步操作置灰':\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").get_attribute('disabled')\n            print('通道1')\n            print(text)\n            assert text == result\n        elif casename == '关闭验证码页面成功':\n            time.sleep(3)\n            # print(self.dr.find_element(by='class name', value='ant-modal-body').is_displayed())\n            driver.find_element(by='class name', value='anticon.anticon-close.ant-modal-close-icon').click()\n            time.sleep(0.5)\n            assert driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed() is not result\n        elif casename == '使用过期验证码验证失败':\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=2)  # 获取验证码\n            self.input_code(driver, code)\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道2')\n            print(text)\n            assert text == result\n        elif casename == '输入错误验证码注册失败':\n            self.input_code(driver, ['111111'])\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道3')\n            print(text)\n            assert text == result\n        elif casename == '超时后再次发送验证码成功':\n            time.sleep(63)\n            driver.find_element(by='xpath', value='/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/a').click()\n            time.sleep(3)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道4')\n            print(text)\n            assert text == result\n        elif casename in ['邮箱不含@弹出错误提示', '输入已存在的用户名注册失败', '不勾选用户协议注册失败']:\n            time.sleep(1)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道5')\n            print(text)\n            assert text == result\n        elif casename == '注册完成后领取优惠卷成功':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            text = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text\n            print(text)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])\n            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span'))\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道6')\n            print(coupons_text)\n            assert text == 'success' and coupons_text == result\n        elif casename == '领取优惠卷回退页面再次领取失败':\n            self.regist_mode1(useraccount, driver, data)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div[5]/img').click()  # 点击礼物箱\n            time.sleep(0.2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            driver.back()\n            time.sleep(2)\n            driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定\n            time.sleep(2)\n            Common().login(driver,useraccount,password=data[1].split('=')[-1])   #登录\n            driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span > p').click()\n            time.sleep(1.5)\n            coupons_text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n            print('通道7')\n            print(coupons_text)\n            assert coupons_text == result\n        elif casename == '不进行验证注册失败':\n            print('通道0')\n            time.sleep(10)      #等待验证码发送至邮箱\n            code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n            print(code[0])\n            self.input_code(driver, code)\n            time.sleep(2)\n            driver.find_element(by='css selector',value='#app > div > div.login-form-wrap > '\n                                                        'div.login-form.margin-bottom > form > div:nth-child(1) > div'\n                                                        ' > div > span > span > input').send_keys(data[1].split('=')[-1]) # 输入密码\n    \n            time.sleep(0.5)\n            driver.find_element(by=\"css selector\",\n                                value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > '\n                                      'div.btn-out.ant-row.ant-form-item > div > div > span > div > a').click()  # 点击下一步\n            WebDriverWait(driver,30,0.2).until(lambda driver:driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span'))\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text 为{text}')\n            print(f'result 为{result}')\n            assert text == result\n        else:\n            try:\n                self.regist_mode1(useraccount, driver, data)\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                           value=f\"{assert_way.split('=', 1)[1]}\").text\n                print('通道0')\n                print(text)\n                assert text == result\n            except :\n>               raise AssertionError\nE               AssertionError\n\n..\\mode\\register.py:157: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1651037090053,
+        "stop" : 1651037090333,
+        "duration" : 280
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "548c60454f1db5e1",
+        "name" : "失败截图",
+        "source" : "548c60454f1db5e1.png",
+        "type" : "image/png",
+        "size" : 65503
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a5a9f36d48c9a647",
+      "name" : "stdout",
+      "source" : "a5a9f36d48c9a647.txt",
+      "type" : "text/plain",
+      "size" : 49
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651038260064,
+      "stop" : 1651038260561,
+      "duration" : 497
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651038260561,
+      "stop" : 1651038260561,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "21748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 21
+      },
+      "items" : [ {
+        "uid" : "b91774d1ea005f7b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/b91774d1ea005f7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033190252,
+          "stop" : 1651033229456,
+          "duration" : 39204
+        }
+      }, {
+        "uid" : "71b363af7c44a7e7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/71b363af7c44a7e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651021923673,
+          "stop" : 1651021963733,
+          "duration" : 40060
+        }
+      }, {
+        "uid" : "9488ac78cf5e8e1b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/9488ac78cf5e8e1b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650960343440,
+          "stop" : 1650960403116,
+          "duration" : 59676
+        }
+      }, {
+        "uid" : "88833c4f6f1a6e10",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/88833c4f6f1a6e10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650956991556,
+          "stop" : 1650957031032,
+          "duration" : 39476
+        }
+      }, {
+        "uid" : "f1461f18bb5c4c9f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/f1461f18bb5c4c9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951202803,
+          "stop" : 1650951242788,
+          "duration" : 39985
+        }
+      }, {
+        "uid" : "afa75932403021f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/afa75932403021f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935395452,
+          "stop" : 1650935438161,
+          "duration" : 42709
+        }
+      }, {
+        "uid" : "f1119bd8b25f5ea2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/f1119bd8b25f5ea2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650868872504,
+          "stop" : 1650868913733,
+          "duration" : 41229
+        }
+      }, {
+        "uid" : "9b59468cea87142f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/9b59468cea87142f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650866435082,
+          "stop" : 1650866469604,
+          "duration" : 34522
+        }
+      }, {
+        "uid" : "5537273e25eae3e5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5537273e25eae3e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650858088590,
+          "stop" : 1650858137641,
+          "duration" : 49051
+        }
+      }, {
+        "uid" : "96665dbffa73ce23",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/96665dbffa73ce23",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650854426531,
+          "stop" : 1650854579907,
+          "duration" : 153376
+        }
+      }, {
+        "uid" : "954b1d4f8234cdac",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/954b1d4f8234cdac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650852355057,
+          "stop" : 1650852486939,
+          "duration" : 131882
+        }
+      }, {
+        "uid" : "1ef1c3f8b8163450",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/1ef1c3f8b8163450",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650789328204,
+          "stop" : 1650789374746,
+          "duration" : 46542
+        }
+      }, {
+        "uid" : "84979c91cc654e43",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/84979c91cc654e43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650785667433,
+          "stop" : 1650785710480,
+          "duration" : 43047
+        }
+      }, {
+        "uid" : "ab1f7d8b1aaf6862",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/ab1f7d8b1aaf6862",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650604399901,
+          "stop" : 1650604442759,
+          "duration" : 42858
+        }
+      }, {
+        "uid" : "fa866eea68264b3d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fa866eea68264b3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650599373804,
+          "stop" : 1650599417192,
+          "duration" : 43388
+        }
+      }, {
+        "uid" : "af0e06e380ccc8c9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/af0e06e380ccc8c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650597986135,
+          "stop" : 1650598029168,
+          "duration" : 43033
+        }
+      }, {
+        "uid" : "b704643d47d210f9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/27/allure/#testresult/b704643d47d210f9",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"register_step_1_userAccount\"]\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E27413+2389011]\n\tOrdinal0 [0x00DB9F61+1941345]\n\tOrdinal0 [0x00CAC658+837208]\n\tOrdinal0 [0x00CD91DD+1020381]\n\tOrdinal0 [0x00CD949B+1021083]\n\tOrdinal0 [0x00D06032+1204274]\n\tOrdinal0 [0x00CF4194+1130900]\n\tOrdinal0 [0x00D04302+1196802]\n\tOrdinal0 [0x00CF3F66+1130342]\n\tOrdinal0 [0x00CCE546+976198]\n\tOrdinal0 [0x00CCF456+980054]\n\tGetHandleVerifier [0x00FD9632+1727522]\n\tGetHandleVerifier [0x0108BA4D+2457661]\n\tGetHandleVerifier [0x00EBEB81+569713]\n\tGetHandleVerifier [0x00EBDD76+566118]\n\tOrdinal0 [0x00DC0B2B+1968939]\n\tOrdinal0 [0x00DC5988+1989000]\n\tOrdinal0 [0x00DC5A75+1989237]\n\tOrdinal0 [0x00DCECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650596974973,
+          "stop" : 1650596977804,
+          "duration" : 2831
+        }
+      }, {
+        "uid" : "47c4146f4a775a75",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure/#testresult/47c4146f4a775a75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650520617089,
+          "stop" : 1650520659924,
+          "duration" : 42835
+        }
+      }, {
+        "uid" : "f106907c37382814",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure/#testresult/f106907c37382814",
+        "status" : "broken",
+        "statusDetails" : "IndexError: string index out of range",
+        "time" : {
+          "start" : 1650519698933,
+          "stop" : 1650519727374,
+          "duration" : 28441
+        }
+      }, {
+        "uid" : "89edabf8c6ed017e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure/#testresult/89edabf8c6ed017e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650518299929,
+          "stop" : 1650518341636,
+          "duration" : 41707
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5d036f41c6a8ab66.json",
+  "parameterValues" : [ "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+}

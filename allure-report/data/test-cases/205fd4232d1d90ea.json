@@ -1,0 +1,186 @@
+{
+  "uid" : "205fd4232d1d90ea",
+  "name" : "All Categories 页面可以点击类别快速移动到该类别所在页面位置",
+  "fullName" : "test_main.Test_Main#test_navigation_bar",
+  "historyId" : "cbe6dec6437bd3c4c16df7dc2b222283",
+  "time" : {
+    "start" : 1651037970832,
+    "stop" : 1651037975231,
+    "duration" : 4399
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651036160659,
+      "stop" : 1651036162863,
+      "duration" : 2204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651036162864,
+      "stop" : 1651036162864,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "73f465764549c22c",
+      "name" : "stdout",
+      "source" : "73f465764549c22c.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651038260064,
+      "stop" : 1651038260561,
+      "duration" : 497
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651038260561,
+      "stop" : 1651038260561,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "导航栏"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "21748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '71', 'casename': 'All Categories 页面可以点击类别快速移动到该类别所在页面位置', 'mode': '导航栏', 'data': '', 'assert_way': 'xpath=//*[@id=\"type7\"]/div[2]/div[44]/a', 'result': 'PENTAIR'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "aaa97562d0be08c8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/aaa97562d0be08c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034098579,
+          "stop" : 1651034102942,
+          "duration" : 4363
+        }
+      }, {
+        "uid" : "158fe796856950cf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/158fe796856950cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023302512,
+          "stop" : 1651023306922,
+          "duration" : 4410
+        }
+      }, {
+        "uid" : "418b80deb6f44031",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/418b80deb6f44031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961498179,
+          "stop" : 1650961502556,
+          "duration" : 4377
+        }
+      }, {
+        "uid" : "aa082353827eda90",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/aa082353827eda90",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958085592,
+          "stop" : 1650958090067,
+          "duration" : 4475
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "205fd4232d1d90ea.json",
+  "parameterValues" : [ "{'case_no': '71', 'casename': 'All Categories 页面可以点击类别快速移动到该类别所在页面位置', 'mode': '导航栏', 'data': '', 'assert_way': 'xpath=//*[@id=\"type7\"]/div[2]/div[44]/a', 'result': 'PENTAIR'}" ]
+}

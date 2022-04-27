@@ -6,6 +6,7 @@
 import re
 import time
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
@@ -84,7 +85,12 @@ class Get_Code:
         self.dr.find_element(by="id", value="dologin").click()  # 进入邮箱首页
         self.dr.switch_to.parent_frame()  # 切回父级页面
         time.sleep(2)
-        self.dr.find_element(By.ID, "_mail_component_147_147").click()  # 点击收件箱
+        try:
+            self.dr.find_element(By.ID, "_mail_component_147_147").click()  # 点击收件箱
+        except NoSuchElementException:
+            time.sleep(2)
+            self.dr.find_element(By.ID, "_mail_component_147_147").click()  # 报错，再次点击一次收件箱
+
         time.sleep(2)
         count = self.dr.find_elements(By.CLASS_NAME, "nl0.hA0.ck0")
         # print(len(count))  # 获取存在的未读邮件数量

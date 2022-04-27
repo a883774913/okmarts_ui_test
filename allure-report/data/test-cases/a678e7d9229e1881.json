@@ -1,0 +1,204 @@
+{
+  "uid" : "a678e7d9229e1881",
+  "name" : "网站左上角存在帮助中心入口",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "c39aafceb577c98b9bcb9f955b94406f",
+  "time" : {
+    "start" : 1651037869896,
+    "stop" : 1651037874431,
+    "duration" : 4535
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651036160659,
+      "stop" : 1651036162863,
+      "duration" : 2204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651036162864,
+      "stop" : 1651036162864,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e859546647f82b23",
+      "name" : "stdout",
+      "source" : "e859546647f82b23.txt",
+      "type" : "text/plain",
+      "size" : 46
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651038260064,
+      "stop" : 1651038260561,
+      "duration" : 497
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651038260561,
+      "stop" : 1651038260561,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "21748-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '51', 'casename': '网站左上角存在帮助中心入口', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.top-menu > a:nth-child(3)', 'result': 'True'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "edfd74684f43e1fd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/edfd74684f43e1fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033999847,
+          "stop" : 1651034004360,
+          "duration" : 4513
+        }
+      }, {
+        "uid" : "a00f1be22968f600",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/a00f1be22968f600",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023223178,
+          "stop" : 1651023224450,
+          "duration" : 1272
+        }
+      }, {
+        "uid" : "f1d4404aa7a04991",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/f1d4404aa7a04991",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961416176,
+          "stop" : 1650961417554,
+          "duration" : 1378
+        }
+      }, {
+        "uid" : "4b14a4104eeeb360",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/4b14a4104eeeb360",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958006050,
+          "stop" : 1650958007340,
+          "duration" : 1290
+        }
+      }, {
+        "uid" : "f67e34a7e0da463a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/f67e34a7e0da463a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951943592,
+          "stop" : 1650951947746,
+          "duration" : 4154
+        }
+      }, {
+        "uid" : "b5e87d737dd703ef",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/b5e87d737dd703ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936393644,
+          "stop" : 1650936394990,
+          "duration" : 1346
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a678e7d9229e1881.json",
+  "parameterValues" : [ "{'case_no': '51', 'casename': '网站左上角存在帮助中心入口', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.top-menu > a:nth-child(3)', 'result': 'True'}" ]
+}

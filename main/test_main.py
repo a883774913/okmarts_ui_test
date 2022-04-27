@@ -7,12 +7,13 @@ from okmarts_ui_test.mode.address import Address
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
 from okmarts_ui_test.mode.login import Login
+from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
 
 
 class Test_Main:
-    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例.xlsx')
+    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例_错误用例.xlsx')
     case_infos = infos[0]
     casename_infos = infos[1]
 
@@ -57,4 +58,11 @@ class Test_Main:
     @allure.feature('地址管理')
     @pytest.mark.parametrize('Parameter', case_infos['address'], ids=casename_infos['address'])
     def test_address(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
         Address().address(driver,Parameter)
+
+    @allure.feature('订单管理')
+    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])
+    def test_my_order(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        My_Order().my_order(driver,Parameter)

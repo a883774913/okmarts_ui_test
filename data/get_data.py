@@ -27,6 +27,8 @@ class Get_Data:
         address_casename = []           #地址管理模块用例名称集合
         address_case_list = []          #地址管理模块用例集合
 
+        my_order_casename = []          #我的订单用例名称集合
+        my_order_case_list = []         #我的订单用例集合
 
         for i in range(1,sheet.nrows):
             dicts = {}
@@ -56,7 +58,9 @@ class Get_Data:
             if mode == '地址管理':
                 self.get_list(dicts,address_case_list,case_no,casename,mode,data,assert_way,result)
                 address_casename.append(casename)
-
+            if mode == '订单管理':
+                self.get_list(dicts,my_order_case_list,case_no,casename,mode,data,assert_way,result)
+                my_order_casename.append(casename)
 
         General_for_casename['login'] = login_casename
         General_table['login'] = login_cases_list
@@ -76,8 +80,11 @@ class Get_Data:
         General_for_casename['address'] = address_casename
         General_table['address'] = address_case_list
 
-        print(General_table['address'])
-        print(General_for_casename['address'])
+        General_for_casename['my_order'] = my_order_casename
+        General_table["my_order"] = my_order_case_list
+
+        print(General_table['my_order'])
+        print(General_for_casename['my_order'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):

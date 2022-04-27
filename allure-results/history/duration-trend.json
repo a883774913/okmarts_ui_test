@@ -1,4 +1,32 @@
 [ {
+  "buildOrder" : 45,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 1915813
+  }
+}, {
+  "buildOrder" : 44,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/44/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 25136
+  }
+}, {
+  "buildOrder" : 43,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 2170218
+  }
+}, {
+  "buildOrder" : 42,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 1948630
+  }
+}, {
   "buildOrder" : 41,
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure",
   "reportName" : "AllureReport",
@@ -108,30 +136,4 @@
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/26/allure",
   "reportName" : "AllureReport",
   "data" : { }
-}, {
-  "buildOrder" : 25,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/25/allure",
-  "reportName" : "AllureReport",
-  "data" : { }
-}, {
-  "buildOrder" : 24,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/24/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 912492
-  }
-}, {
-  "buildOrder" : 23,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/23/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 868063
-  }
-}, {
-  "buildOrder" : 22,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/22/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "duration" : 919115
-  }
 } ]

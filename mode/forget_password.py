@@ -99,9 +99,9 @@ class Forget_Password:
             code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
             driver.find_element(by='id',value='horizontal_login_code').send_keys(code[0])   #输入验证码
             driver.find_element(by='id',value='horizontal_login_newPassword').send_keys(new_password)       #输入新密码
-            time.sleep(0.5)
+            time.sleep(1)
             driver.find_element(by='class name',value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()    #点击Confirm the changes
-            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)'))
+            time.sleep(5)
             driver.find_element(by='css selector',
                             value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击按钮进入个人中心  #点击头像进行登录
             time.sleep(1)
@@ -131,8 +131,7 @@ class Forget_Password:
             driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
             driver.find_element(by='class name',
                                 value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
-            WebDriverWait(driver,20,0.2).until(lambda x:x.find_element_by_css_selector('#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)'))
-            # time.sleep(5)
+            time.sleep(5)
             driver.back()       #回退页面
             time.sleep(2)
             info = driver.find_element(by='class name',value='title.text-tit-lg.margin-bottom-lg').text

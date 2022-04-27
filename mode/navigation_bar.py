@@ -20,13 +20,14 @@ class Navigation_Bar:
         result = Parameter['result']
 
         driver.get('http://18.118.13.94:81/index')      #打开首页
-        time.sleep(1)
+        WebDriverWait(driver,30,0.2).until(lambda x:x.find_element(by='class name',value='pointer.all'))
+        time.sleep(2)
         if casename == '点击导航栏导航栏伸缩成功':
             if driver.find_element(by='class name',value='okm-icon.icon-leimu').is_displayed(): #如果元素Full catalog 存在
                 driver.find_element(by='css selector',value='#app > div > div.global-header > div > div.menu-content '      
                                                             '> div.menu-left > div.menu-out > '
                                                             'div.menu-btn.text-tit-lg > svg').click() #点击导航栏收缩按钮
-                time.sleep(1)
+                time.sleep(2)
                 try:
                     print(driver.find_element(by='class name',value='okm-icon.icon-leimu').is_displayed())
                     raise AssertionError
@@ -45,7 +46,7 @@ class Navigation_Bar:
 
         elif casename == '鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功':
             Common().hover(driver,way='xpath',element='//*[@id="app"]/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/ul/li[1]') #悬停
-            time.sleep(1)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
