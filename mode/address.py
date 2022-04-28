@@ -9,6 +9,8 @@ from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.mysql.mysql import Mysql
 
 
+
+
 class Address:
     def address(self,driver,Parameter):
 
@@ -78,11 +80,11 @@ class Address:
             assert str(text) == result
         elif '修改' in casename:
             print('通道4')
-
             data = eval(data)
             add_data = str(data[0])
-            edit_data = data[1]
-
+            print(add_data)
+            edit_data = str(data[1])
+            print(edit_data)
             self.add_addressinfo(driver,add_data)
             time.sleep(2)
             self.edit_mode(driver,edit_data)
@@ -130,39 +132,80 @@ class Address:
 
     #编辑模块
     def edit_mode(self,driver,data):
+        data = eval(data)
         driver.find_element(by='xpath', value='//*[@id="app"]/div/div[2]/div[1]/div/div[2]/div[1]/div[4]/a[1]').click() #点击编辑
 
         js = """document.querySelector("input[id='coordinated_firstname']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_firstname').send_keys(data['fistname'])  #
+        print(data['fistname'])
+        if data['fistname'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_firstname').send_keys(data['fistname'])  #
 
         js = """document.querySelector("input[id='coordinated_lastname']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_lastname').send_keys(data['lastname'])  #
+        print(data['lastname'])
+        if data['lastname'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_lastname').send_keys(data['lastname'])  #
 
         js = """document.querySelector("input[id='coordinated_contactnumber']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_contactnumber').send_keys(data['contactnumber'])  #
+        print(data['contactnumber'])
+        if data['contactnumber'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_contactnumber').send_keys(data['contactnumber'])  #
 
         js = """document.querySelector("input[id='coordinated_area1']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_area1').send_keys(data['coordinated_area1'])  #
+        print(data['coordinated_area1'])
+        if data['coordinated_area1'] == "null":
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_area1').send_keys(data['coordinated_area1'])  #
 
         js = """document.querySelector("input[id='coordinated_area2']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_area2').send_keys(data['coordinated_area2'])  #
+        print(data['coordinated_area2'])
+        if data['coordinated_area2'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_area2').send_keys(data['coordinated_area2'])  #
 
         js = """document.querySelector("input[id='coordinated_area3']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_area3').send_keys(data['coordinated_area3'])  #
+        print(data['coordinated_area3'])
+        if data['coordinated_area3'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_area3').send_keys(data['coordinated_area3'])  #
 
         js = """document.querySelector("input[id='coordinated_postalCode']").value="";"""
         driver.execute_script(js)
-        driver.find_element(by='id', value='coordinated_postalCode').send_keys(data['coordinated_postalCode'])  #
+        print(data['coordinated_postalCode'])
+        if data['coordinated_postalCode'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_postalCode').send_keys(data['coordinated_postalCode'])  #
 
         driver.find_element(by='id', value='coordinated_addressLine').click()
         driver.find_element(by='id', value='coordinated_addressLine').clear() #清除内容
-        driver.find_element(by='id', value='coordinated_addressLine').send_keys(data['coordinated_addressLine'])  #
+        print(data['coordinated_addressLine'])
+        if data['coordinated_addressLine'] == 'null':
+            print('跳过')
+            pass
+        else:
+            driver.find_element(by='id', value='coordinated_addressLine').send_keys(data['coordinated_addressLine'])  #
 
         driver.find_element(by='class name',
                             value='atn-btn-orange.address_submit.ant-btn.ant-btn-primary').click()  # 点击确定

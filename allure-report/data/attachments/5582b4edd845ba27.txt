@@ -1,6 +1,0 @@
-['useraccount=a979172251@163.com', 'newpassword=a123456']
-new password 为 test61
-Login
-通道5
-Hi~
-a979172251@163.com

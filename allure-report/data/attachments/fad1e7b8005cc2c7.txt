@@ -1,5 +1,0 @@
-['useraccount=a979172251@163.com', 'newpassword=aaaaaaa']
-new password 为 aaaaaaa
-Login
-通道0
-Please set the password to a combination of 6 to 16 digits and letters
