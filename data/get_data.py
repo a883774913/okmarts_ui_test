@@ -30,6 +30,9 @@ class Get_Data:
         my_order_casename = []          #我的订单用例名称集合
         my_order_case_list = []         #我的订单用例集合
 
+        personal_center_casename = []            #个人中心资料修改用例名称集合
+        personal_case_list = []                    #个人中心资料修改用例集合
+
         for i in range(1,sheet.nrows):
             dicts = {}
             value = sheet.row_values(i)
@@ -61,6 +64,9 @@ class Get_Data:
             if mode == '订单管理':
                 self.get_list(dicts,my_order_case_list,case_no,casename,mode,data,assert_way,result)
                 my_order_casename.append(casename)
+            if mode == '个人信息修改':
+                self.get_list(dicts,personal_case_list,case_no,casename,mode,data,assert_way,result)
+                personal_center_casename.append(casename)
 
         General_for_casename['login'] = login_casename
         General_table['login'] = login_cases_list
@@ -83,8 +89,11 @@ class Get_Data:
         General_for_casename['my_order'] = my_order_casename
         General_table["my_order"] = my_order_case_list
 
-        print(General_table['my_order'])
-        print(General_for_casename['my_order'])
+        General_for_casename['personal_center'] = personal_center_casename
+        General_table['personal_center'] = personal_case_list
+
+        print(General_table['personal_center'])
+        print(General_for_casename['personal_center'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):

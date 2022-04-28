@@ -1,4 +1,3 @@
-import os
 
 import allure
 import pytest
@@ -38,6 +37,6 @@ def pytest_runtest_makereport(item, call):
 def driver():
     global _driver
     if _driver is None:
-        _driver = webdriver.Chrome()
+        _driver = webdriver.Edge()
         _driver.maximize_window()
     yield _driver

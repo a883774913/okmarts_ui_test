@@ -10,6 +10,7 @@ from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
+from okmarts_ui_test.mode.Personal_Center import Personal_Center
 
 
 class Test_Main:
@@ -66,3 +67,11 @@ class Test_Main:
     def test_my_order(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
         My_Order().my_order(driver,Parameter)
+
+    @allure.feature('个人资料修改')
+    @pytest.mark.parametrize('Parameter', case_infos['personal_center'], ids=casename_infos['personal_center'])
+    def test_personal_center(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Personal_Center().person_center(driver,Parameter)
+
+
