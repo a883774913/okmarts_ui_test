@@ -1,6 +1,0 @@
-['title=', 'descript=aaaaaaaaaaaaaaaaaaaaaa']
-Hi~
-null null
-通道9
-text 为 please enter the title
-result 为 please enter the title

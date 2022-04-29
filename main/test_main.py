@@ -3,6 +3,7 @@ import pytest
 
 from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.data.get_data import Get_Data
+from okmarts_ui_test.mode.Personal_Center import Personal_Center
 from okmarts_ui_test.mode.address import Address
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
@@ -10,11 +11,10 @@ from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
-from okmarts_ui_test.mode.Personal_Center import Personal_Center
 
 
 class Test_Main:
-    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例.xlsx')
+    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例_错误用例.xlsx')
     case_infos = infos[0]
     casename_infos = infos[1]
 

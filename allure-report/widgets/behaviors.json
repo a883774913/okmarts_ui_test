@@ -4,10 +4,10 @@
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
     "statistic" : {
-      "failed" : 4,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 24,
+      "passed" : 25,
       "unknown" : 0,
       "total" : 28
     }
@@ -16,9 +16,9 @@
     "name" : "订单管理",
     "statistic" : {
       "failed" : 1,
-      "broken" : 6,
+      "broken" : 7,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 7,
       "unknown" : 0,
       "total" : 15
     }
@@ -27,9 +27,9 @@
     "name" : "忘记密码",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 15,
+      "passed" : 16,
       "unknown" : 0,
       "total" : 16
     }
