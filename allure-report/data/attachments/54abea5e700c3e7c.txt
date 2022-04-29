@@ -1,6 +1,0 @@
-['title=aaaaaaaaaaaaa', 'descript=aaaaaaaaaa']
-Hi~
-979172251@qq.com
-通道9
-text 为 send success
-result 为 send success

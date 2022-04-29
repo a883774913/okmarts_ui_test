@@ -4,12 +4,12 @@
     "uid" : "9ddc06458b7584bde71958fea9f8909c",
     "name" : "test_main",
     "statistic" : {
-      "failed" : 4,
-      "broken" : 7,
+      "failed" : 3,
+      "broken" : 8,
       "skipped" : 0,
-      "passed" : 90,
+      "passed" : 94,
       "unknown" : 0,
-      "total" : 101
+      "total" : 105
     }
   } ]
 }

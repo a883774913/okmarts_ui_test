@@ -1,0 +1,334 @@
+{
+  "uid" : "75541edc2df395d8",
+  "name" : "注册完成后领取优惠卷成功",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "55bfa903be6bf8d89ffe158c01819b94",
+  "time" : {
+    "start" : 1651219398032,
+    "stop" : 1651219445797,
+    "duration" : 47765
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651218485432,
+      "stop" : 1651218490130,
+      "duration" : 4698
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651218490131,
+      "stop" : 1651218490131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "880d25ef801aeb92",
+      "name" : "stdout",
+      "source" : "880d25ef801aeb92.txt",
+      "type" : "text/plain",
+      "size" : 88
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651222074294,
+      "stop" : 1651222075007,
+      "duration" : 713
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651222075037,
+      "stop" : 1651222075037,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "14900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 25
+      },
+      "items" : [ {
+        "uid" : "33c3a880a178fa5c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/33c3a880a178fa5c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651200718646,
+          "stop" : 1651200765318,
+          "duration" : 46672
+        }
+      }, {
+        "uid" : "dcbb35aef9508976",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/dcbb35aef9508976",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651194949895,
+          "stop" : 1651194997930,
+          "duration" : 48035
+        }
+      }, {
+        "uid" : "4f171df9e2ea5a95",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/4f171df9e2ea5a95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651051797369,
+          "stop" : 1651051844242,
+          "duration" : 46873
+        }
+      }, {
+        "uid" : "9f75bcd572ce6129",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/9f75bcd572ce6129",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037129879,
+          "stop" : 1651037176024,
+          "duration" : 46145
+        }
+      }, {
+        "uid" : "50e443421a15e159",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/50e443421a15e159",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033272187,
+          "stop" : 1651033317438,
+          "duration" : 45251
+        }
+      }, {
+        "uid" : "45235a3c6ea07ce3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/45235a3c6ea07ce3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651022023517,
+          "stop" : 1651022069169,
+          "duration" : 45652
+        }
+      }, {
+        "uid" : "bf699556a3e647ad",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/bf699556a3e647ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650960442549,
+          "stop" : 1650960487580,
+          "duration" : 45031
+        }
+      }, {
+        "uid" : "358acb9a06037279",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/358acb9a06037279",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650957070668,
+          "stop" : 1650957117831,
+          "duration" : 47163
+        }
+      }, {
+        "uid" : "cfc2377fa94b2a97",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/cfc2377fa94b2a97",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650951283027,
+          "stop" : 1650951342432,
+          "duration" : 59405
+        }
+      }, {
+        "uid" : "389e8f081d790c6a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/389e8f081d790c6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935478455,
+          "stop" : 1650935529150,
+          "duration" : 50695
+        }
+      }, {
+        "uid" : "3587f12b9c23055e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/3587f12b9c23055e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650868958459,
+          "stop" : 1650869004687,
+          "duration" : 46228
+        }
+      }, {
+        "uid" : "8695ef8ec382b48d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/8695ef8ec382b48d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650866504292,
+          "stop" : 1650866538770,
+          "duration" : 34478
+        }
+      }, {
+        "uid" : "fa58c11226fcf1c2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/fa58c11226fcf1c2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650858186820,
+          "stop" : 1650858384816,
+          "duration" : 197996
+        }
+      }, {
+        "uid" : "9df0b4a15d23067b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9df0b4a15d23067b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650854625861,
+          "stop" : 1650854712094,
+          "duration" : 86233
+        }
+      }, {
+        "uid" : "3de6f31541a37131",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/3de6f31541a37131",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650852530063,
+          "stop" : 1650852579698,
+          "duration" : 49635
+        }
+      }, {
+        "uid" : "3cc9d75a16afe43b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/3cc9d75a16afe43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650789420197,
+          "stop" : 1650789473117,
+          "duration" : 52920
+        }
+      }, {
+        "uid" : "cf4a24c4426c7f32",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/cf4a24c4426c7f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650785753506,
+          "stop" : 1650785802511,
+          "duration" : 49005
+        }
+      }, {
+        "uid" : "3c4f8d2da00a0c63",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/3c4f8d2da00a0c63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650604486931,
+          "stop" : 1650604536329,
+          "duration" : 49398
+        }
+      }, {
+        "uid" : "fb2c906b5e613f6c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fb2c906b5e613f6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650599451523,
+          "stop" : 1650599500877,
+          "duration" : 49354
+        }
+      }, {
+        "uid" : "53e43c53053b0af2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/53e43c53053b0af2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650598072056,
+          "stop" : 1650598121532,
+          "duration" : 49476
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "75541edc2df395d8.json",
+  "parameterValues" : [ "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
+}

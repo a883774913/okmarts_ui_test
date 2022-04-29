@@ -1,5 +1,0 @@
-{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\npassword=a123456', 'assert_way': 'xpath=//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}
-['userAccount=979172251@qq.com', 'password=a123456']
-Login
-Hi~
-nullnull nullnull

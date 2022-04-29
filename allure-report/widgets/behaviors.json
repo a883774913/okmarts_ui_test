@@ -15,10 +15,10 @@
     "uid" : "516bf61276b79de3ed3b4be198275db3",
     "name" : "订单管理",
     "statistic" : {
-      "failed" : 1,
-      "broken" : 7,
+      "failed" : 0,
+      "broken" : 6,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 9,
       "unknown" : 0,
       "total" : 15
     }
@@ -27,9 +27,9 @@
     "name" : "忘记密码",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 16,
+      "passed" : 14,
       "unknown" : 0,
       "total" : 16
     }
@@ -84,9 +84,9 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 2
+      "total" : 6
     }
   } ]
 }

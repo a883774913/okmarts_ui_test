@@ -1,0 +1,195 @@
+{
+  "uid" : "223574c0d0d6f32c",
+  "name" : "不输入lastname新增失败",
+  "fullName" : "test_main.Test_Main#test_address",
+  "historyId" : "884abd5510bcba3e2383e4926ce225aa",
+  "time" : {
+    "start" : 1651220773498,
+    "stop" : 1651220791541,
+    "duration" : 18043
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651218485432,
+      "stop" : 1651218490130,
+      "duration" : 4698
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651218490131,
+      "stop" : 1651218490131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5ad734c34f43097",
+      "name" : "stdout",
+      "source" : "5ad734c34f43097.txt",
+      "type" : "text/plain",
+      "size" : 367
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651222074294,
+      "stop" : 1651222075007,
+      "duration" : 713
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651222075037,
+      "stop" : 1651222075037,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "地址管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "14900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '81', 'casename': '不输入lastname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first last Name!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "7e55668cdb27edf9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/7e55668cdb27edf9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201760318,
+          "stop" : 1651201771583,
+          "duration" : 11265
+        }
+      }, {
+        "uid" : "2bf2747bce45d8c4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/2bf2747bce45d8c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196178206,
+          "stop" : 1651196196406,
+          "duration" : 18200
+        }
+      }, {
+        "uid" : "ef4e1e796dfd4e31",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/ef4e1e796dfd4e31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052892872,
+          "stop" : 1651052904139,
+          "duration" : 11267
+        }
+      }, {
+        "uid" : "7ddb37490782be2a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/7ddb37490782be2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651038079722,
+          "stop" : 1651038091700,
+          "duration" : 11978
+        }
+      }, {
+        "uid" : "b0b6d23d29dbb6d0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/b0b6d23d29dbb6d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034206503,
+          "stop" : 1651034217761,
+          "duration" : 11258
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "223574c0d0d6f32c.json",
+  "parameterValues" : [ "{'case_no': '81', 'casename': '不输入lastname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first last Name!'}" ]
+}

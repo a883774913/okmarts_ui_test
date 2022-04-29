@@ -4,696 +4,16 @@
   "children" : [ {
     "name" : "DESKTOP-NB3FDE0",
     "children" : [ {
-      "name" : "7776-MainThread",
+      "name" : "14900-MainThread",
       "children" : [ {
-        "name" : "不勾选用户协议注册失败",
-        "uid" : "c23f5e9f979ea5e0",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199909911,
-          "stop" : 1651199913558,
-          "duration" : 3647
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '10', 'casename': '不勾选用户协议注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please checked our user agreement first'}" ]
-      }, {
-        "name" : "输入7位英文大写密码修改失败",
-        "uid" : "11dd8e6e02cc6ebe",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201187214,
-          "stop" : 1651201225864,
-          "duration" : 38650
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '44', 'casename': '输入7位英文大写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=AAAAAAA', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为纯小写字母注册失败",
-        "uid" : "27c3dbbdadffde54",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200223596,
-          "stop" : 1651200266468,
-          "duration" : 42872
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '20', 'casename': '密码为纯小写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfghjkl', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为数字+大写字母+特殊字符注册成功",
-        "uid" : "6f32c533df482f8",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651200592581,
-          "stop" : 1651200633159,
-          "duration" : 40578
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "超时后再次发送验证码成功",
-        "uid" : "b62939045c1a28d6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199942569,
-          "stop" : 1651200011318,
-          "duration" : 68749
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}" ]
-      }, {
-        "name" : "密码为数字+特殊字符注册失败",
-        "uid" : "8bc2d3e35258cfb3",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200348376,
-          "stop" : 1651200388997,
-          "duration" : 40621
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '23', 'casename': '密码为数字+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=12345！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "登录状态点击Retrieve Password页面跳转到修改密码页面",
-        "uid" : "5f46415b28911f55",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201548962,
-          "stop" : 1651201555867,
-          "duration" : 6905
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '54', 'casename': '登录状态点击Retrieve Password页面跳转到修改密码页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Enter a new password'}" ]
-      }, {
-        "name" : "输入正确用户名密码登录成功",
-        "uid" : "663734e3461ce185",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199865752,
-          "stop" : 1651199873343,
-          "duration" : 7591
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}" ]
-      }, {
-        "name" : "点击 Edit address 输入正确信息修改地址成功",
-        "uid" : "3a77ee91858591ee",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201796249,
-          "stop" : 1651201810217,
-          "duration" : 13968
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '84', 'casename': '点击 Edit address 输入正确信息修改地址成功', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}" ]
-      }, {
-        "name" : "密码为16位注册成功",
-        "uid" : "2579608272308ce4",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200142839,
-          "stop" : 1651200183318,
-          "duration" : 40479
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "点击Change Email Address(Need to log in first)页面成功跳转至登录页面",
-        "uid" : "c545b0b3463860ce",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201555879,
-          "stop" : 1651201562058,
-          "duration" : 6179
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '55', 'casename': '点击Change Email Address(Need to log in first)页面成功跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
-      }, {
-        "name" : "点击新增地址输入正确信息新增成功",
-        "uid" : "5ece58ff2e3843de",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201662755,
-          "stop" : 1651201674005,
-          "duration" : 11250
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '73', 'casename': '点击新增地址输入正确信息新增成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}" ]
-      }, {
-        "name" : "邮箱不含@弹出错误提示",
-        "uid" : "de053e37bd2de172",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199902628,
-          "stop" : 1651199906282,
-          "duration" : 3654
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '8', 'casename': '邮箱不含@弹出错误提示', 'mode': '注册', 'data': 'userAccount=123456', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Register an account'}" ]
-      }, {
-        "name" : "点击Total price可以根据订单金额进行排序",
-        "uid" : "8b57f8dfeb23bfbf",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201840175,
-          "stop" : 1651201847665,
-          "duration" : 7490
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '99', 'casename': '点击Total price可以根据订单金额进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
-      }, {
-        "name" : "不进行验证注册失败",
-        "uid" : "560bf2e911cf843e",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200817397,
-          "stop" : 1651200852312,
-          "duration" : 34915
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '34', 'casename': '不进行验证注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Please press the slider and drag to the far right'}" ]
-      }, {
-        "name" : "点击垃圾桶删除地址成功",
-        "uid" : "a468135208db7563",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201782076,
-          "stop" : 1651201796228,
-          "duration" : 14152
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '83', 'casename': '点击垃圾桶删除地址成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'delete success'}" ]
-      }, {
-        "name" : "不输入邮箱修下一步置灰",
-        "uid" : "1c8538933feed4b0",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200901324,
-          "stop" : 1651200909785,
-          "duration" : 8461
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '36', 'casename': '不输入邮箱修下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
-      }, {
-        "name" : "输入正确内容修改密码成功",
-        "uid" : "13824c19dff9295d",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200852316,
-          "stop" : 1651200901309,
-          "duration" : 48993
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '35', 'casename': '输入正确内容修改密码成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
-      }, {
-        "name" : "登录状态意见反馈不输入内容发送失败",
-        "uid" : "a7881bf87ab4b9d",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201615950,
-          "stop" : 1651201622964,
-          "duration" : 7014
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '64', 'casename': '登录状态意见反馈不输入内容发送失败', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the content'}" ]
-      }, {
-        "name" : "输入空的密码登录失败",
-        "uid" : "b32efe03a8dabc6c",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199881614,
-          "stop" : 1651199886218,
-          "duration" : 4604
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '3', 'casename': '输入空的密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
-      }, {
-        "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-        "uid" : "f31055fd09c4d931",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651200677771,
-          "stop" : 1651200718489,
-          "duration" : 40718
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
-        "uid" : "d3d190586d0b6c0",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201587757,
-          "stop" : 1651201594424,
-          "duration" : 6667
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
-      }, {
-        "name" : "密码为纯特殊字符注册失败",
-        "uid" : "3c34a65a76415cd7",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200307334,
-          "stop" : 1651200348373,
-          "duration" : 41039
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '22', 'casename': '密码为纯特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=~！@#￥%……&**', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "输入16位字母+数字更改成功",
-        "uid" : "a3daf166a807c66f",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201305383,
-          "stop" : 1651201354274,
-          "duration" : 48891
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '47', 'casename': '输入16位字母+数字更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456789123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
-      }, {
-        "name" : "输入7位英文小写密码修改失败",
-        "uid" : "74fd9ac59c469a55",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201103199,
-          "stop" : 1651201187210,
-          "duration" : 84011
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '43', 'casename': '输入7位英文小写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=aaaaaaa', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "输入修改过的密码更改失败",
-        "uid" : "f2ebf3843baa278b",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201491859,
-          "stop" : 1651201540771,
-          "duration" : 48912
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : true,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '50', 'casename': '输入修改过的密码更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
-      }, {
-        "name" : "address中city不输入新增失败",
-        "uid" : "92065ce82a9a4c4d",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201703954,
-          "stop" : 1651201715193,
-          "duration" : 11239
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '76', 'casename': 'address中city不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input city!'}" ]
-      }, {
-        "name" : "密码为5位注册失败",
-        "uid" : "7dbd614922457589",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200102545,
-          "stop" : 1651200142835,
-          "duration" : 40290
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "post code不输入新增失败",
-        "uid" : "8a9bc3722a62afb5",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201726545,
-          "stop" : 1651201737834,
-          "duration" : 11289
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '78', 'casename': 'post code不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input post code!'}" ]
-      }, {
-        "name" : "都为空新增失败",
-        "uid" : "6e02e480b06d369c",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201771588,
-          "stop" : 1651201782072,
-          "duration" : 10484
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '82', 'casename': '都为空新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"\",\"contactnumber\":\"\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
-      }, {
-        "name" : "密码为小写字母+特殊字符注册失败",
-        "uid" : "547a718c72628b12",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200429451,
-          "stop" : 1651200470219,
-          "duration" : 40768
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '25', 'casename': '密码为小写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdf！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "点击Full catalog进入所有类别页面",
-        "uid" : "72f4e9c7b776caa6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201634396,
-          "stop" : 1651201636929,
-          "duration" : 2533
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '67', 'casename': '点击Full catalog进入所有类别页面', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.category-content > div.ant-breadcrumb > span:nth-child(1) > span.ant-breadcrumb-separator', 'result': '>'}" ]
-      }, {
-        "name" : "输入空密码修改失败",
-        "uid" : "68c8742630dfecbe",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201032531,
-          "stop" : 1651201068202,
-          "duration" : 35671
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '41', 'casename': '输入空密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=  ', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "不输入firstname新增失败",
-        "uid" : "cdf7e9ea8188ae54",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201749006,
-          "stop" : 1651201760314,
-          "duration" : 11308
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '80', 'casename': '不输入firstname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
-      }, {
-        "name" : "点击Retrieve Password页面跳转到登录页面",
-        "uid" : "65a7b8ab77851898",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201547728,
-          "stop" : 1651201548957,
-          "duration" : 1229
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '53', 'casename': '点击Retrieve Password页面跳转到登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
-      }, {
-        "name" : "输入错误邮箱发送验证码失败",
-        "uid" : "17497c8cf8b131e7",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200920942,
-          "stop" : 1651200927552,
-          "duration" : 6610
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '39', 'casename': '输入错误邮箱发送验证码失败', 'mode': '忘记密码', 'data': 'useraccount=sdasdsa\\nnewpassword=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'No such user information！'}" ]
-      }, {
-        "name" : "输入7位纯数字修改失败",
-        "uid" : "2ce34e3eb0d3cef9",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201068208,
-          "stop" : 1651201103195,
-          "duration" : 34987
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '42', 'casename': '输入7位纯数字修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为数字+小写字母+大写字母注册成功",
-        "uid" : "49e1404db4b52710",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200510914,
-          "stop" : 1651200551526,
-          "duration" : 40612
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : true,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '27', 'casename': '密码为数字+小写字母+大写字母注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdFGH', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "address details 不输入新增失败",
-        "uid" : "2ee57fcadcfdd178",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201737838,
-          "stop" : 1651201749002,
-          "duration" : 11164
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '79', 'casename': 'address details 不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input Address details!'}" ]
-      }, {
-        "name" : "输入错误验证码注册失败",
-        "uid" : "e570c103eeb9ee5b",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200011324,
-          "stop" : 1651200018397,
-          "duration" : 7073
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
-      }, {
         "name" : "All Categories 页面可以点击类别快速移动到该类别所在页面位置",
-        "uid" : "cb5a21c62cf1b21a",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "63bf0297f2965d83",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201651327,
-          "stop" : 1651201656737,
-          "duration" : 5410
+          "start" : 1651220602717,
+          "stop" : 1651220616208,
+          "duration" : 13491
         },
         "flaky" : false,
         "newFailed" : false,
@@ -703,14 +23,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '71', 'casename': 'All Categories 页面可以点击类别快速移动到该类别所在页面位置', 'mode': '导航栏', 'data': '', 'assert_way': 'xpath=//*[@id=\"type7\"]/div[2]/div[44]/a', 'result': 'PENTAIR'}" ]
       }, {
-        "name" : "输入6位字母+数字密码更改成功",
-        "uid" : "2556ae71a098b52e",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "存在意见反馈模块",
+        "uid" : "fd8d16c17b159428",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201261003,
-          "stop" : 1651201305379,
-          "duration" : 44376
+          "start" : 1651220432503,
+          "stop" : 1651220440787,
+          "duration" : 8284
         },
         "flaky" : false,
         "newFailed" : false,
@@ -718,33 +38,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '46', 'casename': '输入6位字母+数字密码更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+        "parameters" : [ "{'case_no': '61', 'casename': '存在意见反馈模块', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > div.text-tit-lg.margin-bottom-xs', 'result': 'Site Message'}" ]
       }, {
-        "name" : "密码为数字+小写字母+特殊字符注册成功",
-        "uid" : "94a9d9d5f37bb50a",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651200551530,
-          "stop" : 1651200591868,
-          "duration" : 40338
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "点击 Order without payment页面正确跳转至登录页面",
-        "uid" : "51c07ddde6fa8a21",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "输入空的密码登录失败",
+        "uid" : "486b5039a3880c5a",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201581578,
-          "stop" : 1651201587753,
-          "duration" : 6175
+          "start" : 1651218514010,
+          "stop" : 1651218533322,
+          "duration" : 19312
         },
         "flaky" : false,
         "newFailed" : false,
@@ -752,16 +55,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '59', 'casename': '点击 Order without payment页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+        "parameters" : [ "{'case_no': '3', 'casename': '输入空的密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
       }, {
-        "name" : "密码为纯数字注册失败",
-        "uid" : "562e0b177769399",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "不输入邮箱号点击发送验证码失败",
+        "uid" : "eb1400405544b43a",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200183321,
-          "stop" : 1651200223592,
-          "duration" : 40271
+          "start" : 1651219615242,
+          "stop" : 1651219626891,
+          "duration" : 11649
         },
         "flaky" : false,
         "newFailed" : false,
@@ -769,16 +72,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '19', 'casename': '密码为纯数字注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123456789', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+        "parameters" : [ "{'case_no': '38', 'casename': '不输入邮箱号点击发送验证码失败', 'mode': '忘记密码', 'data': 'useraccount=\\nnewpassword=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'No such user information！'}" ]
       }, {
-        "name" : "address中country不选择新增失败",
-        "uid" : "8d3eb1f2219cc288",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击查看物流查看成功",
+        "uid" : "a91e3392520384e4",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201715197,
-          "stop" : 1651201726539,
-          "duration" : 11342
+          "start" : 1651220876587,
+          "stop" : 1651220891593,
+          "duration" : 15006
         },
         "flaky" : false,
         "newFailed" : false,
@@ -786,16 +89,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '77', 'casename': 'address中country不选择新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input country!'}" ]
+        "parameters" : [ "{'case_no': '96', 'casename': '点击查看物流查看成功', 'mode': '订单管理', 'data': '', 'assert_way': 'xpath=//*[@id=\"rcDialogTitle0\"]', 'result': 'Logistics Modal'}" ]
       }, {
-        "name" : "登录状态意见反馈输入正确内容发送成功",
-        "uid" : "aacae8e49c51f38f",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "都为空新增失败",
+        "uid" : "8e0f8ed8db07b454",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201622968,
-          "stop" : 1651201630050,
-          "duration" : 7082
+          "start" : 1651220791551,
+          "stop" : 1651220811329,
+          "duration" : 19778
         },
         "flaky" : false,
         "newFailed" : false,
@@ -803,16 +106,33 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '65', 'casename': '登录状态意见反馈输入正确内容发送成功', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=aaaaaaaaaa', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'send success'}" ]
+        "parameters" : [ "{'case_no': '82', 'casename': '都为空新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"\",\"contactnumber\":\"\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
       }, {
-        "name" : "未支付订单点击未支付跳转到支付页面",
-        "uid" : "be9fbfcae22b1fcf",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "broken",
+        "name" : "点击order data可以根据订单时间进行排序",
+        "uid" : "4f6f2e085adf696e",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
         "time" : {
-          "start" : 1651201827364,
-          "stop" : 1651201831904,
-          "duration" : 4540
+          "start" : 1651220905030,
+          "stop" : 1651220920345,
+          "duration" : 15315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : true,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '98', 'casename': '点击order data可以根据订单时间进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "退货页面不输入任何内容提交退货单失败",
+        "uid" : "dadd63612c004ca3",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221037976,
+          "stop" : 1651221125189,
+          "duration" : 87213
         },
         "flaky" : false,
         "newFailed" : false,
@@ -820,16 +140,84 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '退货页面不输入任何内容提交退货单失败', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please input your reason'}" ]
+      }, {
+        "name" : "不输入lastname新增失败",
+        "uid" : "223574c0d0d6f32c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220773498,
+          "stop" : 1651220791541,
+          "duration" : 18043
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '81', 'casename': '不输入lastname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first last Name!'}" ]
+      }, {
+        "name" : "登录状态意见反馈不输入标题发送失败",
+        "uid" : "33687904e56d138d",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220462724,
+          "stop" : 1651220494957,
+          "duration" : 32233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '63', 'casename': '登录状态意见反馈不输入标题发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=aaaaaaaaaaaaaaaaaaaaaa', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}" ]
+      }, {
+        "name" : "post code不输入新增失败",
+        "uid" : "eb7ad2fccfebe037",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220719589,
+          "stop" : 1651220736351,
+          "duration" : 16762
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '78', 'casename': 'post code不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input post code!'}" ]
+      }, {
+        "name" : "点击账户名称进入个人信息修改页面成功",
+        "uid" : "78b3c84c2450ba39",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221890153,
+          "stop" : 1651221909620,
+          "duration" : 19467
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '点击账户名称进入个人信息修改页面成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'class name=text-tit-lg.text-center', 'result': 'Data modification'}" ]
       }, {
         "name" : "注册完成后领取优惠卷成功",
-        "uid" : "33c3a880a178fa5c",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "75541edc2df395d8",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200718646,
-          "stop" : 1651200765318,
-          "duration" : 46672
+          "start" : 1651219398032,
+          "stop" : 1651219445797,
+          "duration" : 47765
         },
         "flaky" : false,
         "newFailed" : false,
@@ -839,14 +227,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
       }, {
-        "name" : "领取优惠卷回退页面再次领取失败",
-        "uid" : "38f30267bef95b56",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "输入7位英文小写密码修改失败",
+        "uid" : "a6e37e76d10a19b6",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200765322,
-          "stop" : 1651200817393,
-          "duration" : 52071
+          "start" : 1651219834935,
+          "stop" : 1651219930288,
+          "duration" : 95353
         },
         "flaky" : false,
         "newFailed" : false,
@@ -854,16 +242,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '33', 'casename': '领取优惠卷回退页面再次领取失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
+        "parameters" : [ "{'case_no': '43', 'casename': '输入7位英文小写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=aaaaaaa', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "点击订单中的商品名称跳转商品详情成功",
-        "uid" : "7f4545d9d34f6092",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击 Order without payment页面正确跳转至登录页面",
+        "uid" : "e9f240d76898f5d4",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201814555,
-          "stop" : 1651201821013,
-          "duration" : 6458
+          "start" : 1651220409302,
+          "stop" : 1651220419128,
+          "duration" : 9826
         },
         "flaky" : false,
         "newFailed" : false,
@@ -871,16 +259,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '95', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+        "parameters" : [ "{'case_no': '59', 'casename': '点击 Order without payment页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
       }, {
-        "name" : "通过关键字及全文查找可以成功查询相同名称的订单",
-        "uid" : "f23ec1c30d45612",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "登录状态意见反馈输入正确内容发送成功",
+        "uid" : "aa7419fbe4cfce05",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201847669,
-          "stop" : 1651201855295,
-          "duration" : 7626
+          "start" : 1651220528284,
+          "stop" : 1651220539488,
+          "duration" : 11204
         },
         "flaky" : false,
         "newFailed" : false,
@@ -888,16 +276,67 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '通过关键字及全文查找可以成功查询相同名称的订单', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+        "parameters" : [ "{'case_no': '65', 'casename': '登录状态意见反馈输入正确内容发送成功', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=aaaaaaaaaa', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'send success'}" ]
       }, {
-        "name" : "使用Wrong order inform 提交退货单成功",
-        "uid" : "8ea879f6295dbe5b",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击Auction payment balance页面正确跳转至登录页面",
+        "uid" : "99559e4dc6b045f4",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220380410,
+          "stop" : 1651220397036,
+          "duration" : 16626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '57', 'casename': '点击Auction payment balance页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+      }, {
+        "name" : "密码为5位注册失败",
+        "uid" : "d7c7de895a1da995",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218756810,
+          "stop" : 1651218797425,
+          "duration" : 40615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "使用Quality issues提交退货单成功",
+        "uid" : "c9c41a406c57f8a",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "broken",
         "time" : {
-          "start" : 1651202369358,
-          "stop" : 1651202488544,
-          "duration" : 119186
+          "start" : 1651221369185,
+          "stop" : 1651221499375,
+          "duration" : 130190
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      }, {
+        "name" : "使用Wrong order inform 提交退货单成功",
+        "uid" : "e2d7befa76d0f4a5",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651221499516,
+          "stop" : 1651221629387,
+          "duration" : 129871
         },
         "flaky" : false,
         "newFailed" : false,
@@ -907,31 +346,881 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '使用Wrong order inform 提交退货单成功', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\Emblème-LG.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       }, {
-        "name" : "点击order data可以根据订单时间进行排序",
-        "uid" : "ca960333e58e1a8f",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "failed",
+        "name" : "输入7位特殊字符密码修改失败",
+        "uid" : "2d3546416d2d6b2c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
         "time" : {
-          "start" : 1651201832417,
-          "stop" : 1651201840005,
-          "duration" : 7588
+          "start" : 1651219974405,
+          "stop" : 1651220016656,
+          "duration" : 42251
         },
-        "flaky" : true,
-        "newFailed" : true,
+        "flaky" : false,
+        "newFailed" : false,
         "newPassed" : false,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '98', 'casename': '点击order data可以根据订单时间进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+        "parameters" : [ "{'case_no': '45', 'casename': '输入7位特殊字符密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=!!!!!!!', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "用户名邮箱为空下一步操作置灰",
-        "uid" : "767135c24ce83670",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击 Edit address 输入正确信息修改地址成功",
+        "uid" : "1bd7f429f91796d7",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651199900032,
-          "stop" : 1651199902624,
-          "duration" : 2592
+          "start" : 1651220836085,
+          "stop" : 1651220857310,
+          "duration" : 21225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '84', 'casename': '点击 Edit address 输入正确信息修改地址成功', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}" ]
+      }, {
+        "name" : "输入错误用户名正确密码登录失败",
+        "uid" : "72aaf7a9a9ae33f4",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218547544,
+          "stop" : 1651218552159,
+          "duration" : 4615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "退货页面不上传图片提交退货单失败",
+        "uid" : "66f4dc42b3345a67",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651221125193,
+          "stop" : 1651221233282,
+          "duration" : 108089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '退货页面不上传图片提交退货单失败', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please upload the image'}" ]
+      }, {
+        "name" : "输入正确用户名密码登录成功",
+        "uid" : "f2e3b479871d94cc",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218490135,
+          "stop" : 1651218505441,
+          "duration" : 15306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}" ]
+      }, {
+        "name" : "密码为大写字母+特殊字符注册失败",
+        "uid" : "8594fa3f4d7cd27",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219127098,
+          "stop" : 1651219168384,
+          "duration" : 41286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '26', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为数字+大写字母+特殊字符注册成功",
+        "uid" : "1d2ec1db60d9690e",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651219251948,
+          "stop" : 1651219313420,
+          "duration" : 61472
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "输入正确内容修改密码成功",
+        "uid" : "cf946726db0bc57d",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219531887,
+          "stop" : 1651219588034,
+          "duration" : 56147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '35', 'casename': '输入正确内容修改密码成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "点击帮助中心页面成功跳转",
+        "uid" : "f1cdfece369e95f",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220332433,
+          "stop" : 1651220339452,
+          "duration" : 7019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '52', 'casename': '点击帮助中心页面成功跳转', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.text-tit-lg', 'result': 'Self-Service'}" ]
+      }, {
+        "name" : "超时后再次发送验证码成功",
+        "uid" : "821b9a1ca09661bb",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218597541,
+          "stop" : 1651218666535,
+          "duration" : 68994
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '13', 'casename': '超时后再次发送验证码成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-statistic-content-suffix', 'result': 'S'}" ]
+      }, {
+        "name" : "登录状态点击Change Email Address(Need to log in first)页面成功跳转至邮箱修改页面",
+        "uid" : "383c01dab3e67e12",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220369011,
+          "stop" : 1651220380407,
+          "duration" : 11396
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '56', 'casename': '登录状态点击Change Email Address(Need to log in first)页面成功跳转至邮箱修改页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Modify email'}" ]
+      }, {
+        "name" : "密码为16位注册成功",
+        "uid" : "d0fc54bc849449f7",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218797429,
+          "stop" : 1651218838650,
+          "duration" : 41221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "输入16位字母+数字更改成功",
+        "uid" : "8c4f534aa904937f",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220112194,
+          "stop" : 1651220163768,
+          "duration" : 51574
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '47', 'casename': '输入16位字母+数字更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456789123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "密码为数字+小写字母+大写字母注册成功",
+        "uid" : "623d9af1291e40d2",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219168388,
+          "stop" : 1651219209707,
+          "duration" : 41319
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '27', 'casename': '密码为数字+小写字母+大写字母注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdFGH', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "密码为小写字母+特殊字符注册失败",
+        "uid" : "608a46458706b323",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219085533,
+          "stop" : 1651219127095,
+          "duration" : 41562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '25', 'casename': '密码为小写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdf！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "使用视频文件提交退货单失败",
+        "uid" : "1f945d5a2891a004",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651221762279,
+          "stop" : 1651221889968,
+          "duration" : 127689
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\test 8.mp4', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'fail'}" ]
+      }, {
+        "name" : "不输入firstname新增失败",
+        "uid" : "65943eb20d2ceadb",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220754374,
+          "stop" : 1651220773498,
+          "duration" : 19124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '80', 'casename': '不输入firstname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
+      }, {
+        "name" : "输入过期验证码点击下一步失败",
+        "uid" : "921cef5985c3beec",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219637076,
+          "stop" : 1651219747515,
+          "duration" : 110439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '40', 'casename': '输入过期验证码点击下一步失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+      }, {
+        "name" : "登录状态点击Retrieve Password页面跳转到修改密码页面",
+        "uid" : "aff962d2ef575b25",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220344854,
+          "stop" : 1651220357523,
+          "duration" : 12669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '54', 'casename': '登录状态点击Retrieve Password页面跳转到修改密码页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Enter a new password'}" ]
+      }, {
+        "name" : "登录状态意见反馈不输入内容发送失败",
+        "uid" : "4e168a2f43a99acf",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220494961,
+          "stop" : 1651220528280,
+          "duration" : 33319
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '64', 'casename': '登录状态意见反馈不输入内容发送失败', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the content'}" ]
+      }, {
+        "name" : "输入7位英文大写密码修改失败",
+        "uid" : "46a7643cf8bd02bb",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219930288,
+          "stop" : 1651219974405,
+          "duration" : 44117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '44', 'casename': '输入7位英文大写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=AAAAAAA', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "勾选订阅成功",
+        "uid" : "92b3eaf15905350d",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651222009443,
+          "stop" : 1651222042415,
+          "duration" : 32972
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '勾选订阅成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'Success!'}" ]
+      }, {
+        "name" : "登录状态点击点击Auction payment balance页面正确跳转至拍卖页面",
+        "uid" : "aa38272fc27f7d6",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220397036,
+          "stop" : 1651220409301,
+          "duration" : 12265
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '58', 'casename': '登录状态点击点击Auction payment balance页面正确跳转至拍卖页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=text-tit-lg.margin-right-xs', 'result': 'View Auction List'}" ]
+      }, {
+        "name" : "不输入验证码下一步置灰",
+        "uid" : "33f3c750bc13cd3e",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219604515,
+          "stop" : 1651219615239,
+          "duration" : 10724
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '37', 'casename': '不输入验证码下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
+      }, {
+        "name" : "输入空的用户名登录失败",
+        "uid" : "bf9276b674c47e85",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218505445,
+          "stop" : 1651218514006,
+          "duration" : 8561
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '2', 'casename': '输入空的用户名登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "输入5位字母+数字更改失败",
+        "uid" : "6668223ad5fa9211",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220163772,
+          "stop" : 1651220210546,
+          "duration" : 46774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '48', 'casename': '输入5位字母+数字更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a1234', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "输入修改过的密码更改失败",
+        "uid" : "b540bb8ec7bee8d7",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220262473,
+          "stop" : 1651220315694,
+          "duration" : 53221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '50', 'casename': '输入修改过的密码更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "address中country不选择新增失败",
+        "uid" : "80a68c329dd7a491",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220701502,
+          "stop" : 1651220719579,
+          "duration" : 18077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '77', 'casename': 'address中country不选择新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input country!'}" ]
+      }, {
+        "name" : "输入已存在的用户名注册失败",
+        "uid" : "c05547802077e9b1",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218559305,
+          "stop" : 1651218563228,
+          "duration" : 3923
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '9', 'casename': '输入已存在的用户名注册失败', 'mode': '注册', 'data': 'userAccount=979172251@qq.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'The mailbox is already registered'}" ]
+      }, {
+        "name" : "address中city不输入新增失败",
+        "uid" : "a7756b3e8ffff7a8",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220684402,
+          "stop" : 1651220701492,
+          "duration" : 17090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '76', 'casename': 'address中city不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input city!'}" ]
+      }, {
+        "name" : "性别为screct修改成功",
+        "uid" : "401c8d903a4fc522",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221961569,
+          "stop" : 1651222009439,
+          "duration" : 47870
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '性别为screct修改成功', 'mode': '个人信息修改', 'data': 'first_name=1\\nlast_name=1\\nsex=2\\ntime=2022-04-13\\ncompany=12345公司', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
+      }, {
+        "name" : "点击Total price可以根据订单金额进行排序",
+        "uid" : "f07bf226f9c3a690",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220920348,
+          "stop" : 1651220934125,
+          "duration" : 13777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '99', 'casename': '点击Total price可以根据订单金额进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "输入7位纯数字修改失败",
+        "uid" : "9db1c98857544e1c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219793260,
+          "stop" : 1651219834925,
+          "duration" : 41665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '42', 'casename': '输入7位纯数字修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "输入错误密码登录失败",
+        "uid" : "cd92071d57fb4eda",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218542972,
+          "stop" : 1651218547540,
+          "duration" : 4568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '5', 'casename': '输入错误密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a1234567', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "点击Full catalog进入所有类别页面",
+        "uid" : "dae902a80354846f",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220564148,
+          "stop" : 1651220571657,
+          "duration" : 7509
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '67', 'casename': '点击Full catalog进入所有类别页面', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.category-content > div.ant-breadcrumb > span:nth-child(1) > span.ant-breadcrumb-separator', 'result': '>'}" ]
+      }, {
+        "name" : "点击Change Email Address(Need to log in first)页面成功跳转至登录页面",
+        "uid" : "f7ce1eedcbb44e48",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220357536,
+          "stop" : 1651220369001,
+          "duration" : 11465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '55', 'casename': '点击Change Email Address(Need to log in first)页面成功跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+      }, {
+        "name" : "点击二级分类商品品牌跳转至该品牌页中，且商品成功显示",
+        "uid" : "447d578904921cb4",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220581476,
+          "stop" : 1651220594474,
+          "duration" : 12998
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '69', 'casename': '点击二级分类商品品牌跳转至该品牌页中，且商品成功显示', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.search-content > div.result-list-out > div > div:nth-child(1) > div.info > div.title.text-black.margin-bottom-xs > a', 'result': 'Schneider Soft S-1591'}" ]
+      }, {
+        "name" : "点击导航栏导航栏伸缩成功",
+        "uid" : "af6febe19a2f6de1",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220539493,
+          "stop" : 1651220564136,
+          "duration" : 24643
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '66', 'casename': '点击导航栏导航栏伸缩成功', 'mode': '导航栏', 'data': '', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "点击set the address 设置默认地址成功",
+        "uid" : "744b2b8325b04225",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220644681,
+          "stop" : 1651220668370,
+          "duration" : 23689
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '74', 'casename': '点击set the address 设置默认地址成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'change success'}" ]
+      }, {
+        "name" : "密码为小写字母+大写字母注册失败",
+        "uid" : "34647e47fb7f5673",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219044084,
+          "stop" : 1651219085523,
+          "duration" : 41439
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '24', 'casename': '密码为小写字母+大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfGHJKKLL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "邮箱不含@弹出错误提示",
+        "uid" : "a4655f5fecc5f31b",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218555652,
+          "stop" : 1651218559302,
+          "duration" : 3650
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '8', 'casename': '邮箱不含@弹出错误提示', 'mode': '注册', 'data': 'userAccount=123456', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Register an account'}" ]
+      }, {
+        "name" : "密码为纯小写字母注册失败",
+        "uid" : "2b88ebfdba7efd63",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218879216,
+          "stop" : 1651218920416,
+          "duration" : 41200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '20', 'casename': '密码为纯小写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfghjkl', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "领取优惠卷回退页面再次领取失败",
+        "uid" : "7a4e617fd66bc7a5",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219445801,
+          "stop" : 1651219496604,
+          "duration" : 50803
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '33', 'casename': '领取优惠卷回退页面再次领取失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
+      }, {
+        "name" : "密码为纯数字注册失败",
+        "uid" : "8aa089580fab6f54",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218838650,
+          "stop" : 1651218879206,
+          "duration" : 40556
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '19', 'casename': '密码为纯数字注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123456789', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "密码为6为字符注册成功",
+        "uid" : "c160dce89bbd4dfa",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218715557,
+          "stop" : 1651218756800,
+          "duration" : 41243
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "已签收订单点击退货申请进入退货页面成功",
+        "uid" : "5904fab5f6c09975",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220946662,
+          "stop" : 1651221037966,
+          "duration" : 91304
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '已签收订单点击退货申请进入退货页面成功', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tuik_top', 'result': 'Return application submission'}" ]
+      }, {
+        "name" : "更改密码成功后回退重新输入验证码",
+        "uid" : "3eae8966d4aace90",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651220210556,
+          "stop" : 1651220262295,
+          "duration" : 51739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '49', 'casename': '更改密码成功后回退重新输入验证码', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(1) > div > div > span > div > div:nth-child(2) > a', 'result': 'Send verification code to email'}" ]
+      }, {
+        "name" : "密码为空注册失败",
+        "uid" : "4b32398df6772a73",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218673648,
+          "stop" : 1651218715547,
+          "duration" : 41899
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '15', 'casename': '密码为空注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "不进行验证注册失败",
+        "uid" : "e639ed87355a016a",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219496609,
+          "stop" : 1651219531883,
+          "duration" : 35274
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '34', 'casename': '不进行验证注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Please press the slider and drag to the far right'}" ]
+      }, {
+        "name" : "密码为小写字母+大写字母+特殊字符注册失败",
+        "uid" : "6e45917d9d8c8fd9",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219313598,
+          "stop" : 1651219354861,
+          "duration" : 41263
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "不勾选用户协议注册失败",
+        "uid" : "890c56abfba7b13c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218563232,
+          "stop" : 1651218567623,
+          "duration" : 4391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '10', 'casename': '不勾选用户协议注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please checked our user agreement first'}" ]
+      }, {
+        "name" : "用户名邮箱为空下一步操作置灰",
+        "uid" : "7fd5a8490fbb8a6a",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218552163,
+          "stop" : 1651218555648,
+          "duration" : 3485
         },
         "flaky" : false,
         "newFailed" : false,
@@ -942,13 +1231,13 @@
         "parameters" : [ "{'case_no': '7', 'casename': '用户名邮箱为空下一步操作置灰', 'mode': '注册', 'data': 'userAccount=', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div[2]/form/div[3]/div/div/span/div/button', 'result': 'true'}" ]
       }, {
         "name" : "Address中provice不输入新增失败",
-        "uid" : "326560ade008b020",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "787b6567614e94d5",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201692754,
-          "stop" : 1651201703950,
-          "duration" : 11196
+          "start" : 1651220668370,
+          "stop" : 1651220684402,
+          "duration" : 16032
         },
         "flaky" : false,
         "newFailed" : false,
@@ -958,14 +1247,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '75', 'casename': 'Address中provice不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input province!'}" ]
       }, {
-        "name" : "登录状态点击点击Auction payment balance页面正确跳转至拍卖页面",
-        "uid" : "fe62e131d3aca039",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
+        "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
+        "uid" : "f9d6dcbbdbe6ea48",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "failed",
         "time" : {
-          "start" : 1651201574920,
-          "stop" : 1651201581575,
-          "duration" : 6655
+          "start" : 1651219354861,
+          "stop" : 1651219397875,
+          "duration" : 43014
         },
         "flaky" : false,
         "newFailed" : false,
@@ -973,16 +1262,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '58', 'casename': '登录状态点击点击Auction payment balance页面正确跳转至拍卖页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=text-tit-lg.margin-right-xs', 'result': 'View Auction List'}" ]
+        "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
-        "name" : "输入过期验证码点击下一步失败",
-        "uid" : "8672196d36d770ec",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击Manage recipient information跳转到地址管理页面成功",
+        "uid" : "5c98d13fb6408d02",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200927556,
-          "stop" : 1651201032525,
-          "duration" : 104969
+          "start" : 1651220616218,
+          "stop" : 1651220627749,
+          "duration" : 11531
         },
         "flaky" : false,
         "newFailed" : false,
@@ -990,16 +1279,33 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '40', 'casename': '输入过期验证码点击下一步失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+        "parameters" : [ "{'case_no': '72', 'casename': '点击Manage recipient information跳转到地址管理页面成功', 'mode': '地址管理', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.flex.space-between > div > div.title-1.flex.align-center > span', 'result': 'Set as Default address'}" ]
+      }, {
+        "name" : "点击新增地址输入正确信息新增成功",
+        "uid" : "be8fae5379c7ac88",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220627759,
+          "stop" : 1651220644671,
+          "duration" : 16912
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '73', 'casename': '点击新增地址输入正确信息新增成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}" ]
       }, {
         "name" : "网站左上角存在帮助中心入口",
-        "uid" : "fd59464935db2a27",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "b70b7a560e9414a6",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201540775,
-          "stop" : 1651201546086,
-          "duration" : 5311
+          "start" : 1651220315697,
+          "stop" : 1651220332430,
+          "duration" : 16733
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1009,14 +1315,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '51', 'casename': '网站左上角存在帮助中心入口', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.top-menu > a:nth-child(3)', 'result': 'True'}" ]
       }, {
-        "name" : "密码为6为字符注册成功",
-        "uid" : "bf09aa14c44a51df",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "输入空密码修改失败",
+        "uid" : "a5d0b471e91a02c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200061937,
-          "stop" : 1651200102541,
-          "duration" : 40604
+          "start" : 1651219747515,
+          "stop" : 1651219793260,
+          "duration" : 45745
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1024,16 +1330,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+        "parameters" : [ "{'case_no': '41', 'casename': '输入空密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=  ', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
-        "name" : "密码为小写字母+大写字母+特殊字符注册失败",
-        "uid" : "e450e58d287487ea",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "通过关键字及全文查找可以成功查询相同名称的订单",
+        "uid" : "a1ab8a926223808b",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200633309,
-          "stop" : 1651200677767,
-          "duration" : 44458
+          "start" : 1651220934135,
+          "stop" : 1651220946652,
+          "duration" : 12517
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1041,16 +1347,220 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '通过关键字及全文查找可以成功查询相同名称的订单', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "密码为纯特殊字符注册失败",
+        "uid" : "a50dd5f1bbb27a5f",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218961624,
+          "stop" : 1651219002898,
+          "duration" : 41274
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '22', 'casename': '密码为纯特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=~！@#￥%……&**', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "关闭验证码页面成功",
+        "uid" : "566230e36a0a99ac",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218567626,
+          "stop" : 1651218574038,
+          "duration" : 6412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '11', 'casename': '关闭验证码页面成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-modal-body', 'result': 1}" ]
+      }, {
+        "name" : "点击垃圾桶删除地址成功",
+        "uid" : "f5d03686483cb195",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220811339,
+          "stop" : 1651220836050,
+          "duration" : 24711
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '83', 'casename': '点击垃圾桶删除地址成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'delete success'}" ]
+      }, {
+        "name" : "使用过期验证码验证失败",
+        "uid" : "c8d01f1396038f1",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218574042,
+          "stop" : 1651218597521,
+          "duration" : 23479
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '12', 'casename': '使用过期验证码验证失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+      }, {
+        "name" : "使用空的用户名密码登录失败",
+        "uid" : "8fb87edf4462672d",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218533332,
+          "stop" : 1651218542972,
+          "duration" : 9640
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '4', 'casename': '使用空的用户名密码登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
+      }, {
+        "name" : "address details 不输入新增失败",
+        "uid" : "b0e35bdd53c262dd",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220736351,
+          "stop" : 1651220754374,
+          "duration" : 18023
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '79', 'casename': 'address details 不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input Address details!'}" ]
+      }, {
+        "name" : "点击订单中的商品名称跳转商品详情成功",
+        "uid" : "6951106ed8a2f44",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220866099,
+          "stop" : 1651220876577,
+          "duration" : 10478
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '95', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "该品牌下无商品，品牌页面正确显示",
+        "uid" : "4cd84d03e0d2d9e6",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220594484,
+          "stop" : 1651220602717,
+          "duration" : 8233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '70', 'casename': '该品牌下无商品，品牌页面正确显示', 'mode': '导航栏', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[2]/div[1]/div[2]/div', 'result': \"Haven't any goods\"}" ]
+      }, {
+        "name" : "输入错误验证码注册失败",
+        "uid" : "cfea6db8ed126fab",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218666539,
+          "stop" : 1651218673644,
+          "duration" : 7105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '14', 'casename': '输入错误验证码注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+      }, {
+        "name" : "输入6位字母+数字密码更改成功",
+        "uid" : "47c04162c75764",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651220016656,
+          "stop" : 1651220111720,
+          "duration" : 95064
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '46', 'casename': '输入6位字母+数字密码更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "点击个人中心Order record 订单成功显示",
+        "uid" : "3649c074314f6013",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220857310,
+          "stop" : 1651220866089,
+          "duration" : 8779
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '94', 'casename': '点击个人中心Order record 订单成功显示', 'mode': '订单管理', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]', 'result': 1}" ]
+      }, {
+        "name" : "密码为数字+小写字母+特殊字符注册成功",
+        "uid" : "8ce3559905023ec",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651219209707,
+          "stop" : 1651219251269,
+          "duration" : 41562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为纯大写字母注册失败",
-        "uid" : "4555bb1b0f6b5dff",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "1650602c6310a704",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200266472,
-          "stop" : 1651200307329,
-          "duration" : 40857
+          "start" : 1651218920416,
+          "stop" : 1651218961610,
+          "duration" : 41194
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1061,13 +1571,13 @@
         "parameters" : [ "{'case_no': '21', 'casename': '密码为纯大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDFGHJKL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
       }, {
         "name" : "输入正确信息修改成功",
-        "uid" : "f772da1b3acb86fb",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "232b8f4808a11407",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651202733621,
-          "stop" : 1651202745215,
-          "duration" : 11594
+          "start" : 1651221909630,
+          "stop" : 1651221936165,
+          "duration" : 26535
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1075,220 +1585,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\ncompany=null', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
-      }, {
-        "name" : "密码为空注册失败",
-        "uid" : "f5b4b0f206bec13",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200018403,
-          "stop" : 1651200061933,
-          "duration" : 43530
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '15', 'casename': '密码为空注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "点击导航栏导航栏伸缩成功",
-        "uid" : "c731dc0aa4331aec",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201630053,
-          "stop" : 1651201634392,
-          "duration" : 4339
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '66', 'casename': '点击导航栏导航栏伸缩成功', 'mode': '导航栏', 'data': '', 'assert_way': '', 'result': ''}" ]
-      }, {
-        "name" : "使用空的用户名密码登录失败",
-        "uid" : "f3e3886d3488c990",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199886224,
-          "stop" : 1651199890752,
-          "duration" : 4528
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '4', 'casename': '使用空的用户名密码登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
-      }, {
-        "name" : "点击二级分类商品品牌跳转至该品牌页中，且商品成功显示",
-        "uid" : "c538b14104e97ce9",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201641423,
-          "stop" : 1651201646248,
-          "duration" : 4825
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '69', 'casename': '点击二级分类商品品牌跳转至该品牌页中，且商品成功显示', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.search-content > div.result-list-out > div > div:nth-child(1) > div.info > div.title.text-black.margin-bottom-xs > a', 'result': 'Schneider Soft S-1591'}" ]
-      }, {
-        "name" : "输入错误密码登录失败",
-        "uid" : "a35ce88811adbbc6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199890756,
-          "stop" : 1651199895360,
-          "duration" : 4604
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '5', 'casename': '输入错误密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a1234567', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
-      }, {
-        "name" : "密码为小写字母+大写字母注册失败",
-        "uid" : "53e879008e1f5d0d",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200389000,
-          "stop" : 1651200429447,
-          "duration" : 40447
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '24', 'casename': '密码为小写字母+大写字母注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdfGHJKKLL', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "使用视频文件提交退货单失败",
-        "uid" : "d5009a10c83809b6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651202607939,
-          "stop" : 1651202726960,
-          "duration" : 119021
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\test 8.mp4', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'fail'}" ]
-      }, {
-        "name" : "点击Auction payment balance页面正确跳转至登录页面",
-        "uid" : "ffa79edbe859daa6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201568698,
-          "stop" : 1651201574916,
-          "duration" : 6218
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '57', 'casename': '点击Auction payment balance页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
-      }, {
-        "name" : "不输入验证码下一步置灰",
-        "uid" : "6ca2c0fecc06d1e",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200909788,
-          "stop" : 1651200914428,
-          "duration" : 4640
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '37', 'casename': '不输入验证码下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
-      }, {
-        "name" : "点击个人中心Order record 订单成功显示",
-        "uid" : "52f37ae4260b4cf",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201810221,
-          "stop" : 1651201814552,
-          "duration" : 4331
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '94', 'casename': '点击个人中心Order record 订单成功显示', 'mode': '订单管理', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]', 'result': 1}" ]
-      }, {
-        "name" : "存在意见反馈模块",
-        "uid" : "2d5f89d9a1750160",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201594432,
-          "stop" : 1651201599576,
-          "duration" : 5144
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '61', 'casename': '存在意见反馈模块', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > div.text-tit-lg.margin-bottom-xs', 'result': 'Site Message'}" ]
-      }, {
-        "name" : "退货页面不上传图片提交退货单失败",
-        "uid" : "dea041fcd7c4c799",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651202025320,
-          "stop" : 1651202131749,
-          "duration" : 106429
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '退货页面不上传图片提交退货单失败', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please upload the image'}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=1\\nlast_name=1\\nsex=0\\ntime=today\\ncompany=12345公司', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
       }, {
         "name" : "登录状态意见反馈不输入任何内容发送失败",
-        "uid" : "1ea6de295af56180",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "c066978bdec70665",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201599579,
-          "stop" : 1651201608832,
-          "duration" : 9253
+          "start" : 1651220440791,
+          "stop" : 1651220462720,
+          "duration" : 21929
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1298,31 +1604,31 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '62', 'casename': '登录状态意见反馈不输入任何内容发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}" ]
       }, {
-        "name" : "输入已存在的用户名注册失败",
-        "uid" : "7fc8e1ac8201f00e",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "未支付订单点击未支付跳转到支付页面",
+        "uid" : "a6e39a9f8e5d5e49",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651199906286,
-          "stop" : 1651199909905,
-          "duration" : 3619
+          "start" : 1651220891603,
+          "stop" : 1651220905020,
+          "duration" : 13417
         },
         "flaky" : false,
         "newFailed" : false,
-        "newPassed" : false,
+        "newPassed" : true,
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '9', 'casename': '输入已存在的用户名注册失败', 'mode': '注册', 'data': 'userAccount=979172251@qq.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'The mailbox is already registered'}" ]
+        "parameters" : [ "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}" ]
       }, {
-        "name" : "退货页面不输入任何内容提交退货单失败",
-        "uid" : "ceeae12bd4aa5d67",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "通过个人中心修改邮箱入口进入成功",
+        "uid" : "6676f1106dd2c509",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201939727,
-          "stop" : 1651202025317,
-          "duration" : 85590
+          "start" : 1651222042419,
+          "stop" : 1651222074294,
+          "duration" : 31875
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1330,288 +1636,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '退货页面不输入任何内容提交退货单失败', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please input your reason'}" ]
-      }, {
-        "name" : "密码为大写字母+特殊字符注册失败",
-        "uid" : "e2e22009466b7720",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651200470222,
-          "stop" : 1651200510910,
-          "duration" : 40688
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '26', 'casename': '密码为大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=ASDF!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "关闭验证码页面成功",
-        "uid" : "a457994f14937afd",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199913564,
-          "stop" : 1651199919717,
-          "duration" : 6153
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '11', 'casename': '关闭验证码页面成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'class name=ant-modal-body', 'result': 1}" ]
-      }, {
-        "name" : "输入错误用户名正确密码登录失败",
-        "uid" : "2a00ece34e09fc25",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199895368,
-          "stop" : 1651199900026,
-          "duration" : 4658
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '6', 'casename': '输入错误用户名正确密码登录失败', 'mode': '登录', 'data': 'userAccount=979172251@qq.commm\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
-      }, {
-        "name" : "输入7位特殊字符密码修改失败",
-        "uid" : "fff0afa81e472d10",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201225868,
-          "stop" : 1651201260999,
-          "duration" : 35131
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '45', 'casename': '输入7位特殊字符密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=!!!!!!!', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "点击账户名称进入个人信息修改页面成功",
-        "uid" : "dd6ae3573918a8e5",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651202727157,
-          "stop" : 1651202733614,
-          "duration" : 6457
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '点击账户名称进入个人信息修改页面成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'class name=text-tit-lg.text-center', 'result': 'Data modification'}" ]
-      }, {
-        "name" : "输入空的用户名登录失败",
-        "uid" : "46c837e429a5c4c7",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199873349,
-          "stop" : 1651199881610,
-          "duration" : 8261
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '2', 'casename': '输入空的用户名登录失败', 'mode': '登录', 'data': 'userAccount=\\npassword=a123456', 'assert_way': 'class name=login-form-forgot', 'result': '\\n              Forgot Password?\\n            '}" ]
-      }, {
-        "name" : "不输入lastname新增失败",
-        "uid" : "7e55668cdb27edf9",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201760318,
-          "stop" : 1651201771583,
-          "duration" : 11265
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '81', 'casename': '不输入lastname新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first last Name!'}" ]
-      }, {
-        "name" : "点击set the address 设置默认地址成功",
-        "uid" : "91c6fb56e3747b6f",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201674009,
-          "stop" : 1651201692750,
-          "duration" : 18741
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '74', 'casename': '点击set the address 设置默认地址成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'change success'}" ]
-      }, {
-        "name" : "更改密码成功后回退重新输入验证码",
-        "uid" : "8ffc2d1f2e06029",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201393680,
-          "stop" : 1651201491855,
-          "duration" : 98175
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '49', 'casename': '更改密码成功后回退重新输入验证码', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(1) > div > div > span > div > div:nth-child(2) > a', 'result': 'Send verification code to email'}" ]
-      }, {
-        "name" : "使用过期验证码验证失败",
-        "uid" : "561cafd52cd59e6a",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651199919725,
-          "stop" : 1651199942556,
-          "duration" : 22831
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '12', 'casename': '使用过期验证码验证失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
-      }, {
-        "name" : "点击Manage recipient information跳转到地址管理页面成功",
-        "uid" : "c4db67d2c8c8dca3",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201656740,
-          "stop" : 1651201662752,
-          "duration" : 6012
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '72', 'casename': '点击Manage recipient information跳转到地址管理页面成功', 'mode': '地址管理', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.flex.space-between > div > div.title-1.flex.align-center > span', 'result': 'Set as Default address'}" ]
-      }, {
-        "name" : "登录状态意见反馈不输入标题发送失败",
-        "uid" : "15ba1a7ed61b31f4",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201608835,
-          "stop" : 1651201615944,
-          "duration" : 7109
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '63', 'casename': '登录状态意见反馈不输入标题发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=aaaaaaaaaaaaaaaaaaaaaa', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}" ]
-      }, {
-        "name" : "已签收订单点击退货申请进入退货页面成功",
-        "uid" : "195e34cacb5689c1",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201855298,
-          "stop" : 1651201939723,
-          "duration" : 84425
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '已签收订单点击退货申请进入退货页面成功', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tuik_top', 'result': 'Return application submission'}" ]
-      }, {
-        "name" : "点击查看物流查看成功",
-        "uid" : "a1efacb16c72501c",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201821017,
-          "stop" : 1651201827360,
-          "duration" : 6343
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '96', 'casename': '点击查看物流查看成功', 'mode': '订单管理', 'data': '', 'assert_way': 'xpath=//*[@id=\"rcDialogTitle0\"]', 'result': 'Logistics Modal'}" ]
-      }, {
-        "name" : "输入5位字母+数字更改失败",
-        "uid" : "fcfc2c79983e5d6",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201354280,
-          "stop" : 1651201393677,
-          "duration" : 39397
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '48', 'casename': '输入5位字母+数字更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a1234', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "使用other提交退货单成功",
-        "uid" : "2acfaf715243b540",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651202488708,
-          "stop" : 1651202607789,
-          "duration" : 119081
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\Emblème-LG.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '通过个人中心修改邮箱入口进入成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Modify email'}" ]
       }, {
         "name" : "鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功",
-        "uid" : "518c31aadecabf4e",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "2adda6165876a7b6",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201636940,
-          "stop" : 1651201641416,
-          "duration" : 4476
+          "start" : 1651220571662,
+          "stop" : 1651220581472,
+          "duration" : 9810
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1621,14 +1655,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '68', 'casename': '鼠标悬停至导航栏相应类别中，显示该类别所包含的品牌信息成功', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-left > div.menu-out > div.menu-lv-1.text-xs.border-radius-sm > ul > li:nth-child(1) > div > div.lv-2-list > div > div:nth-child(1) > a', 'result': 'PRX'}" ]
       }, {
-        "name" : "不输入邮箱号点击发送验证码失败",
-        "uid" : "2dc4adf683de626",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "点击Retrieve Password页面跳转到登录页面",
+        "uid" : "f12e2f29511b7daf",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651200914432,
-          "stop" : 1651200920938,
-          "duration" : 6506
+          "start" : 1651220339470,
+          "stop" : 1651220344851,
+          "duration" : 5381
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1636,16 +1670,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '38', 'casename': '不输入邮箱号点击发送验证码失败', 'mode': '忘记密码', 'data': 'useraccount=\\nnewpassword=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'No such user information！'}" ]
+        "parameters" : [ "{'case_no': '53', 'casename': '点击Retrieve Password页面跳转到登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
       }, {
-        "name" : "登录状态点击Change Email Address(Need to log in first)页面成功跳转至邮箱修改页面",
-        "uid" : "854ac3794be57914",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "不输入邮箱修下一步置灰",
+        "uid" : "6f89fdf356ee2f71",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201562062,
-          "stop" : 1651201568694,
-          "duration" : 6632
+          "start" : 1651219588060,
+          "stop" : 1651219604505,
+          "duration" : 16445
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1653,16 +1687,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '56', 'casename': '登录状态点击Change Email Address(Need to log in first)页面成功跳转至邮箱修改页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Modify email'}" ]
+        "parameters" : [ "{'case_no': '36', 'casename': '不输入邮箱修下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
       }, {
-        "name" : "点击帮助中心页面成功跳转",
-        "uid" : "47b064e6acdd434d",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "不输入任何内容修改成功",
+        "uid" : "79fbf0d1c7c4d012",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "passed",
         "time" : {
-          "start" : 1651201546090,
-          "stop" : 1651201547714,
-          "duration" : 1624
+          "start" : 1651221936171,
+          "stop" : 1651221961563,
+          "duration" : 25392
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1670,33 +1704,67 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '52', 'casename': '点击帮助中心页面成功跳转', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.text-tit-lg', 'result': 'Self-Service'}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '不输入任何内容修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\nsex=1\\ntime=\\ncompany=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
       }, {
-        "name" : "使用Quality issues提交退货单成功",
-        "uid" : "dc76a65ff1c28fe3",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "name" : "密码为数字+特殊字符注册失败",
+        "uid" : "d6b23865362d080e",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219002902,
+          "stop" : 1651219044080,
+          "duration" : 41178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '23', 'casename': '密码为数字+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=12345！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+      }, {
+        "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
+        "uid" : "22bfd74fb5493c07",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220419130,
+          "stop" : 1651220432500,
+          "duration" : 13370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
+      }, {
+        "name" : "输入错误邮箱发送验证码失败",
+        "uid" : "f3c4fcb7800acb1",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219626901,
+          "stop" : 1651219637076,
+          "duration" : 10175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '39', 'casename': '输入错误邮箱发送验证码失败', 'mode': '忘记密码', 'data': 'useraccount=sdasdsa\\nnewpassword=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'No such user information！'}" ]
+      }, {
+        "name" : "使用other提交退货单成功",
+        "uid" : "a663cc9ac06013c",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "broken",
         "time" : {
-          "start" : 1651202251318,
-          "stop" : 1651202369180,
-          "duration" : 117862
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
-      }, {
-        "name" : "该品牌下无商品，品牌页面正确显示",
-        "uid" : "dda675c235e2b2db",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1651201646253,
-          "stop" : 1651201651323,
-          "duration" : 5070
+          "start" : 1651221629548,
+          "stop" : 1651221762109,
+          "duration" : 132561
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1704,16 +1772,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '70', 'casename': '该品牌下无商品，品牌页面正确显示', 'mode': '导航栏', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[2]/div[1]/div[2]/div', 'result': \"Haven't any goods\"}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\Emblème-LG.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       }, {
         "name" : "退货页面输入正确信息提交退货单成功",
-        "uid" : "b7aee7d9fec966e4",
-        "parentUid" : "b94a0ecdecff90236128250fc2d4195a",
+        "uid" : "9a24e46f5b8afaf",
+        "parentUid" : "a31df461bfe66384db5cf43d921bfa8d",
         "status" : "broken",
         "time" : {
-          "start" : 1651202131897,
-          "stop" : 1651202251137,
-          "duration" : 119240
+          "start" : 1651221233739,
+          "stop" : 1651221368996,
+          "duration" : 135257
         },
         "flaky" : false,
         "newFailed" : false,
@@ -1723,7 +1791,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '退货页面输入正确信息提交退货单成功', 'mode': '订单管理', 'data': 'reason=Model error\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\Emblème-LG.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       } ],
-      "uid" : "b94a0ecdecff90236128250fc2d4195a"
+      "uid" : "a31df461bfe66384db5cf43d921bfa8d"
     } ],
     "uid" : "0ee3cabf779a80526bceb03d1d5a0575"
   } ]

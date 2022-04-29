@@ -1,0 +1,331 @@
+{
+  "uid" : "c05547802077e9b1",
+  "name" : "输入已存在的用户名注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "f44382204f6c23bd5640584e5a08c4dd",
+  "time" : {
+    "start" : 1651218559305,
+    "stop" : 1651218563228,
+    "duration" : 3923
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651218485432,
+      "stop" : 1651218490130,
+      "duration" : 4698
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651218490131,
+      "stop" : 1651218490131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c2b1c96cb4c88bc4",
+      "name" : "stdout",
+      "source" : "c2b1c96cb4c88bc4.txt",
+      "type" : "text/plain",
+      "size" : 42
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651222074294,
+      "stop" : 1651222075007,
+      "duration" : 713
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651222075037,
+      "stop" : 1651222075037,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "14900-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '9', 'casename': '输入已存在的用户名注册失败', 'mode': '注册', 'data': 'userAccount=979172251@qq.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'The mailbox is already registered'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 36,
+        "unknown" : 0,
+        "total" : 37
+      },
+      "items" : [ {
+        "uid" : "7fc8e1ac8201f00e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/7fc8e1ac8201f00e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651199906286,
+          "stop" : 1651199909905,
+          "duration" : 3619
+        }
+      }, {
+        "uid" : "90622383887603df",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/90622383887603df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651193987341,
+          "stop" : 1651193991146,
+          "duration" : 3805
+        }
+      }, {
+        "uid" : "3fbb2d78df78562c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/3fbb2d78df78562c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651050980536,
+          "stop" : 1651050984058,
+          "duration" : 3522
+        }
+      }, {
+        "uid" : "e829304ca1cdd26",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/e829304ca1cdd26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651036251172,
+          "stop" : 1651036255176,
+          "duration" : 4004
+        }
+      }, {
+        "uid" : "5c210cd46e3cce73",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/5c210cd46e3cce73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651032448952,
+          "stop" : 1651032452524,
+          "duration" : 3572
+        }
+      }, {
+        "uid" : "91f2e0d2b21b25a1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/91f2e0d2b21b25a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651021215351,
+          "stop" : 1651021218965,
+          "duration" : 3614
+        }
+      }, {
+        "uid" : "867c038daa86c947",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/867c038daa86c947",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650959598179,
+          "stop" : 1650959602122,
+          "duration" : 3943
+        }
+      }, {
+        "uid" : "5e27996344cb3f7c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/5e27996344cb3f7c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650956214811,
+          "stop" : 1650956219173,
+          "duration" : 4362
+        }
+      }, {
+        "uid" : "1e1ca69859278bb0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/1e1ca69859278bb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650950461423,
+          "stop" : 1650950465221,
+          "duration" : 3798
+        }
+      }, {
+        "uid" : "89a96897f1f1b78e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/89a96897f1f1b78e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650934680436,
+          "stop" : 1650934684017,
+          "duration" : 3581
+        }
+      }, {
+        "uid" : "987f086ae4cc88f7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/987f086ae4cc88f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650868013989,
+          "stop" : 1650868017575,
+          "duration" : 3586
+        }
+      }, {
+        "uid" : "9e1f8af3299dcf1e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/9e1f8af3299dcf1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650865541131,
+          "stop" : 1650865544951,
+          "duration" : 3820
+        }
+      }, {
+        "uid" : "aa5d3cbb91d27199",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/aa5d3cbb91d27199",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650857281749,
+          "stop" : 1650857285442,
+          "duration" : 3693
+        }
+      }, {
+        "uid" : "da29d6329c5179d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/da29d6329c5179d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650853539810,
+          "stop" : 1650853543400,
+          "duration" : 3590
+        }
+      }, {
+        "uid" : "af48468a226eab58",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/af48468a226eab58",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650851590582,
+          "stop" : 1650851594197,
+          "duration" : 3615
+        }
+      }, {
+        "uid" : "aa690a5fbc6ae416",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/aa690a5fbc6ae416",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650788555260,
+          "stop" : 1650788559150,
+          "duration" : 3890
+        }
+      }, {
+        "uid" : "663fdc19b9b421aa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/663fdc19b9b421aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650784869540,
+          "stop" : 1650784873082,
+          "duration" : 3542
+        }
+      }, {
+        "uid" : "fd8dd6c3faaf23aa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/fd8dd6c3faaf23aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650603651051,
+          "stop" : 1650603654906,
+          "duration" : 3855
+        }
+      }, {
+        "uid" : "383839f8acef6f39",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/383839f8acef6f39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650598602571,
+          "stop" : 1650598606135,
+          "duration" : 3564
+        }
+      }, {
+        "uid" : "5f59c5129e42625e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure/#testresult/5f59c5129e42625e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650597314433,
+          "stop" : 1650597318589,
+          "duration" : 4156
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c05547802077e9b1.json",
+  "parameterValues" : [ "{'case_no': '9', 'casename': '输入已存在的用户名注册失败', 'mode': '注册', 'data': 'userAccount=979172251@qq.com', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'The mailbox is already registered'}" ]
+}
