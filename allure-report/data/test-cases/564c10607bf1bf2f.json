@@ -1,0 +1,213 @@
+{
+  "uid" : "564c10607bf1bf2f",
+  "name" : "登录状态意见反馈不输入内容发送失败",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "8388cece8238b4d79ade067dbec088d7",
+  "time" : {
+    "start" : 1651052748357,
+    "stop" : 1651052755349,
+    "duration" : 6992
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651050932526,
+      "stop" : 1651050934692,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651050934693,
+      "stop" : 1651050934693,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "16f02c935176d5f2",
+      "name" : "stdout",
+      "source" : "16f02c935176d5f2.txt",
+      "type" : "text/plain",
+      "size" : 124
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651053107382,
+      "stop" : 1651053107900,
+      "duration" : 518
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651053107903,
+      "stop" : 1651053107903,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "11876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '64', 'casename': '登录状态意见反馈不输入内容发送失败', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the content'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "804bd7aa61571de9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/804bd7aa61571de9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037943709,
+          "stop" : 1651037950691,
+          "duration" : 6982
+        }
+      }, {
+        "uid" : "42592c8501b76668",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/42592c8501b76668",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034070453,
+          "stop" : 1651034077469,
+          "duration" : 7016
+        }
+      }, {
+        "uid" : "ca8cc6e03422df66",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/ca8cc6e03422df66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023278878,
+          "stop" : 1651023283490,
+          "duration" : 4612
+        }
+      }, {
+        "uid" : "28b56a7ab37522b8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/28b56a7ab37522b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961474252,
+          "stop" : 1650961478804,
+          "duration" : 4552
+        }
+      }, {
+        "uid" : "437bf07f5d80f94d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/437bf07f5d80f94d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958061404,
+          "stop" : 1650958066198,
+          "duration" : 4794
+        }
+      }, {
+        "uid" : "ac5ddc618da3ce3a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/ac5ddc618da3ce3a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650952000997,
+          "stop" : 1650952005575,
+          "duration" : 4578
+        }
+      }, {
+        "uid" : "bb3490b25d65c01a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/bb3490b25d65c01a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936445861,
+          "stop" : 1650936450498,
+          "duration" : 4637
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "564c10607bf1bf2f.json",
+  "parameterValues" : [ "{'case_no': '64', 'casename': '登录状态意见反馈不输入内容发送失败', 'mode': '帮助中心', 'data': 'title=aaaaaaaaaaaaa\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the content'}" ]
+}

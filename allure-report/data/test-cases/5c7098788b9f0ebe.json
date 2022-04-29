@@ -1,0 +1,213 @@
+{
+  "uid" : "5c7098788b9f0ebe",
+  "name" : "点击 Order without payment页面正确跳转至登录页面",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "e0a0f174f34502cbce7011702e920658",
+  "time" : {
+    "start" : 1651052712751,
+    "stop" : 1651052718848,
+    "duration" : 6097
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651050932526,
+      "stop" : 1651050934692,
+      "duration" : 2166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651050934693,
+      "stop" : 1651050934693,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dce86655a5ae1ac7",
+      "name" : "stdout",
+      "source" : "dce86655a5ae1ac7.txt",
+      "type" : "text/plain",
+      "size" : 30
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651053107382,
+      "stop" : 1651053107900,
+      "duration" : 518
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651053107903,
+      "stop" : 1651053107903,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "11876-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '59', 'casename': '点击 Order without payment页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "c94c53d1e61bcac8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/c94c53d1e61bcac8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037908571,
+          "stop" : 1651037913831,
+          "duration" : 5260
+        }
+      }, {
+        "uid" : "efbe88bb488317a4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/efbe88bb488317a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034037831,
+          "stop" : 1651034042983,
+          "duration" : 5152
+        }
+      }, {
+        "uid" : "7a67178f0ee80c5e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/7a67178f0ee80c5e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023251831,
+          "stop" : 1651023256970,
+          "duration" : 5139
+        }
+      }, {
+        "uid" : "7c9d9f2593021944",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/7c9d9f2593021944",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961445163,
+          "stop" : 1650961450221,
+          "duration" : 5058
+        }
+      }, {
+        "uid" : "bdda40120f42f46a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/bdda40120f42f46a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958035378,
+          "stop" : 1650958040612,
+          "duration" : 5234
+        }
+      }, {
+        "uid" : "46650b36c6f35cbf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/46650b36c6f35cbf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951975131,
+          "stop" : 1650951979864,
+          "duration" : 4733
+        }
+      }, {
+        "uid" : "31a5664a981c4fab",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/31a5664a981c4fab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936421767,
+          "stop" : 1650936426287,
+          "duration" : 4520
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5c7098788b9f0ebe.json",
+  "parameterValues" : [ "{'case_no': '59', 'casename': '点击 Order without payment页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+}
