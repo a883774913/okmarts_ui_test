@@ -217,11 +217,16 @@ class My_Order:
                     time.sleep(1)
 
                 driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交
-                time.sleep(1.5)
-                text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                           value=f"{assert_way.split('=', 1)[1]}").text
-                print(text)
-                assert text == result
+                try:
+                    WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                                                                  value=f"{assert_way.split('=', 1)[1]}"))
+                    time.sleep(0.2)
+                    text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                               value=f"{assert_way.split('=', 1)[1]}").text
+                    print(text)
+                    assert text == result
+                except NoSuchElementException:
+                    raise AssertionError
 
 
     # 断言价格排序方法
