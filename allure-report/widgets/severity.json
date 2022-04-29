@@ -356,7 +356,7 @@
     "stop" : 1651201568694,
     "duration" : 6632
   },
-  "status" : "passed",
+  "status" : "failed",
   "severity" : "normal"
 }, {
   "uid" : "f31055fd09c4d931",
@@ -366,7 +366,7 @@
     "stop" : 1651200718489,
     "duration" : 40718
   },
-  "status" : "failed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "2dc4adf683de626",
@@ -446,7 +446,7 @@
     "stop" : 1651200388997,
     "duration" : 40621
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "d5009a10c83809b6",
@@ -496,7 +496,7 @@
     "stop" : 1651199881610,
     "duration" : 8261
   },
-  "status" : "passed",
+  "status" : "failed",
   "severity" : "normal"
 }, {
   "uid" : "6f32c533df482f8",
@@ -576,7 +576,7 @@
     "stop" : 1651201810217,
     "duration" : 13968
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "dc76a65ff1c28fe3",
@@ -586,7 +586,7 @@
     "stop" : 1651202369180,
     "duration" : 117862
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
   "uid" : "a1efacb16c72501c",
@@ -846,7 +846,7 @@
     "stop" : 1651201599576,
     "duration" : 5144
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "8ea879f6295dbe5b",
@@ -906,7 +906,7 @@
     "stop" : 1651201715193,
     "duration" : 11239
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "dea041fcd7c4c799",
@@ -926,7 +926,7 @@
     "stop" : 1651199890752,
     "duration" : 4528
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
   "uid" : "d3d190586d0b6c0",

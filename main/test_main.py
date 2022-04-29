@@ -11,6 +11,7 @@ from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
+from okmarts_ui_test.mode.shop_car import Shop_Car
 
 
 class Test_Main:
@@ -74,4 +75,9 @@ class Test_Main:
         allure.dynamic.title(Parameter['casename'])
         Personal_Center().person_center(driver,Parameter)
 
+    @allure.feature('购物车')
+    @pytest.mark.parametrize('Parameter', case_infos['shop_car'], ids=casename_infos['shop_car'])
+    def test_shop_car(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Shop_Car().shop_car(driver,Parameter)
 

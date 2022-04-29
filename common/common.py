@@ -26,10 +26,10 @@ class Common:
 
     # 关闭所有浏览器
     def close_browser(self):
-        # cmd1 = 'TASKKILL /F /IM chrome.exe /T'
-        # cmd2 = 'TASKKILL /F /IM chromedriver.exe /T'
-        cmd1 = 'TASKKILL /F /IM msedge.exe /T'
-        cmd2 = 'TASKKILL /F /IM msedgewebview2.exe /T'
+        cmd1 = 'TASKKILL /F /IM chrome.exe /T'
+        cmd2 = 'TASKKILL /F /IM chromedriver.exe /T'
+        # cmd1 = 'TASKKILL /F /IM msedge.exe /T'
+        # cmd2 = 'TASKKILL /F /IM msedgewebview2.exe /T'
         os.system(cmd1)
         os.system(cmd2)
 
