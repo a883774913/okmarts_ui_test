@@ -57,9 +57,10 @@ class My_Order:
         elif casename == '未支付订单点击未支付跳转到支付页面':
             print('通道4')
             n = 0  # 判断是否找到
-            page = 1  # 判断所处页数
+            page = 0  # 判断所处页数
             while True:
                 n = self.find_Unpaid(driver, n)
+                page += 1
                 print(f'n 为 {n} ')
                 if n == 0:  # 如果循环后没有找到 点击下一页进行查找
                     print(f'第{page}未找到待支付订单数据')
@@ -68,16 +69,16 @@ class My_Order:
                         # 移动到翻页处
                         Common().huadong(driver, by='class name', value='ant-pagination-item-link')
                         # 先判断下一页按钮状态 如果为true 说明是最后一页
-                        info = driver.find_element(by='class name', value='ant-pagination-disabled.ant-pagination-next').get_attribute('aria-disabled')
+                        info = driver.find_element(by='class name', value='ant-pagination-disabled.ant-pagination-next').get_attribute(
+                            'aria-disabled')
                         if info == "true":
                             print('此页为最后一页')
                             break
                     except NoSuchElementException:
                         print('不是最后一页')
-                        # 获取next 元素属性，检测是否为最后一页
-                        driver.find_element(by='class name', value='ant-pagination-disabled.ant-pagination-next').click()  # 点击下一页
+                        driver.find_element(by='css selector', value='li[class=" ant-pagination-next"]').click()  # 点击下一页
+                        print('点击下一页')
                         time.sleep(2)
-                        page += 1
                 else:  # 如果找到了-->
                     print(f'第{page}页存在待支付数据')
                     break
@@ -98,13 +99,13 @@ class My_Order:
                                           value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out > div > div.title.flex.align-center > div:nth-child(2) > svg')
             info = element.get_attribute('p-id')
             self.assert_time_desc(driver, info)
-            time.sleep(1)
+            time.sleep(2)
             element.click()
             info2 = element.get_attribute('p-id')
             if info2 == info:
-                print('点击后未发生变化')
+                print('点击后未发生变化，再次点击')
                 element.click()  # 再次点击
-                time.sleep(1)
+                time.sleep(2)
                 info3 = element.get_attribute('p-id')
                 self.assert_time_desc(driver, info3)
             else:
@@ -179,7 +180,9 @@ class My_Order:
                 Reasons_for_return = data.split('\n')[0].split('=')[-1]
                 print(Reasons_for_return)
                 reason = data.split('\n')[1].split('=')[-1]
+                print(reason)
                 img = data.split('\n')[2].split('=')[-1]
+                print(img)
                 if Reasons_for_return == 'Quality issues':
                     pass
                 elif Reasons_for_return =='Wrong order inform ation':
@@ -196,9 +199,8 @@ class My_Order:
                     driver.find_elements(by="class name", value='ant-select-dropdown-menu-item')[3].click()  # 点击第4个
                 time.sleep(1)
 
-                print(reason)
+
                 driver.find_element(by='class name',value='tuik_text').send_keys(reason)
-                print(img)
                 if img == 'null':
                     print('不上传图片')
                     pass
