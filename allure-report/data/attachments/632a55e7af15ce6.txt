@@ -1,6 +1,0 @@
-{"fistname":"","lastname":"","contactnumber":"","coordinated_area1":"","coordinated_area2":"","coordinated_area3":"","coordinated_postalCode":"","coordinated_addressLine":""}
-Hi~
-Hi ~
-通道0
-Please input your first Name!
-Please input your first Name!

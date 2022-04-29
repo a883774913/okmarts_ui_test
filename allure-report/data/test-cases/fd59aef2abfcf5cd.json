@@ -1,0 +1,139 @@
+{
+  "uid" : "fd59aef2abfcf5cd",
+  "name" : "输入正确信息修改成功",
+  "fullName" : "test_main.Test_Main#test_personal_center",
+  "historyId" : "80112ea5162061c5593fa62c4f7de2b8",
+  "time" : {
+    "start" : 1651196701896,
+    "stop" : 1651196719782,
+    "duration" : 17886
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651193945071,
+      "stop" : 1651193947387,
+      "duration" : 2316
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651193947388,
+      "stop" : 1651193947388,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8bf1d5ef0c33e7aa",
+      "name" : "stdout",
+      "source" : "8bf1d5ef0c33e7aa.txt",
+      "type" : "text/plain",
+      "size" : 2179
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651196719785,
+      "stop" : 1651196720482,
+      "duration" : 697
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651196720485,
+      "stop" : 1651196720485,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "个人资料修改"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\ncompany=null', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fd59aef2abfcf5cd.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\ncompany=null', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
+}

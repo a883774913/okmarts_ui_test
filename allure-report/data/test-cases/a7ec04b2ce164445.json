@@ -1,0 +1,269 @@
+{
+  "uid" : "a7ec04b2ce164445",
+  "name" : "输入7位英文小写密码修改失败",
+  "fullName" : "test_main.Test_Main#test_forget_password",
+  "historyId" : "cc5056e2f350ae9c52d434244450b725",
+  "time" : {
+    "start" : 1651195373591,
+    "stop" : 1651195431262,
+    "duration" : 57671
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651193945071,
+      "stop" : 1651193947387,
+      "duration" : 2316
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651193947388,
+      "stop" : 1651193947388,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "939af523f5ea763d",
+      "name" : "stdout",
+      "source" : "939af523f5ea763d.txt",
+      "type" : "text/plain",
+      "size" : 168
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651196719785,
+      "stop" : 1651196720482,
+      "duration" : 697
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651196720485,
+      "stop" : 1651196720485,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "忘记密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '43', 'casename': '输入7位英文小写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=aaaaaaa', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "7dabf9dce10b1798",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/7dabf9dce10b1798",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052184452,
+          "stop" : 1651052273195,
+          "duration" : 88743
+        }
+      }, {
+        "uid" : "2f81b09a4421e875",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/2f81b09a4421e875",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037491209,
+          "stop" : 1651037526693,
+          "duration" : 35484
+        }
+      }, {
+        "uid" : "900333409e5bb9b0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/900333409e5bb9b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033647331,
+          "stop" : 1651033680992,
+          "duration" : 33661
+        }
+      }, {
+        "uid" : "310cf9a65344c368",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/310cf9a65344c368",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651022520355,
+          "stop" : 1651022592540,
+          "duration" : 72185
+        }
+      }, {
+        "uid" : "822685e361cb3ba0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/822685e361cb3ba0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650960860553,
+          "stop" : 1650960894259,
+          "duration" : 33706
+        }
+      }, {
+        "uid" : "48d975073d0137e1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/48d975073d0137e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650957506305,
+          "stop" : 1650957539867,
+          "duration" : 33562
+        }
+      }, {
+        "uid" : "108ab033733a1679",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/108ab033733a1679",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951672676,
+          "stop" : 1650951706559,
+          "duration" : 33883
+        }
+      }, {
+        "uid" : "9cced0ab97a8206",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/9cced0ab97a8206",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935898520,
+          "stop" : 1650935932443,
+          "duration" : 33923
+        }
+      }, {
+        "uid" : "77c071d1119310f3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/77c071d1119310f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650869492165,
+          "stop" : 1650869528996,
+          "duration" : 36831
+        }
+      }, {
+        "uid" : "b6c4eeb25074eea",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/b6c4eeb25074eea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650866913868,
+          "stop" : 1650866948337,
+          "duration" : 34469
+        }
+      }, {
+        "uid" : "5dbcd8bd7c0af3bd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5dbcd8bd7c0af3bd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650858811662,
+          "stop" : 1650858847234,
+          "duration" : 35572
+        }
+      }, {
+        "uid" : "d238d84d19cd073b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/d238d84d19cd073b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650855188236,
+          "stop" : 1650855222543,
+          "duration" : 34307
+        }
+      }, {
+        "uid" : "f1ca315b424c40db",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/f1ca315b424c40db",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650852939745,
+          "stop" : 1650852973116,
+          "duration" : 33371
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a7ec04b2ce164445.json",
+  "parameterValues" : [ "{'case_no': '43', 'casename': '输入7位英文小写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=aaaaaaa', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+}

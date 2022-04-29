@@ -1,4 +1,12 @@
 [ {
+  "buildOrder" : 48,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 5,
+    "Test defects" : 7
+  }
+}, {
   "buildOrder" : 47,
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure",
   "reportName" : "AllureReport",
@@ -145,13 +153,5 @@
   "data" : {
     "Product defects" : 1,
     "Test defects" : 5
-  }
-}, {
-  "buildOrder" : 28,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/28/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Product defects" : 4,
-    "Test defects" : 11
   }
 } ]

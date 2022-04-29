@@ -6,14 +6,14 @@
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "密码为6为字符注册成功",
-        "uid" : "9685ce6cd16dc264",
+        "name" : "密码为数字+小写字母+大写字母注册成功",
+        "uid" : "a0369fe8e345d3db",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651051133918,
-          "stop" : 1651051193355,
-          "duration" : 59437
+          "start" : 1651194683285,
+          "stop" : 1651194779922,
+          "duration" : 96637
         },
         "flaky" : false,
         "newFailed" : true,
@@ -21,33 +21,16 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '16', 'casename': '密码为6为字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a12345', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
-      }, {
-        "name" : "密码为16位注册成功",
-        "uid" : "6378dc74e4766820",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651051233143,
-          "stop" : 1651051259415,
-          "duration" : 26272
-        },
-        "flaky" : true,
-        "newFailed" : true,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '18', 'casename': '密码为16位注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=A123456789123456', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+        "parameters" : [ "{'case_no': '27', 'casename': '密码为数字+小写字母+大写字母注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdFGH', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+小写字母+特殊字符注册成功",
-        "uid" : "9bdeee5431dfca99",
+        "uid" : "716b054379a83913",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651051632310,
-          "stop" : 1651051673392,
-          "duration" : 41082
+          "start" : 1651194780644,
+          "stop" : 1651194822325,
+          "duration" : 41681
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +41,13 @@
         "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+大写字母+特殊字符注册成功",
-        "uid" : "192a3baaf433613d",
+        "uid" : "5c4b43f5915863c9",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651051673873,
-          "stop" : 1651051714939,
-          "duration" : 41066
+          "start" : 1651194822504,
+          "stop" : 1651194863252,
+          "duration" : 40748
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +58,13 @@
         "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-        "uid" : "96a3889c8252ef66",
+        "uid" : "1604470a95eaca9e",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651051756450,
-          "stop" : 1651051797199,
-          "duration" : 40749
+          "start" : 1651194904705,
+          "stop" : 1651194949740,
+          "duration" : 45035
         },
         "flaky" : false,
         "newFailed" : false,
@@ -91,14 +74,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
-        "name" : "不输入任何内容修改地址修改失败",
-        "uid" : "65466467ac1d2d27",
+        "name" : "使用Quality issues提交退货单成功",
+        "uid" : "6ba50ee3beefab59",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651052943957,
-          "stop" : 1651052958084,
-          "duration" : 14127
+          "start" : 1651196412239,
+          "stop" : 1651196441557,
+          "duration" : 29318
         },
         "flaky" : false,
         "newFailed" : false,
@@ -106,41 +89,7 @@
         "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '85', 'casename': '不输入任何内容修改地址修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"\",\"lastname\":\"\",\"contactnumber\":\"\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
-      }, {
-        "name" : "未支付订单点击未支付跳转到支付页面",
-        "uid" : "4cdb8609f029e15d",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651053088323,
-          "stop" : 1651053093719,
-          "duration" : 5396
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}" ]
-      }, {
-        "name" : "点击order data可以根据订单时间进行排序",
-        "uid" : "3dab144c3af31891",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651053093908,
-          "stop" : 1651053100539,
-          "duration" : 6631
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '98', 'casename': '点击order data可以根据订单时间进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+        "parameters" : [ "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\Desktop\\\\Lipton-logo.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       } ],
       "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],
@@ -148,149 +97,140 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00857413+2389011]\n\tOrdinal0 [0x007E9F61+1941345]\n\tOrdinal0 [0x006DC658+837208]\n\tOrdinal0 [0x007091DD+1020381]\n\tOrdinal0 [0x0070949B+1021083]\n\tOrdinal0 [0x00736032+1204274]\n\tOrdinal0 [0x00724194+1130900]\n\tOrdinal0 [0x00734302+1196802]\n\tOrdinal0 [0x00723F66+1130342]\n\tOrdinal0 [0x006FE546+976198]\n\tOrdinal0 [0x006FF456+980054]\n\tGetHandleVerifier [0x00A09632+1727522]\n\tGetHandleVerifier [0x00ABBA4D+2457661]\n\tGetHandleVerifier [0x008EEB81+569713]\n\tGetHandleVerifier [0x008EDD76+566118]\n\tOrdinal0 [0x007F0B2B+1968939]\n\tOrdinal0 [0x007F5988+1989000]\n\tOrdinal0 [0x007F5A75+1989237]\n\tOrdinal0 [0x007FECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
       "children" : [ {
-        "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
-        "uid" : "4137d8233e4d557e",
-        "parentUid" : "5a41773be77cefa3ffed8a9729266688",
+        "name" : "输入修改过的密码更改失败",
+        "uid" : "d57524c7579b7857",
+        "parentUid" : "d47452f68a269be5c3affb4049534809",
         "status" : "broken",
         "time" : {
-          "start" : 1651052718851,
-          "stop" : 1651052726604,
-          "duration" : 7753
+          "start" : 1651195765327,
+          "stop" : 1651195859570,
+          "duration" : 94243
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : false,
+        "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
+        "parameters" : [ "{'case_no': '50', 'casename': '输入修改过的密码更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
       } ],
-      "uid" : "5a41773be77cefa3ffed8a9729266688"
+      "uid" : "d47452f68a269be5c3affb4049534809"
     }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-form-explain\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00857413+2389011]\n\tOrdinal0 [0x007E9F61+1941345]\n\tOrdinal0 [0x006DC658+837208]\n\tOrdinal0 [0x007091DD+1020381]\n\tOrdinal0 [0x0070949B+1021083]\n\tOrdinal0 [0x00736032+1204274]\n\tOrdinal0 [0x00724194+1130900]\n\tOrdinal0 [0x00734302+1196802]\n\tOrdinal0 [0x00723F66+1130342]\n\tOrdinal0 [0x006FE546+976198]\n\tOrdinal0 [0x006FF456+980054]\n\tGetHandleVerifier [0x00A09632+1727522]\n\tGetHandleVerifier [0x00ABBA4D+2457661]\n\tGetHandleVerifier [0x008EEB81+569713]\n\tGetHandleVerifier [0x008EDD76+566118]\n\tOrdinal0 [0x007F0B2B+1968939]\n\tOrdinal0 [0x007F5988+1989000]\n\tOrdinal0 [0x007F5A75+1989237]\n\tOrdinal0 [0x007FECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-pagination-disabled.ant-pagination-next\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
       "children" : [ {
-        "name" : "不输入First Name修改失败",
-        "uid" : "300281fb223cebe4",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
+        "name" : "未支付订单点击未支付跳转到支付页面",
+        "uid" : "5e15cc5bcdfec0b5",
+        "parentUid" : "43444e1e77db83b993dc69bc2d999f58",
         "status" : "broken",
         "time" : {
-          "start" : 1651052958240,
-          "stop" : 1651052972315,
-          "duration" : 14075
+          "start" : 1651196273130,
+          "stop" : 1651196281402,
+          "duration" : 8272
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : false,
+        "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '86', 'casename': '不输入First Name修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
-      }, {
-        "name" : "不输入Last Name修改失败",
-        "uid" : "302140447225e76c",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651052972493,
-          "stop" : 1651052986589,
-          "duration" : 14096
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '87', 'casename': '不输入Last Name修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first last Name!'}" ]
-      }, {
-        "name" : "不输入Contact number修改失败",
-        "uid" : "9fedc12218550fc2",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651052988820,
-          "stop" : 1651053002958,
-          "duration" : 14138
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '88', 'casename': '不输入Contact number修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your phone number!'}" ]
-      }, {
-        "name" : "Address中provice不输入修改失败",
-        "uid" : "249158f655fd5c33",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651053003118,
-          "stop" : 1651053017204,
-          "duration" : 14086
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '89', 'casename': 'Address中provice不输入修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input province!'}" ]
-      }, {
-        "name" : "address中city不输入修改失败",
-        "uid" : "1e6d79a174e3fd3d",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651053017372,
-          "stop" : 1651053031510,
-          "duration" : 14138
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '90', 'casename': 'address中city不输入修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input city!'}" ]
-      }, {
-        "name" : "address中country不选择修改失败",
-        "uid" : "d8fbacfe5c7197be",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651053031686,
-          "stop" : 1651053045621,
-          "duration" : 13935
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '91', 'casename': 'address中country不选择修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"2\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input country!'}" ]
-      }, {
-        "name" : "post code不输入修改失败",
-        "uid" : "6b8e80840e199fb",
-        "parentUid" : "7a826b0bb9b6d4c7d37ed06c1608c925",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651053045799,
-          "stop" : 1651053059913,
-          "duration" : 14114
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '92', 'casename': 'post code不输入修改失败', 'mode': '地址管理', 'data': '[{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"},{\"fistname\":\"2\",\"lastname\":\"2\",\"contactnumber\":\"2\",\"coordinated_area1\":\"2\",\"coordinated_area2\":\"2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"2\"}]', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input post code!'}" ]
+        "parameters" : [ "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}" ]
       } ],
-      "uid" : "7a826b0bb9b6d4c7d37ed06c1608c925"
+      "uid" : "43444e1e77db83b993dc69bc2d999f58"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+      "children" : [ {
+        "name" : "退货页面不上传图片提交退货单失败",
+        "uid" : "8b47c6de3bef0fce",
+        "parentUid" : "d62ffbabcecb3bc2e8482113950f18dc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651196357541,
+          "stop" : 1651196382313,
+          "duration" : 24772
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '退货页面不上传图片提交退货单失败', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please input your reason'}" ]
+      }, {
+        "name" : "退货页面输入正确信息提交退货单成功",
+        "uid" : "5bb30bf91059afe7",
+        "parentUid" : "d62ffbabcecb3bc2e8482113950f18dc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651196382519,
+          "stop" : 1651196411971,
+          "duration" : 29452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '退货页面输入正确信息提交退货单成功', 'mode': '订单管理', 'data': 'reason=Model error\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\Desktop\\\\Lipton-logo.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      }, {
+        "name" : "使用Wrong order inform 提交退货单成功",
+        "uid" : "1c50eef1a5f01a4c",
+        "parentUid" : "d62ffbabcecb3bc2e8482113950f18dc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651196441741,
+          "stop" : 1651196473085,
+          "duration" : 31344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用Wrong order inform 提交退货单成功', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\Desktop\\\\Lipton-logo.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      }, {
+        "name" : "使用other提交退货单成功",
+        "uid" : "3a286739b15adabd",
+        "parentUid" : "d62ffbabcecb3bc2e8482113950f18dc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651196473280,
+          "stop" : 1651196569481,
+          "duration" : 96201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\Desktop\\\\Lipton-logo.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      } ],
+      "uid" : "d62ffbabcecb3bc2e8482113950f18dc"
+    }, {
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+      "children" : [ {
+        "name" : "使用视频文件提交退货单失败",
+        "uid" : "c34073bfe2906545",
+        "parentUid" : "ef5ce164fdf125b1aa3fccc6a33d998f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651196569692,
+          "stop" : 1651196695135,
+          "duration" : 125443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=D:\\\\测试工作文件夹\\\\测试常用文件类型测试\\\\6.mp4', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'fail'}" ]
+      } ],
+      "uid" : "ef5ce164fdf125b1aa3fccc6a33d998f"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
