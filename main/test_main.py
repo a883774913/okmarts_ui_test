@@ -5,6 +5,7 @@ from okmarts_ui_test.common.common import Common
 from okmarts_ui_test.data.get_data import Get_Data
 from okmarts_ui_test.mode.Personal_Center import Personal_Center
 from okmarts_ui_test.mode.address import Address
+from okmarts_ui_test.mode.banner import Banner
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
 from okmarts_ui_test.mode.login import Login
@@ -80,4 +81,10 @@ class Test_Main:
     def test_shop_car(self,driver,Parameter):
         allure.dynamic.title(Parameter['casename'])
         Shop_Car().shop_car(driver,Parameter)
+
+    @allure.feature('广告位')
+    @pytest.mark.parametrize('Parameter', case_infos['banner'], ids=casename_infos['banner'])
+    def test_banner(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Banner().banner(driver,Parameter)
 

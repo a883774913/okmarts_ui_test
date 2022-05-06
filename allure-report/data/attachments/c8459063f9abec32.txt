@@ -1,4 +1,0 @@
-['']
-Login
-通道1
-Enter a new password

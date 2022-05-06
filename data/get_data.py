@@ -35,6 +35,9 @@ class Get_Data:
 
         shop_car_casename = []          #购物车模块用例名称集合
         shop_car_case_list = []         #购物车模块测试用例集合
+
+        banner_casename = []            #广告位用例名称集合
+        banner_case_list = []           #广告位用例集合
         print(sheet.nrows)
 
         for i in range(1,sheet.nrows):
@@ -72,9 +75,12 @@ class Get_Data:
                 self.get_list(dicts,personal_case_list,case_no,casename,mode,data,assert_way,result)
                 personal_center_casename.append(casename)
             if mode == '购物车':
-                print(mode)
                 self.get_list(dicts,shop_car_case_list,case_no,casename,mode,data,assert_way,result)
                 shop_car_casename.append(casename)
+            if mode == '广告位':
+                self.get_list(dicts,banner_case_list,case_no,casename,mode,data,assert_way,result)
+                banner_casename.append(casename)
+
 
         General_for_casename['login'] = login_casename
         General_table['login'] = login_cases_list
@@ -103,8 +109,11 @@ class Get_Data:
         General_for_casename['shop_car'] = shop_car_casename
         General_table['shop_car'] = shop_car_case_list
 
-        print(General_table['shop_car'])
-        print(General_for_casename['shop_car'])
+        General_for_casename['banner'] = banner_casename
+        General_table['banner'] = banner_case_list
+
+        print(General_table['banner'])
+        print(General_for_casename['banner'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):
