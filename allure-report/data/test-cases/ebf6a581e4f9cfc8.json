@@ -1,0 +1,204 @@
+{
+  "uid" : "ebf6a581e4f9cfc8",
+  "name" : "Address中provice不输入新增失败",
+  "fullName" : "test_main.Test_Main#test_address",
+  "historyId" : "9594056537da39009f8a141db53989a9",
+  "time" : {
+    "start" : 1651738596003,
+    "stop" : 1651738607470,
+    "duration" : 11467
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651737471434,
+      "stop" : 1651737473198,
+      "duration" : 1764
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651737473198,
+      "stop" : 1651737473199,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "33c06ec668503f95",
+      "name" : "stdout",
+      "source" : "33c06ec668503f95.txt",
+      "type" : "text/plain",
+      "size" : 334
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651739721148,
+      "stop" : 1651739721616,
+      "duration" : 468
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651739721619,
+      "stop" : 1651739721619,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "地址管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '75', 'casename': 'Address中provice不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input province!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "787b6567614e94d5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/787b6567614e94d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220668370,
+          "stop" : 1651220684402,
+          "duration" : 16032
+        }
+      }, {
+        "uid" : "326560ade008b020",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/326560ade008b020",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201692754,
+          "stop" : 1651201703950,
+          "duration" : 11196
+        }
+      }, {
+        "uid" : "4e3248cc7a5504d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/4e3248cc7a5504d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196089270,
+          "stop" : 1651196104134,
+          "duration" : 14864
+        }
+      }, {
+        "uid" : "e88fd24f7dafaaf8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/e88fd24f7dafaaf8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052825098,
+          "stop" : 1651052836371,
+          "duration" : 11273
+        }
+      }, {
+        "uid" : "f23a7208b09dafc2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/f23a7208b09dafc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651038011365,
+          "stop" : 1651038022621,
+          "duration" : 11256
+        }
+      }, {
+        "uid" : "3cc3cba1ce377556",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/3cc3cba1ce377556",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034139109,
+          "stop" : 1651034150447,
+          "duration" : 11338
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ebf6a581e4f9cfc8.json",
+  "parameterValues" : [ "{'case_no': '75', 'casename': 'Address中provice不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input province!'}" ]
+}

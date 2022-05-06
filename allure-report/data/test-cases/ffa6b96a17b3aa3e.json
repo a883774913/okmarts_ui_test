@@ -1,0 +1,363 @@
+{
+  "uid" : "ffa6b96a17b3aa3e",
+  "name" : "注册完成后领取优惠卷成功",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "55bfa903be6bf8d89ffe158c01819b94",
+  "time" : {
+    "start" : 1651737904732,
+    "stop" : 1651737922142,
+    "duration" : 17410
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\n\tOrdinal0 [0x00007FF68F8A0BC5+658373]\n\tOrdinal0 [0x00007FF68F8CB5E0+832992]\n\tOrdinal0 [0x00007FF68F8C6B7E+813950]\n\tOrdinal0 [0x00007FF68F8C24EE+795886]\n\tOrdinal0 [0x00007FF68F8FC366+1033062]\n\tOrdinal0 [0x00007FF68F8F6A53+1010259]\n\tOrdinal0 [0x00007FF68F8CDB47+842567]\n\tOrdinal0 [0x00007FF68F8CF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x0000019A426552E0>\nParameter = {'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"393be1dc5d8969509f153a9f15ae2e9e\")>\n\n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n        allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n>       Regist().regist(Parameter, driver)\n\ntest_main.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\register.py:93: in regist\n    self.regist_mode1(useraccount, driver, data)\n..\\mode\\register.py:194: in regist_mode1\n    code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n..\\mode\\get_code.py:57: in __init__\n    self.dr = webdriver.Edge()  # 打开另一个浏览器\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\edge\\webdriver.py:62: in __init__\n    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], \"ms\",\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py:93: in __init__\n    RemoteWebDriver.__init__(\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:268: in __init__\n    self.start_session(capabilities, browser_profile)\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:359: in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000019A42655EE0>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"session not created\",\"message\":\"session not created: This version of MSEd...DA48BE+605710]\\\\n\\\\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\\\\n\\\\tRtlUserThreadStart [0x00007FFB4090485B+43]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nE       Current browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nE       Stacktrace:\nE       Backtrace:\nE       \tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\nE       \tOrdinal0 [0x00007FF68F8A0BC5+658373]\nE       \tOrdinal0 [0x00007FF68F8CB5E0+832992]\nE       \tOrdinal0 [0x00007FF68F8C6B7E+813950]\nE       \tOrdinal0 [0x00007FF68F8C24EE+795886]\nE       \tOrdinal0 [0x00007FF68F8FC366+1033062]\nE       \tOrdinal0 [0x00007FF68F8F6A53+1010259]\nE       \tOrdinal0 [0x00007FF68F8CDB47+842567]\nE       \tOrdinal0 [0x00007FF68F8CF018+847896]\nE       \tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\nE       \tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\nE       \tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\nE       \tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\nE       \tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\nE       \tRtlUserThreadStart [0x00007FFB4090485B+43]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: SessionNotCreatedException",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651737471434,
+      "stop" : 1651737473198,
+      "duration" : 1764
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651737473198,
+      "stop" : 1651737473199,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\n\tOrdinal0 [0x00007FF68F8A0BC5+658373]\n\tOrdinal0 [0x00007FF68F8CB5E0+832992]\n\tOrdinal0 [0x00007FF68F8C6B7E+813950]\n\tOrdinal0 [0x00007FF68F8C24EE+795886]\n\tOrdinal0 [0x00007FF68F8FC366+1033062]\n\tOrdinal0 [0x00007FF68F8F6A53+1010259]\n\tOrdinal0 [0x00007FF68F8CDB47+842567]\n\tOrdinal0 [0x00007FF68F8CF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x0000019A426552E0>\nParameter = {'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', ...}\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"393be1dc5d8969509f153a9f15ae2e9e\")>\n\n    @allure.feature('注册')\n    @pytest.mark.parametrize('Parameter', case_infos['registe'], ids=casename_infos['registe'])\n    def test_regist(self, Parameter, driver):\n        allure.dynamic.title(Parameter['casename'])  # 测试用例名称\n>       Regist().regist(Parameter, driver)\n\ntest_main.py:39: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\register.py:93: in regist\n    self.regist_mode1(useraccount, driver, data)\n..\\mode\\register.py:194: in regist_mode1\n    code = Get_Code().wangyi(username=useraccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码\n..\\mode\\get_code.py:57: in __init__\n    self.dr = webdriver.Edge()  # 打开另一个浏览器\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\edge\\webdriver.py:62: in __init__\n    super(WebDriver, self).__init__(DesiredCapabilities.EDGE['browserName'], \"ms\",\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py:93: in __init__\n    RemoteWebDriver.__init__(\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:268: in __init__\n    self.start_session(capabilities, browser_profile)\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:359: in start_session\n    response = self.execute(Command.NEW_SESSION, parameters)\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000019A42655EE0>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"session not created\",\"message\":\"session not created: This version of MSEd...DA48BE+605710]\\\\n\\\\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\\\\n\\\\tRtlUserThreadStart [0x00007FFB4090485B+43]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nE       Current browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nE       Stacktrace:\nE       Backtrace:\nE       \tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\nE       \tOrdinal0 [0x00007FF68F8A0BC5+658373]\nE       \tOrdinal0 [0x00007FF68F8CB5E0+832992]\nE       \tOrdinal0 [0x00007FF68F8C6B7E+813950]\nE       \tOrdinal0 [0x00007FF68F8C24EE+795886]\nE       \tOrdinal0 [0x00007FF68F8FC366+1033062]\nE       \tOrdinal0 [0x00007FF68F8F6A53+1010259]\nE       \tOrdinal0 [0x00007FF68F8CDB47+842567]\nE       \tOrdinal0 [0x00007FF68F8CF018+847896]\nE       \tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\nE       \tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\nE       \tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\nE       \tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\nE       \tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\nE       \tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\nE       \tRtlUserThreadStart [0x00007FFB4090485B+43]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: SessionNotCreatedException",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1651737922202,
+        "stop" : 1651737922330,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "115725ba419accfa",
+        "name" : "失败截图",
+        "source" : "115725ba419accfa.png",
+        "type" : "image/png",
+        "size" : 46135
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "396debe3d3de8d9c",
+      "name" : "stdout",
+      "source" : "396debe3d3de8d9c.txt",
+      "type" : "text/plain",
+      "size" : 19
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651739721148,
+      "stop" : 1651739721616,
+      "duration" : 468
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651739721619,
+      "stop" : 1651739721619,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 7,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 26
+      },
+      "items" : [ {
+        "uid" : "75541edc2df395d8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/75541edc2df395d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219398032,
+          "stop" : 1651219445797,
+          "duration" : 47765
+        }
+      }, {
+        "uid" : "33c3a880a178fa5c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/33c3a880a178fa5c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651200718646,
+          "stop" : 1651200765318,
+          "duration" : 46672
+        }
+      }, {
+        "uid" : "dcbb35aef9508976",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/dcbb35aef9508976",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651194949895,
+          "stop" : 1651194997930,
+          "duration" : 48035
+        }
+      }, {
+        "uid" : "4f171df9e2ea5a95",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/4f171df9e2ea5a95",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651051797369,
+          "stop" : 1651051844242,
+          "duration" : 46873
+        }
+      }, {
+        "uid" : "9f75bcd572ce6129",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/9f75bcd572ce6129",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037129879,
+          "stop" : 1651037176024,
+          "duration" : 46145
+        }
+      }, {
+        "uid" : "50e443421a15e159",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/50e443421a15e159",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033272187,
+          "stop" : 1651033317438,
+          "duration" : 45251
+        }
+      }, {
+        "uid" : "45235a3c6ea07ce3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/45235a3c6ea07ce3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651022023517,
+          "stop" : 1651022069169,
+          "duration" : 45652
+        }
+      }, {
+        "uid" : "bf699556a3e647ad",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/bf699556a3e647ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650960442549,
+          "stop" : 1650960487580,
+          "duration" : 45031
+        }
+      }, {
+        "uid" : "358acb9a06037279",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/358acb9a06037279",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650957070668,
+          "stop" : 1650957117831,
+          "duration" : 47163
+        }
+      }, {
+        "uid" : "cfc2377fa94b2a97",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/cfc2377fa94b2a97",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650951283027,
+          "stop" : 1650951342432,
+          "duration" : 59405
+        }
+      }, {
+        "uid" : "389e8f081d790c6a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/389e8f081d790c6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935478455,
+          "stop" : 1650935529150,
+          "duration" : 50695
+        }
+      }, {
+        "uid" : "3587f12b9c23055e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/3587f12b9c23055e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span/p\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650868958459,
+          "stop" : 1650869004687,
+          "duration" : 46228
+        }
+      }, {
+        "uid" : "8695ef8ec382b48d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/8695ef8ec382b48d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650866504292,
+          "stop" : 1650866538770,
+          "duration" : 34478
+        }
+      }, {
+        "uid" : "fa58c11226fcf1c2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/fa58c11226fcf1c2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/div/div/i\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01127413+2389011]\n\tOrdinal0 [0x010B9F61+1941345]\n\tOrdinal0 [0x00FAC658+837208]\n\tOrdinal0 [0x00FD91DD+1020381]\n\tOrdinal0 [0x00FD949B+1021083]\n\tOrdinal0 [0x01006032+1204274]\n\tOrdinal0 [0x00FF4194+1130900]\n\tOrdinal0 [0x01004302+1196802]\n\tOrdinal0 [0x00FF3F66+1130342]\n\tOrdinal0 [0x00FCE546+976198]\n\tOrdinal0 [0x00FCF456+980054]\n\tGetHandleVerifier [0x012D9632+1727522]\n\tGetHandleVerifier [0x0138BA4D+2457661]\n\tGetHandleVerifier [0x011BEB81+569713]\n\tGetHandleVerifier [0x011BDD76+566118]\n\tOrdinal0 [0x010C0B2B+1968939]\n\tOrdinal0 [0x010C5988+1989000]\n\tOrdinal0 [0x010C5A75+1989237]\n\tOrdinal0 [0x010CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650858186820,
+          "stop" : 1650858384816,
+          "duration" : 197996
+        }
+      }, {
+        "uid" : "9df0b4a15d23067b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure/#testresult/9df0b4a15d23067b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650854625861,
+          "stop" : 1650854712094,
+          "duration" : 86233
+        }
+      }, {
+        "uid" : "3de6f31541a37131",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure/#testresult/3de6f31541a37131",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650852530063,
+          "stop" : 1650852579698,
+          "duration" : 49635
+        }
+      }, {
+        "uid" : "3cc9d75a16afe43b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure/#testresult/3cc9d75a16afe43b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650789420197,
+          "stop" : 1650789473117,
+          "duration" : 52920
+        }
+      }, {
+        "uid" : "cf4a24c4426c7f32",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure/#testresult/cf4a24c4426c7f32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650785753506,
+          "stop" : 1650785802511,
+          "duration" : 49005
+        }
+      }, {
+        "uid" : "3c4f8d2da00a0c63",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/30/allure/#testresult/3c4f8d2da00a0c63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650604486931,
+          "stop" : 1650604536329,
+          "duration" : 49398
+        }
+      }, {
+        "uid" : "fb2c906b5e613f6c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/29/allure/#testresult/fb2c906b5e613f6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650599451523,
+          "stop" : 1650599500877,
+          "duration" : 49354
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ffa6b96a17b3aa3e.json",
+  "parameterValues" : [ "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
+}

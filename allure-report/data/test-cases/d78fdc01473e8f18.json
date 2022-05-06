@@ -1,0 +1,249 @@
+{
+  "uid" : "d78fdc01473e8f18",
+  "name" : "登录状态点击Retrieve Password页面跳转到修改密码页面",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "f8170590ee36c19a9d03a00672d8599c",
+  "time" : {
+    "start" : 1651738447154,
+    "stop" : 1651738454587,
+    "duration" : 7433
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651737471434,
+      "stop" : 1651737473198,
+      "duration" : 1764
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651737473198,
+      "stop" : 1651737473199,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a0c42b202bbf1f90",
+      "name" : "stdout",
+      "source" : "a0c42b202bbf1f90.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651739721148,
+      "stop" : 1651739721616,
+      "duration" : 468
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651739721619,
+      "stop" : 1651739721619,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '54', 'casename': '登录状态点击Retrieve Password页面跳转到修改密码页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Enter a new password'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "aff962d2ef575b25",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/aff962d2ef575b25",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220344854,
+          "stop" : 1651220357523,
+          "duration" : 12669
+        }
+      }, {
+        "uid" : "5f46415b28911f55",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/5f46415b28911f55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201548962,
+          "stop" : 1651201555867,
+          "duration" : 6905
+        }
+      }, {
+        "uid" : "f3babcaeedaa1f5b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/f3babcaeedaa1f5b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195875506,
+          "stop" : 1651195886932,
+          "duration" : 11426
+        }
+      }, {
+        "uid" : "e2c55a22a38b48e3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/e2c55a22a38b48e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052680274,
+          "stop" : 1651052687177,
+          "duration" : 6903
+        }
+      }, {
+        "uid" : "b49e369d47d6fbe7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/b49e369d47d6fbe7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037877597,
+          "stop" : 1651037884921,
+          "duration" : 7324
+        }
+      }, {
+        "uid" : "b1b0c0866695671b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/b1b0c0866695671b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034007441,
+          "stop" : 1651034014334,
+          "duration" : 6893
+        }
+      }, {
+        "uid" : "17682234452fadeb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/17682234452fadeb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023227178,
+          "stop" : 1651023232172,
+          "duration" : 4994
+        }
+      }, {
+        "uid" : "65ccf2dbcb183c54",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/65ccf2dbcb183c54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961420427,
+          "stop" : 1650961425641,
+          "duration" : 5214
+        }
+      }, {
+        "uid" : "7bd839d3480423fe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/7bd839d3480423fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958010202,
+          "stop" : 1650958015520,
+          "duration" : 5318
+        }
+      }, {
+        "uid" : "dc96f0d4f918ccab",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/dc96f0d4f918ccab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951950774,
+          "stop" : 1650951956181,
+          "duration" : 5407
+        }
+      }, {
+        "uid" : "b1445292db86a3d0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/b1445292db86a3d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936398112,
+          "stop" : 1650936403027,
+          "duration" : 4915
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d78fdc01473e8f18.json",
+  "parameterValues" : [ "{'case_no': '54', 'casename': '登录状态点击Retrieve Password页面跳转到修改密码页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Enter a new password'}" ]
+}
