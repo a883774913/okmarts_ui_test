@@ -38,7 +38,11 @@ class Get_Data:
 
         banner_casename = []            #广告位用例名称集合
         banner_case_list = []           #广告位用例集合
-        print(sheet.nrows)
+
+        sign_casename = []              #签到模块用例名称集合
+        sign_case_list = []             #签到模块用例集合
+
+
 
         for i in range(1,sheet.nrows):
             dicts = {}
@@ -80,6 +84,9 @@ class Get_Data:
             if mode == '广告位':
                 self.get_list(dicts,banner_case_list,case_no,casename,mode,data,assert_way,result)
                 banner_casename.append(casename)
+            if mode == '签到':
+                self.get_list(dicts, sign_case_list, case_no, casename, mode, data, assert_way, result)
+                sign_casename.append(casename)
 
 
         General_for_casename['login'] = login_casename
@@ -112,8 +119,11 @@ class Get_Data:
         General_for_casename['banner'] = banner_casename
         General_table['banner'] = banner_case_list
 
-        print(General_table['banner'])
-        print(General_for_casename['banner'])
+        General_for_casename['sign'] = sign_casename
+        General_table['sign'] = sign_case_list
+
+        print(General_table['sign'])
+        print(General_for_casename['sign'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):

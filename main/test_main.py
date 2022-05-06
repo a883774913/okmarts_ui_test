@@ -13,6 +13,7 @@ from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
 from okmarts_ui_test.mode.shop_car import Shop_Car
+from okmarts_ui_test.mode.sign import Sign
 
 
 class Test_Main:
@@ -87,4 +88,10 @@ class Test_Main:
     def test_banner(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
         Banner().banner(driver,Parameter)
+
+    @allure.feature('签到')
+    @pytest.mark.parametrize('Parameter', case_infos['sign'], ids=casename_infos['sign'])
+    def test_sign(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Sign().sign(driver,Parameter)
 
