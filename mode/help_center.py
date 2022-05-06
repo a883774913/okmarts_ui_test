@@ -108,10 +108,10 @@ class Help_Center:
         driver.find_element(by='css selector',
                             value=f'#app > div > div.ui-container > div.content.page-help-content > div:nth-child(1) > div.flex.href-list.space-between.text-xs > '
                                   f'a:nth-child({number})').click()
-        time.sleep(1)
+        time.sleep(3)
         text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                    value=f"{assert_way.split('=', 1)[1]}").text
-        print(text)
+        print(f'text为{text}')
         assert text == result
 
     #意见反馈模块

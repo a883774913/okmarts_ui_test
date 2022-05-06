@@ -41,7 +41,7 @@ class Personal_Center:
             driver.find_elements(by='class name', value='ant-checkbox-input')[2].click()
             time.sleep(0.5)
             driver.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/div[2]/button').click() #点击提交
-            time.sleep(1.5)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
@@ -55,7 +55,6 @@ class Personal_Center:
                                        value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text == result
-
         else:
             print('通道3')
             first_name = data.split('\n')[0].split('=')[-1]

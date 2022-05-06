@@ -1,0 +1,18 @@
+reason=other
+text=123412412
+img=C:\Users\admin\PycharmProjects\pythonProject\okmarts_ui_test\data\1.jpg
+昝 张
+10
+0
+return request
+1
+return request
+2
+return request
+3
+signed in Request Return
+1
+第1页存在已签收数据
+other
+123412412
+C:\Users\admin\PycharmProjects\pythonProject\okmarts_ui_test\data\1.jpg

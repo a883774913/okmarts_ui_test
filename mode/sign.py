@@ -33,7 +33,6 @@ class Sign:
                                        value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text == result
-
         else:
             useraccount,password = Common().random_account()
             print(useraccount)
@@ -54,4 +53,5 @@ class Sign:
                                            value=f"{assert_way.split('=', 1)[1]}").text
                 print(text)
                 assert text == result
+        Common().Restore_environment(driver)
 

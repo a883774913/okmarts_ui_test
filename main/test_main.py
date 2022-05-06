@@ -6,6 +6,7 @@ from okmarts_ui_test.data.get_data import Get_Data
 from okmarts_ui_test.mode.Personal_Center import Personal_Center
 from okmarts_ui_test.mode.address import Address
 from okmarts_ui_test.mode.banner import Banner
+from okmarts_ui_test.mode.conpons import Conpons
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
 from okmarts_ui_test.mode.login import Login
@@ -17,7 +18,7 @@ from okmarts_ui_test.mode.sign import Sign
 
 
 class Test_Main:
-    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例.xlsx')
+    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例_错误用例.xlsx')
     case_infos = infos[0]
     casename_infos = infos[1]
 
@@ -94,4 +95,11 @@ class Test_Main:
     def test_sign(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
         Sign().sign(driver,Parameter)
+
+    @allure.feature('优惠券')
+    @pytest.mark.parametrize('Parameter', case_infos['conpons'], ids=casename_infos['conpons'])
+    def test_conpons(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Conpons().conpons(driver,Parameter)
+
 

@@ -209,14 +209,17 @@ class My_Order:
                     time.sleep(2)
                     pk = PyKeyboard()
                      # 实例化
-                    pk.type_string(rf"{img}")
-                    time.sleep(0.5)
+                    pk.press_key(pk.shift_key)
+                    pk.release_key(pk.shift_key)
+                    pk.type_string(img)
+                    time.sleep(2)
                     pk.press_key(pk.enter_key)  # 按压
                     pk.release_key(pk.enter_key)  # 释放
                     pk.press_key(pk.enter_key)  # 按压
                     pk.release_key(pk.enter_key) # 释放
+                    time.sleep(2)
                     WebDriverWait(driver,30,0.2).until(lambda x: x.find_element(by='class name',value='ant-upload-list-item-thumbnail'))
-                    time.sleep(1)
+
 
                 driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交
                 try:
@@ -229,6 +232,7 @@ class My_Order:
                     assert text == result
                 except NoSuchElementException:
                     raise AssertionError
+
 
 
     # 断言价格排序方法
@@ -344,7 +348,7 @@ class My_Order:
             print(i)
             status = elements[i].text
             print(status)
-            if status == '已签收 Request Return':
+            if status == 'signed in Request Return':
                 n += 1
                 Common().huadong(driver,by='css selector',value=f'div[class="lines flex"]:nth-child({i+1}) > div[class="item width-17 status"] > button')
                 time.sleep(1)

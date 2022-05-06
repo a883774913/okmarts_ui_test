@@ -187,7 +187,6 @@ class Regist:
         driver.find_element(by='css selector', value='div[class="input-content"]>input[data-index="5"]').send_keys(
             code[0][5])  # 验证码第6个
 
-
     # 获取验证码 - 输入验证码 - 移动滑块 - 点击注册
     def regist_mode1(self, useraccount, driver, data):
         time.sleep(10)

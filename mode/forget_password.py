@@ -38,11 +38,10 @@ class Forget_Password:
         time.sleep(1)
         Common().Restore_environment(driver)    #判断是否为登录状态
         time.sleep(1)
-        driver.find_element(by='xpath',value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').click()  #点击头像进入登录页面
+        driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像
         time.sleep(1)
         driver.find_element(by='class name',value='login-form-forgot').click()      #点击忘记密码
         time.sleep(1)
-
         if casename == '不输入邮箱号点击发送验证码失败' or casename == '输入错误邮箱发送验证码失败':
             print('通道1')
             driver.find_element(by='id', value='horizontal_login_userName').send_keys(userAccount)  # 输入用户名
@@ -58,6 +57,9 @@ class Forget_Password:
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").get_attribute('disabled')
             print(text)
+            print(type(text))
+            print(result)
+            print(type(result))
             assert text == result
         elif casename == '不输入验证码下一步置灰' :
             print('通道3')
@@ -66,6 +68,9 @@ class Forget_Password:
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").get_attribute('disabled')
             print(text)
+            print(type(text))
+            print(result)
+            print(type(result))
             assert text == result
         elif casename == '输入过期验证码点击下一步失败' :
             print('通道4')
@@ -85,8 +90,7 @@ class Forget_Password:
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}", value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text != result
-
-        elif casename in ['输入正确内容修改密码成功','输入6位字母+数字密码更改成功','输入16位字母+数字更改成功','输入修改过的密码更改失败']:
+        elif casename in ['输入正确内容修改密码成功','输入6位字母+数字密码更改成功','输入7位特殊字符密码修改成功','输入16位字母+数字更改成功','输入7位纯数字修改成功','输入7位英文小写密码修改成功','输入7位英文大写密码修改成功']:
             print('通道5')
             driver.find_element(by='id',value='horizontal_login_userName').send_keys(userAccount)  #输入用户名
             driver.find_element(by='xpath',value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click() #点击发送邮箱
@@ -100,13 +104,14 @@ class Forget_Password:
             driver.find_element(by='id',value='horizontal_login_code').send_keys(code[0])   #输入验证码
             driver.find_element(by='id',value='horizontal_login_newPassword').send_keys(new_password)       #输入新密码
             time.sleep(1)
+            driver.find_element(by='class name',value='anticon.anticon-eye-invisible.ant-input-password-icon').click()      #点击明文查看密码
             driver.find_element(by='class name',value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()    #点击Confirm the changes
-            time.sleep(5)
+            time.sleep(7)
             driver.find_element(by='css selector',
                             value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击按钮进入个人中心  #点击头像进行登录
-            time.sleep(1)
+            time.sleep(2)
             Common().login(driver,userAccount,password=new_password)     #登录操作
-            time.sleep(1)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=',1)[0]}",value=f"{assert_way.split('=',1)[1]}").text
             print(text)
             assert text != result
@@ -155,12 +160,15 @@ class Forget_Password:
             code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
             driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
             driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
+            driver.find_element(by='class name',value='anticon.anticon-eye-invisible.ant-input-password-icon').click()      #点击明文查看密码
+
             driver.find_element(by='class name',
                                 value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
-            time.sleep(1)
+            time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}", value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text == result
+
 
 
 

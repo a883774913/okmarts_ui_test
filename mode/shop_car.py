@@ -218,6 +218,7 @@ class Shop_Car:
                                             value=f"{assert_way.split('=', 1)[1]}").text
                 print(text)
                 assert text == result
+        Common().Restore_environment(driver)
 
 
     def add_goods_to_shopcar(self, driver):

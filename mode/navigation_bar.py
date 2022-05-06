@@ -77,6 +77,7 @@ class Navigation_Bar:
         elif casename == 'All Categories 页面可以点击类别快速移动到该类别所在页面位置':
             driver.find_element(by='class name', value='okm-icon.icon-leimu').click()  # 点击full catalog
             time.sleep(2)
+            WebDriverWait(driver,20,0.2).until(lambda x:x.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[2]/div[8]/div/div/a'))
             driver.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[2]/div[8]/div/div/a').click()  #点击Water Pump
             time.sleep(1)
             text = driver.find_element(by='xpath',value='//*[@id="type7"]/div[2]/div[44]/a').text

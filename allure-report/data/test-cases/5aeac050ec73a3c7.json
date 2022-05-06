@@ -1,0 +1,285 @@
+{
+  "uid" : "5aeac050ec73a3c7",
+  "name" : "登录状态意见反馈不输入任何内容发送失败",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "cf6fe783ad885e965c93b324069f6454",
+  "time" : {
+    "start" : 1651825502864,
+    "stop" : 1651825512308,
+    "duration" : 9444
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651823675815,
+      "stop" : 1651823677641,
+      "duration" : 1826
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651823677642,
+      "stop" : 1651823677642,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "57f11a1b640eb1ed",
+      "name" : "stdout",
+      "source" : "57f11a1b640eb1ed.txt",
+      "type" : "text/plain",
+      "size" : 104
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651826430710,
+      "stop" : 1651826431131,
+      "duration" : 421
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651826431131,
+      "stop" : 1651826431131,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "22192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '62', 'casename': '登录状态意见反馈不输入任何内容发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 16,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "39fb0a6f3c8a0aaa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/39fb0a6f3c8a0aaa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822162755,
+          "stop" : 1651822172085,
+          "duration" : 9330
+        }
+      }, {
+        "uid" : "67526d6e258a83cf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/67526d6e258a83cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818109365,
+          "stop" : 1651818118723,
+          "duration" : 9358
+        }
+      }, {
+        "uid" : "29ad1a94cdf8728e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/29ad1a94cdf8728e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810744584,
+          "stop" : 1651810753864,
+          "duration" : 9280
+        }
+      }, {
+        "uid" : "da3dc647f17b01d7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/da3dc647f17b01d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738498901,
+          "stop" : 1651738508409,
+          "duration" : 9508
+        }
+      }, {
+        "uid" : "c066978bdec70665",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/c066978bdec70665",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220440791,
+          "stop" : 1651220462720,
+          "duration" : 21929
+        }
+      }, {
+        "uid" : "1ea6de295af56180",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/1ea6de295af56180",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201599579,
+          "stop" : 1651201608832,
+          "duration" : 9253
+        }
+      }, {
+        "uid" : "13e4e364f86aedf9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/13e4e364f86aedf9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195949248,
+          "stop" : 1651195961283,
+          "duration" : 12035
+        }
+      }, {
+        "uid" : "264c3a5eabdc8736",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/264c3a5eabdc8736",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052732184,
+          "stop" : 1651052741399,
+          "duration" : 9215
+        }
+      }, {
+        "uid" : "313c1be9c8b331fa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/313c1be9c8b331fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037927321,
+          "stop" : 1651037936611,
+          "duration" : 9290
+        }
+      }, {
+        "uid" : "cafe6709d4dd7a47",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/cafe6709d4dd7a47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034054136,
+          "stop" : 1651034063404,
+          "duration" : 9268
+        }
+      }, {
+        "uid" : "ccec7b1508257f1a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/ccec7b1508257f1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023266910,
+          "stop" : 1651023274054,
+          "duration" : 7144
+        }
+      }, {
+        "uid" : "1b76759e7c3fa689",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/1b76759e7c3fa689",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961462523,
+          "stop" : 1650961469454,
+          "duration" : 6931
+        }
+      }, {
+        "uid" : "1b2a60a1b63ae74",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/1b2a60a1b63ae74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958049501,
+          "stop" : 1650958056367,
+          "duration" : 6866
+        }
+      }, {
+        "uid" : "c8b78269d4c1c4b0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/c8b78269d4c1c4b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951989309,
+          "stop" : 1650951996347,
+          "duration" : 7038
+        }
+      }, {
+        "uid" : "6b7b2c5e2a5390cf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/6b7b2c5e2a5390cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936434474,
+          "stop" : 1650936441300,
+          "duration" : 6826
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5aeac050ec73a3c7.json",
+  "parameterValues" : [ "{'case_no': '62', 'casename': '登录状态意见反馈不输入任何内容发送失败', 'mode': '帮助中心', 'data': 'title=\\ndescript=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please enter the title'}" ]
+}

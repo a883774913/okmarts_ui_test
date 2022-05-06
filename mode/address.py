@@ -105,7 +105,6 @@ class Address:
             assert text == result
 
 
-
     #怎加地址模块
     def add_addressinfo(self,driver,data):
         """

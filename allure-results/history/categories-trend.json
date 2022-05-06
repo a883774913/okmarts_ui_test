@@ -1,4 +1,36 @@
 [ {
+  "buildOrder" : 55,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 8,
+    "Test defects" : 31
+  }
+}, {
+  "buildOrder" : 54,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 4,
+    "Test defects" : 15
+  }
+}, {
+  "buildOrder" : 52,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 17,
+    "Test defects" : 19
+  }
+}, {
+  "buildOrder" : 51,
+  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "Product defects" : 20,
+    "Test defects" : 16
+  }
+}, {
   "buildOrder" : 50,
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure",
   "reportName" : "AllureReport",
@@ -122,36 +154,4 @@
   "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/35/allure",
   "reportName" : "AllureReport",
   "data" : { }
-}, {
-  "buildOrder" : 34,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/34/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Product defects" : 9,
-    "Test defects" : 3
-  }
-}, {
-  "buildOrder" : 33,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/33/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Product defects" : 9,
-    "Test defects" : 2
-  }
-}, {
-  "buildOrder" : 32,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/32/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Product defects" : 6,
-    "Test defects" : 2
-  }
-}, {
-  "buildOrder" : 31,
-  "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/31/allure",
-  "reportName" : "AllureReport",
-  "data" : {
-    "Product defects" : 4,
-    "Test defects" : 3
-  }
 } ]

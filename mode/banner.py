@@ -17,8 +17,7 @@ class Banner:
         result = Parameter['result']
 
         driver.get('http://18.118.13.94:81/index')  # 打开首页
-        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))
-        time.sleep(1)
+        time.sleep(2)
         if casename == '点击广告位图片页面跳转到相关页面':
             result = eval(result)
             print(result)
@@ -33,7 +32,6 @@ class Banner:
             self.banner_mode2(driver, n=2, result=result)
             time.sleep(0.5)
             self.banner_mode2(driver, n=3, result=result)
-
         elif casename == '首页侧栏广告位正确显示':
             text = driver.find_elements(by=f"{assert_way.split('=', 1)[0]}",
                                         value=f"{assert_way.split('=', 1)[1]}")[1].is_displayed()
@@ -65,6 +63,7 @@ class Banner:
             self.banner_mode4(driver, 2, assert_way, result[1])
             time.sleep(0.5)
             self.banner_mode4(driver, 3, assert_way, result[2])
+        Common().Restore_environment(driver)
 
     def banner_mode1(self, driver, assert_way, result, number):
         """
