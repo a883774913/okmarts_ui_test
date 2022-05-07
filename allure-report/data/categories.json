@@ -6,48 +6,14 @@
     "children" : [ {
       "name" : "AssertionError",
       "children" : [ {
-        "name" : "密码为5位注册失败",
-        "uid" : "f2597ac42de761aa",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651823942506,
-          "stop" : 1651824002064,
-          "duration" : 59558
-        },
-        "flaky" : true,
-        "newFailed" : true,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '17', 'casename': '密码为5位注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a1234', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "密码为数字+特殊字符注册失败",
-        "uid" : "ce683aacd8186a4d",
-        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
-        "status" : "failed",
-        "time" : {
-          "start" : 1651824199026,
-          "stop" : 1651824341656,
-          "duration" : 142630
-        },
-        "flaky" : true,
-        "newFailed" : true,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '23', 'casename': '密码为数字+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=12345！@#￥', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
         "name" : "密码为数字+小写字母+特殊字符注册成功",
-        "uid" : "9a22c5a2def3e2e4",
+        "uid" : "c47917bf9e32c9ef",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651824499654,
-          "stop" : 1651824539283,
-          "duration" : 39629
+          "start" : 1651892022873,
+          "stop" : 1651892062005,
+          "duration" : 39132
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +24,13 @@
         "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+大写字母+特殊字符注册成功",
-        "uid" : "d72650243dfa1adf",
+        "uid" : "6a76cb3d92fca07f",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651824539438,
-          "stop" : 1651824578597,
-          "duration" : 39159
+          "start" : 1651892062738,
+          "stop" : 1651892102646,
+          "duration" : 39908
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +41,13 @@
         "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD！@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
       }, {
         "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
-        "uid" : "c5979a27c056055c",
+        "uid" : "7aa460ca3b2cc260",
         "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
         "status" : "failed",
         "time" : {
-          "start" : 1651824617875,
-          "stop" : 1651824676715,
-          "duration" : 58840
+          "start" : 1651892141926,
+          "stop" : 1651892180473,
+          "duration" : 38547
         },
         "flaky" : false,
         "newFailed" : false,
@@ -90,6 +56,74 @@
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "使用other提交退货单成功",
+        "uid" : "9a94e7ecdaee73d9",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651893652493,
+          "stop" : 1651893673863,
+          "duration" : 21370
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      }, {
+        "name" : "已签到状态签到失败",
+        "uid" : "ff5edd49b030c1f",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651893996631,
+          "stop" : 1651894002491,
+          "duration" : 5860
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '已签到状态签到失败', 'mode': '签到', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-center.margin-bottom > div.sign-part.bg-white.flex.space-between.align-center.border-radius-sm > div.part-right > button', 'result': 'Sign in successfully'}" ]
+      }, {
+        "name" : "选择UNused显示未使用优惠券",
+        "uid" : "78ba11fa67f71736",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651894009414,
+          "stop" : 1651894021821,
+          "duration" : 12407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '选择UNused显示未使用优惠券', 'mode': '优惠券', 'data': 'unused', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "选择used显示已使用优惠券",
+        "uid" : "fb4935bf5c09d5ef",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1651894021973,
+          "stop" : 1651894034371,
+          "duration" : 12398
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '选择used显示已使用优惠券', 'mode': '优惠券', 'data': 'used', 'assert_way': '', 'result': ''}" ]
       } ],
       "uid" : "a0017ad855102fea08b8682d27fec4ca"
     } ],
@@ -97,16 +131,50 @@
   }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
       "children" : [ {
-        "name" : "注册完成后领取优惠卷成功",
-        "uid" : "f102bfd10af5a88f",
-        "parentUid" : "926942db5186e352859b5925e8661545",
+        "name" : "输入7位纯数字修改成功",
+        "uid" : "372c60acb675dd22",
+        "parentUid" : "4b535c72ccf1c3c34154cc30baa9498c",
         "status" : "broken",
         "time" : {
-          "start" : 1651824676885,
-          "stop" : 1651824718635,
-          "duration" : 41750
+          "start" : 1651892521478,
+          "stop" : 1651892610667,
+          "duration" : 89189
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '42', 'casename': '输入7位纯数字修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "输入7位特殊字符密码修改成功",
+        "uid" : "e5087c77b5058856",
+        "parentUid" : "4b535c72ccf1c3c34154cc30baa9498c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651892708112,
+          "stop" : 1651892801571,
+          "duration" : 93459
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '45', 'casename': '输入7位特殊字符密码修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=!!!!!!!', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "输入6位字母+数字密码更改成功",
+        "uid" : "8e39c685090a0dde",
+        "parentUid" : "4b535c72ccf1c3c34154cc30baa9498c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651892801731,
+          "stop" : 1651892843033,
+          "duration" : 41302
         },
         "flaky" : false,
         "newFailed" : false,
@@ -114,126 +182,75 @@
         "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '32', 'casename': '注册完成后领取优惠卷成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=a123456', 'assert_way': 'xpath=/html/body/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/div/p', 'result': 'My discount coupon (4)'}" ]
+        "parameters" : [ "{'case_no': '46', 'casename': '输入6位字母+数字密码更改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
       } ],
-      "uid" : "926942db5186e352859b5925e8661545"
+      "uid" : "4b535c72ccf1c3c34154cc30baa9498c"
     }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
       "children" : [ {
-        "name" : "输入7位纯数字修改失败",
-        "uid" : "9be07537415a8b0a",
-        "parentUid" : "b8af11d8c0cef48ddd18906543d95971",
+        "name" : "输入修改过的密码更改失败",
+        "uid" : "9a17bc2fde3afd1",
+        "parentUid" : "2ed5b37d519c68b33241122875876ecd",
         "status" : "broken",
         "time" : {
-          "start" : 1651825019272,
-          "stop" : 1651825101525,
-          "duration" : 82253
+          "start" : 1651893032139,
+          "stop" : 1651893066878,
+          "duration" : 34739
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : false,
+        "newBroken" : true,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '42', 'casename': '输入7位纯数字修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "输入7位英文小写密码修改失败",
-        "uid" : "a3c534784675b276",
-        "parentUid" : "b8af11d8c0cef48ddd18906543d95971",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651825102055,
-          "stop" : 1651825135870,
-          "duration" : 33815
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '43', 'casename': '输入7位英文小写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=aaaaaaa', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "输入7位英文大写密码修改失败",
-        "uid" : "12b28e0b4bc9339d",
-        "parentUid" : "b8af11d8c0cef48ddd18906543d95971",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651825136086,
-          "stop" : 1651825169360,
-          "duration" : 33274
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '44', 'casename': '输入7位英文大写密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=AAAAAAA', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
-      }, {
-        "name" : "输入7位特殊字符密码修改失败",
-        "uid" : "62d20fa9cf136475",
-        "parentUid" : "b8af11d8c0cef48ddd18906543d95971",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651825169647,
-          "stop" : 1651825203537,
-          "duration" : 33890
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '45', 'casename': '输入7位特殊字符密码修改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=!!!!!!!', 'assert_way': 'css selector=#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(3) > div > div > span > span:nth-child(2)', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+        "parameters" : [ "{'case_no': '50', 'casename': '输入修改过的密码更改失败', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=a123456', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
       } ],
-      "uid" : "b8af11d8c0cef48ddd18906543d95971"
+      "uid" : "2ed5b37d519c68b33241122875876ecd"
     }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
       "children" : [ {
         "name" : "退货页面不上传图片提交退货单失败",
-        "uid" : "44f73404ebff19d2",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
+        "uid" : "452a51cf57d10f47",
+        "parentUid" : "9d7dc1f357e1e07cbaca499aba75345c",
         "status" : "broken",
         "time" : {
-          "start" : 1651825870578,
-          "stop" : 1651825904180,
-          "duration" : 33602
+          "start" : 1651893506328,
+          "stop" : 1651893539908,
+          "duration" : 33580
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '退货页面不上传图片提交退货单失败', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please upload the image'}" ]
       }, {
         "name" : "退货页面输入正确信息提交退货单成功",
-        "uid" : "4f6dc67f02b76df5",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
+        "uid" : "f85b835b3da4a9db",
+        "parentUid" : "9d7dc1f357e1e07cbaca499aba75345c",
         "status" : "broken",
         "time" : {
-          "start" : 1651825904644,
-          "stop" : 1651825944500,
-          "duration" : 39856
+          "start" : 1651893540412,
+          "stop" : 1651893590172,
+          "duration" : 49760
         },
         "flaky" : false,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '退货页面输入正确信息提交退货单成功', 'mode': '订单管理', 'data': 'reason=Model error\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       }, {
         "name" : "使用Quality issues提交退货单成功",
-        "uid" : "5e282f948b1cd09f",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
+        "uid" : "1ee3e558b30f9685",
+        "parentUid" : "9d7dc1f357e1e07cbaca499aba75345c",
         "status" : "broken",
         "time" : {
-          "start" : 1651825944671,
-          "stop" : 1651825993015,
-          "duration" : 48344
+          "start" : 1651893590352,
+          "stop" : 1651893638867,
+          "duration" : 48515
         },
         "flaky" : false,
         "newFailed" : false,
@@ -243,48 +260,14 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
       }, {
-        "name" : "使用Wrong order inform 提交退货单成功",
-        "uid" : "f159f7fe5109aecc",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651825993175,
-          "stop" : 1651826050649,
-          "duration" : 57474
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '使用Wrong order inform 提交退货单成功', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
-      }, {
-        "name" : "使用other提交退货单成功",
-        "uid" : "3e2756352217ce82",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651826050858,
-          "stop" : 1651826090591,
-          "duration" : 39733
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : false,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
-      }, {
         "name" : "使用视频文件提交退货单失败",
-        "uid" : "63c9bf6ebb72e5ed",
-        "parentUid" : "6d918fbcd77240b3c02f48e2bf3f52df",
+        "uid" : "ca7b17527a06f17b",
+        "parentUid" : "9d7dc1f357e1e07cbaca499aba75345c",
         "status" : "broken",
         "time" : {
-          "start" : 1651826090737,
-          "stop" : 1651826140906,
-          "duration" : 50169
+          "start" : 1651893674051,
+          "stop" : 1651893723722,
+          "duration" : 49671
         },
         "flaky" : false,
         "newFailed" : false,
@@ -294,18 +277,39 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\test 8.mp4', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'fail'}" ]
       } ],
-      "uid" : "6d918fbcd77240b3c02f48e2bf3f52df"
+      "uid" : "9d7dc1f357e1e07cbaca499aba75345c"
     }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li role=\"option\" class=\"ant-select-dropdown-menu-item\" unselectable=\"on\" style=\"user-select: none;\">...</li> is not clickable at point (602, 497). Other element would receive the click: <textarea data-v-133a987a=\"\" class=\"tuik_text\"></textarea>\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CCF8AF+1046703]\n\tOrdinal0 [0x00CCD8D6+1038550]\n\tOrdinal0 [0x00CCB5EB+1029611]\n\tOrdinal0 [0x00CCA359+1024857]\n\tOrdinal0 [0x00CBFF93+982931]\n\tOrdinal0 [0x00CE414C+1130828]\n\tOrdinal0 [0x00CBF974+981364]\n\tOrdinal0 [0x00CE4364+1131364]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
       "children" : [ {
-        "name" : "未登录状态下点击购物车页面跳转到登录页面成功",
-        "uid" : "66a1db7b3ea14b07",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "name" : "使用Wrong order inform 提交退货单成功",
+        "uid" : "b70ceb27c5cb180f",
+        "parentUid" : "7182f3dc010d1fd95194a0db091ff41b",
         "status" : "broken",
         "time" : {
-          "start" : 1651826210276,
-          "stop" : 1651826218305,
-          "duration" : 8029
+          "start" : 1651893639041,
+          "stop" : 1651893652286,
+          "duration" : 13245
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用Wrong order inform 提交退货单成功', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+      } ],
+      "uid" : "7182f3dc010d1fd95194a0db091ff41b"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+      "children" : [ {
+        "name" : "未登录状态下点击购物车页面跳转到登录页面成功",
+        "uid" : "13db23dfc6b22402",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651893791739,
+          "stop" : 1651893799780,
+          "duration" : 8041
         },
         "flaky" : false,
         "newFailed" : false,
@@ -316,13 +320,13 @@
         "parameters" : [ "{'case_no': '', 'casename': '未登录状态下点击购物车页面跳转到登录页面成功', 'mode': '购物车', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
       }, {
         "name" : "首页显示购物车图标，点击购物车，页面跳转到购物车页面",
-        "uid" : "953e76b6178666b1",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "uid" : "b881efdcf68c7947",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
         "status" : "broken",
         "time" : {
-          "start" : 1651826218518,
-          "stop" : 1651826226449,
-          "duration" : 7931
+          "start" : 1651893799954,
+          "stop" : 1651893807679,
+          "duration" : 7725
         },
         "flaky" : false,
         "newFailed" : false,
@@ -333,13 +337,13 @@
         "parameters" : [ "{'case_no': '', 'casename': '首页显示购物车图标，点击购物车，页面跳转到购物车页面', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}" ]
       }, {
         "name" : "购物车内包含商品时，购物车图标显示正确",
-        "uid" : "3f0efa52ef98492b",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "uid" : "c501522c0f36a1fb",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
         "status" : "broken",
         "time" : {
-          "start" : 1651826237865,
-          "stop" : 1651826250412,
-          "duration" : 12547
+          "start" : 1651893819020,
+          "stop" : 1651893831106,
+          "duration" : 12086
         },
         "flaky" : false,
         "newFailed" : false,
@@ -350,30 +354,30 @@
         "parameters" : [ "{'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}" ]
       }, {
         "name" : "购物车数量大于99时，购物车略缩图显示99+",
-        "uid" : "6b36fb4540c9aa77",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "uid" : "15c0a0168e10c0a6",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
         "status" : "broken",
         "time" : {
-          "start" : 1651826250627,
-          "stop" : 1651826263870,
-          "duration" : 13243
+          "start" : 1651893831289,
+          "stop" : 1651893844315,
+          "duration" : 13026
         },
         "flaky" : true,
         "newFailed" : false,
         "newPassed" : false,
-        "newBroken" : true,
+        "newBroken" : false,
         "retriesCount" : 0,
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '购物车数量大于99时，购物车略缩图显示99+', 'mode': '购物车', 'data': '', 'assert_way': 'class name=num', 'result': '99+'}" ]
       }, {
         "name" : "当商品添加数量为1时无法点击-号",
-        "uid" : "7ef46338fcb39d86",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "uid" : "95898ef863406bf4",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
         "status" : "broken",
         "time" : {
-          "start" : 1651826264055,
-          "stop" : 1651826276314,
-          "duration" : 12259
+          "start" : 1651893844476,
+          "stop" : 1651893856466,
+          "duration" : 11990
         },
         "flaky" : false,
         "newFailed" : false,
@@ -384,13 +388,13 @@
         "parameters" : [ "{'case_no': '', 'casename': '当商品添加数量为1时无法点击-号', 'mode': '购物车', 'data': '', 'assert_way': 'class name=cart-btn-count.ant-btn', 'result': 'true'}" ]
       }, {
         "name" : "点击ALL Choices 所有商品被勾选，点击删除删除成功",
-        "uid" : "bfd2281566298da2",
-        "parentUid" : "45515af2e64368230923df322fc90831",
+        "uid" : "46bbb52c26cfc15c",
+        "parentUid" : "a7a3948b181f510943c76d1186a02b53",
         "status" : "broken",
         "time" : {
-          "start" : 1651826305270,
-          "stop" : 1651826336040,
-          "duration" : 30770
+          "start" : 1651893885220,
+          "stop" : 1651893915389,
+          "duration" : 30169
         },
         "flaky" : false,
         "newFailed" : false,
@@ -400,28 +404,7 @@
         "retriesStatusChange" : false,
         "parameters" : [ "{'case_no': '', 'casename': '点击ALL Choices 所有商品被勾选，点击删除删除成功', 'mode': '购物车', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
       } ],
-      "uid" : "45515af2e64368230923df322fc90831"
-    }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".atn-btn-orange.ant-btn\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
-      "children" : [ {
-        "name" : "未签到状态签到成功",
-        "uid" : "546766b4f0d89226",
-        "parentUid" : "5905929243fe65a27bb9cf933a7b9b8d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1651826407631,
-          "stop" : 1651826413758,
-          "duration" : 6127
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "newPassed" : false,
-        "newBroken" : true,
-        "retriesCount" : 0,
-        "retriesStatusChange" : false,
-        "parameters" : [ "{'case_no': '', 'casename': '未签到状态签到成功', 'mode': '签到', 'data': '', 'assert_way': 'css selector=body > div.ant-message > span', 'result': 'Check in succeeded'}" ]
-      } ],
-      "uid" : "5905929243fe65a27bb9cf933a7b9b8d"
+      "uid" : "a7a3948b181f510943c76d1186a02b53"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

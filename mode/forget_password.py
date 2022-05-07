@@ -79,7 +79,7 @@ class Forget_Password:
                                 value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
             WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
                 "body > div.ant-message > span > div > div > div > span"))  # 显示等待
-            time.sleep(80)
+            time.sleep(60)
             code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
             driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
             driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
@@ -92,21 +92,34 @@ class Forget_Password:
             assert text != result
         elif casename in ['输入正确内容修改密码成功','输入6位字母+数字密码更改成功','输入7位特殊字符密码修改成功','输入16位字母+数字更改成功','输入7位纯数字修改成功','输入7位英文小写密码修改成功','输入7位英文大写密码修改成功']:
             print('通道5')
-            driver.find_element(by='id',value='horizontal_login_userName').send_keys(userAccount)  #输入用户名
-            driver.find_element(by='xpath',value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click() #点击发送邮箱
-            WebDriverWait(driver,30,0.2).until(lambda x:x.find_element_by_css_selector("body > div.ant-message > span > div > div > div > span"))   #显示等待
-            code_info = driver.find_element(by='css selector',value='body > div.ant-message > span > div > div > div > span').text
-            if code_info == 'Verification code has been sent. Please do not click again!':
-                time.sleep(60)
-            else:
-                time.sleep(10)
-            code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
-            driver.find_element(by='id',value='horizontal_login_code').send_keys(code[0])   #输入验证码
-            driver.find_element(by='id',value='horizontal_login_newPassword').send_keys(new_password)       #输入新密码
-            time.sleep(1)
-            driver.find_element(by='class name',value='anticon.anticon-eye-invisible.ant-input-password-icon').click()      #点击明文查看密码
-            driver.find_element(by='class name',value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()    #点击Confirm the changes
-            time.sleep(7)
+            self.mode1(driver,userAccount,new_password)
+            erro = 0
+            while True:
+                WebDriverWait(driver, 10, 0.1).until(
+                    lambda x: x.find_element(by='css selector', value='body > div.ant-message > span > div > div > div > span'))  # 等待提示
+                code_info = driver.find_element(by='css selector', value='body > div.ant-message > span > div > div > div > span').text
+                print(code_info)
+                if code_info == 'password update success':
+                    print('修改成功等待跳转...')
+                    WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='css selector',
+                                                                                  value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)'))  # 等待
+                    break
+                elif code_info == 'Verification code error':
+                    erro += 1       #计算错误的次数
+                    print(f'验证码错误，重新获取中，第{erro}次尝试中...')
+                    if erro >= 3:
+                        print(f'错误次数过多！！停止该轮测试')
+                        assert False
+                    else:
+                        print('验证码错误,再次获取...')
+                        driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
+                        time.sleep(3)
+                        code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 重新获取验证码
+                        driver.find_element(by='id', value='horizontal_login_code').clear()  # 清除验证码
+                        time.sleep(0.45)
+                        driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
+                        driver.find_element(by='class name',
+                                            value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes   提交
             driver.find_element(by='css selector',
                             value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击按钮进入个人中心  #点击头像进行登录
             time.sleep(2)
@@ -115,61 +128,45 @@ class Forget_Password:
             text = driver.find_element(by=f"{assert_way.split('=',1)[0]}",value=f"{assert_way.split('=',1)[1]}").text
             print(text)
             assert text != result
-        elif casename == '更改密码成功后回退重新输入验证码':
-            print('通道6')
-            driver.find_element(by='id', value='horizontal_login_userName').send_keys(userAccount)  # 输入用户名
-            driver.find_element(by='xpath',
-                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
-            WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
-                "body > div.ant-message > span > div > div > div > span"))  # 显示等待
-            code_info = driver.find_element(by='css selector',
-                                            value='body > div.ant-message > span > div > div > div > span').text
-            if code_info == 'Verification code has been sent. Please do not click again!':
-                time.sleep(60)
-                driver.find_element(by='xpath',
-                                    value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
-                time.sleep(8)
-            else:
-                time.sleep(10)
-            code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
-            driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
-            driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
-            driver.find_element(by='class name',
-                                value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
-            time.sleep(5)
-            driver.back()       #回退页面
-            time.sleep(2)
-            info = driver.find_element(by='class name',value='title.text-tit-lg.margin-bottom-lg').text
-            print(info)
-            text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}", value=f"{assert_way.split('=', 1)[1]}").text
-            print(text)
-            assert text == result
         else:
             print('通道0')
-            driver.find_element(by='id', value='horizontal_login_userName').send_keys(userAccount)  # 输入用户名
-            driver.find_element(by='xpath',
-                                value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
-            WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
-                "body > div.ant-message > span > div > div > div > span"))  # 显示等待
-            code_info = driver.find_element(by='css selector',
-                                            value='body > div.ant-message > span > div > div > div > span').text
-            if code_info == 'Verification code has been sent. Please do not click again!':
-                time.sleep(60)
-            else:
-                time.sleep(10)
-            code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
-            driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
-            driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
-            driver.find_element(by='class name',value='anticon.anticon-eye-invisible.ant-input-password-icon').click()      #点击明文查看密码
-
-            driver.find_element(by='class name',
-                                value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
+            self.mode1(driver,userAccount,new_password)
             time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}", value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text == result
 
+    def mode1(self,driver,userAccount,new_password):
+        """
+        输入用户名-点击发送邮件-获取验证码-输入验证码-输入新密码-点击明文查看密码-点击提交
+        :param driver: 驱动
+        :param userAccount: 忘记密码的账户
+        :param new_password: 新密码
+        :return:
+        """
+        driver.find_element(by='id', value='horizontal_login_userName').send_keys(userAccount)  # 输入用户名
+        driver.find_element(by='xpath',
+                            value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
+        WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_css_selector(
+            "body > div.ant-message > span > div > div > div > span"))  # 显示等待
+        code_info = driver.find_element(by='css selector',
+                                        value='body > div.ant-message > span > div > div > div > span').text
+        if code_info == 'Verification code has been sent. Please do not click again!':
+            time.sleep(60)
+            print('发送失败，等待一分钟再次发送')
+            driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
+        else:
+            time.sleep(10)
+        code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
+        print(f'验证码获取成功：{code}')
+        driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
+        driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(new_password)  # 输入新密码
+        time.sleep(1)
+        driver.find_element(by='class name', value='anticon.anticon-eye-invisible.ant-input-password-icon').click()  # 点击明文查看密码
 
+        driver.find_element(by='class name',
+                            value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
+        time.sleep(2)
 
 
 
