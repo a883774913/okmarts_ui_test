@@ -18,7 +18,7 @@ from okmarts_ui_test.mode.sign import Sign
 
 
 class Test_Main:
-    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例_错误用例.xlsx')
+    infos = Get_Data().get_data(filepath='../data/UI自动化用测试用例.xlsx')
     case_infos = infos[0]
     casename_infos = infos[1]
 

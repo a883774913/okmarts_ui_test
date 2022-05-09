@@ -1,6 +1,7 @@
 """
 订单模块
 """
+import os
 import re
 import time
 
@@ -183,9 +184,7 @@ class My_Order:
                 print(reason)
                 img = data.split('\n')[2].split('=')[-1]
                 print(img)
-                if Reasons_for_return == 'Quality issues':
-                    pass
-                elif Reasons_for_return =='Wrong order inform ation':
+                if Reasons_for_return =='Wrong order inform ation':
                     driver.find_elements(by='class name',value='ant-select-selection__rendered')[1].click()
                     time.sleep(1)
                     driver.find_elements(by="class name",value='ant-select-dropdown-menu-item')[1].click()   #点击第2个
@@ -198,20 +197,21 @@ class My_Order:
                     time.sleep(1)
                     driver.find_elements(by="class name", value='ant-select-dropdown-menu-item')[3].click()  # 点击第4个
                 time.sleep(1)
-
-
-                driver.find_element(by='class name',value='tuik_text').send_keys(reason)
+                driver.find_element(by='class name',value='tuik_text').send_keys(reason)        #输入原因
                 if img == 'null':
                     print('不上传图片')
                     pass
                 else:
+                    img_file = f'../data/1.jpg'
+                    img_path = os.path.abspath(img_file)
+                    print(f'img_path为{img_path}')
                     driver.find_element(by='class name',value='ant-upload').click() #点击上传
                     time.sleep(2)
                     pk = PyKeyboard()
                      # 实例化
                     pk.press_key(pk.shift_key)
                     pk.release_key(pk.shift_key)
-                    pk.type_string(img)
+                    pk.type_string(img_path)
                     time.sleep(2)
                     pk.press_key(pk.enter_key)  # 按压
                     pk.release_key(pk.enter_key)  # 释放
@@ -219,19 +219,13 @@ class My_Order:
                     pk.release_key(pk.enter_key) # 释放
                     time.sleep(2)
                     WebDriverWait(driver,30,0.2).until(lambda x: x.find_element(by='class name',value='ant-upload-list-item-thumbnail'))
-
-
                 driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交
-                try:
-                    WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                                                                  value=f"{assert_way.split('=', 1)[1]}"))
-                    time.sleep(0.2)
-                    text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                time.sleep(1.8)
+                text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                                value=f"{assert_way.split('=', 1)[1]}").text
-                    print(text)
-                    assert text == result
-                except NoSuchElementException:
-                    raise AssertionError
+                print(f'text为{text}')
+                assert text == result
+
 
 
 

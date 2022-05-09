@@ -1,0 +1,300 @@
+{
+  "uid" : "5883c7de207d502a",
+  "name" : "登录状态点击 Order without payment页面正确跳转至购物车页面",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "f723addca1ecadbf2f361503dde606bb",
+  "time" : {
+    "start" : 1651893122661,
+    "stop" : 1651893131585,
+    "duration" : 8924
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651891343511,
+      "stop" : 1651891345563,
+      "duration" : 2052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651891345563,
+      "stop" : 1651891345563,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "85399b5f1f8725ca",
+      "name" : "stdout",
+      "source" : "85399b5f1f8725ca.txt",
+      "type" : "text/plain",
+      "size" : 102
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651894034521,
+      "stop" : 1651894034991,
+      "duration" : 470
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651894034996,
+      "stop" : 1651894034996,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "3192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 6,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 17
+      },
+      "items" : [ {
+        "uid" : "bc6b0c487e56ed23",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/bc6b0c487e56ed23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825488845,
+          "stop" : 1651825497606,
+          "duration" : 8761
+        }
+      }, {
+        "uid" : "467466c6cdbe244c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/467466c6cdbe244c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822148960,
+          "stop" : 1651822157686,
+          "duration" : 8726
+        }
+      }, {
+        "uid" : "ac8d0a73ebd24afc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/ac8d0a73ebd24afc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818095423,
+          "stop" : 1651818104186,
+          "duration" : 8763
+        }
+      }, {
+        "uid" : "f4b82149e8e98afa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/f4b82149e8e98afa",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01227413+2389011]\n\tOrdinal0 [0x011B9F61+1941345]\n\tOrdinal0 [0x010AC658+837208]\n\tOrdinal0 [0x010D91DD+1020381]\n\tOrdinal0 [0x010D949B+1021083]\n\tOrdinal0 [0x01106032+1204274]\n\tOrdinal0 [0x010F4194+1130900]\n\tOrdinal0 [0x01104302+1196802]\n\tOrdinal0 [0x010F3F66+1130342]\n\tOrdinal0 [0x010CE546+976198]\n\tOrdinal0 [0x010CF456+980054]\n\tGetHandleVerifier [0x013D9632+1727522]\n\tGetHandleVerifier [0x0148BA4D+2457661]\n\tGetHandleVerifier [0x012BEB81+569713]\n\tGetHandleVerifier [0x012BDD76+566118]\n\tOrdinal0 [0x011C0B2B+1968939]\n\tOrdinal0 [0x011C5988+1989000]\n\tOrdinal0 [0x011C5A75+1989237]\n\tOrdinal0 [0x011CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651810731687,
+          "stop" : 1651810739373,
+          "duration" : 7686
+        }
+      }, {
+        "uid" : "521e05937acf13a7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/521e05937acf13a7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738486780,
+          "stop" : 1651738493544,
+          "duration" : 6764
+        }
+      }, {
+        "uid" : "22bfd74fb5493c07",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/22bfd74fb5493c07",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220419130,
+          "stop" : 1651220432500,
+          "duration" : 13370
+        }
+      }, {
+        "uid" : "d3d190586d0b6c0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/d3d190586d0b6c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201587757,
+          "stop" : 1651201594424,
+          "duration" : 6667
+        }
+      }, {
+        "uid" : "75f370ac491b910f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/75f370ac491b910f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195932316,
+          "stop" : 1651195941944,
+          "duration" : 9628
+        }
+      }, {
+        "uid" : "4137d8233e4d557e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/4137d8233e4d557e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00857413+2389011]\n\tOrdinal0 [0x007E9F61+1941345]\n\tOrdinal0 [0x006DC658+837208]\n\tOrdinal0 [0x007091DD+1020381]\n\tOrdinal0 [0x0070949B+1021083]\n\tOrdinal0 [0x00736032+1204274]\n\tOrdinal0 [0x00724194+1130900]\n\tOrdinal0 [0x00734302+1196802]\n\tOrdinal0 [0x00723F66+1130342]\n\tOrdinal0 [0x006FE546+976198]\n\tOrdinal0 [0x006FF456+980054]\n\tGetHandleVerifier [0x00A09632+1727522]\n\tGetHandleVerifier [0x00ABBA4D+2457661]\n\tGetHandleVerifier [0x008EEB81+569713]\n\tGetHandleVerifier [0x008EDD76+566118]\n\tOrdinal0 [0x007F0B2B+1968939]\n\tOrdinal0 [0x007F5988+1989000]\n\tOrdinal0 [0x007F5A75+1989237]\n\tOrdinal0 [0x007FECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651052718851,
+          "stop" : 1651052726604,
+          "duration" : 7753
+        }
+      }, {
+        "uid" : "e76e586d6cf5af57",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/e76e586d6cf5af57",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00927413+2389011]\n\tOrdinal0 [0x008B9F61+1941345]\n\tOrdinal0 [0x007AC658+837208]\n\tOrdinal0 [0x007D91DD+1020381]\n\tOrdinal0 [0x007D949B+1021083]\n\tOrdinal0 [0x00806032+1204274]\n\tOrdinal0 [0x007F4194+1130900]\n\tOrdinal0 [0x00804302+1196802]\n\tOrdinal0 [0x007F3F66+1130342]\n\tOrdinal0 [0x007CE546+976198]\n\tOrdinal0 [0x007CF456+980054]\n\tGetHandleVerifier [0x00AD9632+1727522]\n\tGetHandleVerifier [0x00B8BA4D+2457661]\n\tGetHandleVerifier [0x009BEB81+569713]\n\tGetHandleVerifier [0x009BDD76+566118]\n\tOrdinal0 [0x008C0B2B+1968939]\n\tOrdinal0 [0x008C5988+1989000]\n\tOrdinal0 [0x008C5A75+1989237]\n\tOrdinal0 [0x008CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651037913841,
+          "stop" : 1651037920571,
+          "duration" : 6730
+        }
+      }, {
+        "uid" : "34f886ad9b433be8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/34f886ad9b433be8",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01167413+2389011]\n\tOrdinal0 [0x010F9F61+1941345]\n\tOrdinal0 [0x00FEC658+837208]\n\tOrdinal0 [0x010191DD+1020381]\n\tOrdinal0 [0x0101949B+1021083]\n\tOrdinal0 [0x01046032+1204274]\n\tOrdinal0 [0x01034194+1130900]\n\tOrdinal0 [0x01044302+1196802]\n\tOrdinal0 [0x01033F66+1130342]\n\tOrdinal0 [0x0100E546+976198]\n\tOrdinal0 [0x0100F456+980054]\n\tGetHandleVerifier [0x01319632+1727522]\n\tGetHandleVerifier [0x013CBA4D+2457661]\n\tGetHandleVerifier [0x011FEB81+569713]\n\tGetHandleVerifier [0x011FDD76+566118]\n\tOrdinal0 [0x01100B2B+1968939]\n\tOrdinal0 [0x01105988+1989000]\n\tOrdinal0 [0x01105A75+1989237]\n\tOrdinal0 [0x0110ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651034042993,
+          "stop" : 1651034049737,
+          "duration" : 6744
+        }
+      }, {
+        "uid" : "800b98bde8e4490c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/800b98bde8e4490c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00B27413+2389011]\n\tOrdinal0 [0x00AB9F61+1941345]\n\tOrdinal0 [0x009AC658+837208]\n\tOrdinal0 [0x009D91DD+1020381]\n\tOrdinal0 [0x009D949B+1021083]\n\tOrdinal0 [0x00A06032+1204274]\n\tOrdinal0 [0x009F4194+1130900]\n\tOrdinal0 [0x00A04302+1196802]\n\tOrdinal0 [0x009F3F66+1130342]\n\tOrdinal0 [0x009CE546+976198]\n\tOrdinal0 [0x009CF456+980054]\n\tGetHandleVerifier [0x00CD9632+1727522]\n\tGetHandleVerifier [0x00D8BA4D+2457661]\n\tGetHandleVerifier [0x00BBEB81+569713]\n\tGetHandleVerifier [0x00BBDD76+566118]\n\tOrdinal0 [0x00AC0B2B+1968939]\n\tOrdinal0 [0x00AC5988+1989000]\n\tOrdinal0 [0x00AC5A75+1989237]\n\tOrdinal0 [0x00ACECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651023256974,
+          "stop" : 1651023261622,
+          "duration" : 4648
+        }
+      }, {
+        "uid" : "dc08ed16f58c631e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/dc08ed16f58c631e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div > div.ui-container > div.content.flex.space-between > div.auction-info > div.title-1.flex.align-center.space-between > div.name.flex.align-center > span\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x005E7413+2389011]\n\tOrdinal0 [0x00579F61+1941345]\n\tOrdinal0 [0x0046C658+837208]\n\tOrdinal0 [0x004991DD+1020381]\n\tOrdinal0 [0x0049949B+1021083]\n\tOrdinal0 [0x004C6032+1204274]\n\tOrdinal0 [0x004B4194+1130900]\n\tOrdinal0 [0x004C4302+1196802]\n\tOrdinal0 [0x004B3F66+1130342]\n\tOrdinal0 [0x0048E546+976198]\n\tOrdinal0 [0x0048F456+980054]\n\tGetHandleVerifier [0x00799632+1727522]\n\tGetHandleVerifier [0x0084BA4D+2457661]\n\tGetHandleVerifier [0x0067EB81+569713]\n\tGetHandleVerifier [0x0067DD76+566118]\n\tOrdinal0 [0x00580B2B+1968939]\n\tOrdinal0 [0x00585988+1989000]\n\tOrdinal0 [0x00585A75+1989237]\n\tOrdinal0 [0x0058ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1650961450225,
+          "stop" : 1650961454933,
+          "duration" : 4708
+        }
+      }, {
+        "uid" : "6a27cf21a9dd68f7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/6a27cf21a9dd68f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958040617,
+          "stop" : 1650958045355,
+          "duration" : 4738
+        }
+      }, {
+        "uid" : "f949fddec6cd8362",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/f949fddec6cd8362",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951979869,
+          "stop" : 1650951985191,
+          "duration" : 5322
+        }
+      }, {
+        "uid" : "3aa9112912f1cb86",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/3aa9112912f1cb86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936426297,
+          "stop" : 1650936430894,
+          "duration" : 4597
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5883c7de207d502a.json",
+  "parameterValues" : [ "{'case_no': '60', 'casename': '登录状态点击 Order without payment页面正确跳转至购物车页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
+}

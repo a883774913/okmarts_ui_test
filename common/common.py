@@ -53,7 +53,6 @@ class Common:
         :param dr:  驱动
         :return:
         """
-        print(dr.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').text)
         if dr.find_element(by='xpath',
                            value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').text == 'Login':  # 如果为login 则为未登录状态
             pass
@@ -79,7 +78,6 @@ class Common:
         """
         is_login = driver.find_element(by='css selector',
                                        value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').text
-        print(is_login)
         if is_login == 'Login':  # 为未登录状态
             driver.find_element(by='css selector',
                                 value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()  # 点击登录

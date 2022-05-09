@@ -1,0 +1,294 @@
+{
+  "uid" : "37608eae030d37ef",
+  "name" : "点击Auction payment balance页面正确跳转至登录页面",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "bec9ff8a20e50bea94b93dee875410bd",
+  "time" : {
+    "start" : 1651893097024,
+    "stop" : 1651893105345,
+    "duration" : 8321
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651891343511,
+      "stop" : 1651891345563,
+      "duration" : 2052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651891345563,
+      "stop" : 1651891345563,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "abc443d060c0b1b7",
+      "name" : "stdout",
+      "source" : "abc443d060c0b1b7.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651894034521,
+      "stop" : 1651894034991,
+      "duration" : 470
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651894034996,
+      "stop" : 1651894034996,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "3192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '57', 'casename': '点击Auction payment balance页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 17,
+        "unknown" : 0,
+        "total" : 17
+      },
+      "items" : [ {
+        "uid" : "439793eaece7c0d6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/439793eaece7c0d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825463081,
+          "stop" : 1651825471442,
+          "duration" : 8361
+        }
+      }, {
+        "uid" : "5d2c960f80c70492",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/5d2c960f80c70492",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822124029,
+          "stop" : 1651822132181,
+          "duration" : 8152
+        }
+      }, {
+        "uid" : "bb1f9086c4c90111",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/bb1f9086c4c90111",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818070570,
+          "stop" : 1651818078651,
+          "duration" : 8081
+        }
+      }, {
+        "uid" : "d438ee9d43abae88",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/d438ee9d43abae88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810712944,
+          "stop" : 1651810719003,
+          "duration" : 6059
+        }
+      }, {
+        "uid" : "33bc6aa37b70f71",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/33bc6aa37b70f71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738467626,
+          "stop" : 1651738473703,
+          "duration" : 6077
+        }
+      }, {
+        "uid" : "99559e4dc6b045f4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/99559e4dc6b045f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220380410,
+          "stop" : 1651220397036,
+          "duration" : 16626
+        }
+      }, {
+        "uid" : "ffa79edbe859daa6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/ffa79edbe859daa6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201568698,
+          "stop" : 1651201574916,
+          "duration" : 6218
+        }
+      }, {
+        "uid" : "2e02910c5c73741e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/2e02910c5c73741e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195905863,
+          "stop" : 1651195914603,
+          "duration" : 8740
+        }
+      }, {
+        "uid" : "83f8fe1a6bec2c5a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/83f8fe1a6bec2c5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052699974,
+          "stop" : 1651052706019,
+          "duration" : 6045
+        }
+      }, {
+        "uid" : "70a4a3f00d0658b8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/70a4a3f00d0658b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037896862,
+          "stop" : 1651037901911,
+          "duration" : 5049
+        }
+      }, {
+        "uid" : "392aec2dc6371fd8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/392aec2dc6371fd8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034026108,
+          "stop" : 1651034031106,
+          "duration" : 4998
+        }
+      }, {
+        "uid" : "4e0d97ceabae5e8d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/4e0d97ceabae5e8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023241999,
+          "stop" : 1651023247121,
+          "duration" : 5122
+        }
+      }, {
+        "uid" : "5bc481697ac3f397",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/5bc481697ac3f397",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961435373,
+          "stop" : 1650961440401,
+          "duration" : 5028
+        }
+      }, {
+        "uid" : "fd996e2c4f06e8bf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/fd996e2c4f06e8bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958025368,
+          "stop" : 1650958030636,
+          "duration" : 5268
+        }
+      }, {
+        "uid" : "b4c8ad6560f36dd6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/b4c8ad6560f36dd6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951965692,
+          "stop" : 1650951970381,
+          "duration" : 4689
+        }
+      }, {
+        "uid" : "24b2c51a8a2ed470",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/24b2c51a8a2ed470",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936412467,
+          "stop" : 1650936417097,
+          "duration" : 4630
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "37608eae030d37ef.json",
+  "parameterValues" : [ "{'case_no': '57', 'casename': '点击Auction payment balance页面正确跳转至登录页面', 'mode': '帮助中心', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+}

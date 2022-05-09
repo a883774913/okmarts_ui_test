@@ -1,0 +1,8 @@
+['useraccount=a979172251@163.com', 'newpassword=']
+new password 为 test23
+Login
+通道3
+true
+<class 'str'>
+true
+<class 'str'>

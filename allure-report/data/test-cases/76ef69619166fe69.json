@@ -1,0 +1,186 @@
+{
+  "uid" : "76ef69619166fe69",
+  "name" : "点击侧栏广告位页面正确跳转",
+  "fullName" : "test_main.Test_Main#test_banner",
+  "historyId" : "4a991d8fb18039fcfd802aa16a3e5918",
+  "time" : {
+    "start" : 1651893942878,
+    "stop" : 1651893947481,
+    "duration" : 4603
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1651891343511,
+      "stop" : 1651891345563,
+      "duration" : 2052
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1651891345563,
+      "stop" : 1651891345563,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2cb27e55c8dab310",
+      "name" : "stdout",
+      "source" : "2cb27e55c8dab310.txt",
+      "type" : "text/plain",
+      "size" : 29
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1651894034521,
+      "stop" : 1651894034991,
+      "duration" : 470
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1651894034996,
+      "stop" : 1651894034996,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "广告位"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "3192-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '点击侧栏广告位页面正确跳转', 'mode': '广告位', 'data': '', 'assert_way': 'class name=title.text-black.margin-bottom-sm', 'result': 'YITENG Water Pum-8329'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "a3d42f8b9d51d06d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/a3d42f8b9d51d06d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826363803,
+          "stop" : 1651826368622,
+          "duration" : 4819
+        }
+      }, {
+        "uid" : "ca2cd0bf5fe181fc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/ca2cd0bf5fe181fc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823066427,
+          "stop" : 1651823071114,
+          "duration" : 4687
+        }
+      }, {
+        "uid" : "13928c158204423e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/13928c158204423e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818977011,
+          "stop" : 1651818982156,
+          "duration" : 5145
+        }
+      }, {
+        "uid" : "7bc335a7739e5f2a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/7bc335a7739e5f2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811974044,
+          "stop" : 1651811977604,
+          "duration" : 3560
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "76ef69619166fe69.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '点击侧栏广告位页面正确跳转', 'mode': '广告位', 'data': '', 'assert_way': 'class name=title.text-black.margin-bottom-sm', 'result': 'YITENG Water Pum-8329'}" ]
+}
