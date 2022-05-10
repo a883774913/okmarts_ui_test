@@ -33,5 +33,20 @@ class Mysql:
         self.dml(con, cur, sql)
         self.close(con, cur)
 
+    def search_info(self,user,pwd,host,db,port,sql):
+        """
+        数据库查询方法
+        :param user:数据库用户名
+        :param pwd: 数据库密码
+        :param host: 数据库主机地址
+        :param db: 数据库工作簿
+        :param port: 端口
+        :param sql: 查询语句
+        :return:
+        """
+        con,cur = self.con_db(user,pwd,host,db,port)
+        res = self.dql(cur,sql)
+        self.close(con,cur)
+        return res
 
 

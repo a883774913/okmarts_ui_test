@@ -5,6 +5,7 @@ import time
 
 
 import xlrd
+from selenium import webdriver
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -282,5 +283,5 @@ class Common:
 
 if __name__ == '__main__':
     a = Common()
-    # a.change_password(driver=webdriver.Chrome(),useraccount='a97917225111@163.com',password='a123456')
-    a.test()
+    a.change_password(driver=webdriver.Chrome(),useraccount='a97917225111@163.com',password='a123456',code=0000)
+    # a.test()

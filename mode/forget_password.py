@@ -25,7 +25,7 @@ class Forget_Password:
         if casename in ['不输入邮箱号点击发送验证码失败','输入错误邮箱发送验证码失败']:
             userAccount = data[0].split('=')[-1]
         else :
-            userAccount = random.choice(['a979172251@163.com', 'a9791722511@163.com', 'a97917225111@163.com'])
+            userAccount = random.choice(['a979172251@163.com', 'a9791722511@126.com', 'a9791722511@163.com', 'a97917225111@163.com', 'a979172251@126.com'])
 
         if casename in ['输入正确内容修改密码成功','不输入验证码下一步置灰','输入过期验证码点击下一步失败','输入6位字母+数字密码更改成功']:
             new_password = 'test' + f'{random.randint(11, 99)}'
@@ -92,19 +92,19 @@ class Forget_Password:
             assert text != result
         elif casename in ['输入正确内容修改密码成功','输入6位字母+数字密码更改成功','输入7位特殊字符密码修改成功','输入16位字母+数字更改成功','输入7位纯数字修改成功','输入7位英文小写密码修改成功','输入7位英文大写密码修改成功']:
             print('通道5')
-            self.mode1(driver,userAccount,new_password)
+            code = self.mode1(driver,userAccount,new_password)
             erro = 0
             while True:
                 WebDriverWait(driver, 10, 0.1).until(
                     lambda x: x.find_element(by='css selector', value='body > div.ant-message > span > div > div > div > span'))  # 等待提示
-                code_info = driver.find_element(by='css selector', value='body > div.ant-message > span > div > div > div > span').text
-                print(code_info)
-                if code_info == 'password update success':
+                info = driver.find_element(by='css selector', value='body > div.ant-message > span > div > div > div > span').text
+                print(f'提交后提示信息为{info}')
+                if info == 'password update success':
                     print('修改成功等待跳转...')
                     WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='css selector',
                                                                                   value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)'))  # 等待
                     break
-                elif code_info == 'Verification code error':
+                elif info == 'Verification code error':
                     erro += 1       #计算错误的次数
                     print(f'验证码错误，重新获取中，第{erro}次尝试中...')
                     if erro >= 3:
@@ -129,13 +129,17 @@ class Forget_Password:
             text = driver.find_element(by=f"{assert_way.split('=',1)[0]}",value=f"{assert_way.split('=',1)[1]}").text
             print(text)
             assert text != result
+            Common().Restore_environment(driver)
+            Common().change_password(driver,userAccount,'a123456',code[0])
         else:
             print('通道0')
-            self.mode1(driver,userAccount,new_password)
+            code = self.mode1(driver,userAccount,new_password)
             time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}", value=f"{assert_way.split('=', 1)[1]}").text
             print(text)
             assert text == result
+            Common().Restore_environment(driver)
+            Common().change_password(driver,userAccount,'a123456',code[0])
 
     def mode1(self,driver,userAccount,new_password):
         """
@@ -143,7 +147,7 @@ class Forget_Password:
         :param driver: 驱动
         :param userAccount: 忘记密码的账户
         :param new_password: 新密码
-        :return:
+        :return: code
         """
         driver.find_element(by='id', value='horizontal_login_userName').send_keys(userAccount)  # 输入用户名
         driver.find_element(by='xpath',
@@ -152,12 +156,12 @@ class Forget_Password:
             "body > div.ant-message > span > div > div > div > span"))  # 显示等待
         code_info = driver.find_element(by='css selector',
                                         value='body > div.ant-message > span > div > div > div > span').text
+        print(f'发送验证码后提示信息为{code_info}')
         if code_info == 'Verification code has been sent. Please do not click again!':
             time.sleep(60)
             print('发送失败，等待一分钟再次发送')
             driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]').click()  # 点击发送邮箱
-        else:
-            time.sleep(10)
+        time.sleep(10)
         code = Get_Code().wangyi(username=userAccount, password='Qwe3541118', name='hydraulic', no=1)  # 获取验证码
         print(f'验证码获取成功：{code}')
         driver.find_element(by='id', value='horizontal_login_code').send_keys(code[0])  # 输入验证码
@@ -168,6 +172,7 @@ class Forget_Password:
         driver.find_element(by='class name',
                             value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes
         time.sleep(2)
+        return code
 
 
 

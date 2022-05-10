@@ -14,6 +14,7 @@ from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
 from okmarts_ui_test.mode.register import Regist
+from okmarts_ui_test.mode.search import Search
 from okmarts_ui_test.mode.shop_car import Shop_Car
 from okmarts_ui_test.mode.sign import Sign
 
@@ -111,4 +112,8 @@ class Test_Main:
         allure.dynamic.title(Parameter['casename'])
         Conpons().conpons(driver,Parameter)
 
-
+    @allure.feature('搜索')
+    @pytest.mark.parametrize('Parameter', case_infos['search'], ids=casename_infos['search'])
+    def test_search(self,driver,Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Search().search(driver,Parameter)

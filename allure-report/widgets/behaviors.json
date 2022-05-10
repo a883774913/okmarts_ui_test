@@ -1,5 +1,5 @@
 {
-  "total" : 12,
+  "total" : 14,
   "items" : [ {
     "uid" : "7797343a6802ee9c34157b5b69c20959",
     "name" : "注册",
@@ -12,15 +12,26 @@
       "total" : 28
     }
   }, {
-    "uid" : "4f645476eb5d144f30f3e8a19809022d",
-    "name" : "优惠券",
+    "uid" : "fd6d25784051c66cfc790b8ab183cbee",
+    "name" : "购物车",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "8e6718e8b461d795cc9dc63d9d3929ab",
+    "name" : "个人资料修改",
     "statistic" : {
       "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 3
+      "total" : 6
     }
   }, {
     "uid" : "516bf61276b79de3ed3b4be198275db3",
@@ -34,6 +45,17 @@
       "total" : 15
     }
   }, {
+    "uid" : "4f645476eb5d144f30f3e8a19809022d",
+    "name" : "优惠券",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
     "uid" : "1f657b2ca69389b8f73a2ef2f765869a",
     "name" : "签到",
     "statistic" : {
@@ -45,26 +67,15 @@
       "total" : 4
     }
   }, {
-    "uid" : "fd6d25784051c66cfc790b8ab183cbee",
-    "name" : "购物车",
+    "uid" : "4b40e170c7ca1250fdcc6cd0997a64ea",
+    "name" : "搜索",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 6,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 8
-    }
-  }, {
-    "uid" : "bdf6646c907dd4a7c11cb54225e7ecda",
-    "name" : "忘记密码",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 4,
-      "skipped" : 0,
-      "passed" : 12,
-      "unknown" : 0,
-      "total" : 16
+      "total" : 3
     }
   }, {
     "uid" : "a8683ef936769eca0631743faf12b699",
@@ -78,6 +89,17 @@
       "total" : 15
     }
   }, {
+    "uid" : "bdf6646c907dd4a7c11cb54225e7ecda",
+    "name" : "忘记密码",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
     "uid" : "f4adcbe437d6229b8b7d480cb9dc15fa",
     "name" : "地址管理",
     "statistic" : {
@@ -87,28 +109,6 @@
       "passed" : 13,
       "unknown" : 0,
       "total" : 13
-    }
-  }, {
-    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
-    "name" : "登录",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 6,
-      "unknown" : 0,
-      "total" : 6
-    }
-  }, {
-    "uid" : "fa7e8993eeb6f08f58f63d7cdfad719b",
-    "name" : "导航栏",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 6,
-      "unknown" : 0,
-      "total" : 6
     }
   } ]
 }
