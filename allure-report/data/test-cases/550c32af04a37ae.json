@@ -1,0 +1,243 @@
+{
+  "uid" : "550c32af04a37ae",
+  "name" : "未支付订单点击未支付跳转到支付页面",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "63c0dd49815c5b8d8c1d2e4d43326809",
+  "time" : {
+    "start" : 1652157750135,
+    "stop" : 1652157838419,
+    "duration" : 88284
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c7c5cfc7ba796300",
+      "name" : "stdout",
+      "source" : "c7c5cfc7ba796300.txt",
+      "type" : "text/plain",
+      "size" : 8545
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "efdaca13be483e44",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/efdaca13be483e44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893370144,
+          "stop" : 1651893458322,
+          "duration" : 88178
+        }
+      }, {
+        "uid" : "501256b94bec439e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/501256b94bec439e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825731613,
+          "stop" : 1651825821433,
+          "duration" : 89820
+        }
+      }, {
+        "uid" : "d5fea8696160bdbb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/d5fea8696160bdbb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822448137,
+          "stop" : 1651822540144,
+          "duration" : 92007
+        }
+      }, {
+        "uid" : "3a60a157bc6808c3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/3a60a157bc6808c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818339318,
+          "stop" : 1651818428157,
+          "duration" : 88839
+        }
+      }, {
+        "uid" : "a1cdf86e758f51e6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/a1cdf86e758f51e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810975157,
+          "stop" : 1651811063278,
+          "duration" : 88121
+        }
+      }, {
+        "uid" : "bc3fbee61407d443",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/bc3fbee61407d443",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738732118,
+          "stop" : 1651738821065,
+          "duration" : 88947
+        }
+      }, {
+        "uid" : "a6e39a9f8e5d5e49",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/a6e39a9f8e5d5e49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220891603,
+          "stop" : 1651220905020,
+          "duration" : 13417
+        }
+      }, {
+        "uid" : "be9fbfcae22b1fcf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/be9fbfcae22b1fcf",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-pagination-disabled.ant-pagination-next\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651201827364,
+          "stop" : 1651201831904,
+          "duration" : 4540
+        }
+      }, {
+        "uid" : "5e15cc5bcdfec0b5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/5e15cc5bcdfec0b5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".ant-pagination-disabled.ant-pagination-next\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651196273130,
+          "stop" : 1651196281402,
+          "duration" : 8272
+        }
+      }, {
+        "uid" : "4cdb8609f029e15d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/4cdb8609f029e15d",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651053088323,
+          "stop" : 1651053093719,
+          "duration" : 5396
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "550c32af04a37ae.json",
+  "parameterValues" : [ "{'case_no': '97', 'casename': '未支付订单点击未支付跳转到支付页面', 'mode': '订单管理', 'data': '', 'assert_way': 'class name=tit.text-center.text-black', 'result': 'Pay'}" ]
+}

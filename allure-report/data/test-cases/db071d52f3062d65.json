@@ -1,0 +1,240 @@
+{
+  "uid" : "db071d52f3062d65",
+  "name" : "点击订单中的商品名称跳转商品详情成功",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "7547147ab2727239336b82f464b0a606",
+  "time" : {
+    "start" : 1652157737295,
+    "stop" : 1652157743743,
+    "duration" : 6448
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "da66d890c393b42",
+      "name" : "stdout",
+      "source" : "da66d890c393b42.txt",
+      "type" : "text/plain",
+      "size" : 50
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '95', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "493bfbed3ee031a9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/493bfbed3ee031a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893357144,
+          "stop" : 1651893363521,
+          "duration" : 6377
+        }
+      }, {
+        "uid" : "627174e48505e959",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/627174e48505e959",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825718680,
+          "stop" : 1651825725168,
+          "duration" : 6488
+        }
+      }, {
+        "uid" : "4ce8fb4c00063893",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/4ce8fb4c00063893",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822424934,
+          "stop" : 1651822437907,
+          "duration" : 12973
+        }
+      }, {
+        "uid" : "9016e7bb42c6c88e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/9016e7bb42c6c88e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818326284,
+          "stop" : 1651818332778,
+          "duration" : 6494
+        }
+      }, {
+        "uid" : "8549e13119ceb45",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/8549e13119ceb45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810962360,
+          "stop" : 1651810968739,
+          "duration" : 6379
+        }
+      }, {
+        "uid" : "64eb46cca0dcfae6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/64eb46cca0dcfae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738719274,
+          "stop" : 1651738725736,
+          "duration" : 6462
+        }
+      }, {
+        "uid" : "6951106ed8a2f44",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/6951106ed8a2f44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220866099,
+          "stop" : 1651220876577,
+          "duration" : 10478
+        }
+      }, {
+        "uid" : "7f4545d9d34f6092",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/7f4545d9d34f6092",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201814555,
+          "stop" : 1651201821013,
+          "duration" : 6458
+        }
+      }, {
+        "uid" : "72bfb4cd67e046c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/72bfb4cd67e046c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196251247,
+          "stop" : 1651196263665,
+          "duration" : 12418
+        }
+      }, {
+        "uid" : "9cae52fd7f32f910",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/9cae52fd7f32f910",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651053077613,
+          "stop" : 1651053082979,
+          "duration" : 5366
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "db071d52f3062d65.json",
+  "parameterValues" : [ "{'case_no': '95', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+}

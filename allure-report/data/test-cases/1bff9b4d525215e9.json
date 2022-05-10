@@ -1,0 +1,330 @@
+{
+  "uid" : "1bff9b4d525215e9",
+  "name" : "输入正确用户名密码登录成功",
+  "fullName" : "test_main.Test_Main#test_login",
+  "historyId" : "fde18a51fe368c0942acbf20a323f9a5",
+  "time" : {
+    "start" : 1652155305092,
+    "stop" : 1652155313678,
+    "duration" : 8586
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f9b350f2e0345c29",
+      "name" : "stdout",
+      "source" : "f9b350f2e0345c29.txt",
+      "type" : "text/plain",
+      "size" : 345
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 44,
+        "unknown" : 0,
+        "total" : 44
+      },
+      "items" : [ {
+        "uid" : "eb331c68d042f719",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/eb331c68d042f719",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651891345563,
+          "stop" : 1651891366549,
+          "duration" : 20986
+        }
+      }, {
+        "uid" : "d969c22f43f054f9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/d969c22f43f054f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823677643,
+          "stop" : 1651823705661,
+          "duration" : 28018
+        }
+      }, {
+        "uid" : "8660c87588187cf9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/8660c87588187cf9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820364005,
+          "stop" : 1651820408776,
+          "duration" : 44771
+        }
+      }, {
+        "uid" : "e47f9bd82756d3f6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/e47f9bd82756d3f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651816380301,
+          "stop" : 1651816391331,
+          "duration" : 11030
+        }
+      }, {
+        "uid" : "ab3813a3c5363c31",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/ab3813a3c5363c31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651809677846,
+          "stop" : 1651809687508,
+          "duration" : 9662
+        }
+      }, {
+        "uid" : "1cd7b8ffec4c79c8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/1cd7b8ffec4c79c8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651737473200,
+          "stop" : 1651737481520,
+          "duration" : 8320
+        }
+      }, {
+        "uid" : "f2e3b479871d94cc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/f2e3b479871d94cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218490135,
+          "stop" : 1651218505441,
+          "duration" : 15306
+        }
+      }, {
+        "uid" : "663734e3461ce185",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/663734e3461ce185",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651199865752,
+          "stop" : 1651199873343,
+          "duration" : 7591
+        }
+      }, {
+        "uid" : "e9f7ccaaa4f9eaf4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/e9f7ccaaa4f9eaf4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651193947390,
+          "stop" : 1651193954483,
+          "duration" : 7093
+        }
+      }, {
+        "uid" : "c0c4b5ac00ea9ecf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/c0c4b5ac00ea9ecf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651050934698,
+          "stop" : 1651050946781,
+          "duration" : 12083
+        }
+      }, {
+        "uid" : "c18c8f9c2148a8fd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/c18c8f9c2148a8fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651036162874,
+          "stop" : 1651036200234,
+          "duration" : 37360
+        }
+      }, {
+        "uid" : "d5816199fae40d28",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/d5816199fae40d28",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651032405627,
+          "stop" : 1651032417235,
+          "duration" : 11608
+        }
+      }, {
+        "uid" : "5ced955f732e7216",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/5ced955f732e7216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651021172182,
+          "stop" : 1651021183728,
+          "duration" : 11546
+        }
+      }, {
+        "uid" : "a91ba0ae7a683049",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/a91ba0ae7a683049",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650959553926,
+          "stop" : 1650959566427,
+          "duration" : 12501
+        }
+      }, {
+        "uid" : "85df21b0c4abd4bf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/85df21b0c4abd4bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650956152656,
+          "stop" : 1650956182274,
+          "duration" : 29618
+        }
+      }, {
+        "uid" : "b925637c50e5846d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/b925637c50e5846d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650950391747,
+          "stop" : 1650950429120,
+          "duration" : 37373
+        }
+      }, {
+        "uid" : "ed7142a8701000ea",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/ed7142a8701000ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650934638072,
+          "stop" : 1650934649348,
+          "duration" : 11276
+        }
+      }, {
+        "uid" : "93cee3775739fb9b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/93cee3775739fb9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650867973732,
+          "stop" : 1650867982208,
+          "duration" : 8476
+        }
+      }, {
+        "uid" : "6dd8107f15fd0e08",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/6dd8107f15fd0e08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650865495932,
+          "stop" : 1650865508939,
+          "duration" : 13007
+        }
+      }, {
+        "uid" : "bd274beabf55509a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/bd274beabf55509a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650857238993,
+          "stop" : 1650857247179,
+          "duration" : 8186
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1bff9b4d525215e9.json",
+  "parameterValues" : [ "{'case_no': '1', 'casename': '输入正确用户名密码登录成功', 'mode': '登录', 'data': 'userAccount=979172251@qq.com\\npassword=a123456', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]/span', 'result': 'login'}" ]
+}

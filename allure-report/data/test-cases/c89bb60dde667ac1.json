@@ -1,0 +1,335 @@
+{
+  "uid" : "c89bb60dde667ac1",
+  "name" : "密码为小写字母+大写字母+特殊字符注册失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "bfa9ac51cd33477fd64d5a664ebabac1",
+  "time" : {
+    "start" : 1652156043839,
+    "stop" : 1652156082801,
+    "duration" : 38962
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5f8ce4b11bef42f6",
+      "name" : "stdout",
+      "source" : "5f8ce4b11bef42f6.txt",
+      "type" : "text/plain",
+      "size" : 128
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 6,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 24,
+        "unknown" : 0,
+        "total" : 32
+      },
+      "items" : [ {
+        "uid" : "e2f217c154c23dc9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/e2f217c154c23dc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651892102820,
+          "stop" : 1651892141921,
+          "duration" : 39101
+        }
+      }, {
+        "uid" : "7c38507c0e48abfa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/7c38507c0e48abfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651824578776,
+          "stop" : 1651824617870,
+          "duration" : 39094
+        }
+      }, {
+        "uid" : "a7dfb38ff2741079",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/a7dfb38ff2741079",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821210406,
+          "stop" : 1651821251380,
+          "duration" : 40974
+        }
+      }, {
+        "uid" : "9b0da3c6b663fbc9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/9b0da3c6b663fbc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817126679,
+          "stop" : 1651817165700,
+          "duration" : 39021
+        }
+      }, {
+        "uid" : "3cb2e717936b2115",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/3cb2e717936b2115",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651810067730,
+          "stop" : 1651810084439,
+          "duration" : 16709
+        }
+      }, {
+        "uid" : "7b1bf35248c020c1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/7b1bf35248c020c1",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651737870771,
+          "stop" : 1651737887633,
+          "duration" : 16862
+        }
+      }, {
+        "uid" : "6e45917d9d8c8fd9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/6e45917d9d8c8fd9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219313598,
+          "stop" : 1651219354861,
+          "duration" : 41263
+        }
+      }, {
+        "uid" : "e450e58d287487ea",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/e450e58d287487ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651200633309,
+          "stop" : 1651200677767,
+          "duration" : 44458
+        }
+      }, {
+        "uid" : "ffff1468d8e0b1ce",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/ffff1468d8e0b1ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651194863412,
+          "stop" : 1651194904701,
+          "duration" : 41289
+        }
+      }, {
+        "uid" : "dded5af2e76f6ef4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/dded5af2e76f6ef4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651051715101,
+          "stop" : 1651051756447,
+          "duration" : 41346
+        }
+      }, {
+        "uid" : "5d036f41c6a8ab66",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/5d036f41c6a8ab66",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651036948112,
+          "stop" : 1651037089983,
+          "duration" : 141871
+        }
+      }, {
+        "uid" : "b91774d1ea005f7b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/b91774d1ea005f7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033190252,
+          "stop" : 1651033229456,
+          "duration" : 39204
+        }
+      }, {
+        "uid" : "71b363af7c44a7e7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/71b363af7c44a7e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651021923673,
+          "stop" : 1651021963733,
+          "duration" : 40060
+        }
+      }, {
+        "uid" : "9488ac78cf5e8e1b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/9488ac78cf5e8e1b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650960343440,
+          "stop" : 1650960403116,
+          "duration" : 59676
+        }
+      }, {
+        "uid" : "88833c4f6f1a6e10",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/88833c4f6f1a6e10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650956991556,
+          "stop" : 1650957031032,
+          "duration" : 39476
+        }
+      }, {
+        "uid" : "f1461f18bb5c4c9f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/f1461f18bb5c4c9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951202803,
+          "stop" : 1650951242788,
+          "duration" : 39985
+        }
+      }, {
+        "uid" : "afa75932403021f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/afa75932403021f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935395452,
+          "stop" : 1650935438161,
+          "duration" : 42709
+        }
+      }, {
+        "uid" : "f1119bd8b25f5ea2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/f1119bd8b25f5ea2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650868872504,
+          "stop" : 1650868913733,
+          "duration" : 41229
+        }
+      }, {
+        "uid" : "9b59468cea87142f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/9b59468cea87142f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1650866435082,
+          "stop" : 1650866469604,
+          "duration" : 34522
+        }
+      }, {
+        "uid" : "5537273e25eae3e5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/5537273e25eae3e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650858088590,
+          "stop" : 1650858137641,
+          "duration" : 49051
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c89bb60dde667ac1.json",
+  "parameterValues" : [ "{'case_no': '30', 'casename': '密码为小写字母+大写字母+特殊字符注册失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=asdASD!@#$', 'assert_way': 'xpath=/html/body/div[3]/div/div/div/div[2]/div/div/div', 'result': 'Please set the password to a combination of 6 to 16 digits and letters'}" ]
+}

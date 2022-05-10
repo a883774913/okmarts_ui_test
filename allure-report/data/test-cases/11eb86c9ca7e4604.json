@@ -1,0 +1,236 @@
+{
+  "uid" : "11eb86c9ca7e4604",
+  "name" : "购物车内包含商品时，购物车图标显示正确",
+  "fullName" : "test_main.Test_Main#test_shop_car",
+  "historyId" : "71898bcdeeb21cb287d2a893e6760fbb",
+  "time" : {
+    "start" : 1652158105533,
+    "stop" : 1652158115538,
+    "duration" : 10005
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBCDB8B0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': '', 'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'data': '', ...}\n\n    @allure.feature('购物车')\n    @pytest.mark.parametrize('Parameter', case_infos['shop_car'], ids=casename_infos['shop_car'])\n    def test_shop_car(self,driver,Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Shop_Car().shop_car(driver,Parameter)\n\ntest_main.py:95: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.shop_car.Shop_Car object at 0x000001D1EBB6FC10>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': '', 'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'data': '', ...}\n\n    def shop_car(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(1)\n        if casename == '未登录状态下点击购物车页面跳转到登录页面成功':\n            Common().Restore_environment(driver)\n            time.sleep(1)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').click()\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        else:\n            Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')\n            time.sleep(2)\n            if casename == '首页显示购物车图标，点击购物车，页面跳转到购物车页面':\n                info = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').text  # 检查是否存在购物车按钮\n                print(info)\n                goods_number = driver.find_element(by='class name', value='num').text       #获取购物车小图标显示数量\n                print(goods_number)\n                assert info == 'Cart'\n                driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').click()     #点击购物车\n                time.sleep(2)\n                if goods_number == '0':\n                    text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').text\n                    print('不存在商品')\n                    print(text)\n                    assert text == 'The shopping cart is still empty for the time being, go pick a few items right away'\n                else:\n                    print('存在商品')\n                    text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span').text\n                    assert text == 'Shopping cart'\n            elif casename == '购物车内无商品时点击相关文字跳转到首页成功':\n                goods_number = driver.find_element(by='class name', value='num').text  # 判断购物车是否有商品\n                if goods_number != '0':  # 如果商品数量不为0，删除该账户购物车商品数据\n                    print('存在商品，删除中')\n                    Mysql().drop_table(user=\"root\", pwd=\"OKmarts888.,\", host=\"18.118.13.94\", db=\"okmarts\", port=3306,\n                                       sql=\"DELETE FROM shopping_cart WHERE userid='1506910015154425856';\")\n                    time.sleep(1)\n                else:\n                    pass\n                driver.find_element(by='class name', value='num').click()\n                time.sleep(2)\n                text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').text\n                print(text)\n                assert text == 'The shopping cart is still empty for the time being, go pick a few items right away'\n                driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').click()\n                time.sleep(2)\n                text1 = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                            value=f\"{assert_way.split('=', 1)[1]}\").text\n                assert text1 == result\n            elif casename == '当商品添加数量为1时无法点击-号':\n                Mysql().drop_table(user=\"root\", pwd=\"OKmarts888.,\", host=\"18.118.13.94\", db=\"okmarts\", port=3306,\n                                   sql=\"DELETE FROM shopping_cart WHERE userid='1506910015154425856';\")\n                time.sleep(1)\n                self.add_goods_to_shopcar(driver)  # 加入商品至购物车\n                try:\n                    info = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").get_attribute(\"disabled\")\n                    print(info)\n                    assert info == result\n                except:\n                    assert False\n            elif casename == '购物车内包含商品时，购物车图标显示正确':\n                goods_number = driver.find_element(by='class name', value='num').text  # 判断购物车是否有商品\n                print(goods_number)\n                if goods_number == '0':  # 如果商品数量为0\n                    self.add_goods_to_shopcar(driver)\n                    goods_number2 = driver.find_element(by='class name', value='num').text  # 判断购物车商品数量有无增加\n                    print(goods_number2)\n>                   assert int(goods_number2) == int(goods_number) + 1\nE                   AssertionError\n\n..\\mode\\shop_car.py:93: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBCDB8B0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': '', 'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'data': '', ...}\n\n    @allure.feature('购物车')\n    @pytest.mark.parametrize('Parameter', case_infos['shop_car'], ids=casename_infos['shop_car'])\n    def test_shop_car(self,driver,Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Shop_Car().shop_car(driver,Parameter)\n\ntest_main.py:95: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.shop_car.Shop_Car object at 0x000001D1EBB6FC10>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': '', 'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'data': '', ...}\n\n    def shop_car(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(1)\n        if casename == '未登录状态下点击购物车页面跳转到登录页面成功':\n            Common().Restore_environment(driver)\n            time.sleep(1)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').click()\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        else:\n            Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')\n            time.sleep(2)\n            if casename == '首页显示购物车图标，点击购物车，页面跳转到购物车页面':\n                info = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').text  # 检查是否存在购物车按钮\n                print(info)\n                goods_number = driver.find_element(by='class name', value='num').text       #获取购物车小图标显示数量\n                print(goods_number)\n                assert info == 'Cart'\n                driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]').click()     #点击购物车\n                time.sleep(2)\n                if goods_number == '0':\n                    text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').text\n                    print('不存在商品')\n                    print(text)\n                    assert text == 'The shopping cart is still empty for the time being, go pick a few items right away'\n                else:\n                    print('存在商品')\n                    text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/div[1]/div[1]/div[1]/span').text\n                    assert text == 'Shopping cart'\n            elif casename == '购物车内无商品时点击相关文字跳转到首页成功':\n                goods_number = driver.find_element(by='class name', value='num').text  # 判断购物车是否有商品\n                if goods_number != '0':  # 如果商品数量不为0，删除该账户购物车商品数据\n                    print('存在商品，删除中')\n                    Mysql().drop_table(user=\"root\", pwd=\"OKmarts888.,\", host=\"18.118.13.94\", db=\"okmarts\", port=3306,\n                                       sql=\"DELETE FROM shopping_cart WHERE userid='1506910015154425856';\")\n                    time.sleep(1)\n                else:\n                    pass\n                driver.find_element(by='class name', value='num').click()\n                time.sleep(2)\n                text = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').text\n                print(text)\n                assert text == 'The shopping cart is still empty for the time being, go pick a few items right away'\n                driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div/div[2]/div[1]/a').click()\n                time.sleep(2)\n                text1 = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                            value=f\"{assert_way.split('=', 1)[1]}\").text\n                assert text1 == result\n            elif casename == '当商品添加数量为1时无法点击-号':\n                Mysql().drop_table(user=\"root\", pwd=\"OKmarts888.,\", host=\"18.118.13.94\", db=\"okmarts\", port=3306,\n                                   sql=\"DELETE FROM shopping_cart WHERE userid='1506910015154425856';\")\n                time.sleep(1)\n                self.add_goods_to_shopcar(driver)  # 加入商品至购物车\n                try:\n                    info = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").get_attribute(\"disabled\")\n                    print(info)\n                    assert info == result\n                except:\n                    assert False\n            elif casename == '购物车内包含商品时，购物车图标显示正确':\n                goods_number = driver.find_element(by='class name', value='num').text  # 判断购物车是否有商品\n                print(goods_number)\n                if goods_number == '0':  # 如果商品数量为0\n                    self.add_goods_to_shopcar(driver)\n                    goods_number2 = driver.find_element(by='class name', value='num').text  # 判断购物车商品数量有无增加\n                    print(goods_number2)\n>                   assert int(goods_number2) == int(goods_number) + 1\nE                   AssertionError\n\n..\\mode\\shop_car.py:93: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652158115555,
+        "stop" : 1652158115675,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d4ce93835a0f468e",
+        "name" : "失败截图",
+        "source" : "d4ce93835a0f468e.png",
+        "type" : "image/png",
+        "size" : 50675
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "e2b7290580ab21d8",
+      "name" : "stdout",
+      "source" : "e2b7290580ab21d8.txt",
+      "type" : "text/plain",
+      "size" : 50
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购物车"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "c501522c0f36a1fb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/c501522c0f36a1fb",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651893819020,
+          "stop" : 1651893831106,
+          "duration" : 12086
+        }
+      }, {
+        "uid" : "3f0efa52ef98492b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/3f0efa52ef98492b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826237865,
+          "stop" : 1651826250412,
+          "duration" : 12547
+        }
+      }, {
+        "uid" : "23ac2a64b025f0b9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/23ac2a64b025f0b9",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822940697,
+          "stop" : 1651822952807,
+          "duration" : 12110
+        }
+      }, {
+        "uid" : "ebf282bc79093664",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/ebf282bc79093664",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818860812,
+          "stop" : 1651818871911,
+          "duration" : 11099
+        }
+      }, {
+        "uid" : "bc71def54010bc01",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/bc71def54010bc01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811864683,
+          "stop" : 1651811874642,
+          "duration" : 9959
+        }
+      }, {
+        "uid" : "c52a22ba0ee8cf48",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/c52a22ba0ee8cf48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739631925,
+          "stop" : 1651739642047,
+          "duration" : 10122
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "11eb86c9ca7e4604.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '购物车内包含商品时，购物车图标显示正确', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}" ]
+}

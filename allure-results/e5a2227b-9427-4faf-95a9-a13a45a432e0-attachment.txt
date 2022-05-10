@@ -1,0 +1,9 @@
+
+未登录，正在执行登录
+登录账户为test8857189@kalianet.to
+登录提示信息为success
+当前账户含有 0 积分
+[<selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="fc0abea0-f2bd-4670-ae31-06d0d0d42738")>, <selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="b0235446-6ed6-461a-88a1-a9ba64c5d24f")>, <selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="5bc9b189-eecb-4076-b4cb-ac998c34f9c1")>, <selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="5c1b50f4-00c2-4285-a52c-fef719f176d3")>, <selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="85c18cd3-f9df-4de4-bb23-cf7a39535dc4")>, <selenium.webdriver.remote.webelement.WebElement (session="d1ada906210b70896bceae01dc4cd77a", element="9dc9cd13-88e7-4663-80a5-7b65c13823d3")>]
+6
+You do not have enough points
+登录状态，执行退出登录

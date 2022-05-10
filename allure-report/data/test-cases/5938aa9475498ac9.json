@@ -1,0 +1,269 @@
+{
+  "uid" : "5938aa9475498ac9",
+  "name" : "使用Quality issues提交退货单成功",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "bc6c1d212558f32799a78fbc1009802b",
+  "time" : {
+    "start" : 1652157925257,
+    "stop" : 1652157945446,
+    "duration" : 20189
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBC8FFA0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver,Parameter)\n\ntest_main.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.my_order.My_Order object at 0x000001D1EBC8F5E0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', ...}\n\n    def my_order(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        time.sleep(1)\n        Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')  # 检测是否登录\n        time.sleep(1)\n        driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像\n        time.sleep(2)\n        if casename == '点击个人中心Order record 订单成功显示':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text == result\n        elif casename == '点击订单中的商品名称跳转商品详情成功':\n            print('通道2 ')\n            goods_name = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').text\n            print(goods_name)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').click()  # 点击商品名称\n            time.sleep(2)\n            buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 获取buy_now\n            # 文本 确认是在商品详情页面\n            print(buy_now)\n            assert buy_now == 'Buy now'\n    \n            goods_name1 = driver.find_element(by='class name', value='title.text-black.margin-bottom-sm').text  # 获取详情页面 商品名称\n            assert goods_name == goods_name1\n        elif casename == \"点击查看物流查看成功\":\n            print('通道3')\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[4]/a').click()  # 点击物流按钮\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        elif casename == '未支付订单点击未支付跳转到支付页面':\n            print('通道4')\n            n = 0  # 判断是否找到\n            page = 0  # 判断所处页数\n            while True:\n                n = self.find_Unpaid(driver, n)\n                page += 1\n                print(f'n 为 {n} ')\n                if n == 0:  # 如果循环后没有找到 点击下一页进行查找\n                    print(f'第{page}未找到待支付订单数据')\n                    # 查询该页面是否为最后一页\n                    try:\n                        # 移动到翻页处\n                        Common().huadong(driver, by='class name', value='ant-pagination-item-link')\n                        # 先判断下一页按钮状态 如果为true 说明是最后一页\n                        info = driver.find_element(by='class name', value='ant-pagination-disabled.ant-pagination-next').get_attribute(\n                            'aria-disabled')\n                        if info == \"true\":\n                            print('此页为最后一页')\n                            break\n                    except NoSuchElementException:\n                        print('不是最后一页')\n                        driver.find_element(by='css selector', value='li[class=\" ant-pagination-next\"]').click()  # 点击下一页\n                        print('点击下一页')\n                        time.sleep(2)\n                else:  # 如果找到了-->\n                    print(f'第{page}页存在待支付数据')\n                    break\n            if n == 0:\n                print('该账户不存在待支付数据')\n                pass\n            else:\n                time.sleep(2)\n                # 获取待支付页面 断言文本\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                print(text)\n                assert text == result\n        elif casename == '点击order data可以根据订单时间进行排序':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            element = driver.find_element(by='css selector',\n                                          value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out > div > div.title.flex.align-center > div:nth-child(2) > svg')\n            info = element.get_attribute('p-id')\n            self.assert_time_desc(driver, info)\n            time.sleep(2)\n            element.click()\n            info2 = element.get_attribute('p-id')\n            if info2 == info:\n                print('点击后未发生变化，再次点击')\n                element.click()  # 再次点击\n                time.sleep(2)\n                info3 = element.get_attribute('p-id')\n                self.assert_time_desc(driver, info3)\n            else:\n                self.assert_time_desc(driver, info2)\n        elif casename == '点击Total price可以根据订单金额进行排序':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            element = driver.find_element(by='css selector', value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out '\n                                                                   '> div > div.title.flex.align-center > div:nth-child(3) > svg')\n            info = element.get_attribute('p-id')\n            self.assert_price_desc(driver, info)\n            time.sleep(1)\n            element.click()\n            info2 = element.get_attribute('p-id')\n            if info2 == info:\n                print('点击后未发生变化')\n                element.click()\n                time.sleep(1)\n                info3 = element.get_attribute('p-id')\n                self.assert_price_desc(driver, info3)\n            else:\n                self.assert_price_desc(driver, info2)\n        elif casename == '通过关键字及全文查找可以成功查询相同名称的订单':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            try:\n                info = driver.find_element(by='css selector',\n                                           value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out > div > '\n                                                 'div.tableData > div:nth-child(1) > div.item.width-32.name > div > a').text\n                print(info)\n            except NoSuchElementException:\n                print('未找到订单数据')\n                raise AssertionError\n    \n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[1]/div[2]/span/input').send_keys(info)  # 搜索栏输入名字\n            driver.find_element(by='class name', value='anticon.anticon-search.ant-input-search-icon').click()  # 点击搜索按钮\n            time.sleep(2)\n            elements = driver.find_elements(by='css selector', value='div[class=\"item width-32 name\"] > div > a')\n            erro = 0\n            for element in elements:\n                print(element.text)\n                if info in element.text:\n                    pass\n                else:\n                    erro += 1\n            if erro == 0:\n                assert True\n            else:\n                assert False\n        elif casename == '已签收订单点击退货申请进入退货页面成功':\n            n = self.go_return_goods(driver)\n            if n == 0:\n                print('该账户不存在已签收数据')\n                pass\n            else:\n                time.sleep(2)\n                # 获取待支付页面 断言文本\n                try:\n                    text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                    print(text)\n                    assert text == result\n                except:\n                    raise AssertionError\n        elif '提交退货单' in casename:\n            n = self.go_return_goods(driver)\n            if n == 0:\n                print('该账户不存在已签收数据')\n                pytest.skip(msg=\"未找到相关数据\")\n            else:\n                time.sleep(2)\n                Reasons_for_return = data.split('\\n')[0].split('=')[-1]\n                print(Reasons_for_return)\n                reason = data.split('\\n')[1].split('=')[-1]\n                print(reason)\n                img = data.split('\\n')[2].split('=')[-1]\n                print(img)\n                if Reasons_for_return =='Wrong order inform ation':\n                    driver.find_elements(by='class name',value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\",value='ant-select-dropdown-menu-item')[1].click()   #点击第2个\n                elif Reasons_for_return == 'Model error':\n                    driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\", value='ant-select-dropdown-menu-item')[2].click()  # 点击第3个\n                elif Reasons_for_return == 'other':\n                    driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\", value='ant-select-dropdown-menu-item')[3].click()  # 点击第4个\n                time.sleep(1)\n                driver.find_element(by='class name',value='tuik_text').send_keys(reason)        #输入原因\n                if img == 'null':\n                    print('不上传图片')\n                    pass\n                else:\n                    img_file = f'../data/1.jpg'\n                    img_path = os.path.abspath(img_file)\n                    print(f'img_path为{img_path}')\n                    driver.find_element(by='class name',value='ant-upload').click() #点击上传\n                    time.sleep(2)\n                    pk = PyKeyboard()\n                     # 实例化\n                    pk.press_key(pk.shift_key)\n                    pk.release_key(pk.shift_key)\n                    pk.type_string(img_path)\n                    time.sleep(2)\n                    pk.press_key(pk.enter_key)  # 按压\n                    pk.release_key(pk.enter_key)  # 释放\n                    pk.press_key(pk.enter_key)  # 按压\n                    pk.release_key(pk.enter_key) # 释放\n                    time.sleep(2)\n                    WebDriverWait(driver,30,0.2).until(lambda x: x.find_element(by='class name',value='ant-upload-list-item-thumbnail'))\n                driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交\n                time.sleep(1.8)\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                print(f'text为{text}')\n>               assert text == result\nE               AssertionError\n\n..\\mode\\my_order.py:227: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBC8FFA0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver,Parameter)\n\ntest_main.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.my_order.My_Order object at 0x000001D1EBC8F5E0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', ...}\n\n    def my_order(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        time.sleep(1)\n        Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')  # 检测是否登录\n        time.sleep(1)\n        driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像\n        time.sleep(2)\n        if casename == '点击个人中心Order record 订单成功显示':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text == result\n        elif casename == '点击订单中的商品名称跳转商品详情成功':\n            print('通道2 ')\n            goods_name = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').text\n            print(goods_name)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').click()  # 点击商品名称\n            time.sleep(2)\n            buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 获取buy_now\n            # 文本 确认是在商品详情页面\n            print(buy_now)\n            assert buy_now == 'Buy now'\n    \n            goods_name1 = driver.find_element(by='class name', value='title.text-black.margin-bottom-sm').text  # 获取详情页面 商品名称\n            assert goods_name == goods_name1\n        elif casename == \"点击查看物流查看成功\":\n            print('通道3')\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[4]/a').click()  # 点击物流按钮\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        elif casename == '未支付订单点击未支付跳转到支付页面':\n            print('通道4')\n            n = 0  # 判断是否找到\n            page = 0  # 判断所处页数\n            while True:\n                n = self.find_Unpaid(driver, n)\n                page += 1\n                print(f'n 为 {n} ')\n                if n == 0:  # 如果循环后没有找到 点击下一页进行查找\n                    print(f'第{page}未找到待支付订单数据')\n                    # 查询该页面是否为最后一页\n                    try:\n                        # 移动到翻页处\n                        Common().huadong(driver, by='class name', value='ant-pagination-item-link')\n                        # 先判断下一页按钮状态 如果为true 说明是最后一页\n                        info = driver.find_element(by='class name', value='ant-pagination-disabled.ant-pagination-next').get_attribute(\n                            'aria-disabled')\n                        if info == \"true\":\n                            print('此页为最后一页')\n                            break\n                    except NoSuchElementException:\n                        print('不是最后一页')\n                        driver.find_element(by='css selector', value='li[class=\" ant-pagination-next\"]').click()  # 点击下一页\n                        print('点击下一页')\n                        time.sleep(2)\n                else:  # 如果找到了-->\n                    print(f'第{page}页存在待支付数据')\n                    break\n            if n == 0:\n                print('该账户不存在待支付数据')\n                pass\n            else:\n                time.sleep(2)\n                # 获取待支付页面 断言文本\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                print(text)\n                assert text == result\n        elif casename == '点击order data可以根据订单时间进行排序':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            element = driver.find_element(by='css selector',\n                                          value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out > div > div.title.flex.align-center > div:nth-child(2) > svg')\n            info = element.get_attribute('p-id')\n            self.assert_time_desc(driver, info)\n            time.sleep(2)\n            element.click()\n            info2 = element.get_attribute('p-id')\n            if info2 == info:\n                print('点击后未发生变化，再次点击')\n                element.click()  # 再次点击\n                time.sleep(2)\n                info3 = element.get_attribute('p-id')\n                self.assert_time_desc(driver, info3)\n            else:\n                self.assert_time_desc(driver, info2)\n        elif casename == '点击Total price可以根据订单金额进行排序':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            element = driver.find_element(by='css selector', value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out '\n                                                                   '> div > div.title.flex.align-center > div:nth-child(3) > svg')\n            info = element.get_attribute('p-id')\n            self.assert_price_desc(driver, info)\n            time.sleep(1)\n            element.click()\n            info2 = element.get_attribute('p-id')\n            if info2 == info:\n                print('点击后未发生变化')\n                element.click()\n                time.sleep(1)\n                info3 = element.get_attribute('p-id')\n                self.assert_price_desc(driver, info3)\n            else:\n                self.assert_price_desc(driver, info2)\n        elif casename == '通过关键字及全文查找可以成功查询相同名称的订单':\n            Common().huadong(driver, by='class name', value='text-tit-lg.flex')  # 滑动到订单最上方\n            time.sleep(1)\n            try:\n                info = driver.find_element(by='css selector',\n                                           value='#app > div > div.ui-container > div.content.my-center-form > div > div.record_out > div.table-out > div > '\n                                                 'div.tableData > div:nth-child(1) > div.item.width-32.name > div > a').text\n                print(info)\n            except NoSuchElementException:\n                print('未找到订单数据')\n                raise AssertionError\n    \n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[1]/div[2]/span/input').send_keys(info)  # 搜索栏输入名字\n            driver.find_element(by='class name', value='anticon.anticon-search.ant-input-search-icon').click()  # 点击搜索按钮\n            time.sleep(2)\n            elements = driver.find_elements(by='css selector', value='div[class=\"item width-32 name\"] > div > a')\n            erro = 0\n            for element in elements:\n                print(element.text)\n                if info in element.text:\n                    pass\n                else:\n                    erro += 1\n            if erro == 0:\n                assert True\n            else:\n                assert False\n        elif casename == '已签收订单点击退货申请进入退货页面成功':\n            n = self.go_return_goods(driver)\n            if n == 0:\n                print('该账户不存在已签收数据')\n                pass\n            else:\n                time.sleep(2)\n                # 获取待支付页面 断言文本\n                try:\n                    text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                    print(text)\n                    assert text == result\n                except:\n                    raise AssertionError\n        elif '提交退货单' in casename:\n            n = self.go_return_goods(driver)\n            if n == 0:\n                print('该账户不存在已签收数据')\n                pytest.skip(msg=\"未找到相关数据\")\n            else:\n                time.sleep(2)\n                Reasons_for_return = data.split('\\n')[0].split('=')[-1]\n                print(Reasons_for_return)\n                reason = data.split('\\n')[1].split('=')[-1]\n                print(reason)\n                img = data.split('\\n')[2].split('=')[-1]\n                print(img)\n                if Reasons_for_return =='Wrong order inform ation':\n                    driver.find_elements(by='class name',value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\",value='ant-select-dropdown-menu-item')[1].click()   #点击第2个\n                elif Reasons_for_return == 'Model error':\n                    driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\", value='ant-select-dropdown-menu-item')[2].click()  # 点击第3个\n                elif Reasons_for_return == 'other':\n                    driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()\n                    time.sleep(1)\n                    driver.find_elements(by=\"class name\", value='ant-select-dropdown-menu-item')[3].click()  # 点击第4个\n                time.sleep(1)\n                driver.find_element(by='class name',value='tuik_text').send_keys(reason)        #输入原因\n                if img == 'null':\n                    print('不上传图片')\n                    pass\n                else:\n                    img_file = f'../data/1.jpg'\n                    img_path = os.path.abspath(img_file)\n                    print(f'img_path为{img_path}')\n                    driver.find_element(by='class name',value='ant-upload').click() #点击上传\n                    time.sleep(2)\n                    pk = PyKeyboard()\n                     # 实例化\n                    pk.press_key(pk.shift_key)\n                    pk.release_key(pk.shift_key)\n                    pk.type_string(img_path)\n                    time.sleep(2)\n                    pk.press_key(pk.enter_key)  # 按压\n                    pk.release_key(pk.enter_key)  # 释放\n                    pk.press_key(pk.enter_key)  # 按压\n                    pk.release_key(pk.enter_key) # 释放\n                    time.sleep(2)\n                    WebDriverWait(driver,30,0.2).until(lambda x: x.find_element(by='class name',value='ant-upload-list-item-thumbnail'))\n                driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交\n                time.sleep(1.8)\n                text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                               value=f\"{assert_way.split('=', 1)[1]}\").text\n                print(f'text为{text}')\n>               assert text == result\nE               AssertionError\n\n..\\mode\\my_order.py:227: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652157945466,
+        "stop" : 1652157945606,
+        "duration" : 140
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e14adc78114f5ae8",
+        "name" : "失败截图",
+        "source" : "e14adc78114f5ae8.png",
+        "type" : "image/png",
+        "size" : 73950
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "99f223be696f1f15",
+      "name" : "stdout",
+      "source" : "99f223be696f1f15.txt",
+      "type" : "text/plain",
+      "size" : 307
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 6,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "1ee3e558b30f9685",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/1ee3e558b30f9685",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651893590352,
+          "stop" : 1651893638867,
+          "duration" : 48515
+        }
+      }, {
+        "uid" : "5e282f948b1cd09f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/5e282f948b1cd09f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651825944671,
+          "stop" : 1651825993015,
+          "duration" : 48344
+        }
+      }, {
+        "uid" : "ca2a9fe4e08926e0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/ca2a9fe4e08926e0",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822665177,
+          "stop" : 1651822713602,
+          "duration" : 48425
+        }
+      }, {
+        "uid" : "3b6f641cdd0f0c72",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/3b6f641cdd0f0c72",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651818557283,
+          "stop" : 1651818611600,
+          "duration" : 54317
+        }
+      }, {
+        "uid" : "6de151239daa619",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/6de151239daa619",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651811430849,
+          "stop" : 1651811516583,
+          "duration" : 85734
+        }
+      }, {
+        "uid" : "ec3f19cc01a10b3d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/ec3f19cc01a10b3d",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651739193315,
+          "stop" : 1651739279212,
+          "duration" : 85897
+        }
+      }, {
+        "uid" : "c9c41a406c57f8a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/c9c41a406c57f8a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651221369185,
+          "stop" : 1651221499375,
+          "duration" : 130190
+        }
+      }, {
+        "uid" : "dc76a65ff1c28fe3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/dc76a65ff1c28fe3",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651202251318,
+          "stop" : 1651202369180,
+          "duration" : 117862
+        }
+      }, {
+        "uid" : "6ba50ee3beefab59",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/6ba50ee3beefab59",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651196412239,
+          "stop" : 1651196441557,
+          "duration" : 29318
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5938aa9475498ac9.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '使用Quality issues提交退货单成功', 'mode': '订单管理', 'data': 'reason=Quality issues\\ntext=123412412\\nimg=', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+}

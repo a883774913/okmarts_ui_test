@@ -1,0 +1,259 @@
+{
+  "uid" : "736fbaf456ef23ba",
+  "name" : "post code不输入新增失败",
+  "fullName" : "test_main.Test_Main#test_address",
+  "historyId" : "cb1c65bbb27bf43b655be8f387a9c07d",
+  "time" : {
+    "start" : 1652157647264,
+    "stop" : 1652157658488,
+    "duration" : 11224
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "339feb7de8037b51",
+      "name" : "stdout",
+      "source" : "339feb7de8037b51.txt",
+      "type" : "text/plain",
+      "size" : 329
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "地址管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '78', 'casename': 'post code不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input post code!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "579806abaf08087b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/579806abaf08087b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893265124,
+          "stop" : 1651893276359,
+          "duration" : 11235
+        }
+      }, {
+        "uid" : "fd35cf21a8cb6017",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/fd35cf21a8cb6017",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825630307,
+          "stop" : 1651825641443,
+          "duration" : 11136
+        }
+      }, {
+        "uid" : "1c8346579ae27237",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/1c8346579ae27237",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-55d2836f=\"\" class=\"item\">...</div> is not clickable at point (1419, 83). Other element would receive the click: <div tabindex=\"-1\" role=\"dialog\" class=\"ant-modal-wrap \">...</div>\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x0058F8AF+1046703]\n\tOrdinal0 [0x0058D8D6+1038550]\n\tOrdinal0 [0x0058B5EB+1029611]\n\tOrdinal0 [0x0058A359+1024857]\n\tOrdinal0 [0x0057FF93+982931]\n\tOrdinal0 [0x005A414C+1130828]\n\tOrdinal0 [0x0057F974+981364]\n\tOrdinal0 [0x005A4364+1131364]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822313908,
+          "stop" : 1651822326065,
+          "duration" : 12157
+        }
+      }, {
+        "uid" : "837db2c07d2b493a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/837db2c07d2b493a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818236233,
+          "stop" : 1651818248154,
+          "duration" : 11921
+        }
+      }, {
+        "uid" : "d806065de9a6a5fe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/d806065de9a6a5fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810874339,
+          "stop" : 1651810885513,
+          "duration" : 11174
+        }
+      }, {
+        "uid" : "23294c5cce5cfad9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/23294c5cce5cfad9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738630695,
+          "stop" : 1651738641805,
+          "duration" : 11110
+        }
+      }, {
+        "uid" : "eb7ad2fccfebe037",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/eb7ad2fccfebe037",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220719589,
+          "stop" : 1651220736351,
+          "duration" : 16762
+        }
+      }, {
+        "uid" : "8a9bc3722a62afb5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/8a9bc3722a62afb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201726545,
+          "stop" : 1651201737834,
+          "duration" : 11289
+        }
+      }, {
+        "uid" : "31cf4b464ce7c309",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/31cf4b464ce7c309",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196134256,
+          "stop" : 1651196149296,
+          "duration" : 15040
+        }
+      }, {
+        "uid" : "d9739966ff85fc52",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/d9739966ff85fc52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052859086,
+          "stop" : 1651052870284,
+          "duration" : 11198
+        }
+      }, {
+        "uid" : "66a4b258cdde14b8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/66a4b258cdde14b8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651038045436,
+          "stop" : 1651038056780,
+          "duration" : 11344
+        }
+      }, {
+        "uid" : "553a15ce39270356",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/553a15ce39270356",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034172970,
+          "stop" : 1651034184073,
+          "duration" : 11103
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "736fbaf456ef23ba.json",
+  "parameterValues" : [ "{'case_no': '78', 'casename': 'post code不输入新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input post code!'}" ]
+}

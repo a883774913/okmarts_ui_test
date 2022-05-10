@@ -1,0 +1,331 @@
+{
+  "uid" : "41b62add4f9937da",
+  "name" : "不输入验证码下一步置灰",
+  "fullName" : "test_main.Test_Main#test_forget_password",
+  "historyId" : "bb438e4f603d6966dd58bac58ac42a2c",
+  "time" : {
+    "start" : 1652156722823,
+    "stop" : 1652156727845,
+    "duration" : 5022
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "227e6fc3a5ab2582",
+      "name" : "stdout",
+      "source" : "227e6fc3a5ab2582.txt",
+      "type" : "text/plain",
+      "size" : 155
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "忘记密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '37', 'casename': '不输入验证码下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 22,
+        "unknown" : 0,
+        "total" : 23
+      },
+      "items" : [ {
+        "uid" : "c99ee82adee10c62",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/c99ee82adee10c62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651892366294,
+          "stop" : 1651892370842,
+          "duration" : 4548
+        }
+      }, {
+        "uid" : "d039d08666843f84",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/d039d08666843f84",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651824861545,
+          "stop" : 1651824866220,
+          "duration" : 4675
+        }
+      }, {
+        "uid" : "68d30e2633ff8898",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/68d30e2633ff8898",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651821479488,
+          "stop" : 1651821484238,
+          "duration" : 4750
+        }
+      }, {
+        "uid" : "eddf8cca7878780d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/eddf8cca7878780d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651817380139,
+          "stop" : 1651817384986,
+          "duration" : 4847
+        }
+      }, {
+        "uid" : "d1d8fc7575ce49f9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/d1d8fc7575ce49f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810176352,
+          "stop" : 1651810180893,
+          "duration" : 4541
+        }
+      }, {
+        "uid" : "10a5f007bc547bc6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/10a5f007bc547bc6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651737982486,
+          "stop" : 1651737987125,
+          "duration" : 4639
+        }
+      }, {
+        "uid" : "33f3c750bc13cd3e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/33f3c750bc13cd3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219604515,
+          "stop" : 1651219615239,
+          "duration" : 10724
+        }
+      }, {
+        "uid" : "6ca2c0fecc06d1e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/6ca2c0fecc06d1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651200909788,
+          "stop" : 1651200914428,
+          "duration" : 4640
+        }
+      }, {
+        "uid" : "673c3729f7bc807",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/673c3729f7bc807",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195157336,
+          "stop" : 1651195165506,
+          "duration" : 8170
+        }
+      }, {
+        "uid" : "4c21a4c2261ea91",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/4c21a4c2261ea91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651051990076,
+          "stop" : 1651051994733,
+          "duration" : 4657
+        }
+      }, {
+        "uid" : "2bb1ba581dc91d04",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/2bb1ba581dc91d04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037294845,
+          "stop" : 1651037299509,
+          "duration" : 4664
+        }
+      }, {
+        "uid" : "1d37d9f982b27843",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/1d37d9f982b27843",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033452642,
+          "stop" : 1651033457278,
+          "duration" : 4636
+        }
+      }, {
+        "uid" : "ff34b8b07cc65c82",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/ff34b8b07cc65c82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651022213606,
+          "stop" : 1651022218241,
+          "duration" : 4635
+        }
+      }, {
+        "uid" : "42e8c5a394e9641b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/42e8c5a394e9641b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650960621760,
+          "stop" : 1650960626394,
+          "duration" : 4634
+        }
+      }, {
+        "uid" : "503abaf8d7ae7989",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/503abaf8d7ae7989",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650957265404,
+          "stop" : 1650957270059,
+          "duration" : 4655
+        }
+      }, {
+        "uid" : "88b6c47f7f10d28f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/88b6c47f7f10d28f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951481053,
+          "stop" : 1650951485802,
+          "duration" : 4749
+        }
+      }, {
+        "uid" : "6b76566fbde644a1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/6b76566fbde644a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935660194,
+          "stop" : 1650935664664,
+          "duration" : 4470
+        }
+      }, {
+        "uid" : "21625aad4450064d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/38/allure/#testresult/21625aad4450064d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650869246765,
+          "stop" : 1650869253705,
+          "duration" : 6940
+        }
+      }, {
+        "uid" : "1a8c72117ebfe22e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/37/allure/#testresult/1a8c72117ebfe22e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650866672928,
+          "stop" : 1650866677812,
+          "duration" : 4884
+        }
+      }, {
+        "uid" : "90c095921dbe7544",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/36/allure/#testresult/90c095921dbe7544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650858561783,
+          "stop" : 1650858566315,
+          "duration" : 4532
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "41b62add4f9937da.json",
+  "parameterValues" : [ "{'case_no': '37', 'casename': '不输入验证码下一步置灰', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
+}

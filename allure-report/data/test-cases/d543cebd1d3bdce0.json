@@ -1,0 +1,207 @@
+{
+  "uid" : "d543cebd1d3bdce0",
+  "name" : "未登录状态下点击购物车页面跳转到登录页面成功",
+  "fullName" : "test_main.Test_Main#test_shop_car",
+  "historyId" : "5222be67ce129a6c198c38841d2f1164",
+  "time" : {
+    "start" : 1652158078717,
+    "stop" : 1652158087190,
+    "duration" : 8473
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a6229a5781666d05",
+      "name" : "stdout",
+      "source" : "a6229a5781666d05.txt",
+      "type" : "text/plain",
+      "size" : 43
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购物车"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '未登录状态下点击购物车页面跳转到登录页面成功', 'mode': '购物车', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "13db23dfc6b22402",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/13db23dfc6b22402",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651893791739,
+          "stop" : 1651893799780,
+          "duration" : 8041
+        }
+      }, {
+        "uid" : "66a1db7b3ea14b07",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/66a1db7b3ea14b07",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826210276,
+          "stop" : 1651826218305,
+          "duration" : 8029
+        }
+      }, {
+        "uid" : "f5f2304c5cc7ddef",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/f5f2304c5cc7ddef",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822913417,
+          "stop" : 1651822921447,
+          "duration" : 8030
+        }
+      }, {
+        "uid" : "5d0da109449da6a0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/5d0da109449da6a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818837403,
+          "stop" : 1651818845611,
+          "duration" : 8208
+        }
+      }, {
+        "uid" : "7524ee7c171d0b2a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/7524ee7c171d0b2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811841563,
+          "stop" : 1651811849601,
+          "duration" : 8038
+        }
+      }, {
+        "uid" : "3a99cc085d09fd0a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/3a99cc085d09fd0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739608130,
+          "stop" : 1651739616517,
+          "duration" : 8387
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d543cebd1d3bdce0.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '未登录状态下点击购物车页面跳转到登录页面成功', 'mode': '购物车', 'data': '', 'assert_way': 'class name=title.text-tit-lg.margin-bottom-lg', 'result': 'Sign-In'}" ]
+}

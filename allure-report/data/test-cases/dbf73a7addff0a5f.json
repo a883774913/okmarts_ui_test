@@ -1,0 +1,195 @@
+{
+  "uid" : "dbf73a7addff0a5f",
+  "name" : "点击广告位图片页面跳转到相关页面",
+  "fullName" : "test_main.Test_Main#test_banner",
+  "historyId" : "9cd6ec28d898af26a23a7f9c55e21727",
+  "time" : {
+    "start" : 1652158197895,
+    "stop" : 1652158216197,
+    "duration" : 18302
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "701778ce4836f47a",
+      "name" : "stdout",
+      "source" : "701778ce4836f47a.txt",
+      "type" : "text/plain",
+      "size" : 450
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "广告位"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '点击广告位图片页面跳转到相关页面', 'mode': '广告位', 'data': '', 'assert_way': 'class name=title.text-black.margin-bottom-sm', 'result': '[\"JESUN Air Compre-5550\",\"NEWGEAR Planetar-4143\",\"Bauer Air Compre-6879\"]'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "e944115103e50964",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/e944115103e50964",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893922677,
+          "stop" : 1651893940405,
+          "duration" : 17728
+        }
+      }, {
+        "uid" : "12f62fd42b2878c5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/12f62fd42b2878c5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826343397,
+          "stop" : 1651826361257,
+          "duration" : 17860
+        }
+      }, {
+        "uid" : "b699b5cb14c79f43",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/b699b5cb14c79f43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823045539,
+          "stop" : 1651823063908,
+          "duration" : 18369
+        }
+      }, {
+        "uid" : "795b05f67db19634",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/795b05f67db19634",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818956971,
+          "stop" : 1651818974541,
+          "duration" : 17570
+        }
+      }, {
+        "uid" : "5bdd36abc26e761c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/5bdd36abc26e761c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811954653,
+          "stop" : 1651811971590,
+          "duration" : 16937
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dbf73a7addff0a5f.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '点击广告位图片页面跳转到相关页面', 'mode': '广告位', 'data': '', 'assert_way': 'class name=title.text-black.margin-bottom-sm', 'result': '[\"JESUN Air Compre-5550\",\"NEWGEAR Planetar-4143\",\"Bauer Air Compre-6879\"]'}" ]
+}

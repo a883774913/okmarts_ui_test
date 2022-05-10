@@ -1,0 +1,5 @@
+['']
+未登录，正在执行登录
+登录账户为979172251@qq.com
+登录提示信息为success
+text为View Auction List

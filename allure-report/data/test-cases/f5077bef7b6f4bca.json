@@ -1,0 +1,269 @@
+{
+  "uid" : "f5077bef7b6f4bca",
+  "name" : "使用other提交退货单成功",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "245cd4c5b0534b55bee499eae369ce3d",
+  "time" : {
+    "start" : 1652157967017,
+    "stop" : 1652157988362,
+    "duration" : 21345
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00557413+2389011]\n\tOrdinal0 [0x004E9F61+1941345]\n\tOrdinal0 [0x003DC658+837208]\n\tOrdinal0 [0x004091DD+1020381]\n\tOrdinal0 [0x0040949B+1021083]\n\tOrdinal0 [0x00436032+1204274]\n\tOrdinal0 [0x00424194+1130900]\n\tOrdinal0 [0x00434302+1196802]\n\tOrdinal0 [0x00423F66+1130342]\n\tOrdinal0 [0x003FE546+976198]\n\tOrdinal0 [0x003FF456+980054]\n\tGetHandleVerifier [0x00709632+1727522]\n\tGetHandleVerifier [0x007BBA4D+2457661]\n\tGetHandleVerifier [0x005EEB81+569713]\n\tGetHandleVerifier [0x005EDD76+566118]\n\tOrdinal0 [0x004F0B2B+1968939]\n\tOrdinal0 [0x004F5988+1989000]\n\tOrdinal0 [0x004F5A75+1989237]\n\tOrdinal0 [0x004FECB1+2026673]\n\tBaseThreadInitThunk [0x76D76739+25]\n\tRtlGetFullPathName_UEx [0x77D88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77D88E4D+1165]",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBCDBEE0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用other提交退货单成功', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver,Parameter)\n\ntest_main.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\my_order.py:224: in my_order\n    text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1244: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001D1EB012670>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...unk [0x76D76739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77D88E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77D88E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\nE         (Session info: chrome=101.0.4951.54)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00557413+2389011]\nE       \tOrdinal0 [0x004E9F61+1941345]\nE       \tOrdinal0 [0x003DC658+837208]\nE       \tOrdinal0 [0x004091DD+1020381]\nE       \tOrdinal0 [0x0040949B+1021083]\nE       \tOrdinal0 [0x00436032+1204274]\nE       \tOrdinal0 [0x00424194+1130900]\nE       \tOrdinal0 [0x00434302+1196802]\nE       \tOrdinal0 [0x00423F66+1130342]\nE       \tOrdinal0 [0x003FE546+976198]\nE       \tOrdinal0 [0x003FF456+980054]\nE       \tGetHandleVerifier [0x00709632+1727522]\nE       \tGetHandleVerifier [0x007BBA4D+2457661]\nE       \tGetHandleVerifier [0x005EEB81+569713]\nE       \tGetHandleVerifier [0x005EDD76+566118]\nE       \tOrdinal0 [0x004F0B2B+1968939]\nE       \tOrdinal0 [0x004F5988+1989000]\nE       \tOrdinal0 [0x004F5A75+1989237]\nE       \tOrdinal0 [0x004FECB1+2026673]\nE       \tBaseThreadInitThunk [0x76D76739+25]\nE       \tRtlGetFullPathName_UEx [0x77D88E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77D88E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: NoSuchElementException",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00557413+2389011]\n\tOrdinal0 [0x004E9F61+1941345]\n\tOrdinal0 [0x003DC658+837208]\n\tOrdinal0 [0x004091DD+1020381]\n\tOrdinal0 [0x0040949B+1021083]\n\tOrdinal0 [0x00436032+1204274]\n\tOrdinal0 [0x00424194+1130900]\n\tOrdinal0 [0x00434302+1196802]\n\tOrdinal0 [0x00423F66+1130342]\n\tOrdinal0 [0x003FE546+976198]\n\tOrdinal0 [0x003FF456+980054]\n\tGetHandleVerifier [0x00709632+1727522]\n\tGetHandleVerifier [0x007BBA4D+2457661]\n\tGetHandleVerifier [0x005EEB81+569713]\n\tGetHandleVerifier [0x005EDD76+566118]\n\tOrdinal0 [0x004F0B2B+1968939]\n\tOrdinal0 [0x004F5988+1989000]\n\tOrdinal0 [0x004F5A75+1989237]\n\tOrdinal0 [0x004FECB1+2026673]\n\tBaseThreadInitThunk [0x76D76739+25]\n\tRtlGetFullPathName_UEx [0x77D88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77D88E4D+1165]",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x000001D1EBCDBEE0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d1ada906210b70896bceae01dc4cd77a\")>\nParameter = {'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'case_no': '', 'casename': '使用other提交退货单成功', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver,Parameter)\n\ntest_main.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\mode\\my_order.py:224: in my_order\n    text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1244: in find_element\n    return self.execute(Command.FIND_ELEMENT, {\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:424: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001D1EB012670>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"no such element\",\"message\":\"no such element: Unable to locate element: {\\...unk [0x76D76739+25]\\\\n\\\\tRtlGetFullPathName_UEx [0x77D88E7F+1215]\\\\n\\\\tRtlGetFullPathName_UEx [0x77D88E4D+1165]\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, str):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:\n            exception_class = NoSuchShadowRootException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if not value:\n            value = response['value']\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None  # type: ignore[assignment]\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        st_value = value.get('stackTrace') or value.get('stacktrace')\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split('\\n')\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = self._value_or_default(frame, 'lineNumber', '')\n                        file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                        if line:\n                            file = \"%s:%s\" % (file, line)\n                        meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                        if 'className' in frame:\n                            meth = \"%s.%s\" % (frame['className'], meth)\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\nE         (Session info: chrome=101.0.4951.54)\nE       Stacktrace:\nE       Backtrace:\nE       \tOrdinal0 [0x00557413+2389011]\nE       \tOrdinal0 [0x004E9F61+1941345]\nE       \tOrdinal0 [0x003DC658+837208]\nE       \tOrdinal0 [0x004091DD+1020381]\nE       \tOrdinal0 [0x0040949B+1021083]\nE       \tOrdinal0 [0x00436032+1204274]\nE       \tOrdinal0 [0x00424194+1130900]\nE       \tOrdinal0 [0x00434302+1196802]\nE       \tOrdinal0 [0x00423F66+1130342]\nE       \tOrdinal0 [0x003FE546+976198]\nE       \tOrdinal0 [0x003FF456+980054]\nE       \tGetHandleVerifier [0x00709632+1727522]\nE       \tGetHandleVerifier [0x007BBA4D+2457661]\nE       \tGetHandleVerifier [0x005EEB81+569713]\nE       \tGetHandleVerifier [0x005EDD76+566118]\nE       \tOrdinal0 [0x004F0B2B+1968939]\nE       \tOrdinal0 [0x004F5988+1989000]\nE       \tOrdinal0 [0x004F5A75+1989237]\nE       \tOrdinal0 [0x004FECB1+2026673]\nE       \tBaseThreadInitThunk [0x76D76739+25]\nE       \tRtlGetFullPathName_UEx [0x77D88E7F+1215]\nE       \tRtlGetFullPathName_UEx [0x77D88E4D+1165]\n\nD:\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:247: NoSuchElementException",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652157988401,
+        "stop" : 1652157988542,
+        "duration" : 141
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "50c1c5b3f52f31e5",
+        "name" : "失败截图",
+        "source" : "50c1c5b3f52f31e5.png",
+        "type" : "image/png",
+        "size" : 73287
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3ee0d281de73197f",
+      "name" : "stdout",
+      "source" : "3ee0d281de73197f.txt",
+      "type" : "text/plain",
+      "size" : 380
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 7,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "9a94e7ecdaee73d9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/9a94e7ecdaee73d9",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651893652493,
+          "stop" : 1651893673863,
+          "duration" : 21370
+        }
+      }, {
+        "uid" : "3e2756352217ce82",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/3e2756352217ce82",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826050858,
+          "stop" : 1651826090591,
+          "duration" : 39733
+        }
+      }, {
+        "uid" : "aadc111416b433d5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/aadc111416b433d5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822753582,
+          "stop" : 1651822793272,
+          "duration" : 39690
+        }
+      }, {
+        "uid" : "cab9cbc5a76aa300",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/cab9cbc5a76aa300",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651818667626,
+          "stop" : 1651818714261,
+          "duration" : 46635
+        }
+      }, {
+        "uid" : "c35c9b5d2f2f48d9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/c35c9b5d2f2f48d9",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651811602415,
+          "stop" : 1651811688146,
+          "duration" : 85731
+        }
+      }, {
+        "uid" : "845f30f375cf71d5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/845f30f375cf71d5",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651739364932,
+          "stop" : 1651739451227,
+          "duration" : 86295
+        }
+      }, {
+        "uid" : "a663cc9ac06013c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/a663cc9ac06013c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651221629548,
+          "stop" : 1651221762109,
+          "duration" : 132561
+        }
+      }, {
+        "uid" : "2acfaf715243b540",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/2acfaf715243b540",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651202488708,
+          "stop" : 1651202607789,
+          "duration" : 119081
+        }
+      }, {
+        "uid" : "3a286739b15adabd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/3a286739b15adabd",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: MicrosoftEdge=100.0.1185.50)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651196473280,
+          "stop" : 1651196569481,
+          "duration" : 96201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f5077bef7b6f4bca.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'success'}" ]
+}

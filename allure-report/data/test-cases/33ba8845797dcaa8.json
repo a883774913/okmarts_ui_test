@@ -1,0 +1,195 @@
+{
+  "uid" : "33ba8845797dcaa8",
+  "name" : "Category recommendation 广告位正确显示",
+  "fullName" : "test_main.Test_Main#test_banner",
+  "historyId" : "85a1b7b45c68a43b653e1b4051f2b901",
+  "time" : {
+    "start" : 1652158224365,
+    "stop" : 1652158230307,
+    "duration" : 5942
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a192779a1d452814",
+      "name" : "stdout",
+      "source" : "a192779a1d452814.txt",
+      "type" : "text/plain",
+      "size" : 65
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "广告位"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': 'Category recommendation 广告位正确显示', 'mode': '广告位', 'data': '', 'assert_way': 'class name=item-left', 'result': 'True'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "8f8e252f0289e4e3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/8f8e252f0289e4e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893947487,
+          "stop" : 1651893953016,
+          "duration" : 5529
+        }
+      }, {
+        "uid" : "6c2301c68f52f658",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/6c2301c68f52f658",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826368628,
+          "stop" : 1651826374310,
+          "duration" : 5682
+        }
+      }, {
+        "uid" : "4a378ce5ef6299ea",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/4a378ce5ef6299ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823071118,
+          "stop" : 1651823076700,
+          "duration" : 5582
+        }
+      }, {
+        "uid" : "ec049554e7886e6a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/ec049554e7886e6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818982162,
+          "stop" : 1651818987651,
+          "duration" : 5489
+        }
+      }, {
+        "uid" : "de57e2ec5384c1a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/de57e2ec5384c1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811977619,
+          "stop" : 1651811982146,
+          "duration" : 4527
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "33ba8845797dcaa8.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': 'Category recommendation 广告位正确显示', 'mode': '广告位', 'data': '', 'assert_way': 'class name=item-left', 'result': 'True'}" ]
+}

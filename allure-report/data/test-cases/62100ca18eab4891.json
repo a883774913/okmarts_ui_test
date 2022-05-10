@@ -1,0 +1,213 @@
+{
+  "uid" : "62100ca18eab4891",
+  "name" : "不输入任何内容修改成功",
+  "fullName" : "test_main.Test_Main#test_personal_center",
+  "historyId" : "e52c76080de5a01bf8c12d3085263c16",
+  "time" : {
+    "start" : 1652158031379,
+    "stop" : 1652158045343,
+    "duration" : 13964
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5356af350685087c",
+      "name" : "stdout",
+      "source" : "5356af350685087c.txt",
+      "type" : "text/plain",
+      "size" : 93
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "个人资料修改"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '不输入任何内容修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\nsex=1\\ntime=\\ncompany=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "eb573eb65cada79",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/eb573eb65cada79",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893744949,
+          "stop" : 1651893758837,
+          "duration" : 13888
+        }
+      }, {
+        "uid" : "ce1a63bffcebfa1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/ce1a63bffcebfa1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826162767,
+          "stop" : 1651826176915,
+          "duration" : 14148
+        }
+      }, {
+        "uid" : "2afa0aa5b0fa9181",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/2afa0aa5b0fa9181",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822866709,
+          "stop" : 1651822880367,
+          "duration" : 13658
+        }
+      }, {
+        "uid" : "612a5e94b6851fe1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/612a5e94b6851fe1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818791118,
+          "stop" : 1651818804799,
+          "duration" : 13681
+        }
+      }, {
+        "uid" : "99b2a002abaece49",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/99b2a002abaece49",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811795191,
+          "stop" : 1651811808899,
+          "duration" : 13708
+        }
+      }, {
+        "uid" : "805e80e31aa7c4b5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/805e80e31aa7c4b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739560565,
+          "stop" : 1651739574628,
+          "duration" : 14063
+        }
+      }, {
+        "uid" : "79fbf0d1c7c4d012",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/79fbf0d1c7c4d012",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221936171,
+          "stop" : 1651221961563,
+          "duration" : 25392
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "62100ca18eab4891.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '不输入任何内容修改成功', 'mode': '个人信息修改', 'data': 'first_name=null\\nlast_name=null\\nsex=1\\ntime=\\ncompany=', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
+}

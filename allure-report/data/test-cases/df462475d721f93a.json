@@ -1,0 +1,204 @@
+{
+  "uid" : "df462475d721f93a",
+  "name" : "勾选多个商品批量结算成功",
+  "fullName" : "test_main.Test_Main#test_shop_car",
+  "historyId" : "bf49edc8f741c96bc0b97ec6143738e4",
+  "time" : {
+    "start" : 1652158137409,
+    "stop" : 1652158162565,
+    "duration" : 25156
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1e5f3a0898d55fa8",
+      "name" : "stdout",
+      "source" : "1e5f3a0898d55fa8.txt",
+      "type" : "text/plain",
+      "size" : 87
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购物车"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '', 'casename': '勾选多个商品批量结算成功', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "8179d52a4fc30191",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/8179d52a4fc30191",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893856641,
+          "stop" : 1651893885216,
+          "duration" : 28575
+        }
+      }, {
+        "uid" : "e1dfa13804abe4cf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/e1dfa13804abe4cf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826276511,
+          "stop" : 1651826305270,
+          "duration" : 28759
+        }
+      }, {
+        "uid" : "8871fe9a5384e9fe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/8871fe9a5384e9fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822978647,
+          "stop" : 1651823007594,
+          "duration" : 28947
+        }
+      }, {
+        "uid" : "66a395b802460ff3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/66a395b802460ff3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818899136,
+          "stop" : 1651818924922,
+          "duration" : 25786
+        }
+      }, {
+        "uid" : "392e97e1c0bc9fd7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/392e97e1c0bc9fd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811899672,
+          "stop" : 1651811924791,
+          "duration" : 25119
+        }
+      }, {
+        "uid" : "2989c133137a1221",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/2989c133137a1221",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739667804,
+          "stop" : 1651739693217,
+          "duration" : 25413
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "df462475d721f93a.json",
+  "parameterValues" : [ "{'case_no': '', 'casename': '勾选多个商品批量结算成功', 'mode': '购物车', 'data': '', 'assert_way': '', 'result': ''}" ]
+}

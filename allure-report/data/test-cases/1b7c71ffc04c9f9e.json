@@ -1,0 +1,267 @@
+{
+  "uid" : "1b7c71ffc04c9f9e",
+  "name" : "点击新增地址输入正确信息新增成功",
+  "fullName" : "test_main.Test_Main#test_address",
+  "historyId" : "05de3d773da41bd9ffe5e693c9e03d79",
+  "time" : {
+    "start" : 1652157583182,
+    "stop" : 1652157594616,
+    "duration" : 11434
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652155303370,
+      "stop" : 1652155305089,
+      "duration" : 1719
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652155305090,
+      "stop" : 1652155305090,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ec9c6ceea636a88a",
+      "name" : "stdout",
+      "source" : "ec9c6ceea636a88a.txt",
+      "type" : "text/plain",
+      "size" : 319
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652158413678,
+      "stop" : 1652158414185,
+      "duration" : 507
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652158414192,
+      "stop" : 1652158414192,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "地址管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "24552-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '73', 'casename': '点击新增地址输入正确信息新增成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "406101beb09a070b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/406101beb09a070b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893200594,
+          "stop" : 1651893212084,
+          "duration" : 11490
+        }
+      }, {
+        "uid" : "2b39e58e1205c379",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/2b39e58e1205c379",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825566673,
+          "stop" : 1651825578103,
+          "duration" : 11430
+        }
+      }, {
+        "uid" : "ab688d4e2ba381e3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/ab688d4e2ba381e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822230335,
+          "stop" : 1651822247756,
+          "duration" : 17421
+        }
+      }, {
+        "uid" : "f521961b914a020f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/f521961b914a020f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818172515,
+          "stop" : 1651818183833,
+          "duration" : 11318
+        }
+      }, {
+        "uid" : "2d1ba8f5e42e69eb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/2d1ba8f5e42e69eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810807511,
+          "stop" : 1651810818816,
+          "duration" : 11305
+        }
+      }, {
+        "uid" : "7d53c904f9ebd031",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/7d53c904f9ebd031",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738562427,
+          "stop" : 1651738573841,
+          "duration" : 11414
+        }
+      }, {
+        "uid" : "be8fae5379c7ac88",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/be8fae5379c7ac88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220627759,
+          "stop" : 1651220644671,
+          "duration" : 16912
+        }
+      }, {
+        "uid" : "5ece58ff2e3843de",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/5ece58ff2e3843de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201662755,
+          "stop" : 1651201674005,
+          "duration" : 11250
+        }
+      }, {
+        "uid" : "7400e357ee2e2868",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/7400e357ee2e2868",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196049615,
+          "stop" : 1651196066252,
+          "duration" : 16637
+        }
+      }, {
+        "uid" : "3a403b713297a632",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/3a403b713297a632",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052794890,
+          "stop" : 1651052806363,
+          "duration" : 11473
+        }
+      }, {
+        "uid" : "ea4d316bceae45b7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/ea4d316bceae45b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037981231,
+          "stop" : 1651037992611,
+          "duration" : 11380
+        }
+      }, {
+        "uid" : "578c0df3b9643d80",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/578c0df3b9643d80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034108849,
+          "stop" : 1651034120293,
+          "duration" : 11444
+        }
+      }, {
+        "uid" : "2e45b0d554cdcba7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/2e45b0d554cdcba7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023312898,
+          "stop" : 1651023323261,
+          "duration" : 10363
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1b7c71ffc04c9f9e.json",
+  "parameterValues" : [ "{'case_no': '73', 'casename': '点击新增地址输入正确信息新增成功', 'mode': '地址管理', 'data': '{\"fistname\":\"fistname\",\"lastname\":\"lastname\",\"contactnumber\":\"contactnumber\",\"coordinated_area1\":\"coordinated_area1\",\"coordinated_area2\":\"coordinated_area2\",\"coordinated_area3\":\"C2\",\"coordinated_postalCode\":\"coordinated_postalCode\",\"coordinated_addressLine\":\"coordinated_addressLine\"}', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'success'}" ]
+}
