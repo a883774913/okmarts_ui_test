@@ -6,6 +6,7 @@ from okmarts_ui_test.data.get_data import Get_Data
 from okmarts_ui_test.mode.Personal_Center import Personal_Center
 from okmarts_ui_test.mode.address import Address
 from okmarts_ui_test.mode.banner import Banner
+from okmarts_ui_test.mode.change_passwod import Change_Password
 from okmarts_ui_test.mode.conpons import Conpons
 from okmarts_ui_test.mode.forget_password import Forget_Password
 from okmarts_ui_test.mode.help_center import Help_Center
@@ -40,6 +41,14 @@ class Test_Main:
     def test_regist(self, Parameter, driver):
         allure.dynamic.title(Parameter['casename'])  # 测试用例名称
         Regist().regist(Parameter, driver)
+
+
+    @allure.feature('修改密码')
+    @pytest.mark.parametrize('Parameter', case_infos['change_password'], ids=casename_infos['change_password'])
+    def test_change_password(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Change_Password().change_password(driver,Parameter)
+
 
     @allure.feature('忘记密码')
     @pytest.mark.parametrize('Parameter', case_infos['forget'], ids=casename_infos['forget'])

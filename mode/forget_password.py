@@ -122,6 +122,7 @@ class Forget_Password:
                                             value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击Confirm the changes   提交
             driver.find_element(by='css selector',
                             value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击按钮进入个人中心  #点击头像进行登录
+
             time.sleep(2)
             Common().login(driver,userAccount,password=new_password)     #登录操作
             time.sleep(2)

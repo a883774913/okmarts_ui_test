@@ -12,46 +12,6 @@ from selenium.webdriver.common.by import By
 
 class Get_Code:
 
-    # def change_pwd(self,password,newpassword):
-    #
-    #     driver = webdriver.Chrome()  # 打开浏览器
-    #     driver.get("http://18.118.13.94:81/index")
-    #     driver.maximize_window()  # 窗口最大化
-    #     time.sleep(0.5)
-    #     driver.find_element(by=By.XPATH, value="/html/body/div/div/div[1]/div/div[2]/div[3]/div[1]").click()  # 点击登录
-    #     time.sleep(1)
-    #     driver.find_element(by=By.ID, value="horizontal_login_userAccount").send_keys("selenium3366@163.com")  # 输入登录账户
-    #     driver.find_element(by=By.ID, value="horizontal_login_password").send_keys(password)  # 输入登录密码
-    #     driver.find_element(by=By.CLASS_NAME, value="atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block").click()  # 点击登录
-    #     time.sleep(2)
-    #     driver.find_element(by=By.XPATH,
-    #                         value="""//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]""").click()  # 点击头像进入个人中心
-    #     time.sleep(2)
-    #     driver.find_element(by=By.XPATH,
-    #                         value="""//*[@id="app"]/div/div[2]/div[1]/div[2]/div[3]""").click()  # 点击change_password
-    #     time.sleep(1)
-    #     driver.find_element(by=By.XPATH, value="""//*[@id="horizontal_login_newPassword"]""").send_keys(
-    #         newpassword)  # 输入新密码
-    #     driver.find_element(by=By.XPATH,
-    #                         value="""//*[@id="app"]/div/div/div[2]/form/div[2]/div/div/span/div/div[2]/a""").click()  # 点击发送验证码
-    #     time.sleep(8)  # 等待验证码发送到该邮箱
-    #
-    #     self.wangyi(username="selenium3366", password="Qwe3541118", name="okmarket账户信息更改")  # 调用方法获取验证码
-    #
-    #     driver.find_element(by=By.XPATH, value=
-    #     "/html/body/div[1]/div/div/div[2]/form/div[2]/div/div/span/div/div[1]/input").send_keys(
-    #         code[0])  # 输入验证码
-    #     time.sleep(0.5)
-    #     driver.find_element(by=By.XPATH, value=
-    #     """/html/body/div[1]/div/div/div[2]/form/div[3]/div/div/span/button""").click()  # 点击按钮
-    #     time.sleep(1)
-    #     text = driver.find_element(by=By.XPATH, value="""/html/body/div[2]/span/div/div/div/span""").text
-    #     print(text)
-    #     try:
-    #         assert text == "password update success"        #断言
-    #         print("修改密码成功")
-    #     except:
-    #         print("修改失败")
 
     def __init__(self):
         self.dr = webdriver.Edge()  # 打开另一个浏览器
@@ -70,7 +30,10 @@ class Get_Code:
         option.add_experimental_option("detach", True)
 
         self.dr.maximize_window()  # 窗口最大化
-        self.dr.get("https://mail.163.com/")
+        if username.split('@')[-1] == '126.com':
+            self.dr.get("https://mail.126.com/")
+        elif username.split('@')[-1] == '163.com':
+            self.dr.get("https://mail.163.com/")
         time.sleep(2)
         iframe = self.dr.find_element(by="xpath",
                                       value="/html/body/div[2]/div[3]/div[1]/div/div[4]/div[1]/div[1]/iframe")

@@ -14,7 +14,7 @@ from okmarts_ui_test.common.common import Common
 
 class Conpons:
 
-    def conpons(self,driver,Parameter):
+    def conpons(self, driver, Parameter):
         casename = Parameter['casename']
         data = Parameter['data']
         print(data)
@@ -24,10 +24,10 @@ class Conpons:
         driver.get('http://18.118.13.94:81/index')  # 打开首页
         WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))
         time.sleep(1)
-        if casename == '使用积分不足账户兑换优惠券兑换失败':     #特殊用例 使用不同账户进行测试
-            useraccount,password = Common().random_account()
+        if casename == '使用积分不足账户兑换优惠券兑换失败':  # 特殊用例 使用不同账户进行测试
+            useraccount, password = Common().random_account()
             # Common().is_login(driver, "979172251@qq.com", "a123456")
-            Common().is_login(driver,useraccount,password)
+            Common().is_login(driver, useraccount, password)
             time.sleep(1)
             driver.find_element(by='css selector',
                                 value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像
@@ -37,11 +37,11 @@ class Conpons:
             try:
                 total_points = driver.find_element(by='class name', value='text-F8C334').text  # 获取账户现有积分
                 print(f'当前账户含有{total_points}个积分')
-                prices = driver.find_elements(by='class name',value='text-price')
+                prices = driver.find_elements(by='class name', value='text-price')
                 for i in range(len(prices)):
                     print(prices[i].text)
-                    if int(prices[i].text) > int(total_points): #如果所需积分大于账户积分
-                        driver.find_elements(by='class name',value='ant-btn.ant-btn-block')[i].click()      #点击相应按钮
+                    if int(prices[i].text) > int(total_points):  # 如果所需积分大于账户积分
+                        driver.find_elements(by='class name', value='ant-btn.ant-btn-block')[i].click()  # 点击相应按钮
                         time.sleep(1)
                         driver.find_element(by='class name', value='bg-orange.ant-btn').click()  # 点击确定
                         time.sleep(2)
@@ -128,7 +128,7 @@ class Conpons:
             elif casename == '点击优惠券使用帮助查看页面成功':
                 driver.find_element(by='class name', value='pointsMall-out.text-center').click()  # 点击进入积分商城
                 time.sleep(2)
-                driver.find_element(by='class name',value='help').click()
+                driver.find_element(by='class name', value='help').click()
                 time.sleep(2)
                 text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                            value=f"{assert_way.split('=', 1)[1]}").text
@@ -136,9 +136,7 @@ class Conpons:
                 assert result in text
         Common().Restore_environment(driver)
 
-
-
-    def conpons_mode(self,driver,data):
+    def conpons_mode(self, driver, data):
         """
         进入优惠券页面，点击used或者UNused进行查看，检测是否有错误
         :param driver: 驱动
@@ -174,7 +172,7 @@ class Conpons:
         time.sleep(0.5)
         if data == 'Used':
             local = 2
-        else :
+        else:
             local = 1
         driver.find_elements(by='class name', value='ant-select-dropdown-menu-item')[local].click()  # 点击used/UNused
         time.sleep(1)
@@ -209,8 +207,8 @@ class Conpons:
                     print('当页为最后一页')
                     break
             except NoSuchElementException:
-                    print('当页为最后一页')
-                    break
+                print('当页为最后一页')
+                break
         print(f'num为{num}')
         print(f'total_used为{total_used}')
         print(f'total_unused为{total_unused}')

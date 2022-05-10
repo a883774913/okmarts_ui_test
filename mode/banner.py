@@ -3,7 +3,7 @@
 """
 import time
 
-from selenium.webdriver.support.wait import WebDriverWait
+
 
 from okmarts_ui_test.common.common import Common
 

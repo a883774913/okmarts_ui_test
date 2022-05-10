@@ -1,10 +1,14 @@
+
 import os
 import random
 import time
 
+
 import xlrd
-from selenium.webdriver import ActionChains
+from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.support.wait import WebDriverWait
+
+from okmarts_ui_test.mode.get_code import Get_Code
 
 
 class Common:
@@ -42,9 +46,13 @@ class Common:
         :param password: 密码
         :return:
         """
+        print(f'登录账户为{useraccount}')
         driver.find_element(by='id', value='horizontal_login_userAccount').send_keys(useraccount)  # 登录
         driver.find_element(by='id', value='horizontal_login_password').send_keys(password)
         driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()
+        WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span'))
+        info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+        print(f'登录提示信息为{info}')
         time.sleep(2)
 
     def Restore_environment(self, dr):
@@ -53,10 +61,13 @@ class Common:
         :param dr:  驱动
         :return:
         """
+        dr.get('http://18.118.13.94:81/index')
         if dr.find_element(by='xpath',
                            value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').text == 'Login':  # 如果为login 则为未登录状态
+            print('未登录，不执行任何操作')
             pass
         else:
+            print('登录状态，执行退出登录')
             dr.find_element(by='xpath',
                             value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').click()  # 点击按钮进入个人中心
             time.sleep(1.5)
@@ -79,12 +90,14 @@ class Common:
         is_login = driver.find_element(by='css selector',
                                        value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').text
         if is_login == 'Login':  # 为未登录状态
+            print('未登录，正在执行登录')
             driver.find_element(by='css selector',
                                 value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span').click()  # 点击登录
             WebDriverWait(driver, 30, 0.2).until(lambda x: x.find_element_by_class_name(
                 "title.text-tit-lg.margin-bottom-lg"))
             Common().login(driver, useraccount=useraccount, password=password)
         else:
+            print('已登录')
             pass
 
     #滑动到页面指定位置
@@ -199,6 +212,75 @@ class Common:
         random_lastname = random.choice(li)
         return random_lastname
 
+    def change_password(self,driver,useraccount,password,code):
+        """
+        通过忘记密码版块还原密码
+        :param code: 上次执行的验证码，用于快速还原
+        :param driver: 驱动
+        :param useraccount: 账户名
+        :param password: 需要修改的密码
+        :return:
+        """
+        print('还原密码环境中'.center(60, '-'))
+        driver.maximize_window()
+        driver.get('http://18.118.13.94:81/index')
+        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))
+        time.sleep(1)
+        driver.find_element(by='class name',value='r_text').click() #点击头像
+        time.sleep(2)
+        driver.find_element(by='class name',value='login-form-forgot').click()  #点击忘记密码
+        time.sleep(2)
+        driver.find_element(by='id', value='horizontal_login_userName').send_keys(useraccount)  # 输入用户名
+        driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(password)  # 输入新密码
+        driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 点击发送邮件
+        while True:
+            WebDriverWait(driver, 10, 0.2).until(lambda x: x.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span'))
+            info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+            time.sleep(3)
+            print(f'点击发送邮件后提示为{info}')
+            if info == 'No such user information！':
+                print('账户不存在，请检查账户是否正确！！')
+                break
+            elif info == 'Please go to your email to check the verification code and enter it': #发送成功
+                time.sleep(10)
+                code = Get_Code().wangyi(username=useraccount,password='Qwe3541118',name='hydraulic',no=1)
+                driver.find_element(by='id', value='horizontal_login_code').send_keys(Keys.CONTROL, 'a')  # 输入验证码
+                driver.find_element(by='id',value='horizontal_login_code').send_keys(code)          #输入验证码
+                driver.find_element(by='class name',value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()        #点击提交
+                WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span'))
+                result = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text        #获取提交后的文本提示
+                print(result)
+                if result == 'Verification code error':     #验证码错误，未获取到
+                    driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 再次发送
+                elif result == 'password update success':   #修改成功
+                    print('还原密码成功'.center(60, '-'))
+                    time.sleep(2)
+                    break
+            elif info == 'Verification code has been sent. Please do not click again!':
+                time.sleep(3)
+                print('尝试快速需改，使用上次验证码进行尝试')
+                driver.find_element(by='id', value='horizontal_login_code').send_keys(Keys.CONTROL, 'a')  # 输入验证码
+                driver.find_element(by='id', value='horizontal_login_code').send_keys(code)  # 输入验证码
+                driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击提交
+                WebDriverWait(driver, 10, 0.2).until(lambda x: x.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span'))
+                result = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text  # 获取提交后的文本提示
+                time.sleep(3)
+                print(f'提交验证码后提示为{result}')
+                if result == 'Verification code error':  # 验证码错误，未获取到
+                    print('重复发送，等待一分钟')
+                    time.sleep(60)
+                    driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 再次发送
+                elif result == 'password update success':  # 修改成功
+                    print('还原密码成功'.center(60, '-'))
+                    time.sleep(2)
+                    break
+
+
+    def test(self):
+        useraccount = random.choice(['a979172251@163.com', 'a9791722511@126.com', 'a9791722511@163.com', 'a97917225111@163.com', 'a979172251@126.com'])
+        print(useraccount)
+
 if __name__ == '__main__':
     a = Common()
-    a.random_email_account()
+    # a.change_password(driver=webdriver.Chrome(),useraccount='a97917225111@163.com',password='a123456')
+    a.test()
