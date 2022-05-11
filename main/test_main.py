@@ -117,3 +117,4 @@ class Test_Main:
     def test_search(self,driver,Parameter):
         allure.dynamic.title(Parameter['casename'])
         Search().search(driver,Parameter)
+

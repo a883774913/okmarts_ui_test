@@ -1,5 +1,0 @@
-['title=aaaaaaaaaaaaa', 'descript=aaaaaaaaaa']
-已登录
-通道9
-text 为 send success
-result 为 send success
