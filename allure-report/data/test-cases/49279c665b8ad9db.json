@@ -1,0 +1,192 @@
+{
+  "uid" : "49279c665b8ad9db",
+  "name" : "首页存在搜索栏",
+  "fullName" : "test_main.Test_Main#test_search",
+  "historyId" : "f0079eed1f01cc66e434a20c4a811b8d",
+  "time" : {
+    "start" : 1652861683671,
+    "stop" : 1652861686073,
+    "duration" : 2402
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1fc368c6653df005",
+      "name" : "stdout",
+      "source" : "1fc368c6653df005.txt",
+      "type" : "text/plain",
+      "size" : 13
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "搜索"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '140', 'casename': '首页存在搜索栏', 'mode': '搜索', 'data': '', 'assert_way': 'class name=ant-input-group.ant-input-group-compact', 'result': 'True'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "6d1c7885445e146c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/6d1c7885445e146c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838521509,
+          "stop" : 1652838524024,
+          "duration" : 2515
+        }
+      }, {
+        "uid" : "46843dbd9a3941eb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/46843dbd9a3941eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761863578,
+          "stop" : 1652761865997,
+          "duration" : 2419
+        }
+      }, {
+        "uid" : "45814c313d77f7d7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/45814c313d77f7d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158404489,
+          "stop" : 1652158406177,
+          "duration" : 1688
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "49279c665b8ad9db.json",
+  "parameterValues" : [ "{'case_no': '140', 'casename': '首页存在搜索栏', 'mode': '搜索', 'data': '', 'assert_way': 'class name=ant-input-group.ant-input-group-compact', 'result': 'True'}" ]
+}

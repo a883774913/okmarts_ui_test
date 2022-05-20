@@ -1,7 +1,9 @@
 """
 订单模块
 """
+import json
 import os
+import random
 import re
 import time
 
@@ -11,6 +13,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 
 from okmarts_ui_test.common.common import Common
+from okmarts_ui_test.mysql.mysql import Mysql
 
 
 class My_Order:
@@ -39,7 +42,7 @@ class My_Order:
             goods_name = driver.find_element(by='xpath', value='//*[@id="app"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').text
             print(goods_name)
             driver.find_element(by='xpath', value='//*[@id="app"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').click()  # 点击商品名称
-            time.sleep(2)
+            time.sleep(3)
             buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 获取buy_now
             # 文本 确认是在商品详情页面
             print(buy_now)
@@ -90,7 +93,7 @@ class My_Order:
                 time.sleep(2)
                 # 获取待支付页面 断言文本
                 text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                               value=f"{assert_way.split('=', 1)[1]}").text
+                                           value=f"{assert_way.split('=', 1)[1]}").text
                 print(text)
                 assert text == result
         elif casename == '点击order data可以根据订单时间进行排序':
@@ -172,6 +175,8 @@ class My_Order:
                 except:
                     raise AssertionError
         elif '提交退货单' in casename:
+            self.get_Request_Return()
+            self.truncate_table()
             n = self.go_return_goods(driver)
             if n == 0:
                 print('该账户不存在已签收数据')
@@ -184,10 +189,10 @@ class My_Order:
                 print(reason)
                 img = data.split('\n')[2].split('=')[-1]
                 print(img)
-                if Reasons_for_return =='Wrong order inform ation':
-                    driver.find_elements(by='class name',value='ant-select-selection__rendered')[1].click()
+                if Reasons_for_return == 'Wrong order inform ation':
+                    driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()
                     time.sleep(1)
-                    driver.find_elements(by="class name",value='ant-select-dropdown-menu-item')[1].click()   #点击第2个
+                    driver.find_elements(by="class name", value='ant-select-dropdown-menu-item')[1].click()  # 点击第2个
                 elif Reasons_for_return == 'Model error':
                     driver.find_elements(by='class name', value='ant-select-selection__rendered')[1].click()
                     time.sleep(1)
@@ -197,18 +202,22 @@ class My_Order:
                     time.sleep(1)
                     driver.find_elements(by="class name", value='ant-select-dropdown-menu-item')[3].click()  # 点击第4个
                 time.sleep(1)
-                driver.find_element(by='class name',value='tuik_text').send_keys(reason)        #输入原因
+                driver.find_element(by='class name', value='tuik_text').send_keys(reason)  # 输入原因
                 if img == 'null':
                     print('不上传图片')
                     pass
                 else:
-                    img_file = f'../data/1.jpg'
-                    img_path = os.path.abspath(img_file)
+                    if casename == '使用视频文件提交退货单失败':
+                        img_file = f'../data/test_8.mp4'
+                        img_path = os.path.abspath(img_file)
+                    else:
+                        img_file = f'../data/1.jpg'
+                        img_path = os.path.abspath(img_file)
                     print(f'img_path为{img_path}')
-                    driver.find_element(by='class name',value='ant-upload').click() #点击上传
+                    driver.find_element(by='class name', value='ant-upload').click()  # 点击上传
                     time.sleep(2)
                     pk = PyKeyboard()
-                     # 实例化
+                    # 实例化
                     pk.press_key(pk.shift_key)
                     pk.release_key(pk.shift_key)
                     pk.type_string(img_path)
@@ -216,20 +225,31 @@ class My_Order:
                     pk.press_key(pk.enter_key)  # 按压
                     pk.release_key(pk.enter_key)  # 释放
                     pk.press_key(pk.enter_key)  # 按压
-                    pk.release_key(pk.enter_key) # 释放
+                    pk.release_key(pk.enter_key)  # 释放
                     time.sleep(2)
-                    WebDriverWait(driver,30,0.2).until(lambda x: x.find_element(by='class name',value='ant-upload-list-item-thumbnail'))
-                driver.find_element(by='class name',value='atn-btn-orange.ant-btn').click() #点击提交
-                time.sleep(1.8)
-                text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                               value=f"{assert_way.split('=', 1)[1]}").text
-                print(f'text为{text}')
-                assert text == result
+                driver.find_element(by='css selector', value='#app > div > div.ui-container > div.wai_box > div > div.tuik_div > div.tuik_right > button').click()  # 点击提交
+                time.sleep(2)
+                try:
+                    text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                                   value=f"{assert_way.split('=', 1)[1]}").text
+                    print(f'text为{text}')
+                    assert text == result
+
+                except NoSuchElementException:
+                    print(f'未找到相关文本,再次尝试')
+                    time.sleep(5)
+                    try:
+                        driver.find_element_by_class_name('atn-btn-orange.ant-btn').click()  # 点击提交
+                        time.sleep(2)
+                        text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
+                                                   value=f"{assert_way.split('=', 1)[1]}").text
+                        print(f'text为{text}')
+                        assert text == result
+                    except NoSuchElementException:
+                        raise AssertionError
 
 
-
-
-    # 断言价格排序方法
+                    # 断言价格排序方法
     def assert_price_desc(self, driver, info):
         """
         断言价格排序方法
@@ -324,7 +344,7 @@ class My_Order:
         print(len(infos))
         for info in infos:
             print(info.text)
-            if info.text == '未支付':
+            if info.text == 'unpaid':
                 driver.execute_script("arguments[0].scrollIntoView();", info)  # 拖动到可见的元素去
                 info.click()  # 点击该按钮
                 n += 1
@@ -344,20 +364,20 @@ class My_Order:
             print(status)
             if status == 'signed in Request Return':
                 n += 1
-                Common().huadong(driver,by='css selector',value=f'div[class="lines flex"]:nth-child({i+1}) > div[class="item width-17 status"] > button')
+                Common().huadong(driver, by='css selector', value=f'div[class="lines flex"]:nth-child({i + 1}) > div[class="item width-17 status"] > button')
                 time.sleep(1)
-                driver.find_element(by='css selector',value=f'div[class="lines flex"]:nth-child({i+1}) > div[class="item width-17 status"] > button').click()   #点击按钮
+                driver.find_element(by='css selector', value=f'div[class="lines flex"]:nth-child({i + 1}) > div[class="item width-17 status"] > button').click()  # 点击按钮
                 time.sleep(1.5)
-                Common().huadong(driver,by='class name',value='ant-btn.ant-btn-primary.ant-btn-sm')
-                driver.find_element(by='class name',value='ant-btn.ant-btn-primary.ant-btn-sm').click()   #点击确认
+                Common().huadong(driver, by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm')
+                driver.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
                 time.sleep(2)
                 break
-            else :
+            else:
                 pass
         return n
 
-    #寻找已签收订单-点击退货-确定-进入退货单页面
-    def go_return_goods(self,driver):
+    # 寻找已签收订单-点击退货-确定-进入退货单页面
+    def go_return_goods(self, driver):
         n = 0  # 判断是否找到
         page = 0  # 判断所处页数
         while True:
@@ -383,3 +403,28 @@ class My_Order:
                 print(f'第{page}页存在已签收数据')
                 break
         return n
+
+    def get_Request_Return(self):
+        """
+        生成可退货订单
+        :return:
+        """
+        sql1 = "select id from order_list where userid='1506910015154425856';"
+        order_id = Mysql().search_info(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql1)
+        sess, token = Common().login_sess()
+        url = 'http://18.118.13.94:8080/jeecg-boot/sys/api/orderList/complete_order'
+        data = {"orderId": f"{random.choice(order_id)['id']}"}
+        headers = {'x-access-token': f'{token}', 'Content-Type': 'application/json'}
+        data = json.dumps(data)
+        res = sess.put(url=url, headers=headers, data=data)
+        print(res.json())
+        try:
+            assert '操作成功' in res.json()['message']
+        except AssertionError:
+            print('生成可退货订单失败')
+
+    def truncate_table(self):
+        sql = 'TRUNCATE TABLE return_goods'
+        Mysql().drop_table(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql)
+
+

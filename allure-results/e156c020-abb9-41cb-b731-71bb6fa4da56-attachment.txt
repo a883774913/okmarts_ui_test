@@ -1,0 +1,20 @@
+['useraccount=a979172251@163.com', 'newpassword=a123456789123456']
+new password 为 a123456789123456
+未登录，不执行任何操作
+通道5
+发送验证码后提示信息为Please go to your email to check the verification code and enter it
+验证码获取成功：['416160']
+提交后提示信息为
+提交后提示信息为password update success
+修改成功等待跳转...
+登录账户为a979172251@163.com
+登录提示信息为success
+Hi~
+a979172251@163.com
+登录状态，执行退出登录
+退出登录完成...
+--------------------------还原密码环境中---------------------------
+点击发送邮件后提示为Verification code has been sent. Please do not click again!
+尝试快速需改，使用上次验证码进行尝试
+提交验证码后提示为password update success
+---------------------------还原密码成功---------------------------

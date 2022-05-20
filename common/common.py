@@ -1,15 +1,17 @@
-
+import json
 import os
 import random
 import time
 
-
+import requests
 import xlrd
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.support.wait import WebDriverWait
 
 from okmarts_ui_test.mode.get_code import Get_Code
+from okmarts_ui_test.mysql.mysql import Mysql
 
 
 class Common:
@@ -51,9 +53,14 @@ class Common:
         driver.find_element(by='id', value='horizontal_login_userAccount').send_keys(useraccount)  # 登录
         driver.find_element(by='id', value='horizontal_login_password').send_keys(password)
         driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()
-        WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span'))
-        info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
-        print(f'登录提示信息为{info}')
+        time.sleep(1.5)
+        try:
+            info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+            print(f'登录提示信息为{info}')
+        except NoSuchElementException:
+            time.sleep(0.3)
+            info = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text
+            print(f'登录提示信息为{info}')
         time.sleep(2)
 
     def Restore_environment(self, dr):
@@ -73,12 +80,10 @@ class Common:
                             value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[1]').click()  # 点击按钮进入个人中心
             time.sleep(1.5)
             dr.find_element(by='class name', value='login-out.text-white').click()  # 点击注销
-            time.sleep(1.5)
-            try:
-                dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
-            except :
-                dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
-            time.sleep(0.5)
+            time.sleep(1)
+            dr.find_element(by='class name', value='ant-btn.ant-btn-primary.ant-btn-sm').click()  # 点击确认
+            time.sleep(2)
+            print('退出登录完成...')
 
     def is_login(self,driver,useraccount,password):
         """
@@ -226,30 +231,30 @@ class Common:
         driver.maximize_window()
         driver.get('http://18.118.13.94:81/index')
         WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))
-        time.sleep(1)
         driver.find_element(by='class name',value='r_text').click() #点击头像
-        time.sleep(2)
+        time.sleep(1)
         driver.find_element(by='class name',value='login-form-forgot').click()  #点击忘记密码
-        time.sleep(2)
+        time.sleep(1)
         driver.find_element(by='id', value='horizontal_login_userName').send_keys(useraccount)  # 输入用户名
         driver.find_element(by='id', value='horizontal_login_newPassword').send_keys(password)  # 输入新密码
         driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 点击发送邮件
+        time.sleep(1)
         while True:
-            WebDriverWait(driver, 10, 0.2).until(lambda x: x.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span'))
-            info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text
+            info = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text     #获取发送邮件后的文本
             time.sleep(3)
             print(f'点击发送邮件后提示为{info}')
             if info == 'No such user information！':
                 print('账户不存在，请检查账户是否正确！！')
                 break
             elif info == 'Please go to your email to check the verification code and enter it': #发送成功
-                time.sleep(10)
+                time.sleep(9)
                 code = Get_Code().wangyi(username=useraccount,password='Qwe3541118',name='hydraulic',no=1)
                 driver.find_element(by='id', value='horizontal_login_code').send_keys(Keys.CONTROL, 'a')  # 输入验证码
                 driver.find_element(by='id',value='horizontal_login_code').send_keys(code)          #输入验证码
                 driver.find_element(by='class name',value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()        #点击提交
                 WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span'))
                 result = driver.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span').text        #获取提交后的文本提示
+                time.sleep(3)
                 print(result)
                 if result == 'Verification code error':     #验证码错误，未获取到
                     driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 再次发送
@@ -258,30 +263,64 @@ class Common:
                     time.sleep(2)
                     break
             elif info == 'Verification code has been sent. Please do not click again!':
-                time.sleep(3)
                 print('尝试快速需改，使用上次验证码进行尝试')
                 driver.find_element(by='id', value='horizontal_login_code').send_keys(Keys.CONTROL, 'a')  # 输入验证码
                 driver.find_element(by='id', value='horizontal_login_code').send_keys(code)  # 输入验证码
                 driver.find_element(by='class name', value='atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block').click()  # 点击提交
-                WebDriverWait(driver, 10, 0.2).until(lambda x: x.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span'))
+                time.sleep(2)
                 result = driver.find_element(by='xpath', value='/html/body/div[2]/span/div/div/div/span').text  # 获取提交后的文本提示
-                time.sleep(3)
                 print(f'提交验证码后提示为{result}')
-                if result == 'Verification code error':  # 验证码错误，未获取到
-                    print('重复发送，等待一分钟')
-                    time.sleep(60)
-                    driver.find_element(by='xpath', value='//*[@id="app"]/div/div[1]/div[2]/form/div[2]/div/div/span/div/div[2]/a').click()  # 再次发送
-                elif result == 'password update success':  # 修改成功
+
+                if result == 'password update success':  # 修改成功
                     print('还原密码成功'.center(60, '-'))
                     time.sleep(2)
                     break
+                else:       # 验证码错误，未获取到
+                    print('重复发送，等待一分钟')
+                    time.sleep(60)
+                    driver.find_element(by='css selector', value='#app > div > div.login-form-wrap > div.login-form.margin-bottom > form > div:nth-child(2) > div > '
+                                                                 'div > span > div > div:nth-child(2) > a').click()  # 再次发送
+                    print('点击发送成功')
+                    WebDriverWait(driver,15,0.2).until(lambda x:x.find_element(by='xpath',value='/html/body/div[2]/span/div/div/div/span'))
 
 
     def test(self):
         useraccount = random.choice(['a979172251@163.com', 'a9791722511@126.com', 'a9791722511@163.com', 'a97917225111@163.com', 'a979172251@126.com'])
         print(useraccount)
 
+        # 登录的会话获取
+
+    def login_sess(self):
+        sess = requests.session()
+
+        ran_13 = random.randint(1111111111111, 9999999999999)
+        ran_10 = random.randint(111111111, 9999999999)
+        url1 = f"http://18.118.13.94:8080/jeecg-boot/sys/randomImage/{ran_13}?_t={ran_10}"
+        sess.get(url=url1)
+
+        URL = "http://18.118.13.94:8080/jeecg-boot/sys/login"
+        header = {'Host': '18.118.13.94:8080',
+                  'Connection': 'keep-alive',
+                  'Content-Length': '103',
+                  'Accept': 'application/json,text/plain,*/*',
+                  'tenant-id': '0',
+                  'User-Agent': 'Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,'
+                                'likeGecko)Chrome/98.0.4758.80Safari/537.36Edg/98.0.1108.43',
+                  'Content-Type': 'application/json',
+                  'Origin': 'http://18.118.13.94',
+                  'Referer': 'http://18.118.13.94/',
+                  'Accept-Encoding': 'gzip,deflate',
+                  'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'}
+        data = f'{{"username":"test","password":"Xx.888888","captcha":"0000","checkKey":"{ran_13}","remember_me' \
+               f'":"true"}} '
+        res = sess.post(url=URL, data=data, headers=header)
+        token = res.json()['result']['token']
+        return sess, token
+
+
+
 if __name__ == '__main__':
     a = Common()
-    a.change_password(driver=webdriver.Chrome(),useraccount='a97917225111@163.com',password='a123456',code=0000)
+    # a.change_password(driver=webdriver.Chrome(),useraccount='a97917225111@163.com',password='a123456',code=0000)
     # a.test()
+    a.get_Request_Return()

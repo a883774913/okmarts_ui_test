@@ -1,0 +1,201 @@
+{
+  "uid" : "4ff75103147690c6",
+  "name" : "输入7位英文大写密码修改成功",
+  "fullName" : "test_main.Test_Main#test_forget_password",
+  "historyId" : "973dddd80e65de73a960526765c5e76f",
+  "time" : {
+    "start" : 1652860674354,
+    "stop" : 1652860732075,
+    "duration" : 57721
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5be06694daaf0522",
+      "name" : "stdout",
+      "source" : "5be06694daaf0522.txt",
+      "type" : "text/plain",
+      "size" : 827
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "忘记密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '44', 'casename': '输入7位英文大写密码修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=AAAAAAA', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "4fa24bb797a15118",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/4fa24bb797a15118",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652837436083,
+          "stop" : 1652837504673,
+          "duration" : 68590
+        }
+      }, {
+        "uid" : "e349bac8924b9c22",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/e349bac8924b9c22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652760712346,
+          "stop" : 1652760880094,
+          "duration" : 167748
+        }
+      }, {
+        "uid" : "d293a22bc233b05c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/d293a22bc233b05c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157020061,
+          "stop" : 1652157088739,
+          "duration" : 68678
+        }
+      }, {
+        "uid" : "c8bac574e245defe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/c8bac574e245defe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651892657323,
+          "stop" : 1651892708107,
+          "duration" : 50784
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4ff75103147690c6.json",
+  "parameterValues" : [ "{'case_no': '44', 'casename': '输入7位英文大写密码修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=AAAAAAA', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+}

@@ -1,5 +1,364 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "密码为数字+小写字母+特殊字符注册成功",
+        "uid" : "fa4c413f78312533",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652859759173,
+          "stop" : 1652859796263,
+          "duration" : 37090
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '28', 'casename': '密码为数字+小写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asd!@#$', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "密码为数字+大写字母+特殊字符注册成功",
+        "uid" : "da5d9eefa863657b",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652859796959,
+          "stop" : 1652859838371,
+          "duration" : 41412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '29', 'casename': '密码为数字+大写字母+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123ASD!@#$', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "密码为数字+小写字母+大写字母与+特殊字符注册成功",
+        "uid" : "52b3087cc36976a0",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652859876252,
+          "stop" : 1652859913764,
+          "duration" : 37512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '31', 'casename': '密码为数字+小写字母+大写字母与+特殊字符注册成功', 'mode': '注册', 'data': 'useraccount=a883774917@163.com\\npassword=123asdASD!@#$', 'assert_way': 'class name=text-tit-lg', 'result': 'Congratulations, registration is successful'}" ]
+      }, {
+        "name" : "已签到状态签到失败",
+        "uid" : "b1e3eb9796430709",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861509359,
+          "stop" : 1652861517623,
+          "duration" : 8264
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '123', 'casename': '已签到状态签到失败', 'mode': '签到', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-center.margin-bottom > div.sign-part.bg-white.flex.space-between.align-center.border-radius-sm > div.part-right > button', 'result': 'Sign in successfully'}" ]
+      }, {
+        "name" : "选择UNused显示未使用优惠券",
+        "uid" : "6f6c95f96087e4f9",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861529412,
+          "stop" : 1652861576064,
+          "duration" : 46652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '125', 'casename': '选择UNused显示未使用优惠券', 'mode': '优惠券', 'data': 'Unused', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "不输入任何内容点击查询弹出错误提示",
+        "uid" : "ba0460ce7ff48d58",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861686079,
+          "stop" : 1652861690539,
+          "duration" : 4460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '141', 'casename': '不输入任何内容点击查询弹出错误提示', 'mode': '搜索', 'data': '', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'No information was entered'}" ]
+      }, {
+        "name" : "随机选择一个类型模糊搜索成功",
+        "uid" : "a8fe079d1444a601",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861719173,
+          "stop" : 1652861726986,
+          "duration" : 7813
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'mode': '搜索', 'data': 'search_info=1', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "随机选择一个类型全文搜索成功",
+        "uid" : "da0e3868b6f78bce",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861727270,
+          "stop" : 1652861737713,
+          "duration" : 10443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '145', 'casename': '随机选择一个类型全文搜索成功', 'mode': '搜索', 'data': 'search_info=1', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "搜索出商品后点击相应查询进入商品详情页成功",
+        "uid" : "4ccaa5c10ba431af",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861898417,
+          "stop" : 1652861907217,
+          "duration" : 8800
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '153', 'casename': '搜索出商品后点击相应查询进入商品详情页成功', 'mode': '搜索', 'data': 'search_info=Parker Coil', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "通过筛选器Brand筛选到商品成功",
+        "uid" : "ce7722bccbe2e0e1",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652861907421,
+          "stop" : 1652861916325,
+          "duration" : 8904
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '154', 'casename': '通过筛选器Brand筛选到商品成功', 'mode': '搜索', 'data': 'search_info=1', 'assert_way': '', 'result': ''}" ]
+      }, {
+        "name" : "退货页面不上传图片提交退货单失败",
+        "uid" : "2a006d183b91e64e",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652862376836,
+          "stop" : 1652862413568,
+          "duration" : 36732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '92', 'casename': '退货页面不上传图片提交退货单失败', 'mode': '订单管理', 'data': 'reason=Wrong order inform ation\\ntext=123412412\\nimg=null', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'please upload the image'}" ]
+      }, {
+        "name" : "使用other提交退货单成功",
+        "uid" : "e6aa8588d168e695",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652862501098,
+          "stop" : 1652862534894,
+          "duration" : 33796
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '96', 'casename': '使用other提交退货单成功', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\1.jpg', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'add success'}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".r_text\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC658+837208]\n\tOrdinal0 [0x008D91DD+1020381]\n\tOrdinal0 [0x008D949B+1021083]\n\tOrdinal0 [0x00906032+1204274]\n\tOrdinal0 [0x008F4194+1130900]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+      "children" : [ {
+        "name" : "输入特殊字符密码修改成功",
+        "uid" : "5bbe15c4e20e5d1b",
+        "parentUid" : "d02c35e2f50419ae953db1efc0bdd8a6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652860322926,
+          "stop" : 1652860330225,
+          "duration" : 7299
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '137', 'casename': '输入特殊字符密码修改成功', 'mode': '修改密码', 'data': 'new_password=a12345!@#$', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+      }, {
+        "name" : "输入错误验证码密码修改失败",
+        "uid" : "9ee2a4511801082b",
+        "parentUid" : "d02c35e2f50419ae953db1efc0bdd8a6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652860330800,
+          "stop" : 1652860338368,
+          "duration" : 7568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '138', 'casename': '输入错误验证码密码修改失败', 'mode': '修改密码', 'data': 'new_password=a123456', 'assert_way': 'xpath=/html/body/div[2]/span/div/div/div/span', 'result': 'Verification code error'}" ]
+      } ],
+      "uid" : "d02c35e2f50419ae953db1efc0bdd8a6"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span data-v-72e100f4=\"\" class=\"r_text\" style=\"display: inline-block;\">...</span> is not clickable at point (1433, 86). Other element would receive the click: <div tabindex=\"-1\" role=\"dialog\" class=\"ant-modal-wrap ant-modal-centered\">...</div>\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC658+837208]\n\tOrdinal0 [0x008DF8AF+1046703]\n\tOrdinal0 [0x008DD8D6+1038550]\n\tOrdinal0 [0x008DB5EB+1029611]\n\tOrdinal0 [0x008DA359+1024857]\n\tOrdinal0 [0x008CFF93+982931]\n\tOrdinal0 [0x008F414C+1130828]\n\tOrdinal0 [0x008CF974+981364]\n\tOrdinal0 [0x008F4364+1131364]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+      "children" : [ {
+        "name" : "选择优惠券兑换成功",
+        "uid" : "2474393cc96774c9",
+        "parentUid" : "89614f1c3939cf5a024a6a0cf8f2a9b7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652861639160,
+          "stop" : 1652861654806,
+          "duration" : 15646
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '128', 'casename': '选择优惠券兑换成功', 'mode': '优惠券', 'data': '', 'assert_way': '', 'result': ''}" ]
+      } ],
+      "uid" : "89614f1c3939cf5a024a6a0cf8f2a9b7"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div[class=\"title text-black margin-bottom-xs \"] > a \"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC658+837208]\n\tOrdinal0 [0x008D91DD+1020381]\n\tOrdinal0 [0x008D949B+1021083]\n\tOrdinal0 [0x00906032+1204274]\n\tOrdinal0 [0x008F4194+1130900]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+      "children" : [ {
+        "name" : "点击All Categories 输入商品全称点击回车查询成功",
+        "uid" : "329f06d49f352f3b",
+        "parentUid" : "02371dc5e9232594735df7ef2c5eb975",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652861776868,
+          "stop" : 1652861785026,
+          "duration" : 8158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '147', 'casename': '点击All Categories 输入商品全称点击回车查询成功', 'mode': '搜索', 'data': 'search_info=Copeland Compres-3256', 'assert_way': 'css selector=div[class=\"title text-black margin-bottom-xs \"] > a ', 'result': 'Copeland Compres-3256'}" ]
+      } ],
+      "uid" : "02371dc5e9232594735df7ef2c5eb975"
+    }, {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a data-v-a5ec222a=\"\">...</a> is not clickable at point (766, 301). Other element would receive the click: <input data-v-a5ec222a=\"\" placeholder=\"Fill in a frequently used phone number\" type=\"telephone\" data-__meta=\"[object Object]\" data-__field=\"[object Object]\" id=\"coordinated_contactnumber\" class=\"ant-input\">\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC658+837208]\n\tOrdinal0 [0x008DF8AF+1046703]\n\tOrdinal0 [0x008DD8D6+1038550]\n\tOrdinal0 [0x008DB5EB+1029611]\n\tOrdinal0 [0x008DA359+1024857]\n\tOrdinal0 [0x008CFF93+982931]\n\tOrdinal0 [0x008F414C+1130828]\n\tOrdinal0 [0x008CF974+981364]\n\tOrdinal0 [0x008F4364+1131364]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+      "children" : [ {
+        "name" : "更换地址后点击立即结算支付成功",
+        "uid" : "94bd1c700b00cc74",
+        "parentUid" : "eb6cbf8b960042abd23aeda059d4ad39",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652862033764,
+          "stop" : 1652862055410,
+          "duration" : 21646
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '更换地址后点击立即结算支付成功', 'mode': '支付', 'data': '', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'change success'}" ]
+      } ],
+      "uid" : "eb6cbf8b960042abd23aeda059d4ad39"
+    }, {
+      "name" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC520+836896]\n\tOrdinal0 [0x008DA1F3+1024499]\n\tOrdinal0 [0x008CFF93+982931]\n\tOrdinal0 [0x008F414C+1130828]\n\tOrdinal0 [0x008CF974+981364]\n\tOrdinal0 [0x008F4364+1131364]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+      "children" : [ {
+        "name" : "使用信用卡支付成功",
+        "uid" : "d6c47cedc9fe026c",
+        "parentUid" : "7f20c0e7441514016c6c880a41cf6761",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652862239252,
+          "stop" : 1652862278341,
+          "duration" : 39089
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '', 'casename': '使用信用卡支付成功', 'mode': '支付', 'data': '', 'assert_way': 'class name=text-tit-lg.margin-bottom-xs', 'result': 'Payment successful'}" ]
+      } ],
+      "uid" : "7f20c0e7441514016c6c880a41cf6761"
+    }, {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "点击订单中的商品名称跳转商品详情成功",
+        "uid" : "69c4a3bb08d276d1",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1652862282812,
+          "stop" : 1652862289155,
+          "duration" : 6343
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : true,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

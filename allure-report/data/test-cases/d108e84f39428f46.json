@@ -1,0 +1,228 @@
+{
+  "uid" : "d108e84f39428f46",
+  "name" : "点击View details 跳转至优惠券页面成功",
+  "fullName" : "test_main.Test_Main#test_conpons",
+  "historyId" : "53138503ff4995cef7ec074787d8b067",
+  "time" : {
+    "start" : 1652861517849,
+    "stop" : 1652861529410,
+    "duration" : 11561
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a2f518e10621fbbd",
+      "name" : "stdout",
+      "source" : "a2f518e10621fbbd.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "优惠券"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '124', 'casename': '点击View details 跳转至优惠券页面成功', 'mode': '优惠券', 'data': '', 'assert_way': 'class name=text-tit-lg.flex', 'result': 'Coupon details'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "4d730c2008b1615a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/4d730c2008b1615a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838353034,
+          "stop" : 1652838368115,
+          "duration" : 15081
+        }
+      }, {
+        "uid" : "57daff06c82ed706",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/57daff06c82ed706",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761697465,
+          "stop" : 1652761707967,
+          "duration" : 10502
+        }
+      }, {
+        "uid" : "686f0dedccb1d78c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/686f0dedccb1d78c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158285036,
+          "stop" : 1652158295860,
+          "duration" : 10824
+        }
+      }, {
+        "uid" : "40b6f3dd53c021cb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/40b6f3dd53c021cb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651894002770,
+          "stop" : 1651894009411,
+          "duration" : 6641
+        }
+      }, {
+        "uid" : "a579c2f46a4ce889",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/a579c2f46a4ce889",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826421345,
+          "stop" : 1651826430701,
+          "duration" : 9356
+        }
+      }, {
+        "uid" : "996721b93f364db1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/996721b93f364db1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823130157,
+          "stop" : 1651823139227,
+          "duration" : 9070
+        }
+      }, {
+        "uid" : "56a230d351bffd1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/56a230d351bffd1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819028537,
+          "stop" : 1651819035222,
+          "duration" : 6685
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d108e84f39428f46.json",
+  "parameterValues" : [ "{'case_no': '124', 'casename': '点击View details 跳转至优惠券页面成功', 'mode': '优惠券', 'data': '', 'assert_way': 'class name=text-tit-lg.flex', 'result': 'Coupon details'}" ]
+}

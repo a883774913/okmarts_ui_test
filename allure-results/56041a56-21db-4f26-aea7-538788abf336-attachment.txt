@@ -1,0 +1,8 @@
+通道3
+55
+类型名称为Vacuum Pump
+[]
+类型ID为1524951722096754690
+[{'name': 'Bitzer Compressor 4J-13.2Y-40P'}, {'name': 'Carrier Compressor 06EM499601'}, {'name': 'Daikin Compressor JT125GA-V1'}, {'name': 'Huaguang Compressor VETZ110L'}, {'name': 'Y.S.TECH Fan FD126020MB'}, {'name': 'AVC Fan 2B12038B24M'}, {'name': 'DELIXI Fan G16060HA2BL'}, {'name': 'EVERFLOW Fan T055010BM'}, {'name': 'Nidec Fan D1751U24B8PP363'}, {'name': 'NMB-MAT Fan 3615KL-05W-B50'}, {'name': 'NMB-MAT Fan 4710KL-05W-B50'}, {'name': 'ORION Fan OD280-12MTB'}, {'name': 'OTC FAN SF-200-10-4D'}, {'name': 'OTC FAN XV6 100-2128'}, {'name': 'Pfannenberg FAN PTF 61.000'}, {'name': 'PHANTEKS Fan PH-F140MP'}, {'name': 'SEPA Fan AD0412LB-B31'}, {'name': 'SEW Fan G-132B'}, {'name': 'SEW Fan G-180B'}, {'name': 'Shengkwei FAN SK172AP-22-1'}, {'name': 'Shengkwei FAN SK172AP-11-3'}, {'name': 'SuperRed Fan CHA12012CB-TA-F'}, {'name': 'ASLONG Electric Motor RS-M10'}, {'name': 'ATB Electric Motor AF71/4B-7'}, {'name': 'COPAL Electric Motor LC20G-101'}, {'name': 'CPG Electric Motor CV1500-(15-30)S'}, {'name': 'CPG Electric Motor CV200-(15-30)S'}, {'name': 'Crouzet Electric Motor 80835012'}, {'name': 'Faulhaber Electric Motor 1524T024SR'}, {'name': 'Foyo Electric Motor FY39EL181RGA-275'}, {'name': 'GGM Electric Motor K9IP180FC-SU'}, {'name': 'Minebea Electric Motor 17PM-F340BG02CN'}, {'name': 'Panasonic Electric Motor ARW61M8P30AC'}, {'name': 'SANYO Electric Motor 103H8223-5141'}, {'name': 'Shinano Kenshi Electric Motor STP-59D3162'}, {'name': 'Shinano Kenshi Electric Motor STP-42D414'}, {'name': 'SITI Electric Motor FC112M4 4.0KW'}]
+37
+未搜索出商品数据

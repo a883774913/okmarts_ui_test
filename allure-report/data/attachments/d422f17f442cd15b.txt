@@ -1,0 +1,16 @@
+
+['Unread notification', 'Coupon usage help', 'Coupon usage Help']
+['class name=text-tit-lg.flex', 'class name=help', 'class name=text-tit-lg.flex.margin-bottom-xs']
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-41EC23CFF7C9C1B0B0EF690909B7BA7D']
+class name
+text-tit-lg.flex
+Unread notification
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-CCA0686663C509A7DB1F928B4BD28456']
+class name
+help
+Coupon usage help
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-EC3C5C3969318D3E85E0FF0E3B446518']
+class name
+text-tit-lg.flex.margin-bottom-xs
+Coupon usage Help
+未登录，不执行任何操作

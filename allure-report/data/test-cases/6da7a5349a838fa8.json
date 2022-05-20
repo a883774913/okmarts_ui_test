@@ -1,0 +1,246 @@
+{
+  "uid" : "6da7a5349a838fa8",
+  "name" : "购物车内无商品时点击相关文字跳转到首页成功",
+  "fullName" : "test_main.Test_Main#test_shop_car",
+  "historyId" : "326919492728466126f3e9de1a968394",
+  "time" : {
+    "start" : 1652861320523,
+    "stop" : 1652861330334,
+    "duration" : 9811
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "47725b9c10362fd3",
+      "name" : "stdout",
+      "source" : "47725b9c10362fd3.txt",
+      "type" : "text/plain",
+      "size" : 120
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购物车"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '106', 'casename': '购物车内无商品时点击相关文字跳转到首页成功', 'mode': '购物车', 'data': '', 'assert_way': 'class name=pointer.all', 'result': 'Full catalog'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "48d81ca13c538b89",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/48d81ca13c538b89",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838161112,
+          "stop" : 1652838170968,
+          "duration" : 9856
+        }
+      }, {
+        "uid" : "9823caa4d51009e2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/9823caa4d51009e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761527455,
+          "stop" : 1652761537546,
+          "duration" : 10091
+        }
+      }, {
+        "uid" : "312109f7d7d43edc",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/312109f7d7d43edc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158095619,
+          "stop" : 1652158105527,
+          "duration" : 9908
+        }
+      }, {
+        "uid" : "74bbf763a7cceade",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/74bbf763a7cceade",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893807868,
+          "stop" : 1651893819016,
+          "duration" : 11148
+        }
+      }, {
+        "uid" : "2134fe2c386199c1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/2134fe2c386199c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826226625,
+          "stop" : 1651826237847,
+          "duration" : 11222
+        }
+      }, {
+        "uid" : "ca37f697c5403417",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/ca37f697c5403417",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822929517,
+          "stop" : 1651822940697,
+          "duration" : 11180
+        }
+      }, {
+        "uid" : "acb4fd90b804ff01",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/acb4fd90b804ff01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818853351,
+          "stop" : 1651818860801,
+          "duration" : 7450
+        }
+      }, {
+        "uid" : "92aa811f6f0b28b9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/92aa811f6f0b28b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811857293,
+          "stop" : 1651811864677,
+          "duration" : 7384
+        }
+      }, {
+        "uid" : "831382e7d74b0682",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/831382e7d74b0682",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739624265,
+          "stop" : 1651739631918,
+          "duration" : 7653
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6da7a5349a838fa8.json",
+  "parameterValues" : [ "{'case_no': '106', 'casename': '购物车内无商品时点击相关文字跳转到首页成功', 'mode': '购物车', 'data': '', 'assert_way': 'class name=pointer.all', 'result': 'Full catalog'}" ]
+}

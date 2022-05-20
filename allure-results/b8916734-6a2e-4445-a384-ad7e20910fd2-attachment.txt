@@ -1,0 +1,7 @@
+['useraccount=a979172251@163.com', 'newpassword=a1234']
+new password 为 a1234
+未登录，不执行任何操作
+通道0
+发送验证码后提示信息为Please go to your email to check the verification code and enter it
+验证码获取成功：['248266']
+Please set the password to a combination of 6 to 16 digits and letters

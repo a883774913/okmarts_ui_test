@@ -1,0 +1,238 @@
+{
+  "uid" : "c11ce4267fb19dd6",
+  "name" : "未签到状态签到成功",
+  "fullName" : "test_main.Test_Main#test_sign",
+  "historyId" : "af6fff1d557c75377cd56e6921f8be6d",
+  "time" : {
+    "start" : 1652861496011,
+    "stop" : 1652861509356,
+    "duration" : 13345
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "35a4c69a725af08b",
+      "name" : "stdout",
+      "source" : "35a4c69a725af08b.txt",
+      "type" : "text/plain",
+      "size" : 203
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "签到"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '122', 'casename': '未签到状态签到成功', 'mode': '签到', 'data': '', 'assert_way': 'css selector=body > div.ant-message > span', 'result': 'Check in succeeded'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "6d76243193d57e24",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/6d76243193d57e24",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838337189,
+          "stop" : 1652838350285,
+          "duration" : 13096
+        }
+      }, {
+        "uid" : "8883289148791a7d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/8883289148791a7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761678778,
+          "stop" : 1652761690591,
+          "duration" : 11813
+        }
+      }, {
+        "uid" : "94c4de5114be216c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/94c4de5114be216c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158265894,
+          "stop" : 1652158278279,
+          "duration" : 12385
+        }
+      }, {
+        "uid" : "c25497c3a4f6f7c1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/c25497c3a4f6f7c1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893985951,
+          "stop" : 1651893996631,
+          "duration" : 10680
+        }
+      }, {
+        "uid" : "546766b4f0d89226",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/546766b4f0d89226",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".atn-btn-orange.ant-btn\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826407631,
+          "stop" : 1651826413758,
+          "duration" : 6127
+        }
+      }, {
+        "uid" : "10e88b22636bab4c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/10e88b22636bab4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823110008,
+          "stop" : 1651823120608,
+          "duration" : 10600
+        }
+      }, {
+        "uid" : "f25781675635f741",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/f25781675635f741",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819020551,
+          "stop" : 1651819025053,
+          "duration" : 4502
+        }
+      }, {
+        "uid" : "300ac1c2c94bea23",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/300ac1c2c94bea23",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811995013,
+          "stop" : 1651811999779,
+          "duration" : 4766
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c11ce4267fb19dd6.json",
+  "parameterValues" : [ "{'case_no': '122', 'casename': '未签到状态签到成功', 'mode': '签到', 'data': '', 'assert_way': 'css selector=body > div.ant-message > span', 'result': 'Check in succeeded'}" ]
+}

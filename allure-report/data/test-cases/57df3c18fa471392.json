@@ -1,0 +1,202 @@
+{
+  "uid" : "57df3c18fa471392",
+  "name" : "输入7位纯数字修改成功",
+  "fullName" : "test_main.Test_Main#test_forget_password",
+  "historyId" : "16ecef90d46a6a1de73b61aa106b5b4b",
+  "time" : {
+    "start" : 1652860555731,
+    "stop" : 1652860614050,
+    "duration" : 58319
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "edf89b023ce6d8a4",
+      "name" : "stdout",
+      "source" : "edf89b023ce6d8a4.txt",
+      "type" : "text/plain",
+      "size" : 825
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "忘记密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '42', 'casename': '输入7位纯数字修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "1e422cd783fc02d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/1e422cd783fc02d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652837297526,
+          "stop" : 1652837367010,
+          "duration" : 69484
+        }
+      }, {
+        "uid" : "be33d792ea6be1a0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/be33d792ea6be1a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652760513187,
+          "stop" : 1652760642239,
+          "duration" : 129052
+        }
+      }, {
+        "uid" : "be842fe8b2001750",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/be842fe8b2001750",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652156882900,
+          "stop" : 1652156951491,
+          "duration" : 68591
+        }
+      }, {
+        "uid" : "372c60acb675dd22",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/372c60acb675dd22",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651892521478,
+          "stop" : 1651892610667,
+          "duration" : 89189
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "57df3c18fa471392.json",
+  "parameterValues" : [ "{'case_no': '42', 'casename': '输入7位纯数字修改成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=1234567', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+}

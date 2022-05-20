@@ -13,6 +13,7 @@ from okmarts_ui_test.mode.help_center import Help_Center
 from okmarts_ui_test.mode.login import Login
 from okmarts_ui_test.mode.my_order import My_Order
 from okmarts_ui_test.mode.navigation_bar import Navigation_Bar
+from okmarts_ui_test.mode.pay import Pay
 from okmarts_ui_test.mode.register import Regist
 from okmarts_ui_test.mode.search import Search
 from okmarts_ui_test.mode.shop_car import Shop_Car
@@ -43,78 +44,82 @@ class Test_Main:
         allure.dynamic.title(Parameter['casename'])  # 测试用例名称
         Regist().regist(Parameter, driver)
 
-
     @allure.feature('修改密码')
     @pytest.mark.parametrize('Parameter', case_infos['change_password'], ids=casename_infos['change_password'])
     def test_change_password(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Change_Password().change_password(driver,Parameter)
-
+        Change_Password().change_password(driver, Parameter)
 
     @allure.feature('忘记密码')
     @pytest.mark.parametrize('Parameter', case_infos['forget'], ids=casename_infos['forget'])
-    def test_forget_password(self,driver,Parameter):
+    def test_forget_password(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Forget_Password().forget_password(driver,Parameter)
+        Forget_Password().forget_password(driver, Parameter)
 
     @allure.feature('帮助中心')
     @pytest.mark.parametrize('Parameter', case_infos['help_center'], ids=casename_infos['help_center'])
-    def test_help_center(self,driver,Parameter):
+    def test_help_center(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Help_Center().help_center(driver,Parameter)
+        Help_Center().help_center(driver, Parameter)
 
     @allure.feature('导航栏')
     @pytest.mark.parametrize('Parameter', case_infos['navigation_bar'], ids=casename_infos['navigation_bar'])
-    def test_navigation_bar(self,driver,Parameter):
+    def test_navigation_bar(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Navigation_Bar().navigation_bar(driver,Parameter)
-
+        Navigation_Bar().navigation_bar(driver, Parameter)
 
     @allure.feature('地址管理')
     @pytest.mark.parametrize('Parameter', case_infos['address'], ids=casename_infos['address'])
-    def test_address(self,driver,Parameter):
+    def test_address(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Address().address(driver,Parameter)
+        Address().address(driver, Parameter)
 
-    @allure.feature('订单管理')
-    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])
-    def test_my_order(self, driver, Parameter):
-        allure.dynamic.title(Parameter['casename'])
-        My_Order().my_order(driver,Parameter)
 
     @allure.feature('个人资料修改')
     @pytest.mark.parametrize('Parameter', case_infos['personal_center'], ids=casename_infos['personal_center'])
-    def test_personal_center(self,driver,Parameter):
+    def test_personal_center(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Personal_Center().person_center(driver,Parameter)
+        Personal_Center().person_center(driver, Parameter)
 
     @allure.feature('购物车')
     @pytest.mark.parametrize('Parameter', case_infos['shop_car'], ids=casename_infos['shop_car'])
-    def test_shop_car(self,driver,Parameter):
+    def test_shop_car(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Shop_Car().shop_car(driver,Parameter)
+        Shop_Car().shop_car(driver, Parameter)
 
     @allure.feature('广告位')
     @pytest.mark.parametrize('Parameter', case_infos['banner'], ids=casename_infos['banner'])
     def test_banner(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Banner().banner(driver,Parameter)
+        Banner().banner(driver, Parameter)
 
     @allure.feature('签到')
     @pytest.mark.parametrize('Parameter', case_infos['sign'], ids=casename_infos['sign'])
     def test_sign(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Sign().sign(driver,Parameter)
+        Sign().sign(driver, Parameter)
 
     @allure.feature('优惠券')
     @pytest.mark.parametrize('Parameter', case_infos['conpons'], ids=casename_infos['conpons'])
     def test_conpons(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Conpons().conpons(driver,Parameter)
+        Conpons().conpons(driver, Parameter)
 
     @allure.feature('搜索')
     @pytest.mark.parametrize('Parameter', case_infos['search'], ids=casename_infos['search'])
-    def test_search(self,driver,Parameter):
+    def test_search(self, driver, Parameter):
         allure.dynamic.title(Parameter['casename'])
-        Search().search(driver,Parameter)
+        Search().search(driver, Parameter)
 
+    @allure.feature('支付')
+    @pytest.mark.parametrize('Parameter', case_infos['pay'], ids=casename_infos['pay'])
+    def test_pay(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        Pay().pay(driver,Parameter)
+
+
+    @allure.feature('订单管理')
+    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])
+    def test_my_order(self, driver, Parameter):
+        allure.dynamic.title(Parameter['casename'])
+        My_Order().my_order(driver, Parameter)

@@ -1,0 +1,11 @@
+
+未登录，正在执行登录
+登录账户为979172251@qq.com
+登录提示信息为success
+info为My discount coupon (115)
+交易前存在115张优惠券
+交易前有1829369个积分
+[<selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="f8214c79-1a5d-44a4-8fca-205888c2490b")>, <selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="e494dcdd-6731-4cff-80d3-f3f619980ce7")>, <selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="3b7b8f50-8bfe-4a10-ac58-28c0bfb98574")>, <selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="d8892bca-91cb-49ef-ad7a-d689efcc3e7b")>, <selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="1f745079-4731-4ad1-9a4e-a73c0ddd99bd")>, <selenium.webdriver.remote.webelement.WebElement (session="eeaae31250d5c4b4c8480299db4e3e21", element="c6cfd8e8-a9d7-4da1-a823-0fa232eadd2b")>]
+6
+兑换该优惠券需要30个积分
+兑换后积分为1829339

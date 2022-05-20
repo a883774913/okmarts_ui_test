@@ -66,7 +66,7 @@ class Navigation_Bar:
         elif casename =='该品牌下无商品，品牌页面正确显示':
             Common().hover(driver,way='xpath',element='//*[@id="app"]/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/ul/li[1]')
             time.sleep(0.5)
-            driver.find_element(by='xpath',value='//*[@id="app"]/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/ul/li[1]/div/div[1]/div/div[1]/a').click()
+            driver.find_element(by='xpath',value='//*[@id="app"]/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/ul/li[1]/div/div[1]/div/div[2]/a').click()
             time.sleep(2)
             text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                        value=f"{assert_way.split('=', 1)[1]}").text
@@ -74,16 +74,4 @@ class Navigation_Bar:
             print(result)
             assert str(text) == result
 
-        elif casename == 'All Categories 页面可以点击类别快速移动到该类别所在页面位置':
-            driver.find_element(by='class name', value='okm-icon.icon-leimu').click()  # 点击full catalog
-            time.sleep(2)
-            WebDriverWait(driver,20,0.2).until(lambda x:x.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[2]/div[8]/div/div/a'))
-            driver.find_element(by='xpath',value='//*[@id="app"]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[2]/div[8]/div/div/a').click()  #点击Water Pump
-            time.sleep(1)
-            text = driver.find_element(by='xpath',value='//*[@id="type7"]/div[2]/div[44]/a').text
-            print(text)
-            text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
-                                       value=f"{assert_way.split('=', 1)[1]}").text
-            print(text)
-            print(result)
-            assert str(text) == result
+

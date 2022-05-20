@@ -1,26 +1,114 @@
 {
-  "total" : 2,
+  "total" : 15,
   "items" : [ {
-    "uid" : "7797343a6802ee9c34157b5b69c20959",
-    "name" : "注册",
+    "uid" : "4b40e170c7ca1250fdcc6cd0997a64ea",
+    "name" : "搜索",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
+      "failed" : 5,
+      "broken" : 1,
       "skipped" : 0,
       "passed" : 10,
       "unknown" : 0,
-      "total" : 10
+      "total" : 16
     }
   }, {
-    "uid" : "6e12e06fb17fec92464fd1fd24bca881",
-    "name" : "登录",
+    "uid" : "7797343a6802ee9c34157b5b69c20959",
+    "name" : "注册",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 25,
+      "unknown" : 0,
+      "total" : 28
+    }
+  }, {
+    "uid" : "516bf61276b79de3ed3b4be198275db3",
+    "name" : "订单管理",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 12,
+      "unknown" : 0,
+      "total" : 15
+    }
+  }, {
+    "uid" : "4f645476eb5d144f30f3e8a19809022d",
+    "name" : "优惠券",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 7
+    }
+  }, {
+    "uid" : "1f657b2ca69389b8f73a2ef2f765869a",
+    "name" : "签到",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "53cafdd9bbb4f123a0fd3b682750f948",
+    "name" : "支付",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "8b2d20bf24c43bb3adff22768f6f2128",
+    "name" : "修改密码",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "a8683ef936769eca0631743faf12b699",
+    "name" : "帮助中心",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 15,
       "unknown" : 0,
-      "total" : 6
+      "total" : 15
+    }
+  }, {
+    "uid" : "bdf6646c907dd4a7c11cb54225e7ecda",
+    "name" : "忘记密码",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 14,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "f4adcbe437d6229b8b7d480cb9dc15fa",
+    "name" : "地址管理",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 13,
+      "unknown" : 0,
+      "total" : 13
     }
   } ]
 }

@@ -1,0 +1,27 @@
+reason=Quality issues
+text=123412412
+img=
+已登录
+{'allNum': None, 'typename': None, 'typeid': None, 'brandsid': None, 'brandsname': None, 'title': None, 'keywords': None, 'description': None, 'success': True, 'message': '操作成功！', 'code': 200, 'result': '完成订单流程', 'timestamp': 1652862455585}
+10
+0
+payment successful
+1
+unpaid
+2
+unpaid
+3
+unpaid
+4
+unpaid
+5
+unpaid
+6
+signed in Request Return
+1
+第1页存在已签收数据
+Quality issues
+123412412
+
+img_path为C:\Users\admin\PycharmProjects\pythonProject\okmarts_ui_test\data\1.jpg
+text为add success

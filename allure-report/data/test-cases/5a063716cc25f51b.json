@@ -1,0 +1,284 @@
+{
+  "uid" : "5a063716cc25f51b",
+  "name" : "使用视频文件提交退货单失败",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "b6fb505c5464035a52e419aaa943bd1e",
+  "time" : {
+    "start" : 1652862535061,
+    "stop" : 1652862568813,
+    "duration" : 33752
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e550bfbd2b3e63d",
+      "name" : "stdout",
+      "source" : "e550bfbd2b3e63d.txt",
+      "type" : "text/plain",
+      "size" : 2300
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '97', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\test 8.mp4', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please upload the image'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 8,
+        "skipped" : 2,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "9ad13626f4b05f86",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/9ad13626f4b05f86",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652839503464,
+          "stop" : 1652839537352,
+          "duration" : 33888
+        }
+      }, {
+        "uid" : "e43c13d453488b2e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/e43c13d453488b2e",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652762650478,
+          "stop" : 1652762673945,
+          "duration" : 23467
+        }
+      }, {
+        "uid" : "10d721a1d707148d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/10d721a1d707148d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[2]/span/div/div/div/span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00557413+2389011]\n\tOrdinal0 [0x004E9F61+1941345]\n\tOrdinal0 [0x003DC658+837208]\n\tOrdinal0 [0x004091DD+1020381]\n\tOrdinal0 [0x0040949B+1021083]\n\tOrdinal0 [0x00436032+1204274]\n\tOrdinal0 [0x00424194+1130900]\n\tOrdinal0 [0x00434302+1196802]\n\tOrdinal0 [0x00423F66+1130342]\n\tOrdinal0 [0x003FE546+976198]\n\tOrdinal0 [0x003FF456+980054]\n\tGetHandleVerifier [0x00709632+1727522]\n\tGetHandleVerifier [0x007BBA4D+2457661]\n\tGetHandleVerifier [0x005EEB81+569713]\n\tGetHandleVerifier [0x005EDD76+566118]\n\tOrdinal0 [0x004F0B2B+1968939]\n\tOrdinal0 [0x004F5988+1989000]\n\tOrdinal0 [0x004F5A75+1989237]\n\tOrdinal0 [0x004FECB1+2026673]\n\tBaseThreadInitThunk [0x76D76739+25]\n\tRtlGetFullPathName_UEx [0x77D88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77D88E4D+1165]",
+        "time" : {
+          "start" : 1652157988546,
+          "stop" : 1652158009799,
+          "duration" : 21253
+        }
+      }, {
+        "uid" : "ca7b17527a06f17b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/ca7b17527a06f17b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651893674051,
+          "stop" : 1651893723722,
+          "duration" : 49671
+        }
+      }, {
+        "uid" : "63c9bf6ebb72e5ed",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/63c9bf6ebb72e5ed",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826090737,
+          "stop" : 1651826140906,
+          "duration" : 50169
+        }
+      }, {
+        "uid" : "14e959788afd848d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/14e959788afd848d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822793417,
+          "stop" : 1651822845182,
+          "duration" : 51765
+        }
+      }, {
+        "uid" : "9626ed5c295d1873",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/9626ed5c295d1873",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651818714401,
+          "stop" : 1651818769911,
+          "duration" : 55510
+        }
+      }, {
+        "uid" : "2c21cec148d61c37",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/2c21cec148d61c37",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651811688150,
+          "stop" : 1651811773943,
+          "duration" : 85793
+        }
+      }, {
+        "uid" : "5c3af6c304800dba",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/5c3af6c304800dba",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: 未找到相关数据",
+        "time" : {
+          "start" : 1651739451233,
+          "stop" : 1651739537705,
+          "duration" : 86472
+        }
+      }, {
+        "uid" : "1f945d5a2891a004",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/1f945d5a2891a004",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651221762279,
+          "stop" : 1651221889968,
+          "duration" : 127689
+        }
+      }, {
+        "uid" : "d5009a10c83809b6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/d5009a10c83809b6",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651202607939,
+          "stop" : 1651202726960,
+          "duration" : 119021
+        }
+      }, {
+        "uid" : "c34073bfe2906545",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/c34073bfe2906545",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF6CD461922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD39E982+515794]\n\tOrdinal0 [0x00007FF6CCEB0BC5+658373]\n\tOrdinal0 [0x00007FF6CCEEB992+899474]\n\tOrdinal0 [0x00007FF6CCEEBC68+900200]\n\tOrdinal0 [0x00007FF6CCF1D937+1104183]\n\tOrdinal0 [0x00007FF6CCF06C7F+1010815]\n\tOrdinal0 [0x00007FF6CCF1B034+1093684]\n\tOrdinal0 [0x00007FF6CCF06A53+1010259]\n\tOrdinal0 [0x00007FF6CCEDDB47+842567]\n\tOrdinal0 [0x00007FF6CCEDF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CD06F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD159389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6CD15C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6CCFAC6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3A5971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AA974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3AAACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6CD3B48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651196569692,
+          "stop" : 1651196695135,
+          "duration" : 125443
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5a063716cc25f51b.json",
+  "parameterValues" : [ "{'case_no': '97', 'casename': '使用视频文件提交退货单失败', 'mode': '订单管理', 'data': 'reason=other\\ntext=123412412\\nimg=C:\\\\Users\\\\admin\\\\PycharmProjects\\\\pythonProject\\\\okmarts_ui_test\\\\data\\\\test 8.mp4', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'please upload the image'}" ]
+}

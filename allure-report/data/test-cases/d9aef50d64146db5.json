@@ -1,0 +1,301 @@
+{
+  "uid" : "d9aef50d64146db5",
+  "name" : "都为空新增失败",
+  "fullName" : "test_main.Test_Main#test_address",
+  "historyId" : "db392ae8fb9647bef51e500ce3140598",
+  "time" : {
+    "start" : 1652861196904,
+    "stop" : 1652861207126,
+    "duration" : 10222
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "663f0bef1bd7c377",
+      "name" : "stdout",
+      "source" : "663f0bef1bd7c377.txt",
+      "type" : "text/plain",
+      "size" : 253
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "地址管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '80', 'casename': '都为空新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"\",\"contactnumber\":\"\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 15,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "ca4c04f9e3f96bb0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/ca4c04f9e3f96bb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838037297,
+          "stop" : 1652838047655,
+          "duration" : 10358
+        }
+      }, {
+        "uid" : "8b4abbde5d83f55e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/8b4abbde5d83f55e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761401131,
+          "stop" : 1652761412003,
+          "duration" : 10872
+        }
+      }, {
+        "uid" : "cc0af1ccf1b328f4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/cc0af1ccf1b328f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157693452,
+          "stop" : 1652157703952,
+          "duration" : 10500
+        }
+      }, {
+        "uid" : "47c8b7273894d4ec",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/47c8b7273894d4ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893313712,
+          "stop" : 1651893324306,
+          "duration" : 10594
+        }
+      }, {
+        "uid" : "a381d092563cfa0d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/a381d092563cfa0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825675233,
+          "stop" : 1651825685808,
+          "duration" : 10575
+        }
+      }, {
+        "uid" : "f652841add0898e0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/f652841add0898e0",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div data-v-55d2836f=\"\" class=\"item\">...</div> is not clickable at point (1419, 83). Other element would receive the click: <div tabindex=\"-1\" role=\"dialog\" class=\"ant-modal-wrap \">...</div>\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x0058F8AF+1046703]\n\tOrdinal0 [0x0058D8D6+1038550]\n\tOrdinal0 [0x0058B5EB+1029611]\n\tOrdinal0 [0x0058A359+1024857]\n\tOrdinal0 [0x0057FF93+982931]\n\tOrdinal0 [0x005A414C+1130828]\n\tOrdinal0 [0x0057F974+981364]\n\tOrdinal0 [0x005A4364+1131364]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651822363935,
+          "stop" : 1651822375835,
+          "duration" : 11900
+        }
+      }, {
+        "uid" : "98f7374a8b4d7701",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/98f7374a8b4d7701",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818282778,
+          "stop" : 1651818293958,
+          "duration" : 11180
+        }
+      }, {
+        "uid" : "3d482ed434fb1243",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/3d482ed434fb1243",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810919264,
+          "stop" : 1651810929714,
+          "duration" : 10450
+        }
+      }, {
+        "uid" : "2eb25995bab96ba3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/2eb25995bab96ba3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738675863,
+          "stop" : 1651738686250,
+          "duration" : 10387
+        }
+      }, {
+        "uid" : "8e0f8ed8db07b454",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/8e0f8ed8db07b454",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220791551,
+          "stop" : 1651220811329,
+          "duration" : 19778
+        }
+      }, {
+        "uid" : "6e02e480b06d369c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/6e02e480b06d369c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201771588,
+          "stop" : 1651201782072,
+          "duration" : 10484
+        }
+      }, {
+        "uid" : "4033669c6aac70b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/4033669c6aac70b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196196410,
+          "stop" : 1651196210129,
+          "duration" : 13719
+        }
+      }, {
+        "uid" : "443e15d69c398d8c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/443e15d69c398d8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052904143,
+          "stop" : 1651052914578,
+          "duration" : 10435
+        }
+      }, {
+        "uid" : "10b5740ed17109d4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/10b5740ed17109d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651038091703,
+          "stop" : 1651038102388,
+          "duration" : 10685
+        }
+      }, {
+        "uid" : "48084b081e39918",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/48084b081e39918",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034217771,
+          "stop" : 1651034228274,
+          "duration" : 10503
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d9aef50d64146db5.json",
+  "parameterValues" : [ "{'case_no': '80', 'casename': '都为空新增失败', 'mode': '地址管理', 'data': '{\"fistname\":\"\",\"lastname\":\"\",\"contactnumber\":\"\",\"coordinated_area1\":\"\",\"coordinated_area2\":\"\",\"coordinated_area3\":\"\",\"coordinated_postalCode\":\"\",\"coordinated_addressLine\":\"\"}', 'assert_way': 'class name=ant-form-explain', 'result': 'Please input your first Name!'}" ]
+}

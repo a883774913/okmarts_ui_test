@@ -1,0 +1,273 @@
+{
+  "uid" : "67b796d58918c90b",
+  "name" : "点击账户名称进入个人信息修改页面成功",
+  "fullName" : "test_main.Test_Main#test_personal_center",
+  "historyId" : "b89f8102c9a50863bdbcd56383877805",
+  "time" : {
+    "start" : 1652861234805,
+    "stop" : 1652861241272,
+    "duration" : 6467
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7766ac4418e4f6bd",
+      "name" : "stdout",
+      "source" : "7766ac4418e4f6bd.txt",
+      "type" : "text/plain",
+      "size" : 37
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "个人资料修改"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '98', 'casename': '点击账户名称进入个人信息修改页面成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'class name=text-tit-lg.text-center', 'result': 'Data modification'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "a4f4b84505b13fbe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/a4f4b84505b13fbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838075597,
+          "stop" : 1652838082091,
+          "duration" : 6494
+        }
+      }, {
+        "uid" : "2712a0f4ef9a63d6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/2712a0f4ef9a63d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761441334,
+          "stop" : 1652761447883,
+          "duration" : 6549
+        }
+      }, {
+        "uid" : "9304b895d5402870",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/9304b895d5402870",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158009966,
+          "stop" : 1652158016374,
+          "duration" : 6408
+        }
+      }, {
+        "uid" : "c5f94bec81240ade",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/c5f94bec81240ade",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893723892,
+          "stop" : 1651893730344,
+          "duration" : 6452
+        }
+      }, {
+        "uid" : "a6a146308d3b70f3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/a6a146308d3b70f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826141058,
+          "stop" : 1651826147645,
+          "duration" : 6587
+        }
+      }, {
+        "uid" : "f054cdc6af629254",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/f054cdc6af629254",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822845353,
+          "stop" : 1651822851883,
+          "duration" : 6530
+        }
+      }, {
+        "uid" : "6bf827616d233400",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/6bf827616d233400",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818770124,
+          "stop" : 1651818776511,
+          "duration" : 6387
+        }
+      }, {
+        "uid" : "6672abad26b59a1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/6672abad26b59a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811773947,
+          "stop" : 1651811780326,
+          "duration" : 6379
+        }
+      }, {
+        "uid" : "371f81b25097ebae",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/371f81b25097ebae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739537710,
+          "stop" : 1651739544474,
+          "duration" : 6764
+        }
+      }, {
+        "uid" : "78b3c84c2450ba39",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/78b3c84c2450ba39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221890153,
+          "stop" : 1651221909620,
+          "duration" : 19467
+        }
+      }, {
+        "uid" : "dd6ae3573918a8e5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/dd6ae3573918a8e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651202727157,
+          "stop" : 1651202733614,
+          "duration" : 6457
+        }
+      }, {
+        "uid" : "200a3df01e38f658",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/200a3df01e38f658",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196695327,
+          "stop" : 1651196701890,
+          "duration" : 6563
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "67b796d58918c90b.json",
+  "parameterValues" : [ "{'case_no': '98', 'casename': '点击账户名称进入个人信息修改页面成功', 'mode': '个人信息修改', 'data': '', 'assert_way': 'class name=text-tit-lg.text-center', 'result': 'Data modification'}" ]
+}

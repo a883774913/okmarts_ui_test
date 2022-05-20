@@ -1,0 +1,202 @@
+{
+  "uid" : "e609298e4c80875f",
+  "name" : "选择used显示已使用优惠券",
+  "fullName" : "test_main.Test_Main#test_conpons",
+  "historyId" : "ac7624e9c68110e78b4d8e9a604dc04d",
+  "time" : {
+    "start" : 1652861576222,
+    "stop" : 1652861623844,
+    "duration" : 47622
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "809e7f716e73b451",
+      "name" : "stdout",
+      "source" : "809e7f716e73b451.txt",
+      "type" : "text/plain",
+      "size" : 1634
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "优惠券"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '126', 'casename': '选择used显示已使用优惠券', 'mode': '优惠券', 'data': 'Used', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "32add945d12f7b73",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/32add945d12f7b73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838415764,
+          "stop" : 1652838462518,
+          "duration" : 46754
+        }
+      }, {
+        "uid" : "7817a89e015eafe0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/7817a89e015eafe0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761754458,
+          "stop" : 1652761797042,
+          "duration" : 42584
+        }
+      }, {
+        "uid" : "a571733ef3a4b7dd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/a571733ef3a4b7dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158317183,
+          "stop" : 1652158338138,
+          "duration" : 20955
+        }
+      }, {
+        "uid" : "fb4935bf5c09d5ef",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/fb4935bf5c09d5ef",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651894021973,
+          "stop" : 1651894034371,
+          "duration" : 12398
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e609298e4c80875f.json",
+  "parameterValues" : [ "{'case_no': '126', 'casename': '选择used显示已使用优惠券', 'mode': '优惠券', 'data': 'Used', 'assert_way': '', 'result': ''}" ]
+}

@@ -1,0 +1,30 @@
+通道7
+总页数为2
+第1次循环
+存在12件商品
+EMG-116109
+EMG Servo Valve -2004
+EMG Servo Valve -7945
+EMG-532967
+EMG Servo Valve -3627
+EMG Servo Valve -9656
+EMG-525063
+EMG Proportional-6638
+EMG Servo Valve -2189
+EMG Servo Valve -4278
+EMG Servo Valve -3005
+EMG Servo Valve -9510
+第2次循环
+存在11件商品
+EMG-786798
+EMG-900259
+EMG-122396
+EMG Servo Valve -4091
+EMG-432178
+EMG-364655
+EMG Servo Valve -4067
+EMG-620548
+EMG Servo Valve -6472
+EMG Servo Valve -8989
+EMG Proportional-6079
+当前页为循环最后一次

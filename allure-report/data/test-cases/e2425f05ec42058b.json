@@ -1,0 +1,192 @@
+{
+  "uid" : "e2425f05ec42058b",
+  "name" : "不输入密码，验证码修改密码失败",
+  "fullName" : "test_main.Test_Main#test_change_password",
+  "historyId" : "12f1ffb7b2c475bc563fa70fa3992c2c",
+  "time" : {
+    "start" : 1652860121066,
+    "stop" : 1652860137423,
+    "duration" : 16357
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a3e04b7d2a9314ef",
+      "name" : "stdout",
+      "source" : "a3e04b7d2a9314ef.txt",
+      "type" : "text/plain",
+      "size" : 186
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "修改密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '133', 'casename': '不输入密码，验证码修改密码失败', 'mode': '修改密码', 'data': '', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "cd2c4f699306f851",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/cd2c4f699306f851",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652836770655,
+          "stop" : 1652836786542,
+          "duration" : 15887
+        }
+      }, {
+        "uid" : "efdf8aadad6a9cc2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/efdf8aadad6a9cc2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652759745699,
+          "stop" : 1652759760408,
+          "duration" : 14709
+        }
+      }, {
+        "uid" : "c427ce4b0518328e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/c427ce4b0518328e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652156335928,
+          "stop" : 1652156350426,
+          "duration" : 14498
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e2425f05ec42058b.json",
+  "parameterValues" : [ "{'case_no': '133', 'casename': '不输入密码，验证码修改密码失败', 'mode': '修改密码', 'data': '', 'assert_way': 'class name=atn-btn-orange.ant-btn.ant-btn-lg.ant-btn-block', 'result': 'true'}" ]
+}

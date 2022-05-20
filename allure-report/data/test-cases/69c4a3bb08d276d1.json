@@ -1,0 +1,311 @@
+{
+  "uid" : "69c4a3bb08d276d1",
+  "name" : "点击订单中的商品名称跳转商品详情成功",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "7547147ab2727239336b82f464b0a606",
+  "time" : {
+    "start" : 1652862282812,
+    "stop" : 1652862289155,
+    "duration" : 6343
+  },
+  "status" : "broken",
+  "statusMessage" : "IndexError: list index out of range",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DFC3D00>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'data': '', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver, Parameter)\n\ntest_main.py:125: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.my_order.My_Order object at 0x0000013C3DF1C280>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'data': '', ...}\n\n    def my_order(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        time.sleep(1)\n        Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')  # 检测是否登录\n        time.sleep(1)\n        driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像\n        time.sleep(2)\n        if casename == '点击个人中心Order record 订单成功显示':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text == result\n        elif casename == '点击订单中的商品名称跳转商品详情成功':\n            print('通道2 ')\n            goods_name = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').text\n            print(goods_name)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').click()  # 点击商品名称\n            time.sleep(2)\n>           buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 获取buy_now\nE           IndexError: list index out of range\n\n..\\mode\\my_order.py:46: IndexError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : true,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "IndexError: list index out of range",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DFC3D00>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'data': '', ...}\n\n    @allure.feature('订单管理')\n    @pytest.mark.parametrize('Parameter', case_infos['my_order'], ids=casename_infos['my_order'])\n    def test_my_order(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       My_Order().my_order(driver, Parameter)\n\ntest_main.py:125: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.my_order.My_Order object at 0x0000013C3DF1C280>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'data': '', ...}\n\n    def my_order(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        time.sleep(1)\n        Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')  # 检测是否登录\n        time.sleep(1)\n        driver.find_element(by='css selector', value='#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)').click()  # 点击头像\n        time.sleep(2)\n        if casename == '点击个人中心Order record 订单成功显示':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text == result\n        elif casename == '点击订单中的商品名称跳转商品详情成功':\n            print('通道2 ')\n            goods_name = driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').text\n            print(goods_name)\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[3]/div[1]/div/div[1]/div[2]/div/div[2]/div[1]/div[1]/div/a').click()  # 点击商品名称\n            time.sleep(2)\n>           buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 获取buy_now\nE           IndexError: list index out of range\n\n..\\mode\\my_order.py:46: IndexError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652862289174,
+        "stop" : 1652862289296,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8a270d1d21afa652",
+        "name" : "失败截图",
+        "source" : "8a270d1d21afa652.png",
+        "type" : "image/png",
+        "size" : 9025
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "63e3e3605db743ae",
+      "name" : "stdout",
+      "source" : "63e3e3605db743ae.txt",
+      "type" : "text/plain",
+      "size" : 36
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 13,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "d275e21e4f518597",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/d275e21e4f518597",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652839215333,
+          "stop" : 1652839221726,
+          "duration" : 6393
+        }
+      }, {
+        "uid" : "2db2ca95de12300d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/2db2ca95de12300d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652762422819,
+          "stop" : 1652762429351,
+          "duration" : 6532
+        }
+      }, {
+        "uid" : "db071d52f3062d65",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/db071d52f3062d65",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157737295,
+          "stop" : 1652157743743,
+          "duration" : 6448
+        }
+      }, {
+        "uid" : "493bfbed3ee031a9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/493bfbed3ee031a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893357144,
+          "stop" : 1651893363521,
+          "duration" : 6377
+        }
+      }, {
+        "uid" : "627174e48505e959",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/627174e48505e959",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825718680,
+          "stop" : 1651825725168,
+          "duration" : 6488
+        }
+      }, {
+        "uid" : "4ce8fb4c00063893",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/4ce8fb4c00063893",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822424934,
+          "stop" : 1651822437907,
+          "duration" : 12973
+        }
+      }, {
+        "uid" : "9016e7bb42c6c88e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/9016e7bb42c6c88e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818326284,
+          "stop" : 1651818332778,
+          "duration" : 6494
+        }
+      }, {
+        "uid" : "8549e13119ceb45",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/8549e13119ceb45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810962360,
+          "stop" : 1651810968739,
+          "duration" : 6379
+        }
+      }, {
+        "uid" : "64eb46cca0dcfae6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/64eb46cca0dcfae6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738719274,
+          "stop" : 1651738725736,
+          "duration" : 6462
+        }
+      }, {
+        "uid" : "6951106ed8a2f44",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/6951106ed8a2f44",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220866099,
+          "stop" : 1651220876577,
+          "duration" : 10478
+        }
+      }, {
+        "uid" : "7f4545d9d34f6092",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/7f4545d9d34f6092",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201814555,
+          "stop" : 1651201821013,
+          "duration" : 6458
+        }
+      }, {
+        "uid" : "72bfb4cd67e046c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/72bfb4cd67e046c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196251247,
+          "stop" : 1651196263665,
+          "duration" : 12418
+        }
+      }, {
+        "uid" : "9cae52fd7f32f910",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/9cae52fd7f32f910",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651053077613,
+          "stop" : 1651053082979,
+          "duration" : 5366
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "69c4a3bb08d276d1.json",
+  "parameterValues" : [ "{'case_no': '84', 'casename': '点击订单中的商品名称跳转商品详情成功', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+}

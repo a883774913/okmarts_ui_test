@@ -1,0 +1,249 @@
+{
+  "uid" : "1e655ee85506c5a0",
+  "name" : "点击ALL Choices 所有商品被勾选，点击删除删除成功",
+  "fullName" : "test_main.Test_Main#test_shop_car",
+  "historyId" : "9af746afb90cfd013145b57002e76f4b",
+  "time" : {
+    "start" : 1652861390818,
+    "stop" : 1652861418780,
+    "duration" : 27962
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cfdaabbf36c8726d",
+      "name" : "stdout",
+      "source" : "cfdaabbf36c8726d.txt",
+      "type" : "text/plain",
+      "size" : 95
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "购物车"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '111', 'casename': '点击ALL Choices 所有商品被勾选，点击删除删除成功', 'mode': '购物车', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "a5fc16375738ca19",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/a5fc16375738ca19",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838232369,
+          "stop" : 1652838260481,
+          "duration" : 28112
+        }
+      }, {
+        "uid" : "c2bb2ad275fc0c04",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/c2bb2ad275fc0c04",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761599334,
+          "stop" : 1652761628048,
+          "duration" : 28714
+        }
+      }, {
+        "uid" : "d5d8461e17ba01be",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/d5d8461e17ba01be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158162571,
+          "stop" : 1652158190116,
+          "duration" : 27545
+        }
+      }, {
+        "uid" : "46bbb52c26cfc15c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/46bbb52c26cfc15c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00E17413+2389011]\n\tOrdinal0 [0x00DA9F61+1941345]\n\tOrdinal0 [0x00C9C658+837208]\n\tOrdinal0 [0x00CC91DD+1020381]\n\tOrdinal0 [0x00CC949B+1021083]\n\tOrdinal0 [0x00CF6032+1204274]\n\tOrdinal0 [0x00CE4194+1130900]\n\tOrdinal0 [0x00CF4302+1196802]\n\tOrdinal0 [0x00CE3F66+1130342]\n\tOrdinal0 [0x00CBE546+976198]\n\tOrdinal0 [0x00CBF456+980054]\n\tGetHandleVerifier [0x00FC9632+1727522]\n\tGetHandleVerifier [0x0107BA4D+2457661]\n\tGetHandleVerifier [0x00EAEB81+569713]\n\tGetHandleVerifier [0x00EADD76+566118]\n\tOrdinal0 [0x00DB0B2B+1968939]\n\tOrdinal0 [0x00DB5988+1989000]\n\tOrdinal0 [0x00DB5A75+1989237]\n\tOrdinal0 [0x00DBECB1+2026673]\n\tBaseThreadInitThunk [0x766B6739+25]\n\tRtlGetFullPathName_UEx [0x77C88E7F+1215]\n\tRtlGetFullPathName_UEx [0x77C88E4D+1165]",
+        "time" : {
+          "start" : 1651893885220,
+          "stop" : 1651893915389,
+          "duration" : 30169
+        }
+      }, {
+        "uid" : "bfd2281566298da2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/bfd2281566298da2",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651826305270,
+          "stop" : 1651826336040,
+          "duration" : 30770
+        }
+      }, {
+        "uid" : "dfa77d3d354b990d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/dfa77d3d354b990d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[1]\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651823007600,
+          "stop" : 1651823038045,
+          "duration" : 30445
+        }
+      }, {
+        "uid" : "1c8f5c8978acbd0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/1c8f5c8978acbd0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818924932,
+          "stop" : 1651818953551,
+          "duration" : 28619
+        }
+      }, {
+        "uid" : "774e8df94e1c7a87",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/774e8df94e1c7a87",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811924796,
+          "stop" : 1651811952196,
+          "duration" : 27400
+        }
+      }, {
+        "uid" : "3db6d50a077e7a08",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/3db6d50a077e7a08",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651739693221,
+          "stop" : 1651739721144,
+          "duration" : 27923
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1e655ee85506c5a0.json",
+  "parameterValues" : [ "{'case_no': '111', 'casename': '点击ALL Choices 所有商品被勾选，点击删除删除成功', 'mode': '购物车', 'data': '', 'assert_way': 'xpath=//*[@id=\"app\"]/div/div/div[2]/div[1]/a', 'result': 'The shopping cart is still empty for the time being, go pick a few items right away'}" ]
+}

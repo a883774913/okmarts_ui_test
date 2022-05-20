@@ -1,0 +1,275 @@
+{
+  "uid" : "270e053508a173",
+  "name" : "输入正确信息修改成功",
+  "fullName" : "test_main.Test_Main#test_personal_center",
+  "historyId" : "80112ea5162061c5593fa62c4f7de2b8",
+  "time" : {
+    "start" : 1652861241276,
+    "stop" : 1652861255942,
+    "duration" : 14666
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e4d6f6ad162215f",
+      "name" : "stdout",
+      "source" : "5e4d6f6ad162215f.txt",
+      "type" : "text/plain",
+      "size" : 113
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "个人资料修改"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '99', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=1\\nlast_name=1\\nsex=0\\ntime=today\\ncompany=12345公司', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "90d63327574e39ce",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/90d63327574e39ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838082095,
+          "stop" : 1652838096547,
+          "duration" : 14452
+        }
+      }, {
+        "uid" : "71ce1452ce5c3b62",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/71ce1452ce5c3b62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761447888,
+          "stop" : 1652761462675,
+          "duration" : 14787
+        }
+      }, {
+        "uid" : "bbc7a02bb08bf5c5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/bbc7a02bb08bf5c5",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652158016378,
+          "stop" : 1652158031189,
+          "duration" : 14811
+        }
+      }, {
+        "uid" : "7ee0d5652c2f67e8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/7ee0d5652c2f67e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893730348,
+          "stop" : 1651893744944,
+          "duration" : 14596
+        }
+      }, {
+        "uid" : "a86f135b96f0e1ce",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/a86f135b96f0e1ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826147645,
+          "stop" : 1651826162762,
+          "duration" : 15117
+        }
+      }, {
+        "uid" : "ac6745f6f74e728d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/ac6745f6f74e728d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822851887,
+          "stop" : 1651822866704,
+          "duration" : 14817
+        }
+      }, {
+        "uid" : "43ba5b582968d4ef",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/43ba5b582968d4ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818776523,
+          "stop" : 1651818791110,
+          "duration" : 14587
+        }
+      }, {
+        "uid" : "9e488e6a4a867531",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/9e488e6a4a867531",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811780331,
+          "stop" : 1651811795187,
+          "duration" : 14856
+        }
+      }, {
+        "uid" : "da84946a3218e3e4",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/da84946a3218e3e4",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651739544480,
+          "stop" : 1651739559722,
+          "duration" : 15242
+        }
+      }, {
+        "uid" : "232b8f4808a11407",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/232b8f4808a11407",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651221909630,
+          "stop" : 1651221936165,
+          "duration" : 26535
+        }
+      }, {
+        "uid" : "f772da1b3acb86fb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/f772da1b3acb86fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651202733621,
+          "stop" : 1651202745215,
+          "duration" : 11594
+        }
+      }, {
+        "uid" : "fd59aef2abfcf5cd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/fd59aef2abfcf5cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196701896,
+          "stop" : 1651196719782,
+          "duration" : 17886
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "270e053508a173.json",
+  "parameterValues" : [ "{'case_no': '99', 'casename': '输入正确信息修改成功', 'mode': '个人信息修改', 'data': 'first_name=1\\nlast_name=1\\nsex=0\\ntime=today\\ncompany=12345公司', 'assert_way': 'css selector=body > div.ant-message > span > div > div > div > span', 'result': 'Success!'}" ]
+}

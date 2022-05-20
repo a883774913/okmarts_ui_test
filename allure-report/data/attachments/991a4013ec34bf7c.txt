@@ -1,0 +1,7 @@
+通道4
+55
+类型名称为Power Supply
+1524951694703755266
+[{'name': 'Bristol Compressor H73A463DBEA'}, {'name': 'Bristol Compressor H73A623DBEA'}, {'name': 'GMCC Compressor DA108X1C-23EZ'}, {'name': 'jiaxipera Compressor NX1120Y'}, {'name': 'COMAIR ROTRON Fan MTD24R0X-E2'}, {'name': 'Ebmpapst Fan K2S165-AA77-15'}, {'name': 'Nidec Fan E35427-55MIC13'}, {'name': 'ROYAL Fan T230P99H'}, {'name': 'Sanyo Denki Fan 109P0405H702'}, {'name': 'Sanyo Denki Fan 109R1224H101'}, {'name': 'Shengkwei FAN SK109AP-22-1'}, {'name': 'SULLAIR Fan 88290008-188'}, {'name': 'Y.S.TECH Fan PD1270153B-2F'}, {'name': 'COPAL Electric Motor N20'}, {'name': 'CPG Electric Motor CH1500-(15-30)S'}, {'name': 'DKM Electric Motor 9BDGK-200FP'}, {'name': 'Karcher Electric Motor DS5800'}, {'name': 'LENZE Electric Motor G50AB5045MHAR2C'}, {'name': 'LEXY Electric Motor YJ-545S-P003'}, {'name': 'Nidec Electric Motor 20N709N050'}, {'name': 'SANYO Electric Motor 106-6004-1'}, {'name': 'SITI Electric Motor FC56B4 0.09KW'}]
+输入的内容为Nidec Fan E35427-55MIC13
+搜索的结果为[]

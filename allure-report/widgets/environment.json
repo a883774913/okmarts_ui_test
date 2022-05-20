@@ -1,1 +1,37 @@
-[ ]
+[ {
+  "values" : [ "Winods 11" ],
+  "name" : "system"
+}, {
+  "values" : [ "2.332.2" ],
+  "name" : "jenkinsVsersion"
+}, {
+  "values" : [ "1.8.0_131" ],
+  "name" : "javaVersion"
+}, {
+  "values" : [ "3.9.10" ],
+  "name" : "pythonVersion"
+}, {
+  "values" : [ "6.2.5" ],
+  "name" : "pytestversion"
+}, {
+  "values" : [ "2.17.2" ],
+  "name" : "allureVersion"
+}, {
+  "values" : [ "1.11.0" ],
+  "name" : "pyVersion"
+}, {
+  "values" : [ "1.0.0" ],
+  "name" : "pluggyVersion"
+}, {
+  "values" : [ "PyCharm 2021.2.1 (Professional Edition)" ],
+  "name" : "pycharmVersion"
+}, {
+  "values" : [ "Microsoft Chrome" ],
+  "name" : "Browser"
+}, {
+  "values" : [ "C:/Users/admin/PycharmProjects/pythonProject/okmarts_ui_test" ],
+  "name" : "rootdir"
+}, {
+  "values" : [ "allure-pytest-2.9.45" ],
+  "name" : "plugins"
+} ]

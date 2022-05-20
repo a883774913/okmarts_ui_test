@@ -1,0 +1,270 @@
+{
+  "uid" : "b1e3eb9796430709",
+  "name" : "已签到状态签到失败",
+  "fullName" : "test_main.Test_Main#test_sign",
+  "historyId" : "197d8dc1fe543d1c5f82bf741d531971",
+  "time" : {
+    "start" : 1652861509359,
+    "stop" : 1652861517623,
+    "duration" : 8264
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DF14EE0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-cen...n.align-center.border-radius-sm > div.part-right > button', 'case_no': '123', 'casename': '已签到状态签到失败', 'data': '', ...}\n\n    @allure.feature('签到')\n    @pytest.mark.parametrize('Parameter', case_infos['sign'], ids=casename_infos['sign'])\n    def test_sign(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Sign().sign(driver, Parameter)\n\ntest_main.py:100: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.sign.Sign object at 0x0000013C3DE775B0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-cen...n.align-center.border-radius-sm > div.part-right > button', 'case_no': '123', 'casename': '已签到状态签到失败', 'data': '', ...}\n\n    def sign(self,driver,Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(1)\n        if casename == '未登录状态签到栏显示正确':\n            Common().Restore_environment(driver)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        elif casename == '已签到状态签到失败':\n    \n            Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')\n            try:\n                driver.find_element(by='class name', value='atn-btn-orange.ant-btn').click()  # 点击签到\n                time.sleep(1)\n            except :\n                pass\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n>           assert text == result\nE           AssertionError\n\n..\\mode\\sign.py:41: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DF14EE0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-cen...n.align-center.border-radius-sm > div.part-right > button', 'case_no': '123', 'casename': '已签到状态签到失败', 'data': '', ...}\n\n    @allure.feature('签到')\n    @pytest.mark.parametrize('Parameter', case_infos['sign'], ids=casename_infos['sign'])\n    def test_sign(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Sign().sign(driver, Parameter)\n\ntest_main.py:100: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.sign.Sign object at 0x0000013C3DE775B0>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-cen...n.align-center.border-radius-sm > div.part-right > button', 'case_no': '123', 'casename': '已签到状态签到失败', 'data': '', ...}\n\n    def sign(self,driver,Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        print(data)\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n    \n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(1)\n        if casename == '未登录状态签到栏显示正确':\n            Common().Restore_environment(driver)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n            assert text == result\n        elif casename == '已签到状态签到失败':\n    \n            Common().is_login(driver, useraccount='979172251@qq.com', password='a123456')\n            try:\n                driver.find_element(by='class name', value='atn-btn-orange.ant-btn').click()  # 点击签到\n                time.sleep(1)\n            except :\n                pass\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\",\n                                       value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(text)\n>           assert text == result\nE           AssertionError\n\n..\\mode\\sign.py:41: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652861517633,
+        "stop" : 1652861517843,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a85278b5f7601f06",
+        "name" : "失败截图",
+        "source" : "a85278b5f7601f06.png",
+        "type" : "image/png",
+        "size" : 461126
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "301a16fab02fe83",
+      "name" : "stdout",
+      "source" : "301a16fab02fe83.txt",
+      "type" : "text/plain",
+      "size" : 101
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "签到"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '123', 'casename': '已签到状态签到失败', 'mode': '签到', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-center.margin-bottom > div.sign-part.bg-white.flex.space-between.align-center.border-radius-sm > div.part-right > button', 'result': 'Sign in successfully'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "60cff1f3cf1b7887",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/60cff1f3cf1b7887",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00A27413+2389011]\n\tOrdinal0 [0x009B9F61+1941345]\n\tOrdinal0 [0x008AC658+837208]\n\tOrdinal0 [0x008D91DD+1020381]\n\tOrdinal0 [0x008D949B+1021083]\n\tOrdinal0 [0x00906032+1204274]\n\tOrdinal0 [0x008F4194+1130900]\n\tOrdinal0 [0x00904302+1196802]\n\tOrdinal0 [0x008F3F66+1130342]\n\tOrdinal0 [0x008CE546+976198]\n\tOrdinal0 [0x008CF456+980054]\n\tGetHandleVerifier [0x00BD9632+1727522]\n\tGetHandleVerifier [0x00C8BA4D+2457661]\n\tGetHandleVerifier [0x00ABEB81+569713]\n\tGetHandleVerifier [0x00ABDD76+566118]\n\tOrdinal0 [0x009C0B2B+1968939]\n\tOrdinal0 [0x009C5988+1989000]\n\tOrdinal0 [0x009C5A75+1989237]\n\tOrdinal0 [0x009CECB1+2026673]\n\tBaseThreadInitThunk [0x753A6739+25]\n\tRtlGetFullPathName_UEx [0x77058FEF+1215]\n\tRtlGetFullPathName_UEx [0x77058FBD+1165]",
+        "time" : {
+          "start" : 1652838350289,
+          "stop" : 1652838352853,
+          "duration" : 2564
+        }
+      }, {
+        "uid" : "9931203a2566e969",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/9931203a2566e969",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652761690598,
+          "stop" : 1652761697205,
+          "duration" : 6607
+        }
+      }, {
+        "uid" : "c56c33eff92b03e3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/c56c33eff92b03e3",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652158278283,
+          "stop" : 1652158284809,
+          "duration" : 6526
+        }
+      }, {
+        "uid" : "ff5edd49b030c1f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/ff5edd49b030c1f",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1651893996631,
+          "stop" : 1651894002491,
+          "duration" : 5860
+        }
+      }, {
+        "uid" : "3d283c832231704d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/3d283c832231704d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826414039,
+          "stop" : 1651826421340,
+          "duration" : 7301
+        }
+      }, {
+        "uid" : "43d3af8119857f73",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/43d3af8119857f73",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823120608,
+          "stop" : 1651823130151,
+          "duration" : 9543
+        }
+      }, {
+        "uid" : "8e3ed9f5441e4341",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/8e3ed9f5441e4341",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651819025057,
+          "stop" : 1651819028532,
+          "duration" : 3475
+        }
+      }, {
+        "uid" : "d64d8512e6f32f9c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/d64d8512e6f32f9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811999784,
+          "stop" : 1651812003295,
+          "duration" : 3511
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b1e3eb9796430709.json",
+  "parameterValues" : [ "{'case_no': '123', 'casename': '已签到状态签到失败', 'mode': '签到', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content > div.index-time.flex.space-between.align-center.margin-bottom > div.sign-part.bg-white.flex.space-between.align-center.border-radius-sm > div.part-right > button', 'result': 'Sign in successfully'}" ]
+}

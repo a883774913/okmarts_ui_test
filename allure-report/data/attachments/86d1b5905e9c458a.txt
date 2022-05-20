@@ -1,0 +1,14 @@
+
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-FE80BECCA2EB532EC29805B83454400C']
+class name
+text-tit-lg.flex.align-center
+Favorites
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-24758A4F5897B7777C0384C0D164D597']
+class name
+content.ant-empty
+The shopping cart is still empty for the time being, go pick a few items right away
+['CDwindow-8D82095ADDA2DB26CF10865E29BA2551', 'CDwindow-C8EB1C6BC1B4A2A4D6BA9880E105EBB3']
+class name
+text-tit-lg.flex
+Order record
+未登录，不执行任何操作

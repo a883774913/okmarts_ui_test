@@ -1,0 +1,327 @@
+{
+  "uid" : "821a7387488ca7d2",
+  "name" : "点击Full catalog进入所有类别页面",
+  "fullName" : "test_main.Test_Main#test_navigation_bar",
+  "historyId" : "b9f450094aa600c31cab8b27ad0b02a1",
+  "time" : {
+    "start" : 1652861067853,
+    "stop" : 1652861070347,
+    "duration" : 2494
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "212c5902b9158036",
+      "name" : "stdout",
+      "source" : "212c5902b9158036.txt",
+      "type" : "text/plain",
+      "size" : 9
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "导航栏"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '65', 'casename': '点击Full catalog进入所有类别页面', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.category-content > div.ant-breadcrumb > span:nth-child(1) > span.ant-breadcrumb-separator', 'result': '>'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "2d622221d3eacc32",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/2d622221d3eacc32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652837907004,
+          "stop" : 1652837909514,
+          "duration" : 2510
+        }
+      }, {
+        "uid" : "5fde9ca7cf452c6b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/5fde9ca7cf452c6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761259904,
+          "stop" : 1652761262454,
+          "duration" : 2550
+        }
+      }, {
+        "uid" : "36a0c7fdedc626fe",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/36a0c7fdedc626fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157554862,
+          "stop" : 1652157557393,
+          "duration" : 2531
+        }
+      }, {
+        "uid" : "74919dc43783ddd7",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/74919dc43783ddd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893171728,
+          "stop" : 1651893174290,
+          "duration" : 2562
+        }
+      }, {
+        "uid" : "e7977b587992fe0f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/e7977b587992fe0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825538071,
+          "stop" : 1651825540643,
+          "duration" : 2572
+        }
+      }, {
+        "uid" : "194d0e1bcd4e4429",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/194d0e1bcd4e4429",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822197582,
+          "stop" : 1651822200165,
+          "duration" : 2583
+        }
+      }, {
+        "uid" : "2b370483fd6f892f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/2b370483fd6f892f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818144327,
+          "stop" : 1651818146823,
+          "duration" : 2496
+        }
+      }, {
+        "uid" : "bb4cc8cf8f7e0e2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/bb4cc8cf8f7e0e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810779116,
+          "stop" : 1651810781899,
+          "duration" : 2783
+        }
+      }, {
+        "uid" : "6f69c64d881400b1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/6f69c64d881400b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738533772,
+          "stop" : 1651738536288,
+          "duration" : 2516
+        }
+      }, {
+        "uid" : "dae902a80354846f",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/dae902a80354846f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220564148,
+          "stop" : 1651220571657,
+          "duration" : 7509
+        }
+      }, {
+        "uid" : "72f4e9c7b776caa6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/72f4e9c7b776caa6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201634396,
+          "stop" : 1651201636929,
+          "duration" : 2533
+        }
+      }, {
+        "uid" : "aaa0e9cb61f26f4c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/aaa0e9cb61f26f4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196003016,
+          "stop" : 1651196008508,
+          "duration" : 5492
+        }
+      }, {
+        "uid" : "cf951ebf87086ee9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/cf951ebf87086ee9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052766663,
+          "stop" : 1651052769180,
+          "duration" : 2517
+        }
+      }, {
+        "uid" : "2436d501010e26",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/2436d501010e26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037960101,
+          "stop" : 1651037961631,
+          "duration" : 1530
+        }
+      }, {
+        "uid" : "17010f2aa493795",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/17010f2aa493795",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034086693,
+          "stop" : 1651034088266,
+          "duration" : 1573
+        }
+      }, {
+        "uid" : "a31f5b882448c3d1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/a31f5b882448c3d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023290452,
+          "stop" : 1651023292071,
+          "duration" : 1619
+        }
+      }, {
+        "uid" : "5bbc23ba28d4efea",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/5bbc23ba28d4efea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961485770,
+          "stop" : 1650961487546,
+          "duration" : 1776
+        }
+      }, {
+        "uid" : "8b3aa12a53eea40b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/8b3aa12a53eea40b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958073260,
+          "stop" : 1650958074884,
+          "duration" : 1624
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "821a7387488ca7d2.json",
+  "parameterValues" : [ "{'case_no': '65', 'casename': '点击Full catalog进入所有类别页面', 'mode': '导航栏', 'data': '', 'assert_way': 'css selector=#app > div > div.ui-container > div.content.category-content > div.ant-breadcrumb > span:nth-child(1) > span.ant-breadcrumb-separator', 'result': '>'}" ]
+}

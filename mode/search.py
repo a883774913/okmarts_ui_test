@@ -155,14 +155,17 @@ class Search:
             info = driver.find_elements(by='css selector', value='div[class="title text-black margin-bottom-xs "]')[0].text  # 获取第一个商品名称
             print(info)
             assert search_info in info  # 判断搜索内容是否在名称里
-            driver.find_elements(by='css selector', value='div[class="title text-black margin-bottom-xs "] > a ')[0].click()  # 点击商品名称 跳转到详情页面
-            time.sleep(2)
-            buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 判断是否在商品详情页面
-            print(f'buy_now为{buy_now}')
-            assert buy_now == 'Buy now'
-            goods_name = driver.find_element(by='class name', value='title.text-black.margin-bottom-sm').text  # 获取商品详情页面的商品名称
-            print(goods_name)
-            assert info == goods_name
+            try:
+                driver.find_elements(by='css selector', value='div[class="title text-black margin-bottom-xs "] > a ')[0].click()  # 点击商品名称 跳转到详情页面
+                time.sleep(2)
+                buy_now = driver.find_elements(by='class name', value='atn-btn-orange.ant-btn.ant-btn-block')[1].text  # 判断是否在商品详情页面
+                print(f'buy_now为{buy_now}')
+                assert buy_now == 'Buy now'
+                goods_name = driver.find_element(by='class name', value='title.text-black.margin-bottom-sm').text  # 获取商品详情页面的商品名称
+                print(goods_name)
+                assert info == goods_name
+            except:
+                assert False
         elif casename == '通过筛选器Brand筛选到商品成功':
             self.search_mode3(driver,data,mode=int(0))
         elif casename == '通过筛选器Types of筛选到商品成功':
@@ -294,10 +297,14 @@ class Search:
         self.input_search(data, driver)
         text,number = self.mode4(driver,mode)
         if number == '0':  # 如果数量为0
-            WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='class name', value='tableData-out.nodata.text-black'))
-            result = driver.find_element(by='class name', value='tableData-out.nodata.text-black').text
-            print(result)
-            assert result == 'The keywords you search are not included yet, try other keywords'
+            # WebDriverWait(driver,10,0.2).until(lambda x:x.find_element(by='class name', value='tableData-out.nodata.text-black'))
+            try:
+                time.sleep(3)
+                result = driver.find_element(by='class name', value='tableData-out.nodata.text-black').text
+                print(result)
+                assert result == 'The keywords you search are not included yet, try other keywords'
+            except:
+                assert False
         else:
             erro, n, number = self.get_number_n_erro(driver, 1)
             while number >= n:

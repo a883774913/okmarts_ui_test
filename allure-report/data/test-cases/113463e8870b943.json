@@ -1,0 +1,345 @@
+{
+  "uid" : "113463e8870b943",
+  "name" : "存在意见反馈模块",
+  "fullName" : "test_main.Test_Main#test_help_center",
+  "historyId" : "ec7bf68366a8dbc0f0b85b7c18ec1476",
+  "time" : {
+    "start" : 1652861025790,
+    "stop" : 1652861032092,
+    "duration" : 6302
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9c87374926c01c6a",
+      "name" : "stdout",
+      "source" : "9c87374926c01c6a.txt",
+      "type" : "text/plain",
+      "size" : 82
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "帮助中心"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '59', 'casename': '存在意见反馈模块', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > div.text-tit-lg.margin-bottom-xs', 'result': 'Site Message'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 21,
+        "unknown" : 0,
+        "total" : 21
+      },
+      "items" : [ {
+        "uid" : "c2a027df7b209ea0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/c2a027df7b209ea0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652837864890,
+          "stop" : 1652837870542,
+          "duration" : 5652
+        }
+      }, {
+        "uid" : "d8524eb52a508beb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/d8524eb52a508beb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652761218793,
+          "stop" : 1652761224362,
+          "duration" : 5569
+        }
+      }, {
+        "uid" : "da2d30843ec3898",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/da2d30843ec3898",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157513918,
+          "stop" : 1652157519359,
+          "duration" : 5441
+        }
+      }, {
+        "uid" : "5e8b5f12f564fd1e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/5e8b5f12f564fd1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893131589,
+          "stop" : 1651893136969,
+          "duration" : 5380
+        }
+      }, {
+        "uid" : "8836851923eefd",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/8836851923eefd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825497611,
+          "stop" : 1651825502860,
+          "duration" : 5249
+        }
+      }, {
+        "uid" : "bad2934d855c6e6a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/bad2934d855c6e6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822157686,
+          "stop" : 1651822162755,
+          "duration" : 5069
+        }
+      }, {
+        "uid" : "44dcf4931df445a2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/44dcf4931df445a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818104189,
+          "stop" : 1651818109361,
+          "duration" : 5172
+        }
+      }, {
+        "uid" : "c05fc5f6e33d003d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/c05fc5f6e33d003d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651810739575,
+          "stop" : 1651810744580,
+          "duration" : 5005
+        }
+      }, {
+        "uid" : "5166d0e2e2ae4440",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/5166d0e2e2ae4440",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738493553,
+          "stop" : 1651738498897,
+          "duration" : 5344
+        }
+      }, {
+        "uid" : "fd8d16c17b159428",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/fd8d16c17b159428",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220432503,
+          "stop" : 1651220440787,
+          "duration" : 8284
+        }
+      }, {
+        "uid" : "2d5f89d9a1750160",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/2d5f89d9a1750160",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201594432,
+          "stop" : 1651201599576,
+          "duration" : 5144
+        }
+      }, {
+        "uid" : "53c02fc4d9abc8f6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/53c02fc4d9abc8f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195941947,
+          "stop" : 1651195949243,
+          "duration" : 7296
+        }
+      }, {
+        "uid" : "b7b6c3c6eda19509",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/b7b6c3c6eda19509",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651052727152,
+          "stop" : 1651052732180,
+          "duration" : 5028
+        }
+      }, {
+        "uid" : "f07948069f8551da",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/f07948069f8551da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037923265,
+          "stop" : 1651037927321,
+          "duration" : 4056
+        }
+      }, {
+        "uid" : "c34a6270c74bb59",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/c34a6270c74bb59",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651034050035,
+          "stop" : 1651034054132,
+          "duration" : 4097
+        }
+      }, {
+        "uid" : "8db9068839c021aa",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/8db9068839c021aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651023262838,
+          "stop" : 1651023266906,
+          "duration" : 4068
+        }
+      }, {
+        "uid" : "f6b102e7ef02a3bb",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/f6b102e7ef02a3bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650961458336,
+          "stop" : 1650961462518,
+          "duration" : 4182
+        }
+      }, {
+        "uid" : "ae0364ab7464e5ac",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/ae0364ab7464e5ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650958045360,
+          "stop" : 1650958049497,
+          "duration" : 4137
+        }
+      }, {
+        "uid" : "2aead0590b77493c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/2aead0590b77493c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951985209,
+          "stop" : 1650951989305,
+          "duration" : 4096
+        }
+      }, {
+        "uid" : "8e0ce87e46a73cb0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/8e0ce87e46a73cb0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650936430898,
+          "stop" : 1650936434474,
+          "duration" : 3576
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "113463e8870b943.json",
+  "parameterValues" : [ "{'case_no': '59', 'casename': '存在意见反馈模块', 'mode': '帮助中心', 'data': '', 'assert_way': 'css selector=#app > div.page-myCenter.page-help.transparent-header.transparent > div.ui-container > div.content.page-help-content > div.site-message.clearfix > div.text-tit-lg.margin-bottom-xs', 'result': 'Site Message'}" ]
+}

@@ -1,0 +1,214 @@
+{
+  "uid" : "a8fe079d1444a601",
+  "name" : "随机选择一个类型模糊搜索成功",
+  "fullName" : "test_main.Test_Main#test_search",
+  "historyId" : "49b08071a36124020ed7c25732f373f9",
+  "time" : {
+    "start" : 1652861719173,
+    "stop" : 1652861726986,
+    "duration" : 7813
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DD25490>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'data': 'search_info=1', ...}\n\n    @allure.feature('搜索')\n    @pytest.mark.parametrize('Parameter', case_infos['search'], ids=casename_infos['search'])\n    def test_search(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Search().search(driver, Parameter)\n\ntest_main.py:112: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.search.Search object at 0x0000013C3DFC3160>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'data': 'search_info=1', ...}\n\n    def search(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(2)\n        if casename == '首页存在搜索栏':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\", value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text is bool(result)\n        elif casename == '不输入任何内容点击查询弹出错误提示':\n            print('通道2')\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/button').click()  # 点击搜索\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\", value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text为{text}')\n            assert text == result\n        elif casename == '随机选择一个类型模糊搜索成功':\n            print('通道3')\n            driver.find_element(by='class name', value='ant-select.ant-select-enabled').click()  # 点击类型\n            time.sleep(0.5)\n            elements = driver.find_elements(by='class name', value='ant-select-dropdown-menu-item')  # 获取搜索列表中的类型集合\n            print(len(elements))        #获取存在的类型数量\n            no = random.randint(1, len(elements) - 1)\n            driver.find_elements(by='css selector', value='li[class=\"ant-select-dropdown-menu-item\"]')[no].click()  # 点击随机获取的元素\n            typeone = driver.find_elements(by='css selector', value='li[class=\"ant-select-dropdown-menu-item\"]')[no].text  # 获取随机获取的文本\n            print(f'类型名称为{typeone}')\n            search_info = data.split('=', 1)[-1]\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/span/input').send_keys(search_info)  # 输入搜索内容\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/button').click()  # 点击搜索\n            time.sleep(2)\n            search_goods_infos = driver.find_elements(by='class name', value='title.text-black.margin-bottom-xs ')  # 获取名称集合\n            print(search_goods_infos)\n            sql = f\"SELECT id FROM goods_type WHERE typeone='{typeone}';\"\n            typeid = Mysql().search_info(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql)  # 获取类型ID\n            print(f'类型ID为{typeid[0][\"id\"]}')\n            sql2 = f\"select name from (SELECT * FROM goods WHERE typeid='{typeid[0]['id']}') b where name like '%{search_info}%';\"\n            goodsnames = Mysql().search_info(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql2)  # 获取商品名称集合\n            print(goodsnames)\n            print(len(goodsnames))\n            if not search_goods_infos:\n                print('未搜索出商品数据')\n>               assert len(goodsnames) == 0\nE               AssertionError\n\n..\\mode\\search.py:63: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_main.Test_Main object at 0x0000013C3DD25490>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'data': 'search_info=1', ...}\n\n    @allure.feature('搜索')\n    @pytest.mark.parametrize('Parameter', case_infos['search'], ids=casename_infos['search'])\n    def test_search(self, driver, Parameter):\n        allure.dynamic.title(Parameter['casename'])\n>       Search().search(driver, Parameter)\n\ntest_main.py:112: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <okmarts_ui_test.mode.search.Search object at 0x0000013C3DFC3160>\ndriver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"eeaae31250d5c4b4c8480299db4e3e21\")>\nParameter = {'assert_way': '', 'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'data': 'search_info=1', ...}\n\n    def search(self, driver, Parameter):\n        casename = Parameter['casename']\n        data = Parameter['data']\n        assert_way = Parameter['assert_way']\n        result = Parameter['result']\n        driver.get('http://18.118.13.94:81/index')  # 打开首页\n        WebDriverWait(driver, 20, 0.2).until(lambda x: x.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[3]/div[3]/span[1]'))\n        time.sleep(2)\n        if casename == '首页存在搜索栏':\n            print('通道1')\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\", value=f\"{assert_way.split('=', 1)[1]}\").is_displayed()\n            print(text)\n            assert text is bool(result)\n        elif casename == '不输入任何内容点击查询弹出错误提示':\n            print('通道2')\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/button').click()  # 点击搜索\n            time.sleep(2)\n            text = driver.find_element(by=f\"{assert_way.split('=', 1)[0]}\", value=f\"{assert_way.split('=', 1)[1]}\").text\n            print(f'text为{text}')\n            assert text == result\n        elif casename == '随机选择一个类型模糊搜索成功':\n            print('通道3')\n            driver.find_element(by='class name', value='ant-select.ant-select-enabled').click()  # 点击类型\n            time.sleep(0.5)\n            elements = driver.find_elements(by='class name', value='ant-select-dropdown-menu-item')  # 获取搜索列表中的类型集合\n            print(len(elements))        #获取存在的类型数量\n            no = random.randint(1, len(elements) - 1)\n            driver.find_elements(by='css selector', value='li[class=\"ant-select-dropdown-menu-item\"]')[no].click()  # 点击随机获取的元素\n            typeone = driver.find_elements(by='css selector', value='li[class=\"ant-select-dropdown-menu-item\"]')[no].text  # 获取随机获取的文本\n            print(f'类型名称为{typeone}')\n            search_info = data.split('=', 1)[-1]\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/span/input').send_keys(search_info)  # 输入搜索内容\n            driver.find_element(by='xpath', value='//*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/span/button').click()  # 点击搜索\n            time.sleep(2)\n            search_goods_infos = driver.find_elements(by='class name', value='title.text-black.margin-bottom-xs ')  # 获取名称集合\n            print(search_goods_infos)\n            sql = f\"SELECT id FROM goods_type WHERE typeone='{typeone}';\"\n            typeid = Mysql().search_info(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql)  # 获取类型ID\n            print(f'类型ID为{typeid[0][\"id\"]}')\n            sql2 = f\"select name from (SELECT * FROM goods WHERE typeid='{typeid[0]['id']}') b where name like '%{search_info}%';\"\n            goodsnames = Mysql().search_info(user='root', pwd='OKmarts888.,', host='18.118.13.94', db='okmarts', port=3306, sql=sql2)  # 获取商品名称集合\n            print(goodsnames)\n            print(len(goodsnames))\n            if not search_goods_infos:\n                print('未搜索出商品数据')\n>               assert len(goodsnames) == 0\nE               AssertionError\n\n..\\mode\\search.py:63: AssertionError",
+    "steps" : [ {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1652861727003,
+        "stop" : 1652861727266,
+        "duration" : 263
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b58b2487648fba3a",
+        "name" : "失败截图",
+        "source" : "b58b2487648fba3a.png",
+        "type" : "image/png",
+        "size" : 60095
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "891555fb7a8e65dd",
+      "name" : "stdout",
+      "source" : "891555fb7a8e65dd.txt",
+      "type" : "text/plain",
+      "size" : 1644
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "搜索"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'mode': '搜索', 'data': 'search_info=1', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "5134d420b6619147",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/5134d420b6619147",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652838559505,
+          "stop" : 1652838567412,
+          "duration" : 7907
+        }
+      }, {
+        "uid" : "27700f292ed0768c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/27700f292ed0768c",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652761899357,
+          "stop" : 1652761907161,
+          "duration" : 7804
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a8fe079d1444a601.json",
+  "parameterValues" : [ "{'case_no': '144', 'casename': '随机选择一个类型模糊搜索成功', 'mode': '搜索', 'data': 'search_info=1', 'assert_way': '', 'result': ''}" ]
+}

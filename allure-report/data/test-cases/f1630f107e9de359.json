@@ -1,0 +1,239 @@
+{
+  "uid" : "f1630f107e9de359",
+  "name" : "点击Category recommendation 广告位正确跳转",
+  "fullName" : "test_main.Test_Main#test_banner",
+  "historyId" : "03019b1d1df0721de2969bbabcf6c15b",
+  "time" : {
+    "start" : 1652861459133,
+    "stop" : 1652861481413,
+    "duration" : 22280
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "86d1b5905e9c458a",
+      "name" : "stdout",
+      "source" : "86d1b5905e9c458a.txt",
+      "type" : "text/plain",
+      "size" : 513
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "广告位"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '117', 'casename': '点击Category recommendation 广告位正确跳转', 'mode': '广告位', 'data': '', 'assert_way': '[\"class name=text-tit-lg.flex.align-center\",\"class name=content.ant-empty\",\"class name=text-tit-lg.flex\"]', 'result': '[\"Favorites\",\"The shopping cart is still empty for the time being, go pick a few items right away\",\"Order record\"]'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "5e5b92e5b69a5f53",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/5e5b92e5b69a5f53",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652838300587,
+          "stop" : 1652838322984,
+          "duration" : 22397
+        }
+      }, {
+        "uid" : "19072d89428efb0b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/19072d89428efb0b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".title.text-black.margin-bottom-sm\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x00DE7413+2389011]\n\tOrdinal0 [0x00D79F61+1941345]\n\tOrdinal0 [0x00C6C658+837208]\n\tOrdinal0 [0x00C991DD+1020381]\n\tOrdinal0 [0x00C9949B+1021083]\n\tOrdinal0 [0x00CC6032+1204274]\n\tOrdinal0 [0x00CB4194+1130900]\n\tOrdinal0 [0x00CC4302+1196802]\n\tOrdinal0 [0x00CB3F66+1130342]\n\tOrdinal0 [0x00C8E546+976198]\n\tOrdinal0 [0x00C8F456+980054]\n\tGetHandleVerifier [0x00F99632+1727522]\n\tGetHandleVerifier [0x0104BA4D+2457661]\n\tGetHandleVerifier [0x00E7EB81+569713]\n\tGetHandleVerifier [0x00E7DD76+566118]\n\tOrdinal0 [0x00D80B2B+1968939]\n\tOrdinal0 [0x00D85988+1989000]\n\tOrdinal0 [0x00D85A75+1989237]\n\tOrdinal0 [0x00D8ECB1+2026673]\n\tBaseThreadInitThunk [0x76486739+25]\n\tRtlGetFullPathName_UEx [0x77928FEF+1215]\n\tRtlGetFullPathName_UEx [0x77928FBD+1165]",
+        "time" : {
+          "start" : 1652761656774,
+          "stop" : 1652761665328,
+          "duration" : 8554
+        }
+      }, {
+        "uid" : "9c598726a893a8a0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/9c598726a893a8a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652158230314,
+          "stop" : 1652158252737,
+          "duration" : 22423
+        }
+      }, {
+        "uid" : "2538854b85986578",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/2538854b85986578",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893953016,
+          "stop" : 1651893974953,
+          "duration" : 21937
+        }
+      }, {
+        "uid" : "cf6063f1e2b55f50",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/cf6063f1e2b55f50",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651826374310,
+          "stop" : 1651826396441,
+          "duration" : 22131
+        }
+      }, {
+        "uid" : "f6ac010cd9001752",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/f6ac010cd9001752",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823076703,
+          "stop" : 1651823098778,
+          "duration" : 22075
+        }
+      }, {
+        "uid" : "577cc02ec333ba4c",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/577cc02ec333ba4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818987651,
+          "stop" : 1651819009551,
+          "duration" : 21900
+        }
+      }, {
+        "uid" : "d937ee67a4a9a9a6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/d937ee67a4a9a9a6",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".item-left\"}\n  (Session info: chrome=100.0.4896.127)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x01227413+2389011]\n\tOrdinal0 [0x011B9F61+1941345]\n\tOrdinal0 [0x010AC658+837208]\n\tOrdinal0 [0x010D91DD+1020381]\n\tOrdinal0 [0x010D949B+1021083]\n\tOrdinal0 [0x01106032+1204274]\n\tOrdinal0 [0x010F4194+1130900]\n\tOrdinal0 [0x01104302+1196802]\n\tOrdinal0 [0x010F3F66+1130342]\n\tOrdinal0 [0x010CE546+976198]\n\tOrdinal0 [0x010CF456+980054]\n\tGetHandleVerifier [0x013D9632+1727522]\n\tGetHandleVerifier [0x0148BA4D+2457661]\n\tGetHandleVerifier [0x012BEB81+569713]\n\tGetHandleVerifier [0x012BDD76+566118]\n\tOrdinal0 [0x011C0B2B+1968939]\n\tOrdinal0 [0x011C5988+1989000]\n\tOrdinal0 [0x011C5A75+1989237]\n\tOrdinal0 [0x011CECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651811982150,
+          "stop" : 1651811983850,
+          "duration" : 1700
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f1630f107e9de359.json",
+  "parameterValues" : [ "{'case_no': '117', 'casename': '点击Category recommendation 广告位正确跳转', 'mode': '广告位', 'data': '', 'assert_way': '[\"class name=text-tit-lg.flex.align-center\",\"class name=content.ant-empty\",\"class name=text-tit-lg.flex\"]', 'result': '[\"Favorites\",\"The shopping cart is still empty for the time being, go pick a few items right away\",\"Order record\"]'}" ]
+}

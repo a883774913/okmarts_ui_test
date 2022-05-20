@@ -1,0 +1,347 @@
+{
+  "uid" : "5452a29124c25228",
+  "name" : "使用过期验证码验证失败",
+  "fullName" : "test_main.Test_Main#test_regist",
+  "historyId" : "bd466ecba8567bea303211a5e7e4c51e",
+  "time" : {
+    "start" : 1652859158221,
+    "stop" : 1652859178694,
+    "duration" : 20473
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9ae56771c4bcf293",
+      "name" : "stdout",
+      "source" : "9ae56771c4bcf293.txt",
+      "type" : "text/plain",
+      "size" : 127
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "注册"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '12', 'casename': '使用过期验证码验证失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 11,
+        "skipped" : 0,
+        "passed" : 37,
+        "unknown" : 0,
+        "total" : 48
+      },
+      "items" : [ {
+        "uid" : "268f645f4c50a7a8",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/268f645f4c50a7a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652835570082,
+          "stop" : 1652835591599,
+          "duration" : 21517
+        }
+      }, {
+        "uid" : "ad99fd409db5d9ca",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/ad99fd409db5d9ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652758679803,
+          "stop" : 1652758703639,
+          "duration" : 23836
+        }
+      }, {
+        "uid" : "d532345deee9baae",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/61/allure/#testresult/d532345deee9baae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652258722745,
+          "stop" : 1652258743520,
+          "duration" : 20775
+        }
+      }, {
+        "uid" : "81343ab076688bab",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/81343ab076688bab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652155362088,
+          "stop" : 1652155383092,
+          "duration" : 21004
+        }
+      }, {
+        "uid" : "1818aec4d1c02243",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/1818aec4d1c02243",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651891414569,
+          "stop" : 1651891437137,
+          "duration" : 22568
+        }
+      }, {
+        "uid" : "9b38766b1f663d82",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/9b38766b1f663d82",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651823761889,
+          "stop" : 1651823786103,
+          "duration" : 24214
+        }
+      }, {
+        "uid" : "4d9335253fb8129",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/4d9335253fb8129",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651820456062,
+          "stop" : 1651820478923,
+          "duration" : 22861
+        }
+      }, {
+        "uid" : "d0f979021335602d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/d0f979021335602d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651816440099,
+          "stop" : 1651816461359,
+          "duration" : 21260
+        }
+      }, {
+        "uid" : "188e51fe99532ba",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/188e51fe99532ba",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF69B441922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF69B37E982+515794]\n\tOrdinal0 [0x00007FF69AE90BC5+658373]\n\tOrdinal0 [0x00007FF69AEBB5E0+832992]\n\tOrdinal0 [0x00007FF69AEB6B7E+813950]\n\tOrdinal0 [0x00007FF69AEB24EE+795886]\n\tOrdinal0 [0x00007FF69AEEC366+1033062]\n\tOrdinal0 [0x00007FF69AEE6A53+1010259]\n\tOrdinal0 [0x00007FF69AEBDB47+842567]\n\tOrdinal0 [0x00007FF69AEBF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF69B04F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF69B139389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF69B13C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF69AF8C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF69B385971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF69B38A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF69B38AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF69B3948BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651809733643,
+          "stop" : 1651809740915,
+          "duration" : 7272
+        }
+      }, {
+        "uid" : "dba3d0458955300",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/dba3d0458955300",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\n\tOrdinal0 [0x00007FF68F8A0BC5+658373]\n\tOrdinal0 [0x00007FF68F8CB5E0+832992]\n\tOrdinal0 [0x00007FF68F8C6B7E+813950]\n\tOrdinal0 [0x00007FF68F8C24EE+795886]\n\tOrdinal0 [0x00007FF68F8FC366+1033062]\n\tOrdinal0 [0x00007FF68F8F6A53+1010259]\n\tOrdinal0 [0x00007FF68F8CDB47+842567]\n\tOrdinal0 [0x00007FF68F8CF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651737531698,
+          "stop" : 1651737539005,
+          "duration" : 7307
+        }
+      }, {
+        "uid" : "c8d01f1396038f1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/c8d01f1396038f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651218574042,
+          "stop" : 1651218597521,
+          "duration" : 23479
+        }
+      }, {
+        "uid" : "561cafd52cd59e6a",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/561cafd52cd59e6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651199919725,
+          "stop" : 1651199942556,
+          "duration" : 22831
+        }
+      }, {
+        "uid" : "65c359d7c5449701",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/65c359d7c5449701",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651194001240,
+          "stop" : 1651194024299,
+          "duration" : 23059
+        }
+      }, {
+        "uid" : "156fd73969912e78",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/156fd73969912e78",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651050994061,
+          "stop" : 1651051016881,
+          "duration" : 22820
+        }
+      }, {
+        "uid" : "c10a0614f50b8b21",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/c10a0614f50b8b21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651036265367,
+          "stop" : 1651036291061,
+          "duration" : 25694
+        }
+      }, {
+        "uid" : "9921571a4a7f59f9",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/9921571a4a7f59f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651032462213,
+          "stop" : 1651032483813,
+          "duration" : 21600
+        }
+      }, {
+        "uid" : "b6cbb9f946d6b3b6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/b6cbb9f946d6b3b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651021228722,
+          "stop" : 1651021250143,
+          "duration" : 21421
+        }
+      }, {
+        "uid" : "bca12f0825772973",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/bca12f0825772973",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650959613067,
+          "stop" : 1650959635559,
+          "duration" : 22492
+        }
+      }, {
+        "uid" : "34da9390a5e809ed",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/34da9390a5e809ed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650956229166,
+          "stop" : 1650956253509,
+          "duration" : 24343
+        }
+      }, {
+        "uid" : "7d3eb43598097de2",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/7d3eb43598097de2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650950475800,
+          "stop" : 1650950499372,
+          "duration" : 23572
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5452a29124c25228.json",
+  "parameterValues" : [ "{'case_no': '12', 'casename': '使用过期验证码验证失败', 'mode': '注册', 'data': 'useraccount=a883774917@163.com', 'assert_way': 'xpath=/html/body/div[3]/span/div/div/div/span', 'result': 'Verification code error！'}" ]
+}

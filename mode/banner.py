@@ -20,12 +20,14 @@ class Banner:
         time.sleep(2)
         if casename == '点击广告位图片页面跳转到相关页面':
             result = eval(result)
+            assert_way = eval(assert_way)
             print(result)
-            self.banner_mode1(driver, assert_way, result[0], number=1)
+            print(assert_way)
+            self.banner_mode1(driver, assert_way[0], result[0], number=1)
             time.sleep(0.5)
-            self.banner_mode1(driver, assert_way, result[1], number=2)
+            self.banner_mode1(driver, assert_way[1], result[1], number=2)
             time.sleep(0.5)
-            self.banner_mode1(driver, assert_way, result[2], number=3)
+            self.banner_mode1(driver, assert_way[2], result[2], number=3)
         if casename == '首页广告位点击页数可以跳转到指定广告位页面':
             self.banner_mode2(driver, n=1, result=result)
             time.sleep(0.5)
@@ -58,11 +60,12 @@ class Banner:
         elif casename == '点击Category recommendation 广告位正确跳转':
             Common().huadong(driver, by='class name', value='item-left')
             result = eval(result)
-            self.banner_mode4(driver, 1, assert_way, result[0])
+            assert_way = eval(assert_way)
+            self.banner_mode4(driver, 1, assert_way[0], result[0])
             time.sleep(0.5)
-            self.banner_mode4(driver, 2, assert_way, result[1])
+            self.banner_mode4(driver, 2, assert_way[1], result[1])
             time.sleep(0.5)
-            self.banner_mode4(driver, 3, assert_way, result[2])
+            self.banner_mode4(driver, 3, assert_way[2], result[2])
         Common().Restore_environment(driver)
 
     def banner_mode1(self, driver, assert_way, result, number):
@@ -124,8 +127,11 @@ class Banner:
         print(toHandle)
         driver.switch_to.window(toHandle[1])
         time.sleep(2)
+        print(assert_way.split('=', 1)[0])
+        print(assert_way.split('=', 1)[1])
         text = driver.find_element(by=f"{assert_way.split('=', 1)[0]}",
                                    value=f"{assert_way.split('=', 1)[1]}").text
+
         print(text)
         assert text == result
         driver.close()  # 关闭页面

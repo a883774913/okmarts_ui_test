@@ -1,0 +1,282 @@
+{
+  "uid" : "e266a8482d7436e3",
+  "name" : "点击Total price可以根据订单金额进行排序",
+  "fullName" : "test_main.Test_Main#test_my_order",
+  "historyId" : "94420c606ab73c91fa88f50ae69a9087",
+  "time" : {
+    "start" : 1652862311427,
+    "stop" : 1652862318828,
+    "duration" : 7401
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "784276b44796b130",
+      "name" : "stdout",
+      "source" : "784276b44796b130.txt",
+      "type" : "text/plain",
+      "size" : 74
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "订单管理"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '88', 'casename': '点击Total price可以根据订单金额进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 14,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "1286f32784cca0c6",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/1286f32784cca0c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652839244093,
+          "stop" : 1652839251604,
+          "duration" : 7511
+        }
+      }, {
+        "uid" : "5db75dd874492616",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/5db75dd874492616",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652762507247,
+          "stop" : 1652762514835,
+          "duration" : 7588
+        }
+      }, {
+        "uid" : "c2d0afa48f944865",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/c2d0afa48f944865",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652157847981,
+          "stop" : 1652157855579,
+          "duration" : 7598
+        }
+      }, {
+        "uid" : "241eead615dd2b8e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/241eead615dd2b8e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651893467812,
+          "stop" : 1651893475322,
+          "duration" : 7510
+        }
+      }, {
+        "uid" : "ce4fbca62b40ea05",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/ce4fbca62b40ea05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651825831177,
+          "stop" : 1651825838890,
+          "duration" : 7713
+        }
+      }, {
+        "uid" : "1ceea1cc71f53f85",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/1ceea1cc71f53f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651822556412,
+          "stop" : 1651822570219,
+          "duration" : 13807
+        }
+      }, {
+        "uid" : "3ef735774779736d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/3ef735774779736d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651818437788,
+          "stop" : 1651818445369,
+          "duration" : 7581
+        }
+      }, {
+        "uid" : "183ce0196ad55ea3",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/183ce0196ad55ea3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651811072784,
+          "stop" : 1651811080243,
+          "duration" : 7459
+        }
+      }, {
+        "uid" : "9f557210a0b247a1",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/9f557210a0b247a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651738830592,
+          "stop" : 1651738838228,
+          "duration" : 7636
+        }
+      }, {
+        "uid" : "f07bf226f9c3a690",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/f07bf226f9c3a690",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651220920348,
+          "stop" : 1651220934125,
+          "duration" : 13777
+        }
+      }, {
+        "uid" : "8b57f8dfeb23bfbf",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/8b57f8dfeb23bfbf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651201840175,
+          "stop" : 1651201847665,
+          "duration" : 7490
+        }
+      }, {
+        "uid" : "58b2dfd1ec7856c0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/58b2dfd1ec7856c0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651196292294,
+          "stop" : 1651196302809,
+          "duration" : 10515
+        }
+      }, {
+        "uid" : "2611b8cab18aa0db",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/2611b8cab18aa0db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651053100750,
+          "stop" : 1651053107380,
+          "duration" : 6630
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e266a8482d7436e3.json",
+  "parameterValues" : [ "{'case_no': '88', 'casename': '点击Total price可以根据订单金额进行排序', 'mode': '订单管理', 'data': '', 'assert_way': '', 'result': ''}" ]
+}

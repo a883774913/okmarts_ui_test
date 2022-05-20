@@ -1,0 +1,350 @@
+{
+  "uid" : "16e26cd3c0fbdf0b",
+  "name" : "输入正确内容修改密码成功",
+  "fullName" : "test_main.Test_Main#test_forget_password",
+  "historyId" : "6cea32d0b9e44b91967a1ba548f4b58e",
+  "time" : {
+    "start" : 1652860355630,
+    "stop" : 1652860414574,
+    "duration" : 58944
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : true,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1652859099152,
+      "stop" : 1652859099326,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1652859099326,
+      "stop" : 1652859100848,
+      "duration" : 1522
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1652859100848,
+      "stop" : 1652859100848,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "898ee3d48a957962",
+      "name" : "stdout",
+      "source" : "898ee3d48a957962.txt",
+      "type" : "text/plain",
+      "size" : 844
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1652862568814,
+      "stop" : 1652862569249,
+      "duration" : 435
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1652862569253,
+      "stop" : 1652862569253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "忘记密码"
+  }, {
+    "name" : "suite",
+    "value" : "test_main"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-NB3FDE0"
+  }, {
+    "name" : "thread",
+    "value" : "23480-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Parameter",
+    "value" : "{'case_no': '35', 'casename': '输入正确内容修改密码成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 5,
+        "skipped" : 0,
+        "passed" : 20,
+        "unknown" : 0,
+        "total" : 26
+      },
+      "items" : [ {
+        "uid" : "45d5df751eabf752",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/63/allure/#testresult/45d5df751eabf752",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"_mail_component_147_147\"]\"}\n  (Session info: MicrosoftEdge=101.0.1210.47)\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF64775CBB2+24658]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF64769D2A2+539938]\n\tOrdinal0 [0x00007FF6471A0F05+659205]\n\tOrdinal0 [0x00007FF6471DC1F1+901617]\n\tOrdinal0 [0x00007FF6471DC403+902147]\n\tOrdinal0 [0x00007FF64720E397+1106839]\n\tOrdinal0 [0x00007FF6471F76DF+1013471]\n\tOrdinal0 [0x00007FF64720B9E7+1096167]\n\tOrdinal0 [0x00007FF6471F74B3+1012915]\n\tOrdinal0 [0x00007FF6471CE440+844864]\n\tOrdinal0 [0x00007FF6471CF848+849992]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6474617D8+120584]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF64744CE1E+36174]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF64745001C+48972]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6472A0716+30806]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6476A4571+569329]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6476A8FA4+588324]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6476A90FD+588669]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6476B288E+627470]\n\tBaseThreadInitThunk [0x00007FFC286054E0+16]\n\tRtlUserThreadStart [0x00007FFC2940485B+43]",
+        "time" : {
+          "start" : 1652837094442,
+          "stop" : 1652837130288,
+          "duration" : 35846
+        }
+      }, {
+        "uid" : "54c07575e5ed0f7b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/62/allure/#testresult/54c07575e5ed0f7b",
+        "status" : "failed",
+        "statusDetails" : "AssertionError",
+        "time" : {
+          "start" : 1652760258987,
+          "stop" : 1652760342236,
+          "duration" : 83249
+        }
+      }, {
+        "uid" : "1483520c55897949",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/59/allure/#testresult/1483520c55897949",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652156648961,
+          "stop" : 1652156717829,
+          "duration" : 68868
+        }
+      }, {
+        "uid" : "e2870049ea124c67",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/58/allure/#testresult/e2870049ea124c67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651892306299,
+          "stop" : 1651892357696,
+          "duration" : 51397
+        }
+      }, {
+        "uid" : "da5b200c35c1394",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/56/allure/#testresult/da5b200c35c1394",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651824800368,
+          "stop" : 1651824852842,
+          "duration" : 52474
+        }
+      }, {
+        "uid" : "f5e2360734377733",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/55/allure/#testresult/f5e2360734377733",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651821419009,
+          "stop" : 1651821474258,
+          "duration" : 55249
+        }
+      }, {
+        "uid" : "d6a6bcb74876544e",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/54/allure/#testresult/d6a6bcb74876544e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1)\"}\n  (Session info: chrome=101.0.4951.54)\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x006D7413+2389011]\n\tOrdinal0 [0x00669F61+1941345]\n\tOrdinal0 [0x0055C658+837208]\n\tOrdinal0 [0x005891DD+1020381]\n\tOrdinal0 [0x0058949B+1021083]\n\tOrdinal0 [0x005B6032+1204274]\n\tOrdinal0 [0x005A4194+1130900]\n\tOrdinal0 [0x005B4302+1196802]\n\tOrdinal0 [0x005A3F66+1130342]\n\tOrdinal0 [0x0057E546+976198]\n\tOrdinal0 [0x0057F456+980054]\n\tGetHandleVerifier [0x00889632+1727522]\n\tGetHandleVerifier [0x0093BA4D+2457661]\n\tGetHandleVerifier [0x0076EB81+569713]\n\tGetHandleVerifier [0x0076DD76+566118]\n\tOrdinal0 [0x00670B2B+1968939]\n\tOrdinal0 [0x00675988+1989000]\n\tOrdinal0 [0x00675A75+1989237]\n\tOrdinal0 [0x0067ECB1+2026673]\n\tBaseThreadInitThunk [0x75906739+25]\n\tRtlGetFullPathName_UEx [0x77408E7F+1215]\n\tRtlGetFullPathName_UEx [0x77408E4D+1165]",
+        "time" : {
+          "start" : 1651817331385,
+          "stop" : 1651817374220,
+          "duration" : 42835
+        }
+      }, {
+        "uid" : "83778cf02f4f0419",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/52/allure/#testresult/83778cf02f4f0419",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF639601922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF63953E982+515794]\n\tOrdinal0 [0x00007FF639050BC5+658373]\n\tOrdinal0 [0x00007FF63907B5E0+832992]\n\tOrdinal0 [0x00007FF639076B7E+813950]\n\tOrdinal0 [0x00007FF6390724EE+795886]\n\tOrdinal0 [0x00007FF6390AC366+1033062]\n\tOrdinal0 [0x00007FF6390A6A53+1010259]\n\tOrdinal0 [0x00007FF63907DB47+842567]\n\tOrdinal0 [0x00007FF63907F018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF63920F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6392F9389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF6392FC562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF63914C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF639545971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF63954A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF63954AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF6395548BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651810151296,
+          "stop" : 1651810171798,
+          "duration" : 20502
+        }
+      }, {
+        "uid" : "969a8125d994cf16",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/51/allure/#testresult/969a8125d994cf16",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of MSEdgeDriver only supports MSEdge version 99\nCurrent browser version is 101.0.1210.32 with binary path C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\nStacktrace:\nBacktrace:\n\tMicrosoft::Applications::Events::EventProperties::unpack [0x00007FF68FE51922+25346]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD8E982+515794]\n\tOrdinal0 [0x00007FF68F8A0BC5+658373]\n\tOrdinal0 [0x00007FF68F8CB5E0+832992]\n\tOrdinal0 [0x00007FF68F8C6B7E+813950]\n\tOrdinal0 [0x00007FF68F8C24EE+795886]\n\tOrdinal0 [0x00007FF68F8FC366+1033062]\n\tOrdinal0 [0x00007FF68F8F6A53+1010259]\n\tOrdinal0 [0x00007FF68F8CDB47+842567]\n\tOrdinal0 [0x00007FF68F8CF018+847896]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68FA5F1C8+827304]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB49389+34681]\n\tMicrosoft::Applications::Events::EventProperty::EventProperty [0x00007FF68FB4C562+47442]\n\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF68F99C6D6+29878]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD95971+544449]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9A974+564932]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FD9AACD+565277]\n\tMicrosoft::Applications::Events::time_ticks_t::time_ticks_t [0x00007FF68FDA48BE+605710]\n\tBaseThreadInitThunk [0x00007FFB3F2854E0+16]\n\tRtlUserThreadStart [0x00007FFB4090485B+43]",
+        "time" : {
+          "start" : 1651737955619,
+          "stop" : 1651737977824,
+          "duration" : 22205
+        }
+      }, {
+        "uid" : "cf946726db0bc57d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/50/allure/#testresult/cf946726db0bc57d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651219531887,
+          "stop" : 1651219588034,
+          "duration" : 56147
+        }
+      }, {
+        "uid" : "13824c19dff9295d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/49/allure/#testresult/13824c19dff9295d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651200852316,
+          "stop" : 1651200901309,
+          "duration" : 48993
+        }
+      }, {
+        "uid" : "14f029c1dcf03559",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/48/allure/#testresult/14f029c1dcf03559",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651195086285,
+          "stop" : 1651195145004,
+          "duration" : 58719
+        }
+      }, {
+        "uid" : "ad261e5f00b61ed0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/47/allure/#testresult/ad261e5f00b61ed0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651051932320,
+          "stop" : 1651051981676,
+          "duration" : 49356
+        }
+      }, {
+        "uid" : "71d5fe99f6da5aba",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/46/allure/#testresult/71d5fe99f6da5aba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651037238305,
+          "stop" : 1651037287124,
+          "duration" : 48819
+        }
+      }, {
+        "uid" : "8d00c491a69d358",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/45/allure/#testresult/8d00c491a69d358",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651033399042,
+          "stop" : 1651033444987,
+          "duration" : 45945
+        }
+      }, {
+        "uid" : "d6b2e1e4667f4e8d",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/43/allure/#testresult/d6b2e1e4667f4e8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1651022155080,
+          "stop" : 1651022205912,
+          "duration" : 50832
+        }
+      }, {
+        "uid" : "6b9c75b4d9c6efd5",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/42/allure/#testresult/6b9c75b4d9c6efd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650960569850,
+          "stop" : 1650960614371,
+          "duration" : 44521
+        }
+      }, {
+        "uid" : "2a3820eecb4fe0b0",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/41/allure/#testresult/2a3820eecb4fe0b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650957212927,
+          "stop" : 1650957257513,
+          "duration" : 44586
+        }
+      }, {
+        "uid" : "375e932b06982d71",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/40/allure/#testresult/375e932b06982d71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650951428509,
+          "stop" : 1650951473851,
+          "duration" : 45342
+        }
+      }, {
+        "uid" : "2eb4f78f8b97c20b",
+        "reportUrl" : "http://localhost:8080/job/okmarts_ui_test/39/allure/#testresult/2eb4f78f8b97c20b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650935608973,
+          "stop" : 1650935652975,
+          "duration" : 44002
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "16e26cd3c0fbdf0b.json",
+  "parameterValues" : [ "{'case_no': '35', 'casename': '输入正确内容修改密码成功', 'mode': '忘记密码', 'data': 'useraccount=a979172251@163.com\\nnewpassword=', 'assert_way': 'css selector=#app > div > div.global-header > div > div.menu-content > div.menu-right.flex > div:nth-child(1) > span', 'result': 'Login'}" ]
+}

@@ -51,6 +51,9 @@ class Get_Data:
         search_casename = []            #搜索用例名称集合
         search_case_list = []           #搜索用例集合
 
+        pay_casename = []               #支付用例名称集合
+        pay_case_list = []              #支付用例集合
+
         for i in range(1,sheet.nrows):
             dicts = {}
             value = sheet.row_values(i)
@@ -103,6 +106,9 @@ class Get_Data:
             if mode == '搜索':
                 self.get_list(dicts, search_case_list, case_no, casename, mode, data, assert_way, result)
                 search_casename.append(casename)
+            if mode == '支付':
+                self.get_list(dicts, pay_case_list, case_no, casename, mode, data, assert_way, result)
+                pay_casename.append(casename)
 
 
         General_for_casename['login'] = login_casename
@@ -147,8 +153,11 @@ class Get_Data:
         General_for_casename['search'] = search_casename
         General_table['search'] = search_case_list
 
-        print(General_table['search'])
-        print(General_for_casename['search'])
+        General_for_casename['pay'] = pay_casename
+        General_table['pay'] = pay_case_list
+
+        print(General_table['pay'])
+        print(General_for_casename['pay'])
         return General_table,General_for_casename
 
     def get_list(self,dicts:dict,lists:list,case_no,casename,mode,data,assert_way,result):
@@ -159,8 +168,6 @@ class Get_Data:
         dicts['assert_way'] = assert_way
         dicts['result'] = result
         lists.append(dicts)
-
-
 
 
 if __name__ == '__main__':
